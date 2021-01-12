@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
-class DesktopHomePage extends StatelessWidget {
+import 'navbar_menu_widgets.dart';
+
+class MobileNavbar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
@@ -12,7 +14,15 @@ class DesktopHomePage extends StatelessWidget {
         ),
         Row(
           children: [
-
+            MenuText('Menu'),
+            MenuText('Menu'),
+            MenuText('Menu'),
+            MenuText('Menu'),
+            MenuText('Menu'),
+            MenuText('Menu'),
+            MenuText('Menu'),
+            MenuText('Menu'),
+            MenuText('Menu'),
           ],
         )
       ],

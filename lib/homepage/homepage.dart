@@ -7,12 +7,11 @@ class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return LayoutBuilder(
         // ignore: missing_return
-        builder: (context, constraints) {
-      if (constraints.maxWidth > 1200)
-        return DesktopHomePage();
-      else if (constraints.maxWidth <= 1200 && constraints.maxWidth >= 800)
-        return DesktopHomePage();
-      else if (constraints.maxWidth < 800) return MobileHomePage();
-    });
+        builder: (context, constraints){
+          if(constraints.maxWidth > 1200) return DesktopHomePage();
+          else if(constraints.maxWidth <= 1200 && constraints.maxWidth >= 800) return DesktopHomePage();
+          else if(constraints.maxWidth < 800) return MobileHomePage();
+        }
+    );
   }
 }
