@@ -1,11 +1,11 @@
 {
-    "name": "vihaan2021",
-    "short_name": "vihaan2021",
+    "name": "vihaan_new",
+    "short_name": "vihaan_new",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "Website for Vihaan 2021",
+    "description": "A new Flutter project.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
