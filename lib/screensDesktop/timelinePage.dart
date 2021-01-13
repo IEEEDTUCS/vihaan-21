@@ -43,36 +43,6 @@ class TimelinePage extends StatelessWidget {
       ),
       bubbleColor: Colors.purple,
     ),
-    TimelineItem(
-      title: 'Event 4',
-      subtitle: 'Subtitle 4',
-      description: 'ABCD',
-      child: Icon(
-        Icons.access_alarm,
-        color: Colors.white,
-      ),
-      bubbleColor: Colors.purple,
-    ),
-    TimelineItem(
-      title: 'Event 4',
-      subtitle: 'Subtitle 4',
-      description: 'ABCD',
-      child: Icon(
-        Icons.access_alarm,
-        color: Colors.white,
-      ),
-      bubbleColor: Colors.purple,
-    ),
-    TimelineItem(
-      title: 'Event 4',
-      subtitle: 'Subtitle 4',
-      description: 'ABCD',
-      child: Icon(
-        Icons.access_alarm,
-        color: Colors.white,
-      ),
-      bubbleColor: Colors.purple,
-    ),
   ];
 
   @override
@@ -81,38 +51,12 @@ class TimelinePage extends StatelessWidget {
       backgroundColor: Colors.amber,
       body: Center(
         child: Container(
-          child: Stack(children: [
-            Row(
-              children: <Widget>[
-                Align(
-                  alignment: Alignment.topRight,
-                  child: Container(
-                    //color: Colors.black,
-                    alignment: Alignment.topRight,
-                    padding: const EdgeInsets.all(50.0),
-                    child: AnimatedContainer(
-                      duration: Duration(milliseconds: 500),
-                      curve: Curves.fastOutSlowIn,
-                      child: Text(
-                        "Timeline",
-                        style: TextStyle(
-                          fontSize: 120,
-                          color: Colors.amber[900],
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                    ),
-                  ),
-                ),
-              ],
-            ),
-            BubbleTimeline(
-              bubbleDiameter: 100,
-              items: _items,
-              stripColor: Colors.blue[900],
-              scaffoldColor: Colors.amber,
-            ),
-          ]),
+          child: BubbleTimeline(
+            bubbleDiameter: 100,
+            items: _items,
+            stripColor: Colors.blue[900],
+            scaffoldColor: Colors.amber,
+          ),
         ),
       ),
     );

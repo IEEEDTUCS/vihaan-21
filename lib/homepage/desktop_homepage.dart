@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_web_scrollbar/flutter_web_scrollbar.dart';
 import 'package:vihaan_new/screensDesktop/landingpage.dart';
+import 'package:vihaan_new/screensDesktop/timelinePage.dart';
 
 // class DesktopHomePage extends StatelessWidget {
 //   @override
@@ -70,7 +71,9 @@ class _DesktopHomePageState extends State<DesktopHomePage> {
                   Container(
                     height: MediaQuery.of(context).size.height,
                     width: MediaQuery.of(context).size.width,
-                    color: Colors.red,
+                    child: Stack(children: [
+                      TimelinePage(),
+                    ]),
                   ),
                   Container(
                     height: MediaQuery.of(context).size.height,
@@ -97,6 +100,27 @@ class _DesktopHomePageState extends State<DesktopHomePage> {
             dragHandleBorderRadius: 5.0,
             dragHandleHeight: 40.0,
             dragHandleWidth: 30.0,
+          ),
+          Stack(
+            children: <Widget>[
+              Positioned(
+                top: 20,
+                left: 25,
+                right: 45,
+                // using SafeArea to avoid device frames (for example notch in iPhones)
+                child: SafeArea(
+                  child: Container(
+                    height: 50,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(4),
+                      color: Colors.black,
+                    ),
+                    child: Text('Need To Add Buttons',
+                        style: TextStyle(color: Colors.white)),
+                  ),
+                ),
+              ),
+            ],
           ),
         ],
       ),
