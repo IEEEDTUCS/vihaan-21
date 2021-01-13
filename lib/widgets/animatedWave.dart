@@ -1,7 +1,6 @@
-import 'dart:math';
-
 import 'package:flutter/material.dart';
 import 'package:simple_animations/simple_animations.dart';
+import 'dart:math';
 
 class AnimatedWave extends StatelessWidget {
   final double height;
@@ -16,9 +15,7 @@ class AnimatedWave extends StatelessWidget {
       return Container(
         height: height,
         width: constraints.biggest.width,
-        // ignore: deprecated_member_use
         child: ControlledAnimation(
-            // ignore: deprecated_member_use
             playback: Playback.LOOP,
             duration: Duration(milliseconds: (5000 / speed).round()),
             tween: Tween(begin: 0.0, end: 2 * pi),

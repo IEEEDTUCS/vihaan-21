@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:scroll_to_index/scroll_to_index.dart';
 
 class MobileHomePage extends StatefulWidget {
-
   @override
   _MobileHomePageState createState() => _MobileHomePageState();
 }
@@ -19,10 +18,9 @@ class _MobileHomePageState extends State<MobileHomePage> {
   @override
   void initState() {
     super.initState();
-    controller = AutoScrollController(
-        axis: scrollDirection
-    );
-    randomList = List.generate(maxCount, (index) => <int>[index, (1000 * random.nextDouble()).toInt()]);
+    controller = AutoScrollController(axis: scrollDirection);
+    randomList = List.generate(maxCount,
+        (index) => <int>[index, (1000 * random.nextDouble()).toInt()]);
   }
 
   @override
@@ -122,14 +120,13 @@ class _MobileHomePageState extends State<MobileHomePage> {
     );
   }
 
-  Widget _wrapScrollTag({int index, Widget child})
-  => AutoScrollTag(
-    key: ValueKey(index),
-    controller: controller,
-    index: index,
-    child: child,
-    //highlightColor: Colors.black.withOpacity(0.1),
-  );
+  Widget _wrapScrollTag({int index, Widget child}) => AutoScrollTag(
+        key: ValueKey(index),
+        controller: controller,
+        index: index,
+        child: child,
+        //highlightColor: Colors.black.withOpacity(0.1),
+      );
 }
 
 
