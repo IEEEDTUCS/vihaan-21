@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_web_scrollbar/flutter_web_scrollbar.dart';
 import 'package:vihaan_new/screensDesktop/landingpage.dart';
 import 'package:vihaan_new/screensDesktop/timelinePage.dart';
+import 'package:vihaan_new/widgets/vihaan_icons_icons.dart';
+import 'package:vihaan_new/widgets/desktopNavbar.dart';
 
 // class DesktopHomePage extends StatelessWidget {
 //   @override
@@ -50,13 +52,14 @@ class _DesktopHomePageState extends State<DesktopHomePage> {
 
   @override
   Widget build(BuildContext context) {
+    var _width = MediaQuery.of(context).size.width;
+    var _height = MediaQuery.of(context).size.height;
     return Scaffold(
       backgroundColor: Colors.white,
       body: Stack(
         children: [
           Container(
             child: SingleChildScrollView(
-              //Assign the controller to my scrollable widget
               controller: _controller,
               child: Column(
                 children: [
@@ -90,10 +93,7 @@ class _DesktopHomePageState extends State<DesktopHomePage> {
             ),
           ),
           FlutterWebScroller(
-            //Pass a reference to the ScrollCallBack function into the scrollbar
             scrollCallBack,
-
-            //Add optional values
             scrollBarBackgroundColor: Colors.white,
             scrollBarWidth: 20.0,
             dragHandleColor: Colors.red,
@@ -101,26 +101,44 @@ class _DesktopHomePageState extends State<DesktopHomePage> {
             dragHandleHeight: 40.0,
             dragHandleWidth: 30.0,
           ),
-          Stack(
-            children: <Widget>[
+          PreferredSize(
+            preferredSize: Size(_width - 40, _height * 0.07),
+            child: Stack(children: [
               Positioned(
                 top: 20,
                 left: 25,
                 right: 45,
-                // using SafeArea to avoid device frames (for example notch in iPhones)
                 child: SafeArea(
                   child: Container(
-                    height: 50,
+                    height: _height * 0.07,
+                    width: _width - 40,
                     decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(4),
+                      borderRadius: BorderRadius.circular(20),
                       color: Colors.black,
                     ),
-                    child: Text('Need To Add Buttons',
-                        style: TextStyle(color: Colors.white)),
+                    padding: EdgeInsets.only(
+                      top: 9,
+                      right: 25,
+                      left: 25,
+                    ),
+                    child: Row(
+                      children: [
+                        DesktopNavbar(),
+                      ],
+                    ),
                   ),
                 ),
               ),
-            ],
+              Positioned(
+                bottom: 30,
+                right: 60,
+                child: FloatingActionButton(
+                  onPressed: () {},
+                  backgroundColor: Colors.black,
+                  child: Icon(VihaanIcons.discord),
+                ),
+              )
+            ]),
           ),
         ],
       ),
