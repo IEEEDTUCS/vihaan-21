@@ -73,6 +73,7 @@ class FancyBackgroundApp extends StatelessWidget {
 class LandingPageContent extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    var _height = MediaQuery.of(context).size.height;
     var _width = MediaQuery.of(context).size.width;
     return AnimatedOpacity(
       duration: Duration(milliseconds: 250),
@@ -104,10 +105,13 @@ class LandingPageContent extends StatelessWidget {
                     //           padding: const EdgeInsets.only(right: 40.0),
                     //           child: Container(
                     //             width: _width * 0.55,
-                    //             color: Colors.black,
+                    //             //color: Colors.black,
                     //             child: FittedBox(
                     //               fit: BoxFit.fitWidth,
-                    //               child: Text("Hemang"),
+                    //               child: Image(
+                    //                   fit: BoxFit.fill,
+                    //                   image: AssetImage(
+                    //                       "images/Vihaan_Landing_Image.png")),
                     //             ),
                     //           ),
                     //         ),
@@ -115,6 +119,25 @@ class LandingPageContent extends StatelessWidget {
                     //     ),
                     //   ),
                     // ),
+                    Positioned.fill(
+                      top: 100,
+                      left: 500,
+                      child: Padding(
+                        padding: EdgeInsets.all(10.0),
+                        child: Align(
+                          alignment: Alignment.topLeft,
+                          child: Container(
+                            // height: _height * 0.60,
+                            // width: _width * 0.60,
+                            child: Image(
+                              fit: BoxFit.fill,
+                              image:
+                                  AssetImage("images/Vihaan_Landing_Image.png"),
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
                     // Positioned.fill(
                     //   child: Opacity(
                     //     opacity: 1.0,
@@ -134,18 +157,18 @@ class LandingPageContent extends StatelessWidget {
                     //   ),
                     // ),
                     Positioned.fill(
+                      top: 100,
+                      left: 42,
                       child: Padding(
                         padding: EdgeInsets.all(10.0),
                         child: Align(
                           alignment: Alignment.topLeft,
                           child: Container(
-                            //color: Colors.black,
-                            //height: 120.0,
-                            //width: 120.0,
+                            height: 120.0,
+                            width: 120.0,
                             child: Image(
                                 fit: BoxFit.fill,
-                                image: NetworkImage(
-                                    "https://github.com/IEEECSDTU/DDH/blob/master/images/vihaan.png?raw=true")),
+                                image: AssetImage("images/Vihaan_Logo.png")),
                             // decoration: BoxDecoration(
                             //   image: DecorationImage(
                             //     image: NetworkImage(
@@ -181,6 +204,58 @@ class LandingPageContent extends StatelessWidget {
                                   fontWeight: FontWeight.bold,
                                   color: Colors.black54,
                                 ),
+                              ),
+                              Padding(padding: EdgeInsets.all(10)),
+                              Row(
+                                children: [
+                                  Material(
+                                    elevation: 8,
+                                    color: Colors.blueAccent,
+                                    clipBehavior: Clip.antiAlias,
+                                    shadowColor: Colors.black54,
+                                    borderRadius: BorderRadius.all(
+                                      Radius.circular(12),
+                                    ),
+                                    child: InkWell(
+                                      onTap: () {},
+                                      child: Container(
+                                        width: 170,
+                                        height: 48,
+                                        child: Center(
+                                            child: Text(
+                                          "Register Now",
+                                          style: TextStyle(
+                                              color: Colors.white,
+                                              fontWeight: FontWeight.bold),
+                                        )),
+                                      ),
+                                    ),
+                                  ),
+                                  Padding(padding: EdgeInsets.only(right: 20)),
+                                  Material(
+                                    elevation: 8,
+                                    color: Colors.redAccent,
+                                    clipBehavior: Clip.antiAlias,
+                                    shadowColor: Colors.black54,
+                                    borderRadius: BorderRadius.all(
+                                      Radius.circular(12),
+                                    ),
+                                    child: InkWell(
+                                      onTap: () {},
+                                      child: Container(
+                                        width: 170,
+                                        height: 48,
+                                        child: Center(
+                                            child: Text(
+                                          "Become a Sponsor",
+                                          style: TextStyle(
+                                              color: Colors.white,
+                                              fontWeight: FontWeight.bold),
+                                        )),
+                                      ),
+                                    ),
+                                  )
+                                ],
                               ),
                             ],
                           ),
