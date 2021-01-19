@@ -70,7 +70,7 @@ class _DesktopNavbarState extends State<DesktopNavbar> {
               mainAxisSize: MainAxisSize.min,
               children: [
                 Text(
-                  'About Us',
+                  'Tracks',
                   style: TextStyle(
                     fontSize: 18,
                     fontWeight: FontWeight.bold,
@@ -104,7 +104,7 @@ class _DesktopNavbarState extends State<DesktopNavbar> {
               mainAxisSize: MainAxisSize.min,
               children: [
                 Text(
-                  'About Us',
+                  'Prizes',
                   style: TextStyle(
                     fontSize: 18,
                     fontWeight: FontWeight.bold,
@@ -138,7 +138,7 @@ class _DesktopNavbarState extends State<DesktopNavbar> {
               mainAxisSize: MainAxisSize.min,
               children: [
                 Text(
-                  'About Us',
+                  'Timeline',
                   style: TextStyle(
                     fontSize: 18,
                     fontWeight: FontWeight.bold,
@@ -172,7 +172,7 @@ class _DesktopNavbarState extends State<DesktopNavbar> {
               mainAxisSize: MainAxisSize.min,
               children: [
                 Text(
-                  'About Us',
+                  'Judges',
                   style: TextStyle(
                     fontSize: 18,
                     fontWeight: FontWeight.bold,
@@ -206,7 +206,7 @@ class _DesktopNavbarState extends State<DesktopNavbar> {
               mainAxisSize: MainAxisSize.min,
               children: [
                 Text(
-                  'About Us',
+                  'Sponsors',
                   style: TextStyle(
                     fontSize: 18,
                     fontWeight: FontWeight.bold,
@@ -240,7 +240,7 @@ class _DesktopNavbarState extends State<DesktopNavbar> {
               mainAxisSize: MainAxisSize.min,
               children: [
                 Text(
-                  'About Us',
+                  'FAQs',
                   style: TextStyle(
                     fontSize: 18,
                     fontWeight: FontWeight.bold,
@@ -274,7 +274,7 @@ class _DesktopNavbarState extends State<DesktopNavbar> {
               mainAxisSize: MainAxisSize.min,
               children: [
                 Text(
-                  'About Us',
+                  'Team',
                   style: TextStyle(
                     fontSize: 18,
                     fontWeight: FontWeight.bold,
@@ -308,7 +308,7 @@ class _DesktopNavbarState extends State<DesktopNavbar> {
               mainAxisSize: MainAxisSize.min,
               children: [
                 Text(
-                  'About Us',
+                  'Contact Us',
                   style: TextStyle(
                     fontSize: 18,
                     fontWeight: FontWeight.bold,
