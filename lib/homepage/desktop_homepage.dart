@@ -74,9 +74,7 @@ class _DesktopHomePageState extends State<DesktopHomePage> {
                   Container(
                     height: MediaQuery.of(context).size.height,
                     width: MediaQuery.of(context).size.width,
-                    child: Stack(children: [
-                      TimelinePage(),
-                    ]),
+                    child: Stack(children: []),
                   ),
                   Container(
                     height: MediaQuery.of(context).size.height,
@@ -88,18 +86,25 @@ class _DesktopHomePageState extends State<DesktopHomePage> {
                     width: MediaQuery.of(context).size.width,
                     color: Colors.blue,
                   ),
+                  Container(
+                    height: MediaQuery.of(context).size.height * 1.5,
+                    width: MediaQuery.of(context).size.width,
+                    child: Stack(children: [
+                      TimelinePage(),
+                    ]),
+                  ),
                 ],
               ),
             ),
           ),
           FlutterWebScroller(
             scrollCallBack,
-            scrollBarBackgroundColor: Colors.white,
-            scrollBarWidth: 20.0,
-            dragHandleColor: Colors.red,
-            dragHandleBorderRadius: 5.0,
-            dragHandleHeight: 40.0,
-            dragHandleWidth: 30.0,
+            // scrollBarBackgroundColor: Colors.white,
+            // scrollBarWidth: 20.0,
+            dragHandleColor: Colors.white,
+            // dragHandleBorderRadius: 5.0,
+            // dragHandleHeight: 40.0,
+            // dragHandleWidth: 30.0,
           ),
           PreferredSize(
             preferredSize: Size(_width - 40, _height * 0.07),
@@ -135,7 +140,13 @@ class _DesktopHomePageState extends State<DesktopHomePage> {
                 child: FloatingActionButton(
                   onPressed: () {},
                   backgroundColor: Colors.black,
-                  child: Icon(VihaanIcons.discord),
+                  hoverColor: Colors.purple[800],
+                  splashColor: Colors.purple,
+                  hoverElevation: 10,
+                  child: Icon(
+                    VihaanIcons.discord,
+                    size: 32,
+                  ),
                 ),
               )
             ]),
