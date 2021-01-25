@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_web_scrollbar/flutter_web_scrollbar.dart';
 import 'package:vihaan_new/screensDesktop/landingpage.dart';
+import 'package:vihaan_new/screensDesktop/team.dart';
 import 'package:vihaan_new/screensDesktop/timelinePage.dart';
 import 'package:vihaan_new/widgets/vihaan_icons_icons.dart';
 import 'package:vihaan_new/widgets/desktopNavbar.dart';
