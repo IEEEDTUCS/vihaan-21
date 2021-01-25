@@ -99,6 +99,35 @@ class _DesktopHomePageState extends State<DesktopHomePage> {
                       ]),
                     ),
                   ),
+                  Container(
+                    height: MediaQuery.of(context).size.height,
+                    width: MediaQuery.of(context).size.width,
+                    color: Colors.blueAccent,
+                    child: Stack(children: []),
+                  ),
+                  Container(
+                    height: MediaQuery.of(context).size.height,
+                    width: MediaQuery.of(context).size.width,
+                    color: Colors.green,
+                  ),
+                  Container(
+                    height: MediaQuery.of(context).size.height,
+                    width: MediaQuery.of(context).size.width,
+                    color: Colors.blue,
+                  ),
+                  Container(
+                    height: MediaQuery.of(context).size.height,
+                    width: MediaQuery.of(context).size.width,
+                    color: Colors.greenAccent,
+                    child: Stack(
+                      children: [TeamSection()],
+                    ),
+                  ),
+                  Container(
+                    height: MediaQuery.of(context).size.height,
+                    width: MediaQuery.of(context).size.width,
+                    color: Colors.redAccent,
+                  ),
                 ],
               ),
             ),
