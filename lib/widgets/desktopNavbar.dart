@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:scroll_to_index/scroll_to_index.dart';
 
 class DesktopNavbar extends StatefulWidget {
+  final AutoScrollController controller;
+
+  const DesktopNavbar({Key key, this.controller}) : super(key: key);
+
   @override
   _DesktopNavbarState createState() => _DesktopNavbarState();
 }
@@ -31,7 +36,9 @@ class _DesktopNavbarState extends State<DesktopNavbar> {
                 _isHovering[0] = value;
               });
             },
-            onTap: () {},
+            onTap: () {
+              widget.controller.scrollToIndex(1);
+            },
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
@@ -65,7 +72,9 @@ class _DesktopNavbarState extends State<DesktopNavbar> {
                 _isHovering[1] = value;
               });
             },
-            onTap: () {},
+            onTap: () {
+              widget.controller.scrollToIndex(2);
+            },
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
@@ -99,7 +108,9 @@ class _DesktopNavbarState extends State<DesktopNavbar> {
                 _isHovering[2] = value;
               });
             },
-            onTap: () {},
+            onTap: () {
+              widget.controller.scrollToIndex(3);
+            },
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
@@ -133,7 +144,9 @@ class _DesktopNavbarState extends State<DesktopNavbar> {
                 _isHovering[3] = value;
               });
             },
-            onTap: () {},
+            onTap: () {
+              widget.controller.scrollToIndex(4);
+            },
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
