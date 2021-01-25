@@ -50,14 +50,11 @@ class ProfileCard extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                if (linkedInAddress != null)
-                  InkWell(onTap: () {}, child: Icon(VihaanIcons.linkedin)),
-                if (linkedInAddress != null && facebookAddress != null)
-                  SizedBox(
-                    width: 5,
-                  ),
-                if (facebookAddress != null)
-                  InkWell(onTap: () {}, child: Icon(VihaanIcons.twitter)),
+                Icon(VihaanIcons.linkedin),
+                SizedBox(
+                  width: 5,
+                ),
+                Icon(VihaanIcons.facebook),
               ],
             )
           ],
