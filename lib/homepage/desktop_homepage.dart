@@ -4,6 +4,7 @@ import 'package:vihaan_new/screensDesktop/landingpage.dart';
 import 'package:vihaan_new/screensDesktop/timelinePage.dart';
 import 'package:vihaan_new/widgets/vihaan_icons_icons.dart';
 import 'package:vihaan_new/widgets/desktopNavbar.dart';
+import 'package:vihaan_new/screensDesktop/team.dart';
 
 // class DesktopHomePage extends StatelessWidget {
 //   @override
@@ -74,6 +75,7 @@ class _DesktopHomePageState extends State<DesktopHomePage> {
                   Container(
                     height: MediaQuery.of(context).size.height,
                     width: MediaQuery.of(context).size.width,
+                    color: Colors.blueAccent,
                     child: Stack(children: []),
                   ),
                   Container(
@@ -92,6 +94,35 @@ class _DesktopHomePageState extends State<DesktopHomePage> {
                     child: Stack(children: [
                       TimelinePage(),
                     ]),
+                  ),
+                  Container(
+                    height: MediaQuery.of(context).size.height,
+                    width: MediaQuery.of(context).size.width,
+                    color: Colors.blueAccent,
+                    child: Stack(children: []),
+                  ),
+                  Container(
+                    height: MediaQuery.of(context).size.height,
+                    width: MediaQuery.of(context).size.width,
+                    color: Colors.green,
+                  ),
+                  Container(
+                    height: MediaQuery.of(context).size.height,
+                    width: MediaQuery.of(context).size.width,
+                    color: Colors.blue,
+                  ),
+                  Container(
+                    height: MediaQuery.of(context).size.height,
+                    width: MediaQuery.of(context).size.width,
+                    color: Colors.greenAccent,
+                    child: Stack(
+                      children: [TeamSection()],
+                    ),
+                  ),
+                  Container(
+                    height: MediaQuery.of(context).size.height,
+                    width: MediaQuery.of(context).size.width,
+                    color: Colors.redAccent,
                   ),
                 ],
               ),
