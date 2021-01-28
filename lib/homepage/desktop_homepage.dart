@@ -1,31 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_web_scrollbar/flutter_web_scrollbar.dart';
+//import 'package:flutter_web_scrollbar/flutter_web_scrollbar.dart';
+import 'package:scroll_to_index/scroll_to_index.dart';
 import 'package:vihaan_new/screensDesktop/landingpage.dart';
 import 'package:vihaan_new/screensDesktop/team.dart';
 import 'package:vihaan_new/screensDesktop/timelinePage.dart';
-import 'package:vihaan_new/widgets/vihaan_icons_icons.dart';
 import 'package:vihaan_new/widgets/desktopNavbar.dart';
-import 'package:vihaan_new/screensDesktop/team.dart';
-
-// class DesktopHomePage extends StatelessWidget {
-//   @override
-//   Widget build(BuildContext context) {
-//     return Row(
-//       mainAxisAlignment: MainAxisAlignment.spaceBetween,
-//       children: [
-//         Padding(
-//           padding: const EdgeInsets.all(16.0),
-//           child: Text('Vihaan Logo'),
-//         ),
-//         Row(
-//           children: [
-
-//           ],
-//         )
-//       ],
-//     );
-//   }
-// }
+import 'package:vihaan_new/widgets/vihaan_icons_icons.dart';
 
 class DesktopHomePage extends StatefulWidget {
   DesktopHomePage({Key key}) : super(key: key);
@@ -36,12 +16,22 @@ class DesktopHomePage extends StatefulWidget {
 }
 
 class _DesktopHomePageState extends State<DesktopHomePage> {
-  ScrollController _controller;
+  AutoScrollController _controller;
+  final scrollDirection = Axis.vertical;
+
+  Widget _wrapScrollTag({int index, Widget child}) => AutoScrollTag(
+        key: ValueKey(index),
+        controller: _controller,
+        index: index,
+        child: child,
+        //highlightColor: Colors.black.withOpacity(0.1),
+      );
 
   @override
   void initState() {
     //Initialize the  scrollController
-    _controller = ScrollController();
+
+    _controller = AutoScrollController(axis: scrollDirection);
     super.initState();
   }
 
@@ -65,86 +55,115 @@ class _DesktopHomePageState extends State<DesktopHomePage> {
               controller: _controller,
               child: Column(
                 children: [
-                  Container(
-                    height: MediaQuery.of(context).size.height,
-                    width: MediaQuery.of(context).size.width,
-                    child: Stack(children: [
-                      FancyBackgroundApp(),
-                      LandingPageContent(),
-                    ]),
-                  ),
-                  Container(
-                    height: MediaQuery.of(context).size.height,
-                    width: MediaQuery.of(context).size.width,
-                    color: Colors.blueAccent,
-                    child: Stack(children: []),
-                  ),
-                  Container(
-                    height: MediaQuery.of(context).size.height,
-                    width: MediaQuery.of(context).size.width,
-                    color: Colors.green,
-                  ),
-                  Container(
-                    height: MediaQuery.of(context).size.height,
-                    width: MediaQuery.of(context).size.width,
-                    color: Colors.blue,
-                  ),
-                  Container(
-                    height: MediaQuery.of(context).size.height * 1.5,
-                    width: MediaQuery.of(context).size.width,
-                    child: Stack(children: [
-                      TimelinePage(),
-                    ]),
-                  ),
-                  Container(
-                    height: MediaQuery.of(context).size.height,
-                    width: MediaQuery.of(context).size.width,
-                    color: Colors.blueAccent,
-                    child: Stack(children: []),
-                  ),
-                  Container(
-                    height: MediaQuery.of(context).size.height,
-                    width: MediaQuery.of(context).size.width,
-                    color: Colors.green,
-                  ),
-                  Container(
-                    height: MediaQuery.of(context).size.height,
-                    width: MediaQuery.of(context).size.width,
-                    color: Colors.blue,
-                  ),
-                  Container(
-                    height: MediaQuery.of(context).size.height,
-                    width: MediaQuery.of(context).size.width,
-                    color: Colors.greenAccent,
-                    child: Stack(
-                      children: [TeamSection()],
+                  _wrapScrollTag(
+                    index: 0,
+                    child: Container(
+                      height: MediaQuery.of(context).size.height,
+                      width: MediaQuery.of(context).size.width,
+                      child: Stack(children: [
+                        FancyBackgroundApp(),
+                        LandingPageContent(),
+                      ]),
                     ),
                   ),
-                  Container(
-                    height: MediaQuery.of(context).size.height,
-                    width: MediaQuery.of(context).size.width,
-                    color: Colors.redAccent,
+                  _wrapScrollTag(
+                    index: 1,
+                    child: Container(
+                      height: MediaQuery.of(context).size.height,
+                      width: MediaQuery.of(context).size.width,
+                      child: Stack(children: []),
+                    ),
+                  ),
+                  _wrapScrollTag(
+                    index: 2,
+                    child: Container(
+                      height: MediaQuery.of(context).size.height,
+                      width: MediaQuery.of(context).size.width,
+                      color: Colors.green,
+                    ),
+                  ),
+                  _wrapScrollTag(
+                    index: 3,
+                    child: Container(
+                      height: MediaQuery.of(context).size.height,
+                      width: MediaQuery.of(context).size.width,
+                      color: Colors.blue,
+                    ),
+                  ),
+                  _wrapScrollTag(
+                    index: 4,
+                    child: Container(
+                      height: MediaQuery.of(context).size.height * 1.5,
+                      width: MediaQuery.of(context).size.width,
+                      child: Stack(children: [
+                        TimelinePage(),
+                      ]),
+                    ),
+                  ),
+                  _wrapScrollTag(
+                    index: 5,
+                    child: Container(
+                      height: MediaQuery.of(context).size.height,
+                      width: MediaQuery.of(context).size.width,
+                      color: Colors.blueAccent,
+                      child: Stack(children: []),
+                    ),
+                  ),
+                  _wrapScrollTag(
+                    index: 6,
+                    child: Container(
+                      height: MediaQuery.of(context).size.height,
+                      width: MediaQuery.of(context).size.width,
+                      color: Colors.green,
+                    ),
+                  ),
+                  _wrapScrollTag(
+                    index: 7,
+                    child: Container(
+                      height: MediaQuery.of(context).size.height,
+                      width: MediaQuery.of(context).size.width,
+                      color: Colors.blue,
+                    ),
+                  ),
+                  _wrapScrollTag(
+                    index: 8,
+                    child: Container(
+                      height: MediaQuery.of(context).size.height,
+                      width: MediaQuery.of(context).size.width,
+                      color: Colors.greenAccent,
+                      child: Stack(
+                        children: [TeamSection()],
+                      ),
+                    ),
+                  ),
+                  _wrapScrollTag(
+                    index: 9,
+                    child: Container(
+                      height: MediaQuery.of(context).size.height,
+                      width: MediaQuery.of(context).size.width,
+                      color: Colors.redAccent,
+                    ),
                   ),
                 ],
               ),
             ),
           ),
-          FlutterWebScroller(
-            scrollCallBack,
-            // scrollBarBackgroundColor: Colors.white,
-            // scrollBarWidth: 20.0,
-            dragHandleColor: Colors.white,
-            // dragHandleBorderRadius: 5.0,
-            // dragHandleHeight: 40.0,
-            // dragHandleWidth: 30.0,
-          ),
+          // FlutterWebScroller(
+          //   scrollCallBack,
+          //   // scrollBarBackgroundColor: Colors.white,
+          //   // scrollBarWidth: 20.0,
+          //   dragHandleColor: Colors.white,
+          //   // dragHandleBorderRadius: 5.0,
+          //   // dragHandleHeight: 40.0,
+          //   // dragHandleWidth: 30.0,
+          // ),
           PreferredSize(
             preferredSize: Size(_width - 40, _height * 0.07),
             child: Stack(children: [
               Positioned(
-                top: 20,
+                top: 10,
                 left: 25,
-                right: 45,
+                right: 25,
                 child: SafeArea(
                   child: Container(
                     height: _height * 0.07,
@@ -160,7 +179,9 @@ class _DesktopHomePageState extends State<DesktopHomePage> {
                     ),
                     child: Row(
                       children: [
-                        DesktopNavbar(),
+                        DesktopNavbar(
+                          controller: _controller,
+                        ),
                       ],
                     ),
                   ),
@@ -168,7 +189,7 @@ class _DesktopHomePageState extends State<DesktopHomePage> {
               ),
               Positioned(
                 bottom: 30,
-                right: 60,
+                right: 30,
                 child: FloatingActionButton(
                   onPressed: () {},
                   backgroundColor: Colors.black,
