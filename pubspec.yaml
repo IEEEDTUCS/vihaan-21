@@ -71,6 +71,11 @@ flutter:
     - family: VihaanIcons
       fonts:
         - asset: assets/fonts/VihaanIcons.ttf
+    - family: NunitoSans
+      fonts:
+        - asset: assets/fonts/NunitoSans-Regular.ttf
+        - asset: assets/fonts/NunitoSans-Bold.ttf
+          weight: 700
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro
