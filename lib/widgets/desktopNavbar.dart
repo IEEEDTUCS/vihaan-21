@@ -180,7 +180,9 @@ class _DesktopNavbarState extends State<DesktopNavbar> {
                 _isHovering[4] = value;
               });
             },
-            onTap: () {},
+            onTap: () {
+              widget.controller.scrollToIndex(5);
+            },
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
@@ -214,7 +216,9 @@ class _DesktopNavbarState extends State<DesktopNavbar> {
                 _isHovering[5] = value;
               });
             },
-            onTap: () {},
+            onTap: () {
+              widget.controller.scrollToIndex(6);
+            },
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
@@ -248,7 +252,9 @@ class _DesktopNavbarState extends State<DesktopNavbar> {
                 _isHovering[6] = value;
               });
             },
-            onTap: () {},
+            onTap: () {
+              widget.controller.scrollToIndex(7);
+            },
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
@@ -282,7 +288,9 @@ class _DesktopNavbarState extends State<DesktopNavbar> {
                 _isHovering[7] = value;
               });
             },
-            onTap: () {},
+            onTap: () {
+              widget.controller.scrollToIndex(8);
+            },
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
@@ -316,7 +324,9 @@ class _DesktopNavbarState extends State<DesktopNavbar> {
                 _isHovering[8] = value;
               });
             },
-            onTap: () {},
+            onTap: () {
+              widget.controller.scrollToIndex(9);
+            },
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
