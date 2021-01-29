@@ -1,163 +1,58 @@
-import 'dart:math';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 import 'package:vihaan_new/widgets/sponsorCard.dart';
 
 class Sponsors extends StatelessWidget {
+  final double mrg = 200, gold = 250, silver = 200, bronze = 175;
   @override
   Widget build(BuildContext context) {
-    final width = MediaQuery.of(context).size.width;
-    final double mrg = 4,
-        gold = min(300, width * 0.2),
-        silver = min(236, width * 0.15),
-        bronze = min(195, width * 0.125),
-        titleFont = min(width * 0.065, 90),
-        headingFont = min(width * 0.085, 110);
-        
-    return Container(
-      padding: EdgeInsets.all(16),
-      color: Color.fromARGB(255, 255, 255, 240),
-      child: Column(
-        mainAxisSize: MainAxisSize.min,
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          Text(
-            'SPONSORS',
-            style: TextStyle(
-              fontSize: headingFont,
-              fontWeight: FontWeight.w700,
-              fontFamily: 'NunitoSans',
-            ),
-            textAlign: TextAlign.center,
-          ),
-          Padding(
-            padding: const EdgeInsets.only(bottom: 12.0),
-            child: Text(
-              'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-              style: TextStyle(fontSize: 20, fontFamily: 'NunitoSans'),
+    return Scaffold(
+      backgroundColor: Color.fromARGB(255, 255, 255, 240),
+      body: SafeArea(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            Text('SPONSORS',
+              style: TextStyle(
+                fontSize: 120,
+                fontWeight: FontWeight.w700,
+                fontFamily: 'NunitoSans'
+              ),
               textAlign: TextAlign.center,
             ),
-          ),
-          Container(
-              height: 2,
-              color: Colors.black12,
-              margin: EdgeInsets.symmetric(horizontal: 350)
-          ),
-          SponsorTitle(title: 'GOLD', fnt: titleFont, clr: Colors.amber[500]),
-          SingleChildScrollView(
-            scrollDirection: Axis.horizontal,
-            child: Row(
-              mainAxisSize: MainAxisSize.min,
-              mainAxisAlignment: MainAxisAlignment.center,
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                SponsorCard(
-                    bx: gold,
-                    mrl: mrg,
-                    mrr: mrg,
-                    url: 'images/Vihaan_Aboutus.jpg'),
-                SponsorCard(
-                    bx: gold,
-                    mrl: mrg,
-                    mrr: mrg,
-                    url: 'images/Vihaan_Aboutus.jpg'),
-                SponsorCard(
-                    bx: gold,
-                    mrl: mrg,
-                    mrr: mrg,
-                    url: 'images/Vihaan_Aboutus.jpg'),
-                SponsorCard(
-                    bx: gold,
-                    mrl: mrg,
-                    mrr: mrg,
-                    url: 'images/Vihaan_Aboutus.jpg')
+                SponsorCard(bx: gold, mrl: mrg, mrr: 0, url: 'images/sponsor_placeholder.png'),
+                SponsorCard(bx: gold, mrl: 0, mrr: 0, url: 'images/sponsor_placeholder.png'),
+                SponsorCard(bx: gold, mrl: 0, mrr: 0, url: 'images/sponsor_placeholder.png'),
+                SponsorCard(bx: gold, mrl: 0, mrr: mrg, url: 'images/sponsor_placeholder.png')
               ],
             ),
-          ),
-          SizedBox(height: 15),
-          SponsorTitle(
-              title: 'SILVER',
-              fnt: titleFont,
-              clr: Color.fromARGB(255, 192, 192, 192)),
-          SingleChildScrollView(
-            scrollDirection: Axis.horizontal,
-            child: Row(
-              mainAxisSize: MainAxisSize.min,
-              mainAxisAlignment: MainAxisAlignment.center,
+            SizedBox(height: 50),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                SponsorCard(
-                    bx: silver,
-                    mrl: mrg,
-                    mrr: mrg,
-                    url: 'images/Vihaan_Aboutus.jpg'),
-                SponsorCard(
-                    bx: silver,
-                    mrl: mrg,
-                    mrr: mrg,
-                    url: 'images/Vihaan_Aboutus.jpg'),
-                SponsorCard(
-                    bx: silver,
-                    mrl: mrg,
-                    mrr: mrg,
-                    url: 'images/Vihaan_Aboutus.jpg'),
-                SponsorCard(
-                    bx: silver,
-                    mrl: mrg,
-                    mrr: mrg,
-                    url: 'images/Vihaan_Aboutus.jpg'),
-                SponsorCard(
-                    bx: silver,
-                    mrl: mrg,
-                    mrr: mrg,
-                    url: 'images/Vihaan_Aboutus.jpg')
+                SponsorCard(bx: silver, mrl: mrg, mrr: 0, url: 'images/sponsor_placeholder.png'),
+                SponsorCard(bx: silver, mrl: 0, mrr: 0, url: 'images/sponsor_placeholder.png'),
+                SponsorCard(bx: silver, mrl: 0, mrr: 0, url: 'images/sponsor_placeholder.png'),
+                SponsorCard(bx: silver, mrl: 0, mrr: 0, url: 'images/sponsor_placeholder.png'),
+                SponsorCard(bx: silver, mrl: 0, mrr: mrg, url: 'images/sponsor_placeholder.png')
               ],
             ),
-          ),
-          SizedBox(height: 15),
-          SponsorTitle(
-              title: 'BRONZE',
-              fnt: titleFont,
-              clr: Color.fromARGB(255, 205, 127, 50)),
-          SingleChildScrollView(
-            scrollDirection: Axis.horizontal,
-            child: Row(
-              mainAxisSize: MainAxisSize.min,
-              mainAxisAlignment: MainAxisAlignment.center,
+            SizedBox(height: 50),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                SponsorCard(
-                    bx: bronze,
-                    mrl: mrg,
-                    mrr: mrg,
-                    url: 'images/Vihaan_Aboutus.jpg'),
-                SponsorCard(
-                    bx: bronze,
-                    mrl: mrg,
-                    mrr: mrg,
-                    url: 'images/Vihaan_Aboutus.jpg'),
-                SponsorCard(
-                    bx: bronze,
-                    mrl: mrg,
-                    mrr: mrg,
-                    url: 'images/Vihaan_Aboutus.jpg'),
-                SponsorCard(
-                    bx: bronze,
-                    mrl: mrg,
-                    mrr: mrg,
-                    url: 'images/Vihaan_Aboutus.jpg'),
-                SponsorCard(
-                    bx: bronze,
-                    mrl: mrg,
-                    mrr: mrg,
-                    url: 'images/Vihaan_Aboutus.jpg'),
-                SponsorCard(
-                    bx: bronze,
-                    mrl: mrg,
-                    mrr: mrg,
-                    url: 'images/Vihaan_Aboutus.jpg')
+                SponsorCard(bx: bronze, mrl: mrg, mrr: 0, url: 'images/sponsor_placeholder.png'),
+                SponsorCard(bx: bronze, mrl: 0, mrr: 0, url: 'images/sponsor_placeholder.png'),
+                SponsorCard(bx: bronze, mrl: 0, mrr: 0, url: 'images/sponsor_placeholder.png'),
+                SponsorCard(bx: bronze, mrl: 0, mrr: 0, url: 'images/sponsor_placeholder.png'),
+                SponsorCard(bx: bronze, mrl: 0, mrr: 0, url: 'images/sponsor_placeholder.png'),
+                SponsorCard(bx: bronze, mrl: 0, mrr: mrg, url: 'images/sponsor_placeholder.png')
               ],
-            ),
-          )
-        ],
+            )
+          ],
+        ),
       ),
     );
   }

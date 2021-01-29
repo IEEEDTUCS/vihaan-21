@@ -7,6 +7,7 @@ import 'package:vihaan_new/screensDesktop/timelinePage.dart';
 import 'package:vihaan_new/widgets/desktopNavbar.dart';
 import 'package:vihaan_new/widgets/vihaan_icons_icons.dart';
 import 'package:vihaan_new/screensDesktop/aboutus.dart';
+import 'package:vihaan_new/screensDesktop/sponsors.dart';
 
 class DesktopHomePage extends StatefulWidget {
   DesktopHomePage({Key key}) : super(key: key);
@@ -116,6 +117,9 @@ class _DesktopHomePageState extends State<DesktopHomePage> {
                       height: MediaQuery.of(context).size.height,
                       width: MediaQuery.of(context).size.width,
                       color: Colors.green,
+                      child: Stack(
+                        children: [Sponsors()],
+                      ),
                     ),
                   ),
                   _wrapScrollTag(
