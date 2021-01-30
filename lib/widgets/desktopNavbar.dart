@@ -28,7 +28,7 @@ class _DesktopNavbarState extends State<DesktopNavbar> {
     var _height = MediaQuery.of(context).size.height;
     return Expanded(
       child: Row(
-        mainAxisAlignment: MainAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
           InkWell(
             onHover: (value) {
@@ -65,7 +65,6 @@ class _DesktopNavbarState extends State<DesktopNavbar> {
               ],
             ),
           ),
-          SizedBox(width: _width / 30),
           InkWell(
             onHover: (value) {
               setState(() {
@@ -101,7 +100,6 @@ class _DesktopNavbarState extends State<DesktopNavbar> {
               ],
             ),
           ),
-          SizedBox(width: _width / 30),
           InkWell(
             onHover: (value) {
               setState(() {
@@ -137,7 +135,6 @@ class _DesktopNavbarState extends State<DesktopNavbar> {
               ],
             ),
           ),
-          SizedBox(width: _width / 30),
           InkWell(
             onHover: (value) {
               setState(() {
@@ -173,7 +170,6 @@ class _DesktopNavbarState extends State<DesktopNavbar> {
               ],
             ),
           ),
-          SizedBox(width: _width / 30),
           InkWell(
             onHover: (value) {
               setState(() {
@@ -209,7 +205,6 @@ class _DesktopNavbarState extends State<DesktopNavbar> {
               ],
             ),
           ),
-          SizedBox(width: _width / 30),
           InkWell(
             onHover: (value) {
               setState(() {
@@ -245,7 +240,6 @@ class _DesktopNavbarState extends State<DesktopNavbar> {
               ],
             ),
           ),
-          SizedBox(width: _width / 30),
           InkWell(
             onHover: (value) {
               setState(() {
@@ -281,7 +275,6 @@ class _DesktopNavbarState extends State<DesktopNavbar> {
               ],
             ),
           ),
-          SizedBox(width: _width / 30),
           InkWell(
             onHover: (value) {
               setState(() {
@@ -317,7 +310,6 @@ class _DesktopNavbarState extends State<DesktopNavbar> {
               ],
             ),
           ),
-          SizedBox(width: _width / 30),
           InkWell(
             onHover: (value) {
               setState(() {

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:vihaan_new/homepage/homepage.dart';
-import 'package:vihaan_new/navbar/navbar.dart';
 
 void main() {
   runApp(MyApp());
@@ -16,5 +15,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
-

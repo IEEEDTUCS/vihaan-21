@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:vihaan2021/widgets/responsive_widgets.dart';
+import 'package:vihaan_new/widgets/responsive_widgets.dart';
 
 class DashboardPage extends StatefulWidget {
   @override
