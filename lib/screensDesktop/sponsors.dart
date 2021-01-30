@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:vihaan_new/widgets/sponsorCard.dart';
 
 class Sponsors extends StatelessWidget {
-  final double mrg = 400, gold = 250, silver = 200, bronze = 175;
+  final double mrg = 400, gold = 215, silver = 175, bronze = 150, title_fnt = 70;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -26,17 +26,21 @@ class Sponsors extends StatelessWidget {
               ),
               textAlign: TextAlign.center,
             ),
-            Divider(height: 30, indent: 300, endIndent: 300, color: Colors.black26,),
+            SizedBox(height: 10),
+            Container(height: 2, color: Colors.black12, margin: EdgeInsets.symmetric(horizontal: 350)),
+            SponsorTitle(title: 'GOLD', fnt: title_fnt, clr: Colors.amber[500]),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 SponsorCard(bx: gold, mrl: mrg, mrr: 0, url: 'images/Vihaan_Aboutus.jpg'),
                 SponsorCard(bx: gold, mrl: 0, mrr: 0, url: 'images/Vihaan_Aboutus.jpg'),
                 SponsorCard(bx: gold, mrl: 0, mrr: 0, url: 'images/Vihaan_Aboutus.jpg'),
+                SponsorCard(bx: gold, mrl: 0, mrr: 0, url: 'images/Vihaan_Aboutus.jpg'),
                 SponsorCard(bx: gold, mrl: 0, mrr: mrg, url: 'images/Vihaan_Aboutus.jpg')
               ],
             ),
-            SizedBox(height: 40),
+            SizedBox(height: 15),
+            SponsorTitle(title: 'SILVER', fnt: title_fnt, clr: Color.fromARGB(255, 192, 192, 192)),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -44,14 +48,17 @@ class Sponsors extends StatelessWidget {
                 SponsorCard(bx: silver, mrl: 0, mrr: 0, url: 'images/Vihaan_Aboutus.jpg'),
                 SponsorCard(bx: silver, mrl: 0, mrr: 0, url: 'images/Vihaan_Aboutus.jpg'),
                 SponsorCard(bx: silver, mrl: 0, mrr: 0, url: 'images/Vihaan_Aboutus.jpg'),
+                SponsorCard(bx: silver, mrl: 0, mrr: 0, url: 'images/Vihaan_Aboutus.jpg'),
                 SponsorCard(bx: silver, mrl: 0, mrr: mrg, url: 'images/Vihaan_Aboutus.jpg')
               ],
             ),
-            SizedBox(height: 40),
+            SizedBox(height: 15),
+            SponsorTitle(title: 'BRONZE', fnt: title_fnt, clr: Color.fromARGB(255, 205, 127, 50)),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 SponsorCard(bx: bronze, mrl: mrg, mrr: 0, url: 'images/Vihaan_Aboutus.jpg'),
+                SponsorCard(bx: bronze, mrl: 0, mrr: 0, url: 'images/Vihaan_Aboutus.jpg'),
                 SponsorCard(bx: bronze, mrl: 0, mrr: 0, url: 'images/Vihaan_Aboutus.jpg'),
                 SponsorCard(bx: bronze, mrl: 0, mrr: 0, url: 'images/Vihaan_Aboutus.jpg'),
                 SponsorCard(bx: bronze, mrl: 0, mrr: 0, url: 'images/Vihaan_Aboutus.jpg'),
