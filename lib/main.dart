@@ -1,25 +1,20 @@
 import 'package:flutter/material.dart';
-import 'package:vihaan2021/pages/dashboard.dart';
+import 'package:vihaan_new/homepage/homepage.dart';
+import 'package:vihaan_new/navbar/navbar.dart';
 
-void main() => runApp(VihaanApp());
+void main() {
+  runApp(MyApp());
+}
 
-class VihaanApp extends StatelessWidget {
+class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: HackathonPages(),
+      title: 'Vihaan',
+      home: MyHomePage(),
     );
   }
 }
 
-class HackathonPages extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return DashboardPage();
-  }
-}
+

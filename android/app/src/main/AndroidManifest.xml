@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.ieeedtu.vihaan2021">
+    package="com.ieeedtu.vihaan_new">
    <application
-        android:label="vihaan2021"
+        android:label="vihaan_new"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
