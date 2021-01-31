@@ -31,6 +31,7 @@ dependencies:
   scroll_to_index: ^1.0.6
   flutter_web_scrollbar: ^0.0.3
   simple_animations: ^2.4.2
+  peanut: ^3.5.1
 
 dev_dependencies:
   flutter_test:
@@ -51,8 +52,7 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-      - assets/images/Vihaan_Logo.png
-      - assets/images/Vihaan_Landing_Image.png
+      - images/
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 
@@ -70,11 +70,11 @@ flutter:
   fonts:
     - family: VihaanIcons
       fonts:
-        - asset: assets/fonts/VihaanIcons.ttf
+        - asset: fonts/VihaanIcons.ttf
     - family: NunitoSans
       fonts:
-        - asset: assets/fonts/NunitoSans-Regular.ttf
-        - asset: assets/fonts/NunitoSans-Bold.ttf
+        - asset: fonts/NunitoSans-Regular.ttf
+        - asset: fonts/NunitoSans-Bold.ttf
           weight: 700
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
