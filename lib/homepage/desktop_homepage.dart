@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
 //import 'package:flutter_web_scrollbar/flutter_web_scrollbar.dart';
 import 'package:scroll_to_index/scroll_to_index.dart';
+import 'package:vihaan_new/screensDesktop/aboutus.dart';
 import 'package:vihaan_new/screensDesktop/landingpage.dart';
 import 'package:vihaan_new/screensDesktop/team.dart';
 import 'package:vihaan_new/screensDesktop/timelinePage.dart';
 import 'package:vihaan_new/widgets/desktopNavbar.dart';
 import 'package:vihaan_new/widgets/vihaan_icons_icons.dart';
-import 'package:vihaan_new/screensDesktop/aboutus.dart';
-import 'package:vihaan_new/screensDesktop/sponsors.dart';
 
 class DesktopHomePage extends StatefulWidget {
   DesktopHomePage({Key key}) : super(key: key);
@@ -71,7 +70,6 @@ class _DesktopHomePageState extends State<DesktopHomePage> {
                   _wrapScrollTag(
                     index: 1,
                     child: Container(
-                      height: MediaQuery.of(context).size.height,
                       width: MediaQuery.of(context).size.width,
                       child: Stack(children: [AboutUs()]),
                     ),
@@ -114,11 +112,15 @@ class _DesktopHomePageState extends State<DesktopHomePage> {
                   _wrapScrollTag(
                     index: 6,
                     child: Container(
-                      height: MediaQuery.of(context).size.height*1.15,
+                      height: MediaQuery.of(context).size.height * 1.15,
                       width: MediaQuery.of(context).size.width,
                       color: Colors.green,
-                      child: Stack(
+                      child:
+                          /*Stack(
                         children: [Sponsors()],
+                      )*/
+                          Container(
+                        color: Colors.orange,
                       ),
                     ),
                   ),
@@ -163,7 +165,7 @@ class _DesktopHomePageState extends State<DesktopHomePage> {
           //   // dragHandleWidth: 30.0,
           // ),
           PreferredSize(
-            preferredSize: Size(_width - 40, _height * 0.07),
+            preferredSize: Size(_width - 40, _height * 0.1),
             child: Stack(children: [
               Positioned(
                 top: 10,
@@ -172,7 +174,7 @@ class _DesktopHomePageState extends State<DesktopHomePage> {
                 child: SafeArea(
                   child: Container(
                     height: _height * 0.07,
-                    width: _width - 40,
+                    width: _width * 0.95,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(20),
                       color: Colors.black,
@@ -182,12 +184,8 @@ class _DesktopHomePageState extends State<DesktopHomePage> {
                       right: 25,
                       left: 25,
                     ),
-                    child: Row(
-                      children: [
-                        DesktopNavbar(
-                          controller: _controller,
-                        ),
-                      ],
+                    child: DesktopNavbar(
+                      controller: _controller,
                     ),
                   ),
                 ),
