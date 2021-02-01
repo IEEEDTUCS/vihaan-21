@@ -32,6 +32,7 @@ dependencies:
   flutter_web_scrollbar: ^0.0.3
   simple_animations: ^2.4.2
   peanut: ^3.5.1
+  expansion_tile_card: ^1.1.0
 
 dev_dependencies:
   flutter_test:
