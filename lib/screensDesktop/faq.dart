@@ -1,5 +1,5 @@
-import 'package:flutter/material.dart';
 import 'package:expansion_tile_card/expansion_tile_card.dart';
+import 'package:flutter/material.dart';
 
 class Faq extends StatefulWidget {
   @override
@@ -7,9 +7,9 @@ class Faq extends StatefulWidget {
 }
 
 class _Faq extends State<Faq> {
-  Padding makeUI({Color color, String question, String answer}) {
+  Widget makeUI({Color color, String question, String answer}) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 12.0),
+      padding: const EdgeInsets.symmetric(horizontal: 12.0, vertical: 8.0),
       child: ExpansionTileCard(
         expandedColor: color,
         baseColor: color,
@@ -49,17 +49,25 @@ class _Faq extends State<Faq> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.black54,
-      body: Padding(
-        padding: EdgeInsets.all(8.0),
-        child: Row(
-          children: [
-            Expanded(flex: 1, child: Image.asset('images/faq.png')),
-            Expanded(
-              flex: 1,
+    return Container(
+      color: Colors.black54,
+      padding: EdgeInsets.all(8.0),
+      child: Row(
+        children: [
+          Flexible(
+            flex: 3,
+            child: Padding(
+              padding: const EdgeInsets.all(32.0),
+              child: Image.asset('images/faq.png'),
+            ),
+          ),
+          Flexible(
+            flex: 4,
+            child: Padding(
+              padding: const EdgeInsets.all(32.0),
               child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                mainAxisSize: MainAxisSize.min,
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
                   makeUI(
                       color: Colors.purple,
@@ -99,8 +107,8 @@ class _Faq extends State<Faq> {
                 ],
               ),
             ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }
