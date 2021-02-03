@@ -114,7 +114,7 @@ class _DesktopHomePageState extends State<DesktopHomePage> {
                   _wrapScrollTag(
                     index: 6,
                     child: Container(
-                      height: MediaQuery.of(context).size.height*1.15,
+                      height: MediaQuery.of(context).size.height*1.2,
                       width: MediaQuery.of(context).size.width,
                       color: Colors.green,
                       child: Stack(
