@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:scroll_to_index/scroll_to_index.dart';
 import 'package:vihaan_new/screensDesktop/aboutus.dart';
@@ -191,7 +193,7 @@ class _DesktopHomePageState extends State<DesktopHomePage> {
                 right: 25,
                 child: SafeArea(
                   child: Container(
-                    height: _height * 0.07,
+                    height: max(_height * 0.07, 48),
                     width: _width * 0.95,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(20),

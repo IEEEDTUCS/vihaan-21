@@ -1,7 +1,4 @@
-import 'dart:math' as math;
-
 import 'package:flutter/material.dart';
-import 'package:scroll_to_index/scroll_to_index.dart';
 
 class MobileHomePage extends StatefulWidget {
   @override
@@ -9,19 +6,9 @@ class MobileHomePage extends StatefulWidget {
 }
 
 class _MobileHomePageState extends State<MobileHomePage> {
-  static const maxCount = 100;
-  final random = math.Random();
-  final scrollDirection = Axis.vertical;
-
-  AutoScrollController controller;
-  List<List<int>> randomList;
-
   @override
   void initState() {
     super.initState();
-    controller = AutoScrollController(axis: scrollDirection);
-    randomList = List.generate(maxCount,
-        (index) => <int>[index, (1000 * random.nextDouble()).toInt()]);
   }
 
   @override
@@ -36,7 +23,10 @@ class _MobileHomePageState extends State<MobileHomePage> {
           padding: EdgeInsets.zero,
           children: <Widget>[
             DrawerHeader(
-              child: Text('Vihaan Logo or Image'),
+              child: Image.asset(
+                'images/Vihaan_Logo.png',
+                fit: BoxFit.contain,
+              ),
               decoration: BoxDecoration(
                 color: Colors.blue,
               ),
@@ -49,56 +39,42 @@ class _MobileHomePageState extends State<MobileHomePage> {
               },
             ),
             ListTile(
-              title: Text('Item 1'),
+              title: Text('Tracks'),
               onTap: () {
                 // Update the state of the app.
                 // ...
               },
             ),
             ListTile(
-              title: Text('Item 1'),
+              title: Text('Timeline'),
               onTap: () {
                 // Update the state of the app.
                 // ...
               },
             ),
             ListTile(
-              title: Text('Item 1'),
+              title: Text('Prizes'),
               onTap: () {
                 // Update the state of the app.
                 // ...
               },
             ),
             ListTile(
-              title: Text('Item 1'),
+              title: Text('Sponsor'),
               onTap: () {
                 // Update the state of the app.
                 // ...
               },
             ),
             ListTile(
-              title: Text('Item 1'),
+              title: Text('Team'),
               onTap: () {
                 // Update the state of the app.
                 // ...
               },
             ),
             ListTile(
-              title: Text('Item 1'),
-              onTap: () {
-                // Update the state of the app.
-                // ...
-              },
-            ),
-            ListTile(
-              title: Text('Item 1'),
-              onTap: () {
-                // Update the state of the app.
-                // ...
-              },
-            ),
-            ListTile(
-              title: Text('Item 2'),
+              title: Text('Contact Us'),
               onTap: () {
                 // Update the state of the app.
                 // ...
@@ -108,10 +84,8 @@ class _MobileHomePageState extends State<MobileHomePage> {
         ),
       ),
       body: SingleChildScrollView(
-        controller: controller,
         child: Column(
           children: [
-            //TODO: Vihaan Home Page
             Container(
               child: Text('About Us Section'),
             ),
