@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 //import 'package:flutter_web_scrollbar/flutter_web_scrollbar.dart';
 import 'package:scroll_to_index/scroll_to_index.dart';
 import 'package:vihaan_new/screensDesktop/aboutus.dart';
+import 'package:vihaan_new/screensDesktop/judges.dart';
 import 'package:vihaan_new/screensDesktop/landingpage.dart';
 import 'package:vihaan_new/screensDesktop/team.dart';
 import 'package:vihaan_new/screensDesktop/timelinePage.dart';
@@ -106,7 +107,9 @@ class _DesktopHomePageState extends State<DesktopHomePage> {
                       height: MediaQuery.of(context).size.height,
                       width: MediaQuery.of(context).size.width,
                       color: Colors.blueAccent,
-                      child: Stack(children: []),
+                      child: Stack(children: [
+                        Judges(),
+                      ]),
                     ),
                   ),
                   _wrapScrollTag(
