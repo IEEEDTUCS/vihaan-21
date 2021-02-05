@@ -3,15 +3,13 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:scroll_to_index/scroll_to_index.dart';
 import 'package:vihaan_new/screensDesktop/aboutus.dart';
-
-import 'package:vihaan_new/screensDesktop/judges.dart';
-
 import 'package:vihaan_new/screensDesktop/contact_us.dart';
 import 'package:vihaan_new/screensDesktop/faq.dart';
-
+import 'package:vihaan_new/screensDesktop/judges.dart';
 import 'package:vihaan_new/screensDesktop/landingpage.dart';
 import 'package:vihaan_new/screensDesktop/sponsors.dart';
 import 'package:vihaan_new/screensDesktop/team.dart';
+import 'package:vihaan_new/screensDesktop/tracks.dart';
 import 'package:vihaan_new/widgets/desktopNavbar.dart';
 import 'package:vihaan_new/widgets/revealing_soon.dart';
 
@@ -84,14 +82,13 @@ class _DesktopHomePageState extends State<DesktopHomePage> {
                   _wrapScrollTag(
                     index: 2,
                     child: Container(
-                      height: MediaQuery.of(context).size.height,
                       width: MediaQuery.of(context).size.width,
                       color: Colors.green,
                       child: Stack(
                         children: [
                           Align(
                             alignment: Alignment.center,
-                            child: RevealingSoon(),
+                            child: Tracks(),
                           )
                         ],
                       ),
@@ -134,11 +131,9 @@ class _DesktopHomePageState extends State<DesktopHomePage> {
                       height: MediaQuery.of(context).size.height,
                       width: MediaQuery.of(context).size.width,
                       color: Colors.blueAccent,
-
                       child: Stack(children: [
                         Judges(),
                       ]),
-
                     ),
                   ),
                   _wrapScrollTag(
