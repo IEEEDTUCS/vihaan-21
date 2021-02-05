@@ -1,18 +1,20 @@
+import 'dart:math';
 import 'package:flutter/material.dart';
 
 class AboutUs extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var _width = MediaQuery.of(context).size.width;
-    var _height = MediaQuery.of(context).size.height;
+    print(_width);
 
     return Container(
       color: Color.fromARGB(255, 222, 240, 244),
       child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
           Flexible(
             child: Padding(
-              padding: EdgeInsets.symmetric(horizontal: _width * 0.05),
+              padding: EdgeInsets.symmetric(horizontal: (_width <= 960)? 5: _width*0.05, vertical: 10),
               child: Card(
                 child: Padding(
                   padding: EdgeInsets.fromLTRB(30, 20, 30, 30),
@@ -34,7 +36,7 @@ class AboutUs extends StatelessWidget {
                         child: Text(
                           'One of the biggest IEEE Student branches in Delhi, IEEE DTU has emerged as the most active & prolific student organisation in the past 35 years. With over 400 active student members. IEEE DTU provides students extensive opportunities for skill development in various domains of engineering by actively organising seminars, SIGs and workshops by senior members of the organisation and collaborating with other premier institutions. Vihaan is an annual event organized by IEEE DTU, a university wide professional organization dedicated to encourage students to take up and continue their careers in STEM Fields. IEEE DTU believes in encouraging talent that is not bounded by gender inequalities and with Vihaan, IEEE DTU aims at carrying this thought forward. The event is a 24 hour Hackathon which provides a platform to budding programmers to come up with a solution to an existing problem using technology. Students can participate in a team size of upto 4 members.',
                           style: TextStyle(
-                              //fontSize: 20,
+                              fontSize: 15,
                               fontFamily: 'NunitoSans',
                               color: Colors.white),
                           textAlign: TextAlign.justify,
@@ -53,7 +55,8 @@ class AboutUs extends StatelessWidget {
           ),
           Flexible(
             child: Container(
-              padding: EdgeInsets.symmetric(horizontal: _width * 0.05),
+              height: _width * 0.35,
+              width: _width * 0.35,
               child: Image(
                 image: AssetImage('images/Vihaan_Aboutus.jpg'),
               ),
