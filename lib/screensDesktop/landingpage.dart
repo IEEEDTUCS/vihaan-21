@@ -1,7 +1,8 @@
-import 'package:flutter/material.dart';
-import 'package:vihaan_new/widgets/animatedWave.dart';
-import 'package:simple_animations/simple_animations.dart';
 import 'dart:math';
+
+import 'package:flutter/material.dart';
+import 'package:simple_animations/simple_animations.dart';
+import 'package:vihaan_new/widgets/animatedWave.dart';
 
 // class LandingPage extends StatelessWidget {
 //   @override
@@ -168,7 +169,7 @@ class LandingPageContent extends StatelessWidget {
                             width: 120.0,
                             child: Image(
                                 fit: BoxFit.fill,
-                                image: AssetImage("images/Vihaan_Logo.png")),
+                                image: AssetImage("images/vihaan_logo.png")),
                             // decoration: BoxDecoration(
                             //   image: DecorationImage(
                             //     image: NetworkImage(
