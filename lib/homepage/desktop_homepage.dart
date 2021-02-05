@@ -6,6 +6,7 @@ import 'package:vihaan_new/screensDesktop/aboutus.dart';
 import 'package:vihaan_new/screensDesktop/contact_us.dart';
 import 'package:vihaan_new/screensDesktop/faq.dart';
 import 'package:vihaan_new/screensDesktop/landingpage.dart';
+import 'package:vihaan_new/screensDesktop/sponsors.dart';
 import 'package:vihaan_new/screensDesktop/team.dart';
 import 'package:vihaan_new/widgets/desktopNavbar.dart';
 import 'package:vihaan_new/widgets/revealing_soon.dart';
@@ -144,6 +145,7 @@ class _DesktopHomePageState extends State<DesktopHomePage> {
                     child: Container(
                       width: MediaQuery.of(context).size.width,
                       color: Colors.green,
+                      child: Stack(children: [Sponsors()]),
                     ),
                   ),
                   _wrapScrollTag(
