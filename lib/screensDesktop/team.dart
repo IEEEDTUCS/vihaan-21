@@ -19,6 +19,7 @@ class TeamSection extends StatelessWidget {
           )),
         ),
         Column(
+          mainAxisSize: MainAxisSize.min,
           children: [
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
