@@ -8,13 +8,13 @@ class JudgeCard extends StatelessWidget {
       this.position,
       this.imageAddress,
       this.linkedInAddress,
-      this.facebookAddress});
+      this.twitterAddress});
 
   final String name;
   final String position;
   final String imageAddress;
   final String linkedInAddress;
-  final String facebookAddress;
+  final String twitterAddress;
 
   @override
   Widget build(BuildContext context) {
@@ -53,11 +53,14 @@ class JudgeCard extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
-                  Icon(VihaanIcons.linkedin),
-                  SizedBox(
-                    width: 5,
-                  ),
-                  Icon(VihaanIcons.facebook),
+                  if (linkedInAddress != null)
+                    InkWell(onTap: () {}, child: Icon(VihaanIcons.linkedin)),
+                  if (linkedInAddress != null && twitterAddress != null)
+                    SizedBox(
+                      width: 5,
+                    ),
+                  if (twitterAddress != null)
+                    InkWell(onTap: () {}, child: Icon(VihaanIcons.twitter)),
                 ],
               )
             ],
