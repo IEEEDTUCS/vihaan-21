@@ -84,7 +84,7 @@ class _DesktopHomePageState extends State<DesktopHomePage> {
                     index: 2,
                     child: Container(
                       width: MediaQuery.of(context).size.width,
-                      color: Colors.green,
+                      color: Color.fromARGB(255, 209, 253, 172),
                       child: Stack(
                         children: [
                           Align(

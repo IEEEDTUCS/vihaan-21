@@ -1,5 +1,4 @@
 import 'dart:math';
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
@@ -10,14 +9,12 @@ class Sponsors extends StatelessWidget {
   Widget build(BuildContext context) {
     final width = MediaQuery.of(context).size.width;
     final double mrg = 4,
-        gold = width * 0.2,
-        silver = width * 0.15,
-        bronze = width * 0.125,
-        titleFont = max(width * 0.075, 60),
-        headingFont = max(width * 0.085, 68);
-
-    print(width);
-
+        gold = min(300, width * 0.2),
+        silver = min(236, width * 0.15),
+        bronze = min(195, width * 0.125),
+        titleFont = min(width * 0.065, 90),
+        headingFont = min(width * 0.085, 110);
+        
     return Container(
       padding: EdgeInsets.all(16),
       color: Color.fromARGB(255, 255, 255, 240),
@@ -26,7 +23,7 @@ class Sponsors extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Text(
-            'OUR PROUD\nSPONSORS',
+            'SPONSORS',
             style: TextStyle(
               fontSize: headingFont,
               fontWeight: FontWeight.w700,
@@ -45,7 +42,8 @@ class Sponsors extends StatelessWidget {
           Container(
               height: 2,
               color: Colors.black12,
-              margin: EdgeInsets.symmetric(horizontal: 350)),
+              margin: EdgeInsets.symmetric(horizontal: 350)
+          ),
           SponsorTitle(title: 'GOLD', fnt: titleFont, clr: Colors.amber[500]),
           SingleChildScrollView(
             scrollDirection: Axis.horizontal,
