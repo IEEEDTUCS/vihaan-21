@@ -3,13 +3,11 @@ import 'dart:math' as math;
 import 'package:flutter/material.dart';
 import 'package:scroll_to_index/scroll_to_index.dart';
 import 'package:vihaan_new/screensmobile/aboutus_m.dart';
-import 'package:vihaan_new/screensmobile/judges_m.dart';
-import 'package:vihaan_new/screensmobile/sponsor_m.dart';
+import 'package:vihaan_new/screensmobile/contactus_m.dart';
 import 'package:vihaan_new/screensmobile/faq_m.dart';
 import 'package:vihaan_new/screensmobile/landingpage_m.dart';
+import 'package:vihaan_new/screensmobile/sponsor_m.dart';
 import 'package:vihaan_new/screensmobile/team_m.dart';
-import 'package:vihaan_new/screensDesktop/timelinePage.dart';
-import 'package:vihaan_new/screensmobile/contactus_m.dart';
 
 class MobileHomePage extends StatefulWidget {
   final AutoScrollController controller;
@@ -148,6 +146,7 @@ class _MobileHomePageState extends State<MobileHomePage> {
       body: SingleChildScrollView(
         controller: controller,
         child: Column(
+          mainAxisSize: MainAxisSize.min,
           children: [
             //TODO: Vihaan Home Page
             _wrapScrollTag(
@@ -191,9 +190,8 @@ class _MobileHomePageState extends State<MobileHomePage> {
               child: Container(
                 height: MediaQuery.of(context).size.height * 1.5,
                 width: MediaQuery.of(context).size.width,
-                child: Stack(children: [
-                  TimelinePage(),
-                ]),
+                color: Colors.yellow,
+                child: Stack(children: []),
               ),
             ),
             _wrapScrollTag(
@@ -202,9 +200,7 @@ class _MobileHomePageState extends State<MobileHomePage> {
                 height: MediaQuery.of(context).size.height,
                 width: MediaQuery.of(context).size.width,
                 color: Colors.blueAccent,
-                child: Stack(children: [
-                  Judges(),
-                ]),
+                child: Stack(children: []),
               ),
             ),
             _wrapScrollTag(
