@@ -1,5 +1,4 @@
 import 'dart:math';
-
 import 'package:flutter/material.dart';
 
 class Tracks extends StatelessWidget {
@@ -14,84 +13,65 @@ class Tracks extends StatelessWidget {
       child: Column(
         children: <Widget>[
           Container(
-            padding: EdgeInsets.all(15.0),
             child: Text(
               'Tracks',
               style: TextStyle(
                 fontFamily: 'NunitoSans',
                 fontSize: titleSize,
-                color: Colors.cyan,
+                color: Color.fromARGB(255, 0, 48, 76),
+                fontWeight: FontWeight.w700
               ),
             ),
           ),
+          Container(
+              height: 2,
+              color: Colors.black12,
+              margin: EdgeInsets.fromLTRB(400, 0, 400, 10)
+          ),
+          SizedBox(height: 10),
           TrackCard(
             orient: 0,
-            width: width,
+            width: width*0.75,
             icon: Icons.add_box,
             name: 'Enter name here',
             detail: 'Enter Detail here',
           ),
-          const Divider(
-            color: Colors.teal,
-            thickness: 1.0,
-            indent: 40.0,
-            endIndent: 40.0,
-          ),
+          SizedBox(height: 10),
           TrackCard(
             orient: 1,
-            width: width,
+            width: width*0.75,
             icon: Icons.add_box,
             name: 'Enter name here',
             detail: 'Enter Detail here',
           ),
-          const Divider(
-            color: Colors.teal,
-            thickness: 1.0,
-            indent: 40.0,
-            endIndent: 40.0,
-          ),
+          SizedBox(height: 10),
           TrackCard(
             orient: 0,
-            width: width,
+            width: width*0.75,
             icon: Icons.add_box,
             name: 'Enter name here',
             detail: 'Enter Detail here',
           ),
-          const Divider(
-            color: Colors.teal,
-            thickness: 1.0,
-            indent: 40.0,
-            endIndent: 40.0,
-          ),
+          SizedBox(height: 10),
           TrackCard(
             orient: 1,
-            width: width,
+            width: width*0.75,
             icon: Icons.add_box,
             name: 'Enter name here',
             detail: 'Enter Detail here',
           ),
-          const Divider(
-            color: Colors.teal,
-            thickness: 1.0,
-            indent: 40.0,
-            endIndent: 40.0,
-          ),
+          SizedBox(height: 10),
           TrackCard(
             orient: 0,
-            width: width,
+            width: width*0.75,
             icon: Icons.add_box,
             name: 'Enter name here',
             detail: 'Enter Detail here',
           ),
-          const Divider(
-            color: Colors.teal,
-            thickness: 1.0,
-            indent: 40.0,
-            endIndent: 40.0,
-          ),
+          SizedBox(height: 10),
           TrackCard(
             orient: 1,
-            width: width,
+            width: width*0.75,
             icon: Icons.add_box,
             name: 'Enter name here',
             detail: 'Enter Detail here',
@@ -128,7 +108,7 @@ class TrackCard extends StatelessWidget {
               child: Icon(
                 icon,
                 size: width * 0.12,
-                color: Colors.cyan,
+                color: Color.fromARGB(255, 1, 188, 99),
               ),
             ),
           if (orient == 0)
@@ -215,7 +195,7 @@ class TrackCard extends StatelessWidget {
               child: Icon(
                 icon,
                 size: width * 0.12,
-                color: Colors.cyan,
+                color: Color.fromARGB(255, 1, 188, 99),
               ),
             ),
         ],
