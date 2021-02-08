@@ -1,7 +1,8 @@
-import 'package:flutter/material.dart';
-import 'package:vihaan_new/widgets/animatedWave.dart';
-import 'package:simple_animations/simple_animations.dart';
 import 'dart:math';
+
+import 'package:flutter/material.dart';
+import 'package:simple_animations/simple_animations.dart';
+import 'package:vihaan_new/widgets/animatedWave.dart';
 
 // class LandingPage extends StatelessWidget {
 //   @override
@@ -175,7 +176,7 @@ class LandingPageContent extends StatelessWidget {
                               fontWeight: FontWeight.bold),
                         ),
                         Text(
-                          'by IEEE DTU | February 14 - 28, 2021',
+                          'by IEEE DTU | April 2 - 4, 2021',
                           textScaleFactor: 1.25,
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
@@ -197,15 +198,16 @@ class LandingPageContent extends StatelessWidget {
                               child: InkWell(
                                 onTap: () {},
                                 child: Container(
-                                  width: 170,
+                                  width: min(170, _width * 0.4),
                                   height: 48,
                                   child: Center(
-                                      child: Text(
-                                    "Register Now",
-                                    style: TextStyle(
-                                        color: Colors.white,
-                                        fontWeight: FontWeight.bold),
-                                  )),
+                                    child: Text(
+                                      "Register Now",
+                                      style: TextStyle(
+                                          color: Colors.white,
+                                          fontWeight: FontWeight.bold),
+                                    ),
+                                  ),
                                 ),
                               ),
                             ),
@@ -221,7 +223,7 @@ class LandingPageContent extends StatelessWidget {
                               child: InkWell(
                                 onTap: () {},
                                 child: Container(
-                                  width: 170,
+                                  width: min(170, _width * 0.4),
                                   height: 48,
                                   child: Center(
                                       child: Text(
