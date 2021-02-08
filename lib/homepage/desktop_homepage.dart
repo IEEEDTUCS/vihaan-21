@@ -11,6 +11,7 @@ import 'package:vihaan_new/screensDesktop/sponsors.dart';
 import 'package:vihaan_new/screensDesktop/team.dart';
 import 'package:vihaan_new/screensDesktop/tracks.dart';
 import 'package:vihaan_new/widgets/desktopNavbar.dart';
+import 'package:vihaan_new/screensDesktop/judgesDesktop.dart';
 import 'package:vihaan_new/widgets/revealing_soon.dart';
 
 class DesktopHomePage extends StatefulWidget {
@@ -105,7 +106,19 @@ class _DesktopHomePageState extends State<DesktopHomePage> {
                           Align(
                             alignment: Alignment.center,
                             child: RevealingSoon(),
-                          )
+                          ),
+                          Align(
+                            alignment: Alignment.topCenter,
+                            child: Text(
+                              'Prizes',
+                              style: TextStyle(
+                                fontSize: max(_width * 0.085, 68),
+                                fontWeight: FontWeight.w700,
+                                fontFamily: 'NunitoSans',
+                              ),
+                              textAlign: TextAlign.center,
+                            ),
+                          ),
                         ],
                       ),
                     ),
@@ -120,7 +133,19 @@ class _DesktopHomePageState extends State<DesktopHomePage> {
                           Align(
                             alignment: Alignment.center,
                             child: RevealingSoon(),
-                          )
+                          ),
+                          Align(
+                            alignment: Alignment.topCenter,
+                            child: Text(
+                              'Timeline',
+                              style: TextStyle(
+                                fontSize: max(_width * 0.085, 68),
+                                fontWeight: FontWeight.w700,
+                                fontFamily: 'NunitoSans',
+                              ),
+                              textAlign: TextAlign.center,
+                            ),
+                          ),
                         ],
                       ),
                     ),
@@ -128,11 +153,12 @@ class _DesktopHomePageState extends State<DesktopHomePage> {
                   _wrapScrollTag(
                     index: 5,
                     child: Container(
-                      height: MediaQuery.of(context).size.height,
+                      //height: MediaQuery.of(context).size.height,
                       width: MediaQuery.of(context).size.width,
                       color: Colors.blueAccent,
                       child: Stack(children: [
-                        Judges(),
+                        Align(child: JudgeSection() //Judges(),
+                            ),
                       ]),
                     ),
                   ),
@@ -157,7 +183,7 @@ class _DesktopHomePageState extends State<DesktopHomePage> {
                       width: MediaQuery.of(context).size.width,
                       color: Colors.greenAccent,
                       child: Stack(
-                        children: [TeamSection()],
+                        children: [Align(child: TeamSection())],
                       ),
                     ),
                   ),

@@ -1,0 +1,76 @@
+import 'package:flutter/material.dart';
+import 'package:vihaan_new/widgets/vihaan_icons_icons.dart';
+import 'package:hovering/hovering.dart';
+
+class JudgeCard extends StatelessWidget {
+  JudgeCard(
+      {this.name,
+      this.position,
+      this.imageAddress,
+      this.linkedInAddress,
+      this.facebookAddress});
+
+  final String name;
+  final String position;
+  final String imageAddress;
+  final String linkedInAddress;
+  final String facebookAddress;
+
+  @override
+  Widget build(BuildContext context) {
+    return HoverAnimatedContainer(
+      duration: Duration(milliseconds: 300),
+      child: Card(
+        shadowColor: Colors.black,
+        child: Padding(
+          padding: const EdgeInsets.all(10.0),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              CircleAvatar(
+                maxRadius: 64.0,
+                minRadius: 20.0,
+                backgroundColor: Colors.white,
+                //radius: 60.0,
+                backgroundImage: NetworkImage(
+                    imageAddress), // https://github.com/hemangdtu/MiCardApp/blob/master/images/hemang.jpg?raw=true
+              ),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Text(
+                  name,
+                  style: TextStyle(color: Colors.white, fontSize: 20),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(bottom: 8.0),
+                child: Text(
+                  position,
+                  style: TextStyle(color: Colors.white, fontSize: 15),
+                ),
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  Icon(VihaanIcons.linkedin),
+                  SizedBox(
+                    width: 5,
+                  ),
+                  Icon(VihaanIcons.facebook),
+                ],
+              )
+            ],
+          ),
+        ),
+        elevation: 12.0,
+        margin: EdgeInsets.all(10.0),
+        color: Colors.black38,
+        clipBehavior: Clip.hardEdge,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(25),
+        ),
+      ),
+    );
+  }
+}
