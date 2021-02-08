@@ -1,5 +1,3 @@
-import 'dart:math' as math;
-
 import 'package:flutter/material.dart';
 import 'package:scroll_to_index/scroll_to_index.dart';
 import 'package:vihaan_new/screensmobile/aboutus_m.dart';
@@ -18,12 +16,9 @@ class MobileHomePage extends StatefulWidget {
 }
 
 class _MobileHomePageState extends State<MobileHomePage> {
-  static const maxCount = 100;
-  final random = math.Random();
   final scrollDirection = Axis.vertical;
 
   AutoScrollController controller;
-  List<List<int>> randomList;
   Widget _wrapScrollTag({int index, Widget child}) => AutoScrollTag(
         key: ValueKey(index),
         controller: controller,
@@ -36,8 +31,6 @@ class _MobileHomePageState extends State<MobileHomePage> {
   void initState() {
     super.initState();
     controller = AutoScrollController(axis: scrollDirection);
-    randomList = List.generate(maxCount,
-        (index) => <int>[index, (1000 * random.nextDouble()).toInt()]);
   }
 
   @override
@@ -56,7 +49,15 @@ class _MobileHomePageState extends State<MobileHomePage> {
               decoration: BoxDecoration(
                 color: Colors.black,
               ),
-              child: Image(image: AssetImage("images/Vihaan_Logo.png")),
+              child: InkWell(
+                onTap: () {
+                  controller.scrollToIndex(0);
+                  Navigator.pop(context);
+                },
+                child: Image(
+                  image: AssetImage("images/Vihaan_Logo.png"),
+                ),
+              ),
             ),
             ListTile(
               title: Text('About Us'),
@@ -145,6 +146,7 @@ class _MobileHomePageState extends State<MobileHomePage> {
       ),
       body: SingleChildScrollView(
         controller: controller,
+        physics: BouncingScrollPhysics(),
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
