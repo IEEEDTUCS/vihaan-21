@@ -1,16 +1,19 @@
-import 'dart:math' as math;
-
 import 'package:flutter/material.dart';
 import 'package:scroll_to_index/scroll_to_index.dart';
 import 'package:vihaan_new/screensmobile/aboutus_m.dart';
+
 import 'package:vihaan_new/screensmobile/judges_m.dart';
 import 'package:vihaan_new/screensmobile/tracks_m.dart';
 import 'package:vihaan_new/screensmobile/sponsor_m.dart';
+
 import 'package:vihaan_new/screensmobile/faq_m.dart';
 import 'package:vihaan_new/screensmobile/landingpage_m.dart';
+import 'package:vihaan_new/screensmobile/sponsor_m.dart';
 import 'package:vihaan_new/screensmobile/team_m.dart';
+
 import 'package:vihaan_new/screensmobile/contactus_m.dart';
 import 'package:vihaan_new/widgets/revealing_soon.dart';
+
 
 class MobileHomePage extends StatefulWidget {
   final AutoScrollController controller;
@@ -21,12 +24,9 @@ class MobileHomePage extends StatefulWidget {
 }
 
 class _MobileHomePageState extends State<MobileHomePage> {
-  static const maxCount = 100;
-  final random = math.Random();
   final scrollDirection = Axis.vertical;
 
   AutoScrollController controller;
-  List<List<int>> randomList;
   Widget _wrapScrollTag({int index, Widget child}) => AutoScrollTag(
         key: ValueKey(index),
         controller: controller,
@@ -39,8 +39,6 @@ class _MobileHomePageState extends State<MobileHomePage> {
   void initState() {
     super.initState();
     controller = AutoScrollController(axis: scrollDirection);
-    randomList = List.generate(maxCount,
-        (index) => <int>[index, (1000 * random.nextDouble()).toInt()]);
   }
 
   @override
@@ -59,7 +57,15 @@ class _MobileHomePageState extends State<MobileHomePage> {
               decoration: BoxDecoration(
                 color: Colors.black,
               ),
-              child: Image(image: AssetImage("images/Vihaan_Logo.png")),
+              child: InkWell(
+                onTap: () {
+                  controller.scrollToIndex(0);
+                  Navigator.pop(context);
+                },
+                child: Image(
+                  image: AssetImage("images/Vihaan_Logo.png"),
+                ),
+              ),
             ),
             ListTile(
               title: Text('About Us'),
@@ -148,7 +154,9 @@ class _MobileHomePageState extends State<MobileHomePage> {
       ),
       body: SingleChildScrollView(
         controller: controller,
+        physics: BouncingScrollPhysics(),
         child: Column(
+          mainAxisSize: MainAxisSize.min,
           children: [
             //TODO: Vihaan Home Page
             _wrapScrollTag(
@@ -207,6 +215,7 @@ class _MobileHomePageState extends State<MobileHomePage> {
               child: Container(
                 height: MediaQuery.of(context).size.height * 1.5,
                 width: MediaQuery.of(context).size.width,
+
                 child: Stack(
                         children: [
                           Align(
@@ -215,6 +224,7 @@ class _MobileHomePageState extends State<MobileHomePage> {
                           )
                         ],
                       ),
+
               ),
             ),
             _wrapScrollTag(
@@ -223,9 +233,11 @@ class _MobileHomePageState extends State<MobileHomePage> {
                
                 width: MediaQuery.of(context).size.width,
                 color: Colors.blueAccent,
+
                 child: Stack(children: [
                   JudgeSection(),
                 ]),
+
               ),
             ),
             _wrapScrollTag(

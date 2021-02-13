@@ -1,7 +1,9 @@
-import 'package:flutter/material.dart';
-import 'package:vihaan_new/widgets/animatedWave.dart';
-import 'package:simple_animations/simple_animations.dart';
 import 'dart:math';
+
+import 'package:animated_text_kit/animated_text_kit.dart';
+import 'package:flutter/material.dart';
+import 'package:simple_animations/simple_animations.dart';
+import 'package:vihaan_new/widgets/animatedWave.dart';
 
 // class LandingPage extends StatelessWidget {
 //   @override
@@ -166,9 +168,8 @@ class LandingPageContent extends StatelessWidget {
                           child: Container(
                             height: 120.0,
                             width: 120.0,
-                            child: Image(
-                                fit: BoxFit.fill,
-                                image: AssetImage("images/Vihaan_Logo.png")),
+                            child: Image.asset("images/vihaan_logo.png",
+                                color: Colors.white70),
                             // decoration: BoxDecoration(
                             //   image: DecorationImage(
                             //     image: NetworkImage(
@@ -198,60 +199,82 @@ class LandingPageContent extends StatelessWidget {
                                     fontWeight: FontWeight.bold),
                               ),
                               Text(
-                                'by IEEE DTU | February 14 - 28, 2021',
+                                'by IEEE DTU | April 2 - 4, 2021',
                                 textScaleFactor: 1.25,
                                 style: TextStyle(
                                   fontWeight: FontWeight.bold,
                                   color: Colors.black54,
                                 ),
                               ),
-                              Padding(padding: EdgeInsets.all(10)),
+                              Container(
+                                margin: EdgeInsets.symmetric(vertical: 12),
+                                decoration: BoxDecoration(
+                                  color: Colors.white70,
+                                  backgroundBlendMode: BlendMode.srcOver,
+                                  borderRadius: BorderRadius.circular(6),
+                                ),
+                                child: TypewriterAnimatedTextKit(
+                                  text: [' Eat', ' Sleep', ' Code', ' Repeat'],
+                                  textStyle: TextStyle(
+                                    fontSize: 22,
+                                    fontFamily: 'NunitoSans',
+                                    color: Colors.black87,
+                                    fontWeight: FontWeight.bold,
+                                    height: 1.6,
+                                  ),
+                                ),
+                              ),
                               Row(
                                 children: [
-                                  Material(
-                                    elevation: 8,
-                                    color: Colors.blueAccent,
-                                    clipBehavior: Clip.antiAlias,
-                                    shadowColor: Colors.black54,
-                                    borderRadius: BorderRadius.all(
-                                      Radius.circular(12),
-                                    ),
-                                    child: InkWell(
-                                      onTap: () {},
-                                      child: Container(
-                                        width: 170,
-                                        height: 48,
-                                        child: Center(
-                                            child: Text(
-                                          "Register Now",
-                                          style: TextStyle(
-                                              color: Colors.white,
-                                              fontWeight: FontWeight.bold),
-                                        )),
+                                  Padding(
+                                    padding: const EdgeInsets.all(8.0),
+                                    child: Material(
+                                      elevation: 8,
+                                      color: Colors.blueAccent,
+                                      clipBehavior: Clip.antiAlias,
+                                      shadowColor: Colors.black54,
+                                      borderRadius: BorderRadius.all(
+                                        Radius.circular(12),
+                                      ),
+                                      child: InkWell(
+                                        onTap: () {},
+                                        child: Container(
+                                          width: 170,
+                                          height: 48,
+                                          child: Center(
+                                              child: Text(
+                                            "Register Now",
+                                            style: TextStyle(
+                                                color: Colors.white,
+                                                fontWeight: FontWeight.bold),
+                                          )),
+                                        ),
                                       ),
                                     ),
                                   ),
-                                  Padding(padding: EdgeInsets.only(right: 20)),
-                                  Material(
-                                    elevation: 8,
-                                    color: Colors.redAccent,
-                                    clipBehavior: Clip.antiAlias,
-                                    shadowColor: Colors.black54,
-                                    borderRadius: BorderRadius.all(
-                                      Radius.circular(12),
-                                    ),
-                                    child: InkWell(
-                                      onTap: () {},
-                                      child: Container(
-                                        width: 170,
-                                        height: 48,
-                                        child: Center(
-                                            child: Text(
-                                          "Become a Sponsor",
-                                          style: TextStyle(
-                                              color: Colors.white,
-                                              fontWeight: FontWeight.bold),
-                                        )),
+                                  Padding(
+                                    padding: const EdgeInsets.all(8.0),
+                                    child: Material(
+                                      elevation: 8,
+                                      color: Colors.redAccent,
+                                      clipBehavior: Clip.antiAlias,
+                                      shadowColor: Colors.black54,
+                                      borderRadius: BorderRadius.all(
+                                        Radius.circular(12),
+                                      ),
+                                      child: InkWell(
+                                        onTap: () {},
+                                        child: Container(
+                                          width: 170,
+                                          height: 48,
+                                          child: Center(
+                                              child: Text(
+                                            "Become a Sponsor",
+                                            style: TextStyle(
+                                                color: Colors.white,
+                                                fontWeight: FontWeight.bold),
+                                          )),
+                                        ),
                                       ),
                                     ),
                                   )

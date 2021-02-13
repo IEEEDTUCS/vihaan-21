@@ -1,12 +1,17 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
-//import 'package:flutter_web_scrollbar/flutter_web_scrollbar.dart';
 import 'package:scroll_to_index/scroll_to_index.dart';
 import 'package:vihaan_new/screensDesktop/aboutus.dart';
+import 'package:vihaan_new/screensDesktop/contact_us.dart';
+import 'package:vihaan_new/screensDesktop/faq.dart';
 import 'package:vihaan_new/screensDesktop/landingpage.dart';
+import 'package:vihaan_new/screensDesktop/sponsors.dart';
 import 'package:vihaan_new/screensDesktop/team.dart';
-import 'package:vihaan_new/screensDesktop/timelinePage.dart';
+import 'package:vihaan_new/screensDesktop/tracks.dart';
 import 'package:vihaan_new/widgets/desktopNavbar.dart';
-import 'package:vihaan_new/widgets/vihaan_icons_icons.dart';
+import 'package:vihaan_new/screensDesktop/judgesDesktop.dart';
+import 'package:vihaan_new/widgets/revealing_soon.dart';
 
 class DesktopHomePage extends StatefulWidget {
   DesktopHomePage({Key key}) : super(key: key);
@@ -77,9 +82,16 @@ class _DesktopHomePageState extends State<DesktopHomePage> {
                   _wrapScrollTag(
                     index: 2,
                     child: Container(
-                      height: MediaQuery.of(context).size.height,
                       width: MediaQuery.of(context).size.width,
-                      color: Colors.green,
+                      color: Color.fromARGB(255, 209, 253, 172),
+                      child: Stack(
+                        children: [
+                          Align(
+                            alignment: Alignment.center,
+                            child: Tracks(),
+                          )
+                        ],
+                      ),
                     ),
                   ),
                   _wrapScrollTag(
@@ -88,6 +100,26 @@ class _DesktopHomePageState extends State<DesktopHomePage> {
                       height: MediaQuery.of(context).size.height,
                       width: MediaQuery.of(context).size.width,
                       color: Colors.blue,
+                      child: Stack(
+                        children: [
+                          Align(
+                            alignment: Alignment.center,
+                            child: RevealingSoon(),
+                          ),
+                          Align(
+                            alignment: Alignment.topCenter,
+                            child: Text(
+                              'Prizes',
+                              style: TextStyle(
+                                fontSize: max(_width * 0.085, 68),
+                                fontWeight: FontWeight.w700,
+                                fontFamily: 'NunitoSans',
+                              ),
+                              textAlign: TextAlign.center,
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                   _wrapScrollTag(
@@ -95,60 +127,71 @@ class _DesktopHomePageState extends State<DesktopHomePage> {
                     child: Container(
                       height: MediaQuery.of(context).size.height * 1.5,
                       width: MediaQuery.of(context).size.width,
-                      child: Stack(children: [
-                        TimelinePage(),
-                      ]),
+                      child: Stack(
+                        children: [
+                          Align(
+                            alignment: Alignment.center,
+                            child: RevealingSoon(),
+                          ),
+                          Align(
+                            alignment: Alignment.topCenter,
+                            child: Text(
+                              'Timeline',
+                              style: TextStyle(
+                                fontSize: max(_width * 0.085, 68),
+                                fontWeight: FontWeight.w700,
+                                fontFamily: 'NunitoSans',
+                              ),
+                              textAlign: TextAlign.center,
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                   _wrapScrollTag(
                     index: 5,
                     child: Container(
-                      height: MediaQuery.of(context).size.height,
+                      //height: MediaQuery.of(context).size.height,
                       width: MediaQuery.of(context).size.width,
                       color: Colors.blueAccent,
-                      child: Stack(children: []),
+                      child: Stack(children: [
+                        Align(child: JudgeSection() //Judges(),
+                            ),
+                      ]),
                     ),
                   ),
                   _wrapScrollTag(
                     index: 6,
                     child: Container(
-                      height: MediaQuery.of(context).size.height * 1.15,
                       width: MediaQuery.of(context).size.width,
                       color: Colors.green,
-                      child:
-                          /*Stack(
-                        children: [Sponsors()],
-                      )*/
-                          Container(
-                        color: Colors.orange,
-                      ),
+                      child: Stack(children: [Sponsors()]),
                     ),
                   ),
                   _wrapScrollTag(
                     index: 7,
                     child: Container(
-                      height: MediaQuery.of(context).size.height,
                       width: MediaQuery.of(context).size.width,
-                      color: Colors.blue,
+                      child: Stack(children: [Faq()]),
                     ),
                   ),
                   _wrapScrollTag(
                     index: 8,
                     child: Container(
-                      height: MediaQuery.of(context).size.height,
                       width: MediaQuery.of(context).size.width,
                       color: Colors.greenAccent,
                       child: Stack(
-                        children: [TeamSection()],
+                        children: [Align(child: TeamSection())],
                       ),
                     ),
                   ),
                   _wrapScrollTag(
                     index: 9,
                     child: Container(
-                      height: MediaQuery.of(context).size.height,
                       width: MediaQuery.of(context).size.width,
-                      color: Colors.redAccent,
+                      color: Colors.black12,
+                      child: ContactUs(),
                     ),
                   ),
                 ],
@@ -173,7 +216,7 @@ class _DesktopHomePageState extends State<DesktopHomePage> {
                 right: 25,
                 child: SafeArea(
                   child: Container(
-                    height: _height * 0.07,
+                    height: max(_height * 0.07, 48),
                     width: _width * 0.95,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(20),
@@ -194,13 +237,15 @@ class _DesktopHomePageState extends State<DesktopHomePage> {
                 bottom: 30,
                 right: 30,
                 child: FloatingActionButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    _controller.scrollToIndex(0);
+                  },
                   backgroundColor: Colors.black,
                   hoverColor: Colors.purple[800],
                   splashColor: Colors.purple,
                   hoverElevation: 10,
                   child: Icon(
-                    VihaanIcons.discord,
+                    Icons.home,
                     size: 32,
                   ),
                 ),
