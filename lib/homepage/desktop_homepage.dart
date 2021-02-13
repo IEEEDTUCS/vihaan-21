@@ -13,6 +13,7 @@ import 'package:vihaan_new/screensDesktop/tracks.dart';
 import 'package:vihaan_new/widgets/desktopNavbar.dart';
 import 'package:vihaan_new/screensDesktop/judgesDesktop.dart';
 import 'package:vihaan_new/widgets/revealing_soon.dart';
+import 'package:vihaan_new/screensDesktop/prizes.dart';
 
 class DesktopHomePage extends StatefulWidget {
   DesktopHomePage({Key key}) : super(key: key);
@@ -100,24 +101,12 @@ class _DesktopHomePageState extends State<DesktopHomePage> {
                     child: Container(
                       height: MediaQuery.of(context).size.height,
                       width: MediaQuery.of(context).size.width,
-                      color: Colors.blue,
+                      color: Colors.blueGrey[800],
                       child: Stack(
                         children: [
                           Align(
                             alignment: Alignment.center,
-                            child: RevealingSoon(),
-                          ),
-                          Align(
-                            alignment: Alignment.topCenter,
-                            child: Text(
-                              'Prizes',
-                              style: TextStyle(
-                                fontSize: max(_width * 0.085, 68),
-                                fontWeight: FontWeight.w700,
-                                fontFamily: 'NunitoSans',
-                              ),
-                              textAlign: TextAlign.center,
-                            ),
+                            child: Prizes()
                           ),
                         ],
                       ),
