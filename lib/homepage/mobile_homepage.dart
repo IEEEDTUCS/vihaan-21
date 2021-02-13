@@ -1,105 +1,151 @@
-import 'dart:math' as math;
 import 'package:flutter/material.dart';
 import 'package:scroll_to_index/scroll_to_index.dart';
+import 'package:vihaan_new/screensmobile/aboutus_m.dart';
+
+import 'package:vihaan_new/screensmobile/judges_m.dart';
+import 'package:vihaan_new/screensmobile/tracks_m.dart';
+import 'package:vihaan_new/screensmobile/sponsor_m.dart';
+
+import 'package:vihaan_new/screensmobile/faq_m.dart';
+import 'package:vihaan_new/screensmobile/landingpage_m.dart';
+import 'package:vihaan_new/screensmobile/sponsor_m.dart';
+import 'package:vihaan_new/screensmobile/team_m.dart';
+
+import 'package:vihaan_new/screensmobile/contactus_m.dart';
+import 'package:vihaan_new/widgets/revealing_soon.dart';
+
 
 class MobileHomePage extends StatefulWidget {
+  final AutoScrollController controller;
+
+  const MobileHomePage({Key key, this.controller}) : super(key: key);
   @override
   _MobileHomePageState createState() => _MobileHomePageState();
 }
 
 class _MobileHomePageState extends State<MobileHomePage> {
-  static const maxCount = 100;
-  final random = math.Random();
   final scrollDirection = Axis.vertical;
 
   AutoScrollController controller;
-  List<List<int>> randomList;
+  Widget _wrapScrollTag({int index, Widget child}) => AutoScrollTag(
+        key: ValueKey(index),
+        controller: controller,
+        index: index,
+        child: child,
+        //highlightColor: Colors.black.withOpacity(0.1),
+      );
 
   @override
   void initState() {
     super.initState();
     controller = AutoScrollController(axis: scrollDirection);
-    randomList = List.generate(maxCount,
-        (index) => <int>[index, (1000 * random.nextDouble()).toInt()]);
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.black,
         centerTitle: true,
-        title: Text('Vihaan Logo'),
+        title: Text('VIHAAN'),
       ),
       drawer: Drawer(
         child: ListView(
           padding: EdgeInsets.zero,
           children: <Widget>[
             DrawerHeader(
-              child: Text('Vihaan Logo or Image'),
               decoration: BoxDecoration(
-                color: Colors.blue,
+                color: Colors.black,
+              ),
+              child: InkWell(
+                onTap: () {
+                  controller.scrollToIndex(0);
+                  Navigator.pop(context);
+                },
+                child: Image(
+                  image: AssetImage("images/Vihaan_Logo.png"),
+                ),
               ),
             ),
             ListTile(
-              title: Text('Item 1'),
+              title: Text('About Us'),
               onTap: () {
                 // Update the state of the app.
+                controller.scrollToIndex(1);
+                Navigator.pop(context);
+                // Navigator.pop(context)
                 // ...
               },
             ),
             ListTile(
-              title: Text('Item 1'),
+              title: Text('Tracks'),
               onTap: () {
                 // Update the state of the app.
+                controller.scrollToIndex(2);
+                Navigator.pop(context);
                 // ...
               },
             ),
             ListTile(
-              title: Text('Item 1'),
+              title: Text('Prizes'),
               onTap: () {
                 // Update the state of the app.
+                controller.scrollToIndex(3);
+                Navigator.pop(context);
                 // ...
               },
             ),
             ListTile(
-              title: Text('Item 1'),
+              title: Text('Timeline'),
               onTap: () {
                 // Update the state of the app.
+                controller.scrollToIndex(4);
+                Navigator.pop(context);
                 // ...
               },
             ),
             ListTile(
-              title: Text('Item 1'),
+              title: Text('Judges'),
               onTap: () {
                 // Update the state of the app.
+                controller.scrollToIndex(5);
+                Navigator.pop(context);
                 // ...
               },
             ),
             ListTile(
-              title: Text('Item 1'),
+              title: Text('Sponsors'),
               onTap: () {
                 // Update the state of the app.
+                controller.scrollToIndex(6);
+                Navigator.pop(context);
                 // ...
               },
             ),
             ListTile(
-              title: Text('Item 1'),
+              title: Text('FAQs'),
               onTap: () {
                 // Update the state of the app.
+                controller.scrollToIndex(7);
+                Navigator.pop(context);
                 // ...
               },
             ),
             ListTile(
-              title: Text('Item 1'),
+              title: Text('Team'),
               onTap: () {
                 // Update the state of the app.
+                controller.scrollToIndex(8);
+                Navigator.pop(context);
                 // ...
               },
             ),
             ListTile(
-              title: Text('Item 2'),
+              title: Text('Contact Us'),
               onTap: () {
                 // Update the state of the app.
+                controller.scrollToIndex(9);
+                Navigator.pop(context);
                 // ...
               },
             ),
@@ -108,99 +154,144 @@ class _MobileHomePageState extends State<MobileHomePage> {
       ),
       body: SingleChildScrollView(
         controller: controller,
+        physics: BouncingScrollPhysics(),
         child: Column(
+          mainAxisSize: MainAxisSize.min,
           children: [
             //TODO: Vihaan Home Page
-            Container(
-              child: Text('About Us Section'),
+            _wrapScrollTag(
+              index: 0,
+              child: Container(
+                 height: MediaQuery.of(context).size.height,
+                width: MediaQuery.of(context).size.width,
+                child: Stack(children: [
+                  FancyBackgroundApp(),
+                  LandingPageContent(),
+                ]),
+              ),
             ),
+            _wrapScrollTag(
+              index: 1,
+              child: Container(
+                width: MediaQuery.of(context).size.width,
+                child: Stack(children: [
+                  AboutUs(),
+                ]),
+              ),
+            ),
+            _wrapScrollTag(
+              index: 2,
+              child: Container(
+              width: MediaQuery.of(context).size.width,
+               color: Color.fromARGB(255, 209, 253, 172),
+               child: Stack(
+                        children: [
+                          Align(
+                            alignment: Alignment.center,
+                            child: Tracks(),
+                          )
+                        ],
+                      ),
+              ),
+            ),
+            _wrapScrollTag(
+              index: 3,
+              child: Container(
+                height: MediaQuery.of(context).size.height,
+                width: MediaQuery.of(context).size.width,
+                color: Colors.blue,
+                child: Stack(
+                        children: [
+                          Align(
+                            alignment: Alignment.center,
+                            child: RevealingSoon(),
+                          )
+                        ],
+                      ),
+              ),
+            ),
+            _wrapScrollTag(
+              index: 4,
+              child: Container(
+                height: MediaQuery.of(context).size.height * 1.5,
+                width: MediaQuery.of(context).size.width,
+
+                child: Stack(
+                        children: [
+                          Align(
+                            alignment: Alignment.center,
+                            child: RevealingSoon(),
+                          )
+                        ],
+                      ),
+
+              ),
+            ),
+            _wrapScrollTag(
+              index: 5,
+              child: Container(
+               
+                width: MediaQuery.of(context).size.width,
+                color: Colors.blueAccent,
+
+                child: Stack(children: [
+                  JudgeSection(),
+                ]),
+
+              ),
+            ),
+            _wrapScrollTag(
+              index: 6,
+              child: Container(
+                width: MediaQuery.of(context).size.width,
+                color: Colors.green,
+                child: Stack(
+                  children: [
+                    Sponsors(),
+                  ],
+                ),
+              ),
+            ),
+            _wrapScrollTag(
+              index: 7,
+              child: Container(
+                width: MediaQuery.of(context).size.width,
+                // color: Colors.blue,
+                child: Stack(
+                  children: [
+                    Faq(),
+                  ],
+                ),
+              ),
+            ),
+            _wrapScrollTag(
+              index: 8,
+              child: Container(
+                width: MediaQuery.of(context).size.width,
+                color: Colors.greenAccent,
+                child: Stack(
+                  children: [
+                    TeamSection(),
+                  ],
+                ),
+              ),
+            ),
+            _wrapScrollTag(
+              index: 9,
+              child: Container(
+                width: MediaQuery.of(context).size.width,
+                color: Colors.black12,
+                child: Stack(
+                  children: [
+                    ContactUs(),
+                  ],
+                ),
+              ),
+            ),
+            
           ],
         ),
       ),
     );
   }
-
-  Widget _wrapScrollTag({int index, Widget child}) => AutoScrollTag(
-        key: ValueKey(index),
-        controller: controller,
-        index: index,
-        child: child,
-        //highlightColor: Colors.black.withOpacity(0.1),
-      );
 }
-
-
-// static const maxCount = 100;
-// final random = math.Random();
-// final scrollDirection = Axis.vertical;
-//
-// AutoScrollController controller;
-// List<List<int>> randomList;
-//
-// @override
-// void initState() {
-//   super.initState();
-//   controller = AutoScrollController(
-//       viewportBoundaryGetter: () => Rect.fromLTRB(0, 0, 0, MediaQuery.of(context).padding.bottom),
-//       axis: scrollDirection
-//   );
-//   randomList = List.generate(maxCount, (index) => <int>[index, (1000 * random.nextDouble()).toInt()]);
-// }
-//
-// @override
-// Widget build(BuildContext context) {
-//   return Scaffold(
-//     appBar: AppBar(
-//       title: Text(widget.title),
-//     ),
-//     body: ListView(
-//       scrollDirection: scrollDirection,
-//       controller: controller,
-//       children: randomList.map<Widget>((data) {
-//         return Padding(
-//           padding: EdgeInsets.all(8),
-//           child: _getRow(data[0], math.max(data[1].toDouble(), 50.0)),
-//         );
-//       }).toList(),
-//     ),
-//     floatingActionButton: FloatingActionButton(
-//       onPressed: _scrollToIndex,
-//       tooltip: 'Increment',
-//       child: Text(counter.toString()),
-//     ),
-//   );
-// }
-//
-// int counter = -1;
-// Future _scrollToIndex() async {
-//   setState(() {
-//     counter++;
-//
-//     if (counter >= maxCount)
-//       counter = 0;
-//   });
-//
-//   await controller.scrollToIndex(counter, preferPosition: AutoScrollPosition.begin);
-//   controller.highlight(counter);
-// }
-//
-// Widget _getRow(int index, double height) {
-//   return _wrapScrollTag(
-//       index: index,
-//       child: Container(
-//         padding: EdgeInsets.all(8),
-//         alignment: Alignment.topCenter,
-//         height: height,
-//         decoration: BoxDecoration(
-//             border: Border.all(
-//                 color: Colors.lightBlue,
-//                 width: 4
-//             ),
-//             borderRadius: BorderRadius.circular(12)
-//         ),
-//         child: Text('index: $index, height: $height'),
-//       )
-//   );
-// }
-//
-
