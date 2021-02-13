@@ -1,4 +1,5 @@
 import 'dart:math';
+
 import 'package:flutter/material.dart';
 
 class Tracks extends StatelessWidget {
@@ -16,18 +17,16 @@ class Tracks extends StatelessWidget {
             child: Text(
               'TRACKS',
               style: TextStyle(
-                fontFamily: 'NunitoSans',
-                fontSize: titleSize,
-                color: Color.fromARGB(255, 0, 48, 76),
-                fontWeight: FontWeight.w700
-              ),
+                  fontFamily: 'NunitoSans',
+                  fontSize: titleSize,
+                  color: Color.fromARGB(255, 0, 48, 76),
+                  fontWeight: FontWeight.w700),
             ),
           ),
           Container(
               height: 2,
               color: Colors.black12,
-              margin: EdgeInsets.fromLTRB(80, 0, 80, 10)
-          ),
+              margin: EdgeInsets.fromLTRB(80, 0, 80, 10)),
           SizedBox(height: 10),
           TrackCard(
             orient: 0,
@@ -40,7 +39,6 @@ class Tracks extends StatelessWidget {
           TrackCard(
             orient: 1,
             width: width,
-           
             icon: Icons.add_box,
             name: 'Enter name here',
             detail: 'Enter Detail here',
@@ -108,19 +106,15 @@ class TrackCard extends StatelessWidget {
               width: width * 0.2,
               child: Icon(
                 icon,
-                size: width * 0.2,
+                size: width * 0.15,
                 color: Color.fromARGB(255, 1, 188, 99),
               ),
-            ),
-          if (orient == 0)
-            SizedBox(
-              width: 20.0,
             ),
           if (orient == 0)
             Container(
               padding: EdgeInsets.fromLTRB(0.0, 10.0, 0.0, 0.0),
               height: 115.0,
-              width: width * 0.75,
+              width: width * 0.7,
               child: Column(
                 crossAxisAlignment: (orient == 1)
                     ? CrossAxisAlignment.end
@@ -155,7 +149,7 @@ class TrackCard extends StatelessWidget {
             Container(
               padding: EdgeInsets.fromLTRB(0.0, 10.0, 20.0, 0.0),
               height: 115.0,
-              width: width * 0.75,
+              width: width * 0.7,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
@@ -187,19 +181,14 @@ class TrackCard extends StatelessWidget {
               ),
             ),
           if (orient == 1)
-            SizedBox(
-              width: 0,
-            ),
-          if (orient == 1)
             Container(
               width: width * 0.2,
               child: Icon(
                 icon,
-                size: width * 0.2,
+                size: width * 0.15,
                 color: Color.fromARGB(255, 1, 188, 99),
               ),
             ),
-           
         ],
       ),
     );
