@@ -2,6 +2,7 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:scroll_to_index/scroll_to_index.dart';
+import 'package:vihaan_new/screensDesktop/TimelineSection.dart';
 import 'package:vihaan_new/screensDesktop/aboutus.dart';
 import 'package:vihaan_new/screensDesktop/contact_us.dart';
 import 'package:vihaan_new/screensDesktop/faq.dart';
@@ -131,7 +132,8 @@ class _DesktopHomePageState extends State<DesktopHomePage> {
                         children: [
                           Align(
                             alignment: Alignment.center,
-                            child: RevealingSoon(),
+                            child: TimelineSection(),
+                            // child: RevealingSoon(),
                           ),
                           Align(
                             alignment: Alignment.topCenter,
