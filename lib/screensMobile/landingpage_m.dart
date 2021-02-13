@@ -88,13 +88,10 @@ class LandingPageContent extends StatelessWidget {
               // crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text(
-                  "VIHAAN",
-                  textScaleFactor: 2.5,
-                  style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 35.0,
-                      fontWeight: FontWeight.bold),
+                Flexible(
+                  child: Image.network(
+                    'images/vihaan.png',
+                  ),
                 ),
                 Text(
                   'by IEEE DTU | April 2 - 4, 2021',
@@ -183,7 +180,7 @@ class LandingPageContent extends StatelessWidget {
                       // height: _height * 0.60,
                       // width: _width * 0.60,
                       child: Image.asset(
-                        "images/Vihaan_Landing_Image.png",
+                        'images/Vihaan_Landing_Image.png',
                       ),
                     ),
                   ),
