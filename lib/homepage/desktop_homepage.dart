@@ -5,7 +5,6 @@ import 'package:scroll_to_index/scroll_to_index.dart';
 import 'package:vihaan_new/screensDesktop/aboutus.dart';
 import 'package:vihaan_new/screensDesktop/contact_us.dart';
 import 'package:vihaan_new/screensDesktop/faq.dart';
-import 'package:vihaan_new/screensDesktop/judges.dart';
 import 'package:vihaan_new/screensDesktop/landingpage.dart';
 import 'package:vihaan_new/screensDesktop/sponsors.dart';
 import 'package:vihaan_new/screensDesktop/team.dart';
