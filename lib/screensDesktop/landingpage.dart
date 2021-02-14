@@ -96,7 +96,7 @@ class LandingPageContent extends StatelessWidget {
                       child: Container(
                         child: Image.network('images/vihaan.png'),
                         constraints: BoxConstraints(
-                          maxHeight: 300,
+                          maxHeight: 400,
                         ),
                       ),
                     ),
@@ -105,7 +105,7 @@ class LandingPageContent extends StatelessWidget {
                       textScaleFactor: 1.5,
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
-                        color: Colors.black54,
+                        color: Colors.white70,
                       ),
                     ),
                     Container(
@@ -187,22 +187,22 @@ class LandingPageContent extends StatelessWidget {
                             ),
                           ),
                         ),
-                        if (_width < 1000)
-                          Flexible(
-                            flex: 4,
-                            child: Image.network(
-                                'images/Vihaan_Landing_Image.png'),
-                          ),
+                        // if (_width < 1000)
+                        //   Flexible(
+                        //     flex: 4,
+                        //     child: Image.network(
+                        //         'images/Vihaan_Landing_Image.png'),
+                        //   ),
                       ],
                     ),
                   ],
                 ),
               ),
-              if (_width >= 1000)
-                Flexible(
-                  flex: 4,
-                  child: Image.network('images/Vihaan_Landing_Image.png'),
-                ),
+              // if (_width >= 1000)
+              //   Flexible(
+              //     flex: 4,
+              //     child: Image.network('images/Vihaan_Landing_Image.png'),
+              //   ),
             ],
           ),
         ),
