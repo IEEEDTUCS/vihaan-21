@@ -89,7 +89,7 @@ class LandingPageContent extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Flexible(
-                  child: Image.network(
+                  child: Image.asset(
                     'images/vihaan.png',
                   ),
                 ),

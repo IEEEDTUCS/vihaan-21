@@ -94,7 +94,7 @@ class LandingPageContent extends StatelessWidget {
                   children: [
                     Flexible(
                       child: Container(
-                        child: Image.network('images/vihaan.png'),
+                        child: Image.asset('images/vihaan.png'),
                         constraints: BoxConstraints(
                           maxHeight: 300,
                         ),
@@ -190,8 +190,8 @@ class LandingPageContent extends StatelessWidget {
                         if (_width < 1000)
                           Flexible(
                             flex: 4,
-                            child: Image.network(
-                                'images/Vihaan_Landing_Image.png'),
+                            child:
+                                Image.asset('images/Vihaan_Landing_Image.png'),
                           ),
                       ],
                     ),
@@ -201,7 +201,7 @@ class LandingPageContent extends StatelessWidget {
               if (_width >= 1000)
                 Flexible(
                   flex: 4,
-                  child: Image.network('images/Vihaan_Landing_Image.png'),
+                  child: Image.asset('images/Vihaan_Landing_Image.png'),
                 ),
             ],
           ),
