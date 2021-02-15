@@ -7,7 +7,8 @@ class ContactUs extends StatelessWidget {
         TextStyle(fontSize: 16, fontWeight: FontWeight.w200, height: 1.3);
     return Container(
       padding: EdgeInsets.only(top: 32, bottom: 16),
-      color: Colors.indigoAccent,
+      // color: Colors.indigoAccent,
+      color: Colors.black,
       child: Column(
         children: [
           Row(
@@ -90,8 +91,50 @@ class ContactUs extends StatelessWidget {
             ],
           ),
           Center(
+            child: Column(
+              children: [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text(
+                      'This website has been developed with ',
+                      style: TextStyle(fontSize: 16, color: Colors.white70),
+                    ),
+                    RichText(
+                      text: TextSpan(
+                        text: '❤',
+                        style: TextStyle(fontSize: 25, color: Colors.red),
+                      ),
+                    ),
+                   ],
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text(
+                      ' by ',
+                      style: TextStyle(fontSize: 16, color: Colors.white70),
+                    ),
+                    InkWell(
+                      onTap: () {},
+                      child: Text(
+                        'members of IEEE DTU',
+                        style: TextStyle(
+                          fontSize: 16,
+                          color: Colors.white70,
+                          decoration: TextDecoration.underline,
+                          decorationThickness: 0.7,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ],
+            ),
+          ),
+          Center(
             child: Text(
-              'Copyright: IEEE DTU',
+              '© 2021 IEEE DTU',
               style: TextStyle(fontSize: 16, color: Colors.white70),
             ),
           ),
