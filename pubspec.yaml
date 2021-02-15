@@ -46,4 +46,8 @@ flutter:
         - asset: fonts/NunitoSans-Regular.ttf
         - asset: fonts/NunitoSans-Bold.ttf
           weight: 700
+    - family: LeagueSpartan
+      fonts:
+        - asset: fonts/LeagueSpartan-Bold.otf
+          weight: 500
 
