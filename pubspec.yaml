@@ -21,6 +21,7 @@ dependencies:
   expansion_tile_card: ^1.1.0
   animated_text_kit: ^3.1.0
   timelines: ^0.0.2+1
+  url_launcher: ^5.7.10
 
 dev_dependencies:
   flutter_test:
