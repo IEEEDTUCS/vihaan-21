@@ -14,6 +14,7 @@ import 'package:vihaan_new/screensDesktop/team.dart';
 import 'package:vihaan_new/screensDesktop/tracks.dart';
 import 'package:vihaan_new/widgets/desktopNavbar.dart';
 import 'package:vihaan_new/widgets/vihaan_icons_icons.dart';
+import 'package:vihaan_new/widgets/hyperlinks.dart';
 
 class DesktopHomePage extends StatefulWidget {
   DesktopHomePage({Key key}) : super(key: key);
@@ -262,23 +263,23 @@ class _DesktopHomePageState extends State<DesktopHomePage> {
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
                   InkWell(
-                    onTap: () {},
+                    onTap: IEEEURLS.ieeedtufb,
                     child: Icon(VihaanIcons.facebook, color: Colors.white),
                   ),
                   InkWell(
-                    onTap: () {},
+                    onTap: IEEEURLS.ieeedtuinsta,
                     child: Icon(VihaanIcons.instagram, color: Colors.white),
                   ),
                   InkWell(
-                    onTap: () {},
+                    onTap: IEEEURLS.ieeedtutwitter,
                     child: Icon(VihaanIcons.twitter, color: Colors.white),
                   ),
                   InkWell(
-                    onTap: () {},
+                    onTap: IEEEURLS.ieeedtulinkedin,
                     child: Icon(VihaanIcons.linkedin, color: Colors.white),
                   ),
                   InkWell(
-                    onTap: () {},
+                    onTap: IEEEURLS.ieeedtumail,
                     child: Icon(Icons.mail, color: Colors.white),
                   ),
                 ],
