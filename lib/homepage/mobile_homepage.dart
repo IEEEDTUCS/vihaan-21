@@ -13,6 +13,7 @@ import 'package:vihaan_new/screensmobile/team_m.dart';
 
 import 'package:vihaan_new/screensmobile/contactus_m.dart';
 import 'package:vihaan_new/widgets/revealing_soon.dart';
+import 'package:vihaan_new/widgets/hyperlinks.dart';
 
 import 'package:vihaan_new/widgets/vihaan_icons_icons.dart';
 
@@ -156,23 +157,23 @@ class _MobileHomePageState extends State<MobileHomePage> {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   InkWell(
-                    onTap: () {},
+                    onTap: IEEEURLS.ieeedtufb,
                     child: Icon(VihaanIcons.facebook, color: Colors.black),
                   ),
                   InkWell(
-                    onTap: () {},
+                    onTap: IEEEURLS.ieeedtuinsta,
                     child: Icon(VihaanIcons.instagram, color: Colors.black),
                   ),
                   InkWell(
-                    onTap: () {},
+                    onTap: IEEEURLS.ieeedtutwitter,
                     child: Icon(VihaanIcons.twitter, color: Colors.black),
                   ),
                   InkWell(
-                    onTap: () {},
+                    onTap: IEEEURLS.ieeedtulinkedin,
                     child: Icon(VihaanIcons.linkedin, color: Colors.black),
                   ),
                   InkWell(
-                    onTap: () {},
+                    onTap: IEEEURLS.ieeedtumail,
                     child: Icon(Icons.mail, color: Colors.black),
                   ),
                 ],
