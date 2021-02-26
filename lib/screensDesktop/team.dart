@@ -13,10 +13,9 @@ class TeamSection extends StatelessWidget {
               child: Text(
             "OUR TEAM",
             style: TextStyle(
-              fontSize: 50,
+              fontSize: 120,
               color: Colors.white,
-              fontFamily: 'NunitoSans',
-              fontWeight: FontWeight.w700,
+              fontWeight: FontWeight.bold,
             ),
           )),
         ),
@@ -86,22 +85,22 @@ class TeamSection extends StatelessWidget {
                 children: [
                   ProfileCard(
                     name: "Abhishek Sethi",
-                    position: "Social Media Coordinator",
+                    position: "Event Coordinator",
                     imageAddress: "images/team/team_abhishek.jpg",
                   ),
                   ProfileCard(
                     name: "Manali Biswas",
-                    position: "Webinar Coordinator",
+                    position: "Event Coordinator",
                     imageAddress: "images/team/team_manali.jpg",
                   ),
                   ProfileCard(
                     name: "Manan Gupta",
-                    position: "Corporate Coordinator",
+                    position: "Event Coordinator",
                     imageAddress: "images/team/team_manan.jpg",
                   ),
                   ProfileCard(
                     name: "Shivam Shaurya",
-                    position: "PR Coordinator",
+                    position: "Event Coordinator",
                     imageAddress: "images/team/team_shivamShaurya.jpg",
                   ),
                 ],
