@@ -1,5 +1,4 @@
 import 'dart:math';
-
 import 'package:flutter/material.dart';
 
 class Tracks extends StatelessWidget {
@@ -18,7 +17,7 @@ class Tracks extends StatelessWidget {
               'TRACKS',
               style: TextStyle(
                   fontFamily: 'NunitoSans',
-                  fontSize: titleSize,
+                  fontSize: 50.0,
                   color: Color.fromARGB(255, 0, 48, 76),
                   fontWeight: FontWeight.w700),
             ),
@@ -106,15 +105,19 @@ class TrackCard extends StatelessWidget {
               width: width * 0.2,
               child: Icon(
                 icon,
-                size: width * 0.15,
+                size: width * 0.2,
                 color: Color.fromARGB(255, 1, 188, 99),
               ),
+            ),
+          if (orient == 0)
+            SizedBox(
+              width: 20.0,
             ),
           if (orient == 0)
             Container(
               padding: EdgeInsets.fromLTRB(0.0, 10.0, 0.0, 0.0),
               height: 115.0,
-              width: width * 0.7,
+              width: width * 0.75,
               child: Column(
                 crossAxisAlignment: (orient == 1)
                     ? CrossAxisAlignment.end
@@ -149,7 +152,7 @@ class TrackCard extends StatelessWidget {
             Container(
               padding: EdgeInsets.fromLTRB(0.0, 10.0, 20.0, 0.0),
               height: 115.0,
-              width: width * 0.7,
+              width: width * 0.75,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
@@ -181,11 +184,15 @@ class TrackCard extends StatelessWidget {
               ),
             ),
           if (orient == 1)
+            SizedBox(
+              width: 0,
+            ),
+          if (orient == 1)
             Container(
               width: width * 0.2,
               child: Icon(
                 icon,
-                size: width * 0.15,
+                size: width * 0.2,
                 color: Color.fromARGB(255, 1, 188, 99),
               ),
             ),
