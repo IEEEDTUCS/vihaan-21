@@ -16,18 +16,16 @@ class Tracks extends StatelessWidget {
             child: Text(
               'TRACKS',
               style: TextStyle(
-                fontFamily: 'NunitoSans',
-                fontSize: titleSize,
-                color: Color.fromARGB(255, 0, 48, 76),
-                fontWeight: FontWeight.w700
-              ),
+                  fontFamily: 'NunitoSans',
+                  fontSize: 50.0,
+                  color: Color.fromARGB(255, 0, 48, 76),
+                  fontWeight: FontWeight.w700),
             ),
           ),
           Container(
               height: 2,
               color: Colors.black12,
-              margin: EdgeInsets.fromLTRB(80, 0, 80, 10)
-          ),
+              margin: EdgeInsets.fromLTRB(80, 0, 80, 10)),
           SizedBox(height: 10),
           TrackCard(
             orient: 0,
@@ -40,7 +38,6 @@ class Tracks extends StatelessWidget {
           TrackCard(
             orient: 1,
             width: width,
-           
             icon: Icons.add_box,
             name: 'Enter name here',
             detail: 'Enter Detail here',
@@ -199,7 +196,6 @@ class TrackCard extends StatelessWidget {
                 color: Color.fromARGB(255, 1, 188, 99),
               ),
             ),
-           
         ],
       ),
     );

@@ -167,13 +167,15 @@ class LandingPageContent extends StatelessWidget {
                       // crossAxisAlignment: CrossAxisAlignment.center,
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Text(
-                          "VIHAAN",
-                          textScaleFactor: 2.5,
-                          style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 35.0,
-                              fontWeight: FontWeight.bold),
+                        FittedBox(
+                          child: Text(
+                            "VIHAAN",
+                            textScaleFactor: 2.5,
+                            style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 35.0,
+                                fontWeight: FontWeight.bold),
+                          ),
                         ),
                         Text(
                           'by IEEE DTU | April 2 - 4, 2021',
