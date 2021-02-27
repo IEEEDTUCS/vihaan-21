@@ -2,10 +2,10 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:scroll_to_index/scroll_to_index.dart';
+import 'package:vihaan_new/screensDesktop/TimelineSection.dart';
 import 'package:vihaan_new/screensDesktop/aboutus.dart';
 import 'package:vihaan_new/screensDesktop/contact_us.dart';
 import 'package:vihaan_new/screensDesktop/faq.dart';
-import 'package:vihaan_new/screensDesktop/judges.dart';
 import 'package:vihaan_new/screensDesktop/landingpage.dart';
 import 'package:vihaan_new/screensDesktop/sponsors.dart';
 import 'package:vihaan_new/screensDesktop/team.dart';
@@ -115,13 +115,14 @@ class _DesktopHomePageState extends State<DesktopHomePage> {
                   _wrapScrollTag(
                     index: 4,
                     child: Container(
-                      height: MediaQuery.of(context).size.height * 1.5,
+                      height: MediaQuery.of(context).size.height * 2.1,
                       width: MediaQuery.of(context).size.width,
                       child: Stack(
                         children: [
                           Align(
                             alignment: Alignment.center,
-                            child: RevealingSoon(),
+                            child: TimelineSection(),
+                            // child: RevealingSoon(),
                           ),
                           Align(
                             alignment: Alignment.topCenter,
