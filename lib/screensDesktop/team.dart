@@ -13,9 +13,10 @@ class TeamSection extends StatelessWidget {
               child: Text(
             "OUR TEAM",
             style: TextStyle(
-              fontSize: 120,
+              fontSize: 50,
               color: Colors.white,
-              fontWeight: FontWeight.bold,
+              fontFamily: 'NunitoSans',
+              fontWeight: FontWeight.w700,
             ),
           )),
         ),

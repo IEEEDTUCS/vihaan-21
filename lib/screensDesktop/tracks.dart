@@ -16,22 +16,20 @@ class Tracks extends StatelessWidget {
             child: Text(
               'Tracks',
               style: TextStyle(
-                fontFamily: 'NunitoSans',
-                fontSize: titleSize,
-                color: Color.fromARGB(255, 0, 48, 76),
-                fontWeight: FontWeight.w700
-              ),
+                  fontFamily: 'NunitoSans',
+                  fontSize: 50,
+                  color: Color.fromARGB(255, 0, 48, 76),
+                  fontWeight: FontWeight.w700),
             ),
           ),
           Container(
               height: 2,
               color: Colors.black12,
-              margin: EdgeInsets.fromLTRB(400, 0, 400, 10)
-          ),
+              margin: EdgeInsets.fromLTRB(400, 0, 400, 10)),
           SizedBox(height: 10),
           TrackCard(
             orient: 0,
-            width: width*0.75,
+            width: width * 0.75,
             icon: Icons.add_box,
             name: 'Enter name here',
             detail: 'Enter Detail here',
@@ -39,7 +37,7 @@ class Tracks extends StatelessWidget {
           SizedBox(height: 10),
           TrackCard(
             orient: 1,
-            width: width*0.75,
+            width: width * 0.75,
             icon: Icons.add_box,
             name: 'Enter name here',
             detail: 'Enter Detail here',
@@ -47,7 +45,7 @@ class Tracks extends StatelessWidget {
           SizedBox(height: 10),
           TrackCard(
             orient: 0,
-            width: width*0.75,
+            width: width * 0.75,
             icon: Icons.add_box,
             name: 'Enter name here',
             detail: 'Enter Detail here',
@@ -55,7 +53,7 @@ class Tracks extends StatelessWidget {
           SizedBox(height: 10),
           TrackCard(
             orient: 1,
-            width: width*0.75,
+            width: width * 0.75,
             icon: Icons.add_box,
             name: 'Enter name here',
             detail: 'Enter Detail here',
@@ -63,7 +61,7 @@ class Tracks extends StatelessWidget {
           SizedBox(height: 10),
           TrackCard(
             orient: 0,
-            width: width*0.75,
+            width: width * 0.75,
             icon: Icons.add_box,
             name: 'Enter name here',
             detail: 'Enter Detail here',
@@ -71,7 +69,7 @@ class Tracks extends StatelessWidget {
           SizedBox(height: 10),
           TrackCard(
             orient: 1,
-            width: width*0.75,
+            width: width * 0.75,
             icon: Icons.add_box,
             name: 'Enter name here',
             detail: 'Enter Detail here',
