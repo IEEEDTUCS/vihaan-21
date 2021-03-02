@@ -113,15 +113,11 @@ class _DesktopHomePageState extends State<DesktopHomePage> {
                   _wrapScrollTag(
                     index: 4,
                     child: Container(
-                      height: MediaQuery.of(context).size.height * 2.1,
+                      // height: MediaQuery.of(context).size.height * 2.1,
                       width: MediaQuery.of(context).size.width,
-                      child: Stack(
+                      color: Colors.amber,
+                      child: Column(
                         children: [
-                          Align(
-                            alignment: Alignment.center,
-                            child: TimelineSection(),
-                            // child: RevealingSoon(),
-                          ),
                           Align(
                             alignment: Alignment.topCenter,
                             child: Text(
@@ -134,8 +130,37 @@ class _DesktopHomePageState extends State<DesktopHomePage> {
                               textAlign: TextAlign.center,
                             ),
                           ),
+                          Padding(
+                            padding: EdgeInsets.only(bottom: 20),
+                            child: Align(
+                              alignment: Alignment.center,
+                              child: TimelineSection(),
+                              // child: RevealingSoon(),
+                            ),
+                          ),
                         ],
                       ),
+                      // Stack(
+                      //   children: [
+                      //     Align(
+                      //       alignment: Alignment.center,
+                      //       child: TimelineSection(),
+                      //       // child: RevealingSoon(),
+                      //     ),
+                      //     Align(
+                      //       alignment: Alignment.topCenter,
+                      //       child: Text(
+                      //         'Timeline',
+                      //         style: TextStyle(
+                      //           fontSize: max(_width * 0.085, 68),
+                      //           fontWeight: FontWeight.w700,
+                      //           fontFamily: 'NunitoSans',
+                      //         ),
+                      //         textAlign: TextAlign.center,
+                      //       ),
+                      //     ),
+                      //   ],
+                      // ),
                     ),
                   ),
                   _wrapScrollTag(
