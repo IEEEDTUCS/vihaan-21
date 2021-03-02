@@ -18,6 +18,7 @@ class Tracks extends StatelessWidget {
               'TRACKS',
               style: TextStyle(
                   fontFamily: 'NunitoSans',
+
                   fontSize: titleSize,
                   color: Color.fromARGB(255, 0, 48, 76),
                   fontWeight: FontWeight.w700),

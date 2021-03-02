@@ -14,9 +14,10 @@ class JudgeSection extends StatelessWidget {
               child: Text(
             "JUDGES",
             style: TextStyle(
-              fontSize: 120,
+              fontSize: 50,
+              fontFamily: 'NunitoSans',
               color: Colors.white,
-              fontWeight: FontWeight.bold,
+              fontWeight: FontWeight.w700,
             ),
           )),
         ),

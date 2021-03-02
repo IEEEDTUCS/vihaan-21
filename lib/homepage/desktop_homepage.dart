@@ -114,7 +114,7 @@ class _DesktopHomePageState extends State<DesktopHomePage> {
                             child: Text(
                               'Prizes',
                               style: TextStyle(
-                                fontSize: max(_width * 0.085, 68),
+                                fontSize: 50,
                                 fontWeight: FontWeight.w700,
                                 fontFamily: 'NunitoSans',
                               ),
@@ -142,7 +142,7 @@ class _DesktopHomePageState extends State<DesktopHomePage> {
                             child: Text(
                               'Timeline',
                               style: TextStyle(
-                                fontSize: max(_width * 0.085, 68),
+                                fontSize: 50,
                                 fontWeight: FontWeight.w700,
                                 fontFamily: 'NunitoSans',
                               ),

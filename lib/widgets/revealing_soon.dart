@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class RevealingSoon extends StatelessWidget {
@@ -11,6 +12,7 @@ class RevealingSoon extends StatelessWidget {
           fontFamily: 'NunitoSans',
           fontWeight: FontWeight.bold,
         ),
+        textAlign: TextAlign.center,
       ),
     );
   }
