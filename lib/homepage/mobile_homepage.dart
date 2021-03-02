@@ -9,7 +9,9 @@ import 'package:vihaan_new/screensmobile/sponsor_m.dart';
 import 'package:vihaan_new/screensmobile/faq_m.dart';
 import 'package:vihaan_new/screensmobile/landingpage_m.dart';
 import 'package:vihaan_new/screensmobile/sponsor_m.dart';
+import 'package:vihaan_new/screensmobile/timelineSection_m.dart';
 import 'package:vihaan_new/screensmobile/team_m.dart';
+import 'package:vihaan_new/screensmobile/prizes_m.dart';
 
 import 'package:vihaan_new/screensmobile/contactus_m.dart';
 import 'package:vihaan_new/widgets/revealing_soon.dart';
@@ -197,14 +199,14 @@ class _MobileHomePageState extends State<MobileHomePage> {
             _wrapScrollTag(
               index: 3,
               child: Container(
-                height: MediaQuery.of(context).size.height,
+                height: MediaQuery.of(context).size.height*1.25,
                 width: MediaQuery.of(context).size.width,
-                color: Colors.blue,
+                color: Colors.blueGrey[800],
                 child: Stack(
                         children: [
                           Align(
                             alignment: Alignment.center,
-                            child: RevealingSoon(),
+                            child: Prizes(),
                           )
                         ],
                       ),
@@ -213,14 +215,14 @@ class _MobileHomePageState extends State<MobileHomePage> {
             _wrapScrollTag(
               index: 4,
               child: Container(
-                height: MediaQuery.of(context).size.height * 1.5,
+                height: MediaQuery.of(context).size.height*1.55,
                 width: MediaQuery.of(context).size.width,
 
                 child: Stack(
                         children: [
                           Align(
                             alignment: Alignment.center,
-                            child: RevealingSoon(),
+                            child: TimelineSection(),
                           )
                         ],
                       ),
