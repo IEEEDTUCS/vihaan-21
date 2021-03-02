@@ -6,13 +6,13 @@ import 'package:vihaan_new/screensDesktop/TimelineSection.dart';
 import 'package:vihaan_new/screensDesktop/aboutus.dart';
 import 'package:vihaan_new/screensDesktop/contact_us.dart';
 import 'package:vihaan_new/screensDesktop/faq.dart';
+import 'package:vihaan_new/screensDesktop/judgesDesktop.dart';
 import 'package:vihaan_new/screensDesktop/landingpage.dart';
+import 'package:vihaan_new/screensDesktop/prizes.dart';
 import 'package:vihaan_new/screensDesktop/sponsors.dart';
 import 'package:vihaan_new/screensDesktop/team.dart';
 import 'package:vihaan_new/screensDesktop/tracks.dart';
 import 'package:vihaan_new/widgets/desktopNavbar.dart';
-import 'package:vihaan_new/screensDesktop/judgesDesktop.dart';
-import 'package:vihaan_new/screensDesktop/prizes.dart';
 import 'package:vihaan_new/widgets/vihaan_icons_icons.dart';
 
 class DesktopHomePage extends StatefulWidget {
@@ -104,10 +104,7 @@ class _DesktopHomePageState extends State<DesktopHomePage> {
                       color: Colors.blueGrey[800],
                       child: Stack(
                         children: [
-                          Align(
-                            alignment: Alignment.center,
-                            child: Prizes()
-                          ),
+                          Align(alignment: Alignment.center, child: Prizes()),
                         ],
                       ),
                     ),
