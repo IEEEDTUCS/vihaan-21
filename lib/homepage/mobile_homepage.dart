@@ -212,13 +212,14 @@ class _MobileHomePageState extends State<MobileHomePage> {
             _wrapScrollTag(
               index: 2,
               child: Container(
+                height: MediaQuery.of(context).size.height,
                 width: MediaQuery.of(context).size.width,
                 color: Color.fromARGB(255, 209, 253, 172),
                 child: Stack(
                   children: [
                     Align(
                       alignment: Alignment.center,
-                      child: Tracks(),
+                      child: RevealingSoon(),
                     )
                   ],
                 ),

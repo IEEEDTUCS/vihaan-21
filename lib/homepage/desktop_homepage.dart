@@ -105,7 +105,12 @@ class _DesktopHomePageState extends State<DesktopHomePage> {
                       color: Colors.blueGrey[800],
                       child: Stack(
                         children: [
-                          Align(alignment: Alignment.center, child: Prizes()),
+                          Align(
+                              alignment: Alignment.center,
+                              child: Padding(
+                                padding: EdgeInsets.only(bottom: 10),
+                                child: Prizes(),
+                              )),
                         ],
                       ),
                     ),
