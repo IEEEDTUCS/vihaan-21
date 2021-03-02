@@ -28,8 +28,8 @@ class Sponsors extends StatelessWidget {
           Text(
             'OUR PROUD\nSPONSORS',
             style: TextStyle(
-              fontSize: 45,
-              fontWeight: FontWeight.bold,
+              fontSize: 50,
+              fontWeight: FontWeight.w700,
               fontFamily: 'NunitoSans',
             ),
             textAlign: TextAlign.center,

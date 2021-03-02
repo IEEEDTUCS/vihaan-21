@@ -15,6 +15,10 @@ import 'package:vihaan_new/screensDesktop/tracks.dart';
 import 'package:vihaan_new/widgets/desktopNavbar.dart';
 import 'package:vihaan_new/widgets/vihaan_icons_icons.dart';
 import 'package:vihaan_new/widgets/hyperlinks.dart';
+import 'package:vihaan_new/screensDesktop/judgesDesktop.dart';
+import 'package:vihaan_new/widgets/revealing_soon.dart';
+import 'package:vihaan_new/widgets/vihaan_icons_icons.dart';
+import 'package:vihaan_new/widgets/hyperlinks.dart';
 
 class DesktopHomePage extends StatefulWidget {
   DesktopHomePage({Key key}) : super(key: key);

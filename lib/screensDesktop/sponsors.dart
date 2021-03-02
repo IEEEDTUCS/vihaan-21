@@ -14,7 +14,7 @@ class Sponsors extends StatelessWidget {
         bronze = min(195, width * 0.125),
         titleFont = min(width * 0.065, 90),
         headingFont = min(width * 0.085, 110);
-        
+
     return Container(
       padding: EdgeInsets.all(16),
       color: Color.fromARGB(255, 255, 255, 240),
@@ -25,7 +25,7 @@ class Sponsors extends StatelessWidget {
           Text(
             'SPONSORS',
             style: TextStyle(
-              fontSize: headingFont,
+              fontSize: 50,
               fontWeight: FontWeight.w700,
               fontFamily: 'NunitoSans',
             ),
@@ -42,8 +42,7 @@ class Sponsors extends StatelessWidget {
           Container(
               height: 2,
               color: Colors.black12,
-              margin: EdgeInsets.symmetric(horizontal: 350)
-          ),
+              margin: EdgeInsets.symmetric(horizontal: 350)),
           SponsorTitle(title: 'GOLD', fnt: titleFont, clr: Colors.amber[500]),
           SingleChildScrollView(
             scrollDirection: Axis.horizontal,
