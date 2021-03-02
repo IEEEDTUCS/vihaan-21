@@ -101,7 +101,7 @@ class LandingPageContent extends StatelessWidget {
                       ),
                     ),
                     Text(
-                      'by IEEE DTU | April 2 - 4, 2021',
+                      'by IEEE DTU | April 9 - 11, 2021',
                       textScaleFactor: 1.5,
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
