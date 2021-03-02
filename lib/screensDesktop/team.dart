@@ -85,22 +85,22 @@ class TeamSection extends StatelessWidget {
                 children: [
                   ProfileCard(
                     name: "Abhishek Sethi",
-                    position: "Event Coordinator",
+                    position: "Social Media Coordinator",
                     imageAddress: "images/team/team_abhishek.jpg",
                   ),
                   ProfileCard(
                     name: "Manali Biswas",
-                    position: "Event Coordinator",
+                    position: "Webinar Coordinator",
                     imageAddress: "images/team/team_manali.jpg",
                   ),
                   ProfileCard(
                     name: "Manan Gupta",
-                    position: "Event Coordinator",
+                    position: "Corporate Coordinator",
                     imageAddress: "images/team/team_manan.jpg",
                   ),
                   ProfileCard(
                     name: "Shivam Shaurya",
-                    position: "Event Coordinator",
+                    position: "PR Coordinator",
                     imageAddress: "images/team/team_shivamShaurya.jpg",
                   ),
                 ],
