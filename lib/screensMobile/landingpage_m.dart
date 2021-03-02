@@ -1,5 +1,6 @@
 import 'dart:math';
 
+import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:simple_animations/simple_animations.dart';
 import 'package:vihaan_new/widgets/animatedWave.dart';
@@ -251,15 +252,53 @@ class LandingPageContent extends StatelessWidget {
                                 image: AssetImage(
                                     "images/Vihaan_Landing_Image.png"),
                               ),
+
                             ),
                           ),
                         ),
-                      ],
+                      ),
                     ),
+                    Padding(padding: EdgeInsets.only(right: 20)),
+                    Material(
+                      elevation: 8,
+                      color: Colors.redAccent,
+                      clipBehavior: Clip.antiAlias,
+                      shadowColor: Colors.black54,
+                      borderRadius: BorderRadius.all(
+                        Radius.circular(12),
+                      ),
+                      child: InkWell(
+                        onTap: () {},
+                        child: Container(
+                          width: min(170, _width * 0.4),
+                          height: 48,
+                          child: Center(
+                              child: Text(
+                            "Become a Sponsor",
+                            style: TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold),
+                          )),
+                        ),
+                      ),
+                    )
                   ],
                 ),
-              ),
-            ],
+                Padding(
+                  padding: EdgeInsets.all(10.0),
+                  child: Align(
+                    alignment: Alignment.bottomCenter,
+                    child: Container(
+                      // height: _height * 0.60,
+                      // width: _width * 0.60,
+                      child: Image.asset(
+                        'images/Vihaan_Landing_Image.png',
+                      ),
+                    ),
+                  ),
+                ),
+              ],
+            ),
           ),
         ),
       ),

@@ -13,7 +13,9 @@ import 'package:vihaan_new/screensmobile/team_m.dart';
 
 import 'package:vihaan_new/screensmobile/contactus_m.dart';
 import 'package:vihaan_new/widgets/revealing_soon.dart';
+import 'package:vihaan_new/widgets/hyperlinks.dart';
 
+import 'package:vihaan_new/widgets/vihaan_icons_icons.dart';
 
 class MobileHomePage extends StatefulWidget {
   final AutoScrollController controller;
@@ -149,6 +151,34 @@ class _MobileHomePageState extends State<MobileHomePage> {
                 // ...
               },
             ),
+            ListTile(
+              title: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  InkWell(
+                    onTap: IEEEURLS.ieeedtufb,
+                    child: Icon(VihaanIcons.facebook, color: Colors.black),
+                  ),
+                  InkWell(
+                    onTap: IEEEURLS.ieeedtuinsta,
+                    child: Icon(VihaanIcons.instagram, color: Colors.black),
+                  ),
+                  InkWell(
+                    onTap: IEEEURLS.ieeedtutwitter,
+                    child: Icon(VihaanIcons.twitter, color: Colors.black),
+                  ),
+                  InkWell(
+                    onTap: IEEEURLS.ieeedtulinkedin,
+                    child: Icon(VihaanIcons.linkedin, color: Colors.black),
+                  ),
+                  InkWell(
+                    onTap: IEEEURLS.ieeedtumail,
+                    child: Icon(Icons.mail, color: Colors.black),
+                  ),
+                ],
+              ),
+            ),
           ],
         ),
       ),
@@ -162,7 +192,7 @@ class _MobileHomePageState extends State<MobileHomePage> {
             _wrapScrollTag(
               index: 0,
               child: Container(
-                 height: MediaQuery.of(context).size.height,
+                height: MediaQuery.of(context).size.height,
                 width: MediaQuery.of(context).size.width,
                 child: Stack(children: [
                   FancyBackgroundApp(),
@@ -182,16 +212,16 @@ class _MobileHomePageState extends State<MobileHomePage> {
             _wrapScrollTag(
               index: 2,
               child: Container(
-              width: MediaQuery.of(context).size.width,
-               color: Color.fromARGB(255, 209, 253, 172),
-               child: Stack(
-                        children: [
-                          Align(
-                            alignment: Alignment.center,
-                            child: Tracks(),
-                          )
-                        ],
-                      ),
+                width: MediaQuery.of(context).size.width,
+                color: Color.fromARGB(255, 209, 253, 172),
+                child: Stack(
+                  children: [
+                    Align(
+                      alignment: Alignment.center,
+                      child: Tracks(),
+                    )
+                  ],
+                ),
               ),
             ),
             _wrapScrollTag(
@@ -201,13 +231,13 @@ class _MobileHomePageState extends State<MobileHomePage> {
                 width: MediaQuery.of(context).size.width,
                 color: Colors.blue,
                 child: Stack(
-                        children: [
-                          Align(
-                            alignment: Alignment.center,
-                            child: RevealingSoon(),
-                          )
-                        ],
-                      ),
+                  children: [
+                    Align(
+                      alignment: Alignment.center,
+                      child: RevealingSoon(),
+                    )
+                  ],
+                ),
               ),
             ),
             _wrapScrollTag(
@@ -215,29 +245,24 @@ class _MobileHomePageState extends State<MobileHomePage> {
               child: Container(
                 height: MediaQuery.of(context).size.height * 1.5,
                 width: MediaQuery.of(context).size.width,
-
                 child: Stack(
-                        children: [
-                          Align(
-                            alignment: Alignment.center,
-                            child: RevealingSoon(),
-                          )
-                        ],
-                      ),
-
+                  children: [
+                    Align(
+                      alignment: Alignment.center,
+                      child: RevealingSoon(),
+                    )
+                  ],
+                ),
               ),
             ),
             _wrapScrollTag(
               index: 5,
               child: Container(
-               
                 width: MediaQuery.of(context).size.width,
                 color: Colors.blueAccent,
-
                 child: Stack(children: [
                   JudgeSection(),
                 ]),
-
               ),
             ),
             _wrapScrollTag(
@@ -288,7 +313,6 @@ class _MobileHomePageState extends State<MobileHomePage> {
                 ),
               ),
             ),
-            
           ],
         ),
       ),

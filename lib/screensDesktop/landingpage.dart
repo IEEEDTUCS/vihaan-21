@@ -80,214 +80,129 @@ class LandingPageContent extends StatelessWidget {
     return AnimatedOpacity(
       duration: Duration(milliseconds: 250),
       opacity: 1.0,
-      child: Center(
-        child: Container(
-          child: Stack(
-            children: <Widget>[
-              // ClipPath(
-              //   clipper: BezierClipper(),
-              //   child: Container(
-              //     color: Colors.lightBlue[200],
-
-              //   ),
-              // ),
-              Container(
-                padding: EdgeInsets.only(left: 20, right: 20),
-                child: Stack(
-                  //alignment: Alignment.center,
-                  children: <Widget>[
-                    // Positioned.fill(
-                    //   child: Opacity(
-                    //     opacity: 1.0,
-                    //     child: Align(
-                    //       alignment: Alignment.centerRight,
-                    //       child: Opacity(
-                    //         opacity: 0.60,
-                    //         child: Padding(
-                    //           padding: const EdgeInsets.only(right: 40.0),
-                    //           child: Container(
-                    //             width: _width * 0.55,
-                    //             //color: Colors.black,
-                    //             child: FittedBox(
-                    //               fit: BoxFit.fitWidth,
-                    //               child: Image(
-                    //                   fit: BoxFit.fill,
-                    //                   image: AssetImage(
-                    //                       "images/Vihaan_Landing_Image.png")),
-                    //             ),
-                    //           ),
-                    //         ),
-                    //       ),
-                    //     ),
-                    //   ),
-                    // ),
-                    Positioned.fill(
-                      top: 100,
-                      left: 500,
-                      child: Padding(
-                        padding: EdgeInsets.all(10.0),
-                        child: Align(
-                          alignment: Alignment.topLeft,
-                          child: Container(
-                            // height: _height * 0.60,
-                            // width: _width * 0.60,
-                            child: Image(
-                              fit: BoxFit.fill,
-                              image:
-                                  AssetImage("images/Vihaan_Landing_Image.png"),
+      child: Container(
+        padding: EdgeInsets.only(left: 20, right: 20),
+        child: Center(
+          child: Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Flexible(
+                flex: 5,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Flexible(
+                      child: Container(
+                        child: Image.asset('images/vihaan.png'),
+                        constraints: BoxConstraints(
+                          maxHeight: 400,
+                        ),
+                      ),
+                    ),
+                    Text(
+                      'by IEEE DTU | April 2 - 4, 2021',
+                      textScaleFactor: 1.5,
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white70,
+                      ),
+                    ),
+                    Container(
+                      margin: EdgeInsets.symmetric(vertical: 12),
+                      decoration: BoxDecoration(
+                        color: Colors.white70,
+                        backgroundBlendMode: BlendMode.srcOver,
+                        borderRadius: BorderRadius.circular(6),
+                      ),
+                      child: TypewriterAnimatedTextKit(
+                        text: [' Eat', ' Sleep', ' Code', ' Repeat'],
+                        textStyle: TextStyle(
+                          fontSize: 22,
+                          fontFamily: 'NunitoSans',
+                          color: Colors.black87,
+                          fontWeight: FontWeight.bold,
+                          height: 1.6,
+                        ),
+                      ),
+                    ),
+                    Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Flexible(
+                          flex: 3,
+                          child: Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Material(
+                              elevation: 8,
+                              color: Colors.blueAccent,
+                              clipBehavior: Clip.antiAlias,
+                              shadowColor: Colors.black54,
+                              borderRadius: BorderRadius.all(
+                                Radius.circular(12),
+                              ),
+                              child: InkWell(
+                                onTap: () {},
+                                child: Container(
+                                  width: 170,
+                                  height: 48,
+                                  child: Center(
+                                      child: Text(
+                                    "Register Now",
+                                    style: TextStyle(
+                                        color: Colors.white,
+                                        fontWeight: FontWeight.bold),
+                                  )),
+                                ),
+                              ),
                             ),
                           ),
                         ),
-                      ),
-                    ),
-                    // Positioned.fill(
-                    //   child: Opacity(
-                    //     opacity: 1.0,
-                    //     child: Padding(
-                    //       padding: const EdgeInsets.only(left: 40),
-                    //       child: Align(
-                    //         alignment: Alignment.topLeft,
-                    //         child: Container(
-                    //           color: Colors.black,
-                    //           padding: EdgeInsets.only(top: 50),
-                    //           //width: _width * 0.11,
-                    //           child: Image.network(
-                    //               "https://github.com/IEEECSDTU/DDH/blob/master/images/vihaan.png?raw=true"),
-                    //         ),
-                    //       ),
-                    //     ),
-                    //   ),
-                    // ),
-                    Positioned.fill(
-                      top: 100,
-                      left: 42,
-                      child: Padding(
-                        padding: EdgeInsets.all(10.0),
-                        child: Align(
-                          alignment: Alignment.topLeft,
-                          child: Container(
-                            height: 120.0,
-                            width: 120.0,
-                            child: Image.asset("images/vihaan_logo.png",
-                                color: Colors.white70),
-                            // decoration: BoxDecoration(
-                            //   image: DecorationImage(
-                            //     image: NetworkImage(
-                            //         "https://github.com/IEEECSDTU/DDH/blob/master/images/vihaan.png?raw=true"),
-                            //     fit: BoxFit.fill,
-                            //   ),
-                            // ),
+                        Flexible(
+                          flex: 3,
+                          child: Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Material(
+                              elevation: 8,
+                              color: Colors.redAccent,
+                              clipBehavior: Clip.antiAlias,
+                              shadowColor: Colors.black54,
+                              borderRadius: BorderRadius.all(
+                                Radius.circular(12),
+                              ),
+                              child: InkWell(
+                                onTap: () {},
+                                child: Container(
+                                  width: 170,
+                                  height: 48,
+                                  child: Center(
+                                      child: Text(
+                                    "Become a Sponsor",
+                                    style: TextStyle(
+                                        color: Colors.white,
+                                        fontWeight: FontWeight.bold),
+                                  )),
+                                ),
+                              ),
+                            ),
                           ),
                         ),
-                      ),
-                    ),
-                    Positioned.fill(
-                      child: Padding(
-                        padding: const EdgeInsets.only(left: 70),
-                        child: Align(
-                          alignment: Alignment.centerLeft,
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Text(
-                                "VIHAAN",
-                                textScaleFactor: 2.5,
-                                style: TextStyle(
-                                    color: Colors.white,
-                                    fontSize: 50.0,
-                                    fontWeight: FontWeight.bold),
-                              ),
-                              Text(
-                                'by IEEE DTU | April 2 - 4, 2021',
-                                textScaleFactor: 1.25,
-                                style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.black54,
-                                ),
-                              ),
-                              Container(
-                                margin: EdgeInsets.symmetric(vertical: 12),
-                                decoration: BoxDecoration(
-                                  color: Colors.white70,
-                                  backgroundBlendMode: BlendMode.srcOver,
-                                  borderRadius: BorderRadius.circular(6),
-                                ),
-                                child: TypewriterAnimatedTextKit(
-                                  text: [' Eat', ' Sleep', ' Code', ' Repeat'],
-                                  textStyle: TextStyle(
-                                    fontSize: 22,
-                                    fontFamily: 'NunitoSans',
-                                    color: Colors.black87,
-                                    fontWeight: FontWeight.bold,
-                                    height: 1.6,
-                                  ),
-                                ),
-                              ),
-                              Row(
-                                children: [
-                                  Padding(
-                                    padding: const EdgeInsets.all(8.0),
-                                    child: Material(
-                                      elevation: 8,
-                                      color: Colors.blueAccent,
-                                      clipBehavior: Clip.antiAlias,
-                                      shadowColor: Colors.black54,
-                                      borderRadius: BorderRadius.all(
-                                        Radius.circular(12),
-                                      ),
-                                      child: InkWell(
-                                        onTap: () {},
-                                        child: Container(
-                                          width: 170,
-                                          height: 48,
-                                          child: Center(
-                                              child: Text(
-                                            "Register Now",
-                                            style: TextStyle(
-                                                color: Colors.white,
-                                                fontWeight: FontWeight.bold),
-                                          )),
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                  Padding(
-                                    padding: const EdgeInsets.all(8.0),
-                                    child: Material(
-                                      elevation: 8,
-                                      color: Colors.redAccent,
-                                      clipBehavior: Clip.antiAlias,
-                                      shadowColor: Colors.black54,
-                                      borderRadius: BorderRadius.all(
-                                        Radius.circular(12),
-                                      ),
-                                      child: InkWell(
-                                        onTap: () {},
-                                        child: Container(
-                                          width: 170,
-                                          height: 48,
-                                          child: Center(
-                                              child: Text(
-                                            "Become a Sponsor",
-                                            style: TextStyle(
-                                                color: Colors.white,
-                                                fontWeight: FontWeight.bold),
-                                          )),
-                                        ),
-                                      ),
-                                    ),
-                                  )
-                                ],
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
+                        // if (_width < 1000)
+                        //   Flexible(
+                        //     flex: 4,
+                        //     child: Image.network(
+                        //         'images/Vihaan_Landing_Image.png'),
+                        //   ),
+                      ],
                     ),
                   ],
                 ),
               ),
+              // if (_width >= 1000)
+              //   Flexible(
+              //     flex: 4,
+              //     child: Image.network('images/Vihaan_Landing_Image.png'),
+              //   ),
             ],
           ),
         ),
