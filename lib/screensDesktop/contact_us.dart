@@ -2,9 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:vihaan_new/widgets/profileCard.dart';
 
 class ContactUs extends StatelessWidget {
-  //WHY CAN'T YOU MAKE AN ARRAY OF OBJECTS IN DART?!, FUCK DART!
-
-  //VALUES----------------------
   List<String> team_name = [
     'Ritwik Ranjan',
     'Hemang Sinha',
@@ -29,15 +26,13 @@ class ContactUs extends StatelessWidget {
     'Now don\'t you understand',
     'That I\'m never changing who I am'
   ];
-  //-----------------------------
-
+  
   @override
   Widget build(BuildContext context) {
     var contactUsTextStyle =
         TextStyle(fontSize: 16, fontWeight: FontWeight.w200, height: 1.3);
     return Container(
       padding: EdgeInsets.only(top: 32, bottom: 16),
-      // color: Colors.indigoAccent,
       color: Colors.black,
       child: Column(
         children: [
