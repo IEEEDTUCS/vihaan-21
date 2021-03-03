@@ -1,7 +1,9 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
+
 import 'package:scroll_to_index/scroll_to_index.dart';
+
 import 'package:vihaan_new/screensDesktop/TimelineSection.dart';
 import 'package:vihaan_new/screensDesktop/aboutus.dart';
 import 'package:vihaan_new/screensDesktop/contact_us.dart';
@@ -12,8 +14,10 @@ import 'package:vihaan_new/screensDesktop/prizes.dart';
 import 'package:vihaan_new/screensDesktop/sponsors.dart';
 import 'package:vihaan_new/screensDesktop/team.dart';
 import 'package:vihaan_new/screensDesktop/tracks.dart';
+
 import 'package:vihaan_new/widgets/desktopNavbar.dart';
 import 'package:vihaan_new/widgets/hyperlinks.dart';
+import 'package:vihaan_new/widgets/revealing_soon.dart';
 import 'package:vihaan_new/widgets/vihaan_icons_icons.dart';
 
 class DesktopHomePage extends StatefulWidget {
@@ -33,7 +37,6 @@ class _DesktopHomePageState extends State<DesktopHomePage> {
         controller: _controller,
         index: index,
         child: child,
-        //highlightColor: Colors.black.withOpacity(0.1),
       );
 
   @override
@@ -102,15 +105,26 @@ class _DesktopHomePageState extends State<DesktopHomePage> {
                     child: Container(
                       height: MediaQuery.of(context).size.height,
                       width: MediaQuery.of(context).size.width,
-                      color: Colors.blueGrey[800],
-                      child: Stack(
+                      color: Colors.purpleAccent,
+                      child: Column(
                         children: [
-                          Align(
+                          Text(
+                            'Prizes',
+                            style: TextStyle(
+                                fontSize: max(_width * 0.085, 68),
+                                fontWeight: FontWeight.w700,
+                                fontFamily: 'NunitoSans',
+                                color: Colors.white),
+                            textAlign: TextAlign.center,
+                          ),
+                          Padding(
+                            padding: EdgeInsets.only(bottom: 20),
+                            child: Align(
                               alignment: Alignment.center,
-                              child: Padding(
-                                padding: EdgeInsets.only(bottom: 10),
-                                child: Prizes(),
-                              )),
+                              // child: TimelineSection(),
+                              child: RevealingSoon(),
+                            ),
+                          ),
                         ],
                       ),
                     ),
@@ -118,65 +132,51 @@ class _DesktopHomePageState extends State<DesktopHomePage> {
                   _wrapScrollTag(
                     index: 4,
                     child: Container(
-                      // height: MediaQuery.of(context).size.height * 2.1,
+                      height: MediaQuery.of(context).size.height,
                       width: MediaQuery.of(context).size.width,
                       color: Colors.amber,
                       child: Column(
                         children: [
-                          Align(
-                            alignment: Alignment.topCenter,
-                            child: Text(
-                              'Timeline',
-                              style: TextStyle(
+                          Text(
+                            'Timeline',
+                            style: TextStyle(
                                 fontSize: max(_width * 0.085, 68),
                                 fontWeight: FontWeight.w700,
                                 fontFamily: 'NunitoSans',
-                              ),
-                              textAlign: TextAlign.center,
-                            ),
+                                color: Colors.black),
+                            textAlign: TextAlign.center,
                           ),
                           Padding(
                             padding: EdgeInsets.only(bottom: 20),
                             child: Align(
                               alignment: Alignment.center,
-                              child: TimelineSection(),
-                              // child: RevealingSoon(),
+                              // child: TimelineSection(),
+                              child: RevealingSoon(),
                             ),
                           ),
                         ],
                       ),
-                      // Stack(
-                      //   children: [
-                      //     Align(
-                      //       alignment: Alignment.center,
-                      //       child: TimelineSection(),
-                      //       // child: RevealingSoon(),
-                      //     ),
-                      //     Align(
-                      //       alignment: Alignment.topCenter,
-                      //       child: Text(
-                      //         'Timeline',
-                      //         style: TextStyle(
-                      //           fontSize: max(_width * 0.085, 68),
-                      //           fontWeight: FontWeight.w700,
-                      //           fontFamily: 'NunitoSans',
-                      //         ),
-                      //         textAlign: TextAlign.center,
-                      //       ),
-                      //     ),
-                      //   ],
-                      // ),
                     ),
                   ),
                   _wrapScrollTag(
                     index: 5,
                     child: Container(
-                      //height: MediaQuery.of(context).size.height,
+                      height: MediaQuery.of(context).size.height,
                       width: MediaQuery.of(context).size.width,
                       color: Colors.blueAccent,
-                      child: Stack(children: [
-                        Align(child: JudgeSection() //Judges(),
-                            ),
+                      child: Column(children: [
+                        Text(
+                          'Judges',
+                          style: TextStyle(
+                              fontSize: max(_width * 0.085, 68),
+                              fontWeight: FontWeight.w700,
+                              fontFamily: 'NunitoSans',
+                              color: Colors.amberAccent),
+                          textAlign: TextAlign.center,
+                        ),
+                        Align(
+                          child: RevealingSoon(),
+                        ),
                       ]),
                     ),
                   ),

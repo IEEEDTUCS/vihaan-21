@@ -89,6 +89,7 @@ class ContactUs extends StatelessWidget {
               )
             ],
           ),
+          SizedBox(height: 50),
           Center(
             child: Text(
               'Copyright: IEEE DTU',

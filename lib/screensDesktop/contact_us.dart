@@ -139,54 +139,63 @@ class ContactUs extends StatelessWidget {
                   ' by ',
                   style: TextStyle(fontSize: 16, color: Colors.white70),
                 ),
-                InkWell(
-                  onTap: () {
-                    showDialog(
-                        context: context,
-                        builder: (context) {
-                          return Dialog(
-                            shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(10)),
-                            elevation: 16,
-                            child: Container(
-                                height: 700.0,
-                                width: 500.0,
-                                child: Scrollbar(
-                                  isAlwaysShown: true,
-                                  controller: ScrollController(),
-                                  child: ListView.builder(
-                                    controller: ScrollController(),
-                                    itemCount: 7,
-                                    itemBuilder: (context, index) {
-                                      if (index == 0)
-                                        return Center(
-                                            child: Text("Team Members",
-                                                style: TextStyle(
-                                                    fontSize: 36,
-                                                    color: Colors.black26,
-                                                    fontWeight:
-                                                        FontWeight.bold)));
-                                      else
-                                        return ProfileCard(
-                                            name: team_name[index - 1],
-                                            position: team_qt[index - 1],
-                                            imageAddress: team_img[index - 1]);
-                                    },
-                                  ),
-                                )),
-                          );
-                        });
-                  },
-                  child: Text(
-                    'members of IEEE DTU',
-                    style: TextStyle(
-                      fontSize: 16,
-                      color: Colors.white70,
-                      decoration: TextDecoration.underline,
-                      decorationThickness: 0.7,
-                    ),
+                Text(
+                  'members of IEEE DTU',
+                  style: TextStyle(
+                    fontSize: 16,
+                    color: Colors.white70,
+                    decoration: TextDecoration.underline,
+                    decorationThickness: 0.7,
                   ),
                 ),
+                // InkWell(
+                //   onTap: () {
+                //     showDialog(
+                //         context: context,
+                //         builder: (context) {
+                //           return Dialog(
+                //             shape: RoundedRectangleBorder(
+                //                 borderRadius: BorderRadius.circular(10)),
+                //             elevation: 16,
+                //             child: Container(
+                //                 height: 700.0,
+                //                 width: 500.0,
+                //                 child: Scrollbar(
+                //                   isAlwaysShown: true,
+                //                   controller: ScrollController(),
+                //                   child: ListView.builder(
+                //                     controller: ScrollController(),
+                //                     itemCount: 7,
+                //                     itemBuilder: (context, index) {
+                //                       if (index == 0)
+                //                         return Center(
+                //                             child: Text("Team Members",
+                //                                 style: TextStyle(
+                //                                     fontSize: 36,
+                //                                     color: Colors.black26,
+                //                                     fontWeight:
+                //                                         FontWeight.bold)));
+                //                       else
+                //                         return ProfileCard(
+                //                             name: team_name[index - 1],
+                //                             position: team_qt[index - 1],
+                //                             imageAddress: team_img[index - 1]);
+                //                     },
+                //                   ),
+                //                 )),
+                //           );
+                //         });
+                //   },
+                //   child: Text(
+                //     'members of IEEE DTU',
+                //     style: TextStyle(
+                //       fontSize: 16,
+                //       color: Colors.white70,
+                //       decoration: TextDecoration.underline,
+                //       decorationThickness: 0.7,
+                //     ),
+                //   ),
+                // ),
               ],
             ),
           ),
