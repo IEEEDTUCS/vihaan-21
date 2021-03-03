@@ -32,7 +32,7 @@ class ProfileCard extends StatelessWidget {
                 minRadius: 20.0,
                 backgroundColor: Colors.white,
                 //radius: 60.0,
-                backgroundImage: NetworkImage(imageAddress),
+                backgroundImage: AssetImage(imageAddress),
               ),
             ),
             Padding(
