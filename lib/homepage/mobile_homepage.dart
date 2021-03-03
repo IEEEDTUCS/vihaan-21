@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:scroll_to_index/scroll_to_index.dart';
 import 'package:vihaan_new/screensmobile/aboutus_m.dart';
@@ -45,6 +47,7 @@ class _MobileHomePageState extends State<MobileHomePage> {
 
   @override
   Widget build(BuildContext context) {
+    var _width = MediaQuery.of(context).size.width;
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.black,
@@ -188,9 +191,8 @@ class _MobileHomePageState extends State<MobileHomePage> {
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            //TODO: Vihaan Home Page
             _wrapScrollTag(
-              index: 0,
+              index: 0, // Landing Page
               child: Container(
                 height: MediaQuery.of(context).size.height,
                 width: MediaQuery.of(context).size.width,
@@ -201,7 +203,7 @@ class _MobileHomePageState extends State<MobileHomePage> {
               ),
             ),
             _wrapScrollTag(
-              index: 1,
+              index: 1, // About Us
               child: Container(
                 width: MediaQuery.of(context).size.width,
                 child: Stack(children: [
@@ -210,16 +212,15 @@ class _MobileHomePageState extends State<MobileHomePage> {
               ),
             ),
             _wrapScrollTag(
-              index: 2,
+              index: 2, // Tracks
               child: Container(
-                height: MediaQuery.of(context).size.height,
                 width: MediaQuery.of(context).size.width,
                 color: Color.fromARGB(255, 209, 253, 172),
                 child: Stack(
                   children: [
                     Align(
                       alignment: Alignment.center,
-                      child: RevealingSoon(),
+                      child: Tracks(),
                     )
                   ],
                 ),
@@ -230,13 +231,27 @@ class _MobileHomePageState extends State<MobileHomePage> {
               child: Container(
                 height: MediaQuery.of(context).size.height,
                 width: MediaQuery.of(context).size.width,
-                color: Colors.blue,
-                child: Stack(
+                color: Colors.purpleAccent,
+                child: Column(
                   children: [
-                    Align(
-                      alignment: Alignment.center,
-                      child: RevealingSoon(),
-                    )
+                    Text(
+                      'Prizes',
+                      style: TextStyle(
+                          fontSize: max(
+                              _width * 0.085, 68),
+                          fontWeight: FontWeight.w700,
+                          fontFamily: 'NunitoSans',
+                          color: Colors.white),
+                      textAlign: TextAlign.center,
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(bottom: 20),
+                      child: Align(
+                        alignment: Alignment.center,
+                        // child: TimelineSection(),
+                        child: RevealingSoon(),
+                      ),
+                    ),
                   ],
                 ),
               ),
@@ -244,14 +259,29 @@ class _MobileHomePageState extends State<MobileHomePage> {
             _wrapScrollTag(
               index: 4,
               child: Container(
-                height: MediaQuery.of(context).size.height * 1.5,
+                height: MediaQuery.of(context).size.height,
                 width: MediaQuery.of(context).size.width,
-                child: Stack(
+                color: Colors.purpleAccent,
+                child: Column(
                   children: [
-                    Align(
-                      alignment: Alignment.center,
-                      child: RevealingSoon(),
-                    )
+                    Text(
+                      'Timeline',
+                      style: TextStyle(
+                          fontSize: max(
+                              _width * 0.085, 68),
+                          fontWeight: FontWeight.w700,
+                          fontFamily: 'NunitoSans',
+                          color: Colors.white),
+                      textAlign: TextAlign.center,
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(bottom: 20),
+                      child: Align(
+                        alignment: Alignment.center,
+                        // child: TimelineSection(),
+                        child: RevealingSoon(),
+                      ),
+                    ),
                   ],
                 ),
               ),
@@ -259,11 +289,31 @@ class _MobileHomePageState extends State<MobileHomePage> {
             _wrapScrollTag(
               index: 5,
               child: Container(
+                height: MediaQuery.of(context).size.height,
                 width: MediaQuery.of(context).size.width,
-                color: Colors.blueAccent,
-                child: Stack(children: [
-                  JudgeSection(),
-                ]),
+                color: Colors.purpleAccent,
+                child: Column(
+                  children: [
+                    Text(
+                      'Judges',
+                      style: TextStyle(
+                          fontSize: max(
+                              _width * 0.085, 68),
+                          fontWeight: FontWeight.w700,
+                          fontFamily: 'NunitoSans',
+                          color: Colors.white),
+                      textAlign: TextAlign.center,
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(bottom: 20),
+                      child: Align(
+                        alignment: Alignment.center,
+                        // child: TimelineSection(),
+                        child: RevealingSoon(),
+                      ),
+                    ),
+                  ],
+                ),
               ),
             ),
             _wrapScrollTag(

@@ -5,13 +5,6 @@ import 'package:flutter/material.dart';
 import 'package:simple_animations/simple_animations.dart';
 import 'package:vihaan_new/widgets/animatedWave.dart';
 
-// class LandingPage extends StatelessWidget {
-//   @override
-//   Widget build(BuildContext context) {
-//     return Container();
-//   }
-// }
-
 class AnimatedBackground extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -59,7 +52,6 @@ class FancyBackgroundApp extends StatelessWidget {
           speed: 1.2,
           offset: pi / 2,
         )),
-        // Positioned.fill(child: Text("HEMANG")), // Testing
       ],
     );
   }
@@ -141,19 +133,16 @@ class LandingPageContent extends StatelessWidget {
                               borderRadius: BorderRadius.all(
                                 Radius.circular(12),
                               ),
-                              child: InkWell(
-                                onTap: () {},
-                                child: Container(
-                                  width: 170,
-                                  height: 48,
-                                  child: Center(
-                                      child: Text(
-                                    "Register Now",
-                                    style: TextStyle(
-                                        color: Colors.white,
-                                        fontWeight: FontWeight.bold),
-                                  )),
-                                ),
+                              child: Container(
+                                width: 170,
+                                height: 48,
+                                child: Center(
+                                    child: Text(
+                                  "Register Now",
+                                  style: TextStyle(
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.bold),
+                                )),
                               ),
                             ),
                           ),
@@ -187,22 +176,11 @@ class LandingPageContent extends StatelessWidget {
                             ),
                           ),
                         ),
-                        // if (_width < 1000)
-                        //   Flexible(
-                        //     flex: 4,
-                        //     child: Image.network(
-                        //         'images/Vihaan_Landing_Image.png'),
-                        //   ),
                       ],
                     ),
                   ],
                 ),
               ),
-              // if (_width >= 1000)
-              //   Flexible(
-              //     flex: 4,
-              //     child: Image.network('images/Vihaan_Landing_Image.png'),
-              //   ),
             ],
           ),
         ),

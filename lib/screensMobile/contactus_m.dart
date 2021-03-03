@@ -90,6 +90,7 @@ class ContactUs extends StatelessWidget {
               )
             ],
           ),
+          SizedBox(height: 50),
           Center(
             child: Column(
               children: [
