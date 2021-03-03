@@ -237,8 +237,7 @@ class _MobileHomePageState extends State<MobileHomePage> {
                     Text(
                       'Prizes',
                       style: TextStyle(
-                          fontSize: max(
-                              _width * 0.085, 68),
+                          fontSize: max(_width * 0.085, 68),
                           fontWeight: FontWeight.w700,
                           fontFamily: 'NunitoSans',
                           color: Colors.white),
@@ -267,8 +266,7 @@ class _MobileHomePageState extends State<MobileHomePage> {
                     Text(
                       'Timeline',
                       style: TextStyle(
-                          fontSize: max(
-                              _width * 0.085, 68),
+                          fontSize: max(_width * 0.085, 68),
                           fontWeight: FontWeight.w700,
                           fontFamily: 'NunitoSans',
                           color: Colors.white),
@@ -297,8 +295,7 @@ class _MobileHomePageState extends State<MobileHomePage> {
                     Text(
                       'Judges',
                       style: TextStyle(
-                          fontSize: max(
-                              _width * 0.085, 68),
+                          fontSize: max(_width * 0.085, 68),
                           fontWeight: FontWeight.w700,
                           fontFamily: 'NunitoSans',
                           color: Colors.white),

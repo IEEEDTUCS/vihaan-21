@@ -1,4 +1,5 @@
 import 'dart:math';
+
 import 'package:flutter/material.dart';
 
 class Tracks extends StatelessWidget {
@@ -17,7 +18,7 @@ class Tracks extends StatelessWidget {
               'TRACKS',
               style: TextStyle(
                   fontFamily: 'NunitoSans',
-                  fontSize: 50.0,
+                  fontSize: titleSize,
                   color: Color.fromARGB(255, 0, 48, 76),
                   fontWeight: FontWeight.w700),
             ),
@@ -31,48 +32,48 @@ class Tracks extends StatelessWidget {
             orient: 0,
             width: width,
             icon: Icons.add_box,
-            name: 'Enter name here',
-            detail: 'Enter Detail here',
+            name: 'Healthcare',
+            detail: 'Description',
           ),
           SizedBox(height: 10),
           TrackCard(
             orient: 1,
             width: width,
             icon: Icons.add_box,
-            name: 'Enter name here',
-            detail: 'Enter Detail here',
+            name: 'Education',
+            detail: 'Description',
           ),
           SizedBox(height: 10),
           TrackCard(
             orient: 0,
             width: width,
             icon: Icons.add_box,
-            name: 'Enter name here',
-            detail: 'Enter Detail here',
+            name: 'Blockchain',
+            detail: 'Description',
           ),
           SizedBox(height: 10),
           TrackCard(
             orient: 1,
             width: width,
             icon: Icons.add_box,
-            name: 'Enter name here',
-            detail: 'Enter Detail here',
+            name: 'Transport',
+            detail: 'Description',
           ),
           SizedBox(height: 10),
           TrackCard(
             orient: 0,
             width: width,
             icon: Icons.add_box,
-            name: 'Enter name here',
-            detail: 'Enter Detail here',
+            name: 'Security',
+            detail: 'Description',
           ),
           SizedBox(height: 10),
           TrackCard(
             orient: 1,
             width: width,
             icon: Icons.add_box,
-            name: 'Enter name here',
-            detail: 'Enter Detail here',
+            name: 'Rural Development',
+            detail: 'Description',
           ),
         ],
       ),
@@ -105,19 +106,15 @@ class TrackCard extends StatelessWidget {
               width: width * 0.2,
               child: Icon(
                 icon,
-                size: width * 0.2,
+                size: width * 0.15,
                 color: Color.fromARGB(255, 1, 188, 99),
               ),
-            ),
-          if (orient == 0)
-            SizedBox(
-              width: 20.0,
             ),
           if (orient == 0)
             Container(
               padding: EdgeInsets.fromLTRB(0.0, 10.0, 0.0, 0.0),
               height: 115.0,
-              width: width * 0.75,
+              width: width * 0.7,
               child: Column(
                 crossAxisAlignment: (orient == 1)
                     ? CrossAxisAlignment.end
@@ -152,7 +149,7 @@ class TrackCard extends StatelessWidget {
             Container(
               padding: EdgeInsets.fromLTRB(0.0, 10.0, 20.0, 0.0),
               height: 115.0,
-              width: width * 0.75,
+              width: width * 0.7,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
@@ -184,15 +181,11 @@ class TrackCard extends StatelessWidget {
               ),
             ),
           if (orient == 1)
-            SizedBox(
-              width: 0,
-            ),
-          if (orient == 1)
             Container(
               width: width * 0.2,
               child: Icon(
                 icon,
-                size: width * 0.2,
+                size: width * 0.15,
                 color: Color.fromARGB(255, 1, 188, 99),
               ),
             ),
