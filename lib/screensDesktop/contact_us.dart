@@ -26,7 +26,7 @@ class ContactUs extends StatelessWidget {
     'Now don\'t you understand',
     'That I\'m never changing who I am'
   ];
-
+  
   @override
   Widget build(BuildContext context) {
     var contactUsTextStyle =
@@ -60,7 +60,7 @@ class ContactUs extends StatelessWidget {
                 ),
               ),
               Flexible(
-                flex: 2,
+                flex: 3,
                 child: Column(
                   children: [
                     Container(
@@ -70,8 +70,16 @@ class ContactUs extends StatelessWidget {
                             padding: const EdgeInsets.all(8.0),
                             child: RichText(
                               text: TextSpan(
-                                text: 'Ritwik Ranjan',
+                                text: 'Ritwik ',
                                 children: [
+                                  TextSpan(
+                                    text: 'Ranjan',
+                                    style: TextStyle(
+                                        backgroundColor: Colors.white70,
+                                        color: Colors.black87,
+                                        fontWeight: FontWeight.w700,
+                                        height: 1.8),
+                                  ),
                                   TextSpan(
                                     text: '\nLead Organizer, VIHAAN',
                                     style: contactUsTextStyle,
@@ -87,53 +95,6 @@ class ContactUs extends StatelessWidget {
                                   ),
                                   TextSpan(
                                     text: '\nritwikr@ieee.org',
-                                    style: contactUsTextStyle,
-                                  ),
-                                ],
-                                style: TextStyle(
-                                  color: Colors.white70,
-                                  fontFamily: 'NunitoSans',
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 22,
-                                  height: 1.2,
-                                ),
-                              ),
-                            ),
-                          )
-                        ],
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              Flexible(
-                flex: 2,
-                child: Column(
-                  children: [
-                    Container(
-                      child: Column(
-                        children: [
-                          Padding(
-                            padding: const EdgeInsets.all(8.0),
-                            child: RichText(
-                              text: TextSpan(
-                                text: 'Shubham Kumar',
-                                children: [
-                                  TextSpan(
-                                    text: '\nLead Organizer, VIHAAN',
-                                    style: contactUsTextStyle,
-                                  ),
-                                  TextSpan(
-                                    text:
-                                        '\nInduatrial Relations Coordinator,IEEE DTU',
-                                    style: contactUsTextStyle,
-                                  ),
-                                  TextSpan(
-                                    text: '\n+91 99535 69302',
-                                    style: contactUsTextStyle,
-                                  ),
-                                  TextSpan(
-                                    text: '\nshubhamgodleon@ieee.org',
                                     style: contactUsTextStyle,
                                   ),
                                 ],
@@ -182,16 +143,6 @@ class ContactUs extends StatelessWidget {
                     decorationThickness: 0.7,
                   ),
                 ),
-                // --------------- in Flutter
-                // Text(
-                //   ' in ',
-                //   style: TextStyle(fontSize: 16, color: Colors.white70),
-                // ),
-                // FlutterLogo(
-                //   size: 25,
-                // ),
-                // --------------- in Flutter
-
                 // InkWell(
                 //   onTap: () {
                 //     showDialog(

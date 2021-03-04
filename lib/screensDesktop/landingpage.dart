@@ -3,10 +3,7 @@ import 'dart:math';
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:simple_animations/simple_animations.dart';
-import 'package:universal_html/html.dart';
 import 'package:vihaan_new/widgets/animatedWave.dart';
-import 'package:vihaan_new/widgets/devfolio_button.dart';
-import 'package:vihaan_new/widgets/hyperlinks.dart';
 
 class AnimatedBackground extends StatelessWidget {
   @override
@@ -89,7 +86,7 @@ class LandingPageContent extends StatelessWidget {
                   children: [
                     Flexible(
                       child: Container(
-                        child: Image.network('images/vihaan.png'),
+                        child: Image.asset('images/vihaan.png'),
                         constraints: BoxConstraints(
                           maxHeight: 400,
                         ),
@@ -124,8 +121,9 @@ class LandingPageContent extends StatelessWidget {
                     Row(
                       mainAxisSize: MainAxisSize.min,
                       children: [
-                        Flexible(flex: 3, child: DevfolioButton()
-                            /*Padding(
+                        Flexible(
+                          flex: 3,
+                          child: Padding(
                             padding: const EdgeInsets.all(8.0),
                             child: Material(
                               elevation: 8,
@@ -147,8 +145,8 @@ class LandingPageContent extends StatelessWidget {
                                 )),
                               ),
                             ),
-                          ),*/
-                            ),
+                          ),
+                        ),
                         Flexible(
                           flex: 3,
                           child: Padding(
@@ -159,20 +157,19 @@ class LandingPageContent extends StatelessWidget {
                               clipBehavior: Clip.antiAlias,
                               shadowColor: Colors.black54,
                               borderRadius: BorderRadius.all(
-                                Radius.circular(5),
+                                Radius.circular(12),
                               ),
                               child: InkWell(
-                                onTap: ContactMails.becomeSponsor,
+                                onTap: () {},
                                 child: Container(
-                                  width: 310,
-                                  height: 45,
+                                  width: 170,
+                                  height: 48,
                                   child: Center(
                                       child: Text(
                                     "Become a Sponsor",
                                     style: TextStyle(
                                         color: Colors.white,
-                                        fontWeight: FontWeight.w500,
-                                        fontSize: 20),
+                                        fontWeight: FontWeight.bold),
                                   )),
                                 ),
                               ),

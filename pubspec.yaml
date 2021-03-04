@@ -22,8 +22,6 @@ dependencies:
   animated_text_kit: ^3.1.0
   timelines: ^0.0.2+1
   url_launcher: ^5.7.10
-  universal_html: ^1.2.4
-
 
 dev_dependencies:
   flutter_test:

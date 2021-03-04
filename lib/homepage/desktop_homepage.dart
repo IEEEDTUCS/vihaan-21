@@ -192,7 +192,6 @@ class _DesktopHomePageState extends State<DesktopHomePage> {
                     index: 7,
                     child: Container(
                       width: MediaQuery.of(context).size.width,
-                      color: Colors.white,
                       child: Stack(children: [Faq()]),
                     ),
                   ),
@@ -275,7 +274,7 @@ class _DesktopHomePageState extends State<DesktopHomePage> {
 
           // Social Media Panel
           Positioned(
-            top: _height / 4,
+            top: 80,
             //left: 25,
             right: 20,
             child: Container(

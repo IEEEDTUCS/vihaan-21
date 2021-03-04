@@ -1,16 +1,46 @@
-# vihaan_new
+# [Vihaan](https://vihaan.ieeedtu.in)
+Website made by the students of [IEEE DTU](https://ieeedtu.in/) for Vihaan, a 24 hour hackathon providing budding programmers to come up unique solutions to interesting problems using various technological know-hows.
 
-A new Flutter project.
+## Technologies Used
+| Technology        | Home Page         |
+| -                 | -                 |
+| Flutter Web | https://flutter.dev/web |
+| Firebase | https://firebase.google.com |
 
-## Getting Started
+## Deploying Locally
++ Ensure that you have a working instance of Flutter web on your machine, if not, visit [here](https://flutter.dev/docs/get-started/web)
++ Clone the repository (master branch)
++ Run the following commands at the root of the project :-
+    ```
+    flutter pub get
+    flutter run
+    ```
 
-This project is a starting point for a Flutter application.
+## Project Structure
+#### Source Code
++ `/lib/main.dart` -> Runner file
++ `/lib/widgets/` -> Components to be rendered in various pages
++ `/lib/screensMobile/` -> Pages to be shown in the mobile version of the website
++ `/lib/screensDesktop/` -> Pages to be shown in the desktop version of the website
++ `/lib/homepage/` -> Router that routes to desktop/mobile version of the website depending on the device
+#### Assets
++ `/images/` -> Images used in the project
++ `/fonts/` -> Font files used in the project
++ `/test/` -> Prototypes to test out new features
+#### Meta Files
++ `/app/` -> Flutter and Gradle
++ `/.vscode/` -> [VSCode](https://code.visualstudio.com)/[VSCodium](https://vscodium.com)
++ `/ios/` -> IOS build of Flutter 
++ `/web/` -> Web build of Flutter 
++ `/android/`-> Android build of Flutter
++ `/.firebase/` -> hosting and Firebase
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Contributors
+| Contributor       | Github            |
+| -                 | -                 |
+| Ritwik Ranjan | https://github.com/ritwikranjan |
+| Hemang Sinha | https://github.com/hemangdtu |
+| Garvit Kansal | https://github.com/helewrer3 |
+| Shubham Shrivastava | https://github.com/Shubham6013 |
+| Vaibhav Srivastava | https://github.com/V2107v |
+| Ansh Agrawal | https://github.com/anshagrawal343 |

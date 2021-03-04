@@ -58,12 +58,8 @@ class ContactUs extends StatelessWidget {
                   ),
                 ),
               ),
-            ],
-          ),
-          Row(
-            children: [
               Flexible(
-                flex: 2,
+                flex: 3,
                 child: Column(
                   children: [
                     Container(
@@ -116,57 +112,10 @@ class ContactUs extends StatelessWidget {
                     ),
                   ],
                 ),
-              ),
-              Flexible(
-                flex: 2,
-                child: Column(
-                  children: [
-                    Container(
-                      child: Column(
-                        children: [
-                          Padding(
-                            padding: const EdgeInsets.all(8.0),
-                            child: RichText(
-                              text: TextSpan(
-                                text: 'Shubham Kumar',
-                                children: [
-                                  TextSpan(
-                                    text: '\nLead Organizer, VIHAAN',
-                                    style: contactUsTextStyle,
-                                  ),
-                                  TextSpan(
-                                    text:
-                                        '\nInduatrial Relations Coordinator, IEEE DTU',
-                                    style: contactUsTextStyle,
-                                  ),
-                                  TextSpan(
-                                    text: '\n+91 99535 69302',
-                                    style: contactUsTextStyle,
-                                  ),
-                                  TextSpan(
-                                    text: '\nshubhamgodleon@ieee.org',
-                                    style: contactUsTextStyle,
-                                  ),
-                                ],
-                                style: TextStyle(
-                                  color: Colors.white70,
-                                  fontFamily: 'NunitoSans',
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 22,
-                                  height: 1.2,
-                                ),
-                              ),
-                            ),
-                          )
-                        ],
-                      ),
-                    ),
-                  ],
-                ),
               )
             ],
           ),
-          SizedBox(height: 40),
+          SizedBox(height: 50),
           Center(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -178,27 +127,18 @@ class ContactUs extends StatelessWidget {
                 Column(
                   children: [
                     Text(
-                      'developed',
+                      'developed with ',
                       style: TextStyle(fontSize: 16, color: Colors.white70),
                     ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Text(
-                          'with ',
-                          style: TextStyle(fontSize: 16, color: Colors.white70),
-                        ),
-                        RichText(
-                          text: TextSpan(
-                            text: '❤',
-                            style: TextStyle(fontSize: 25, color: Colors.red),
-                          ),
-                        ),
-                        Text(
-                          ' by ',
-                          style: TextStyle(fontSize: 16, color: Colors.white70),
-                        ),
-                      ],
+                    RichText(
+                      text: TextSpan(
+                        text: '❤',
+                        style: TextStyle(fontSize: 25, color: Colors.red),
+                      ),
+                    ),
+                    Text(
+                      ' by ',
+                      style: TextStyle(fontSize: 16, color: Colors.white70),
                     ),
                   ],
                 ),
@@ -212,20 +152,6 @@ class ContactUs extends StatelessWidget {
                     decorationThickness: 0.7,
                   ),
                 ),
-                // --------------- in Flutter
-                // Row(
-                //   mainAxisAlignment: MainAxisAlignment.center,
-                //   children: [
-                //     Text(
-                //       ' in ',
-                //       style: TextStyle(fontSize: 16, color: Colors.white70),
-                //     ),
-                //     FlutterLogo(
-                //       size: 25,
-                //     ),
-                //   ],
-                // ),
-                // --------------- in Flutter
                 // InkWell(
                 //   onTap: () {
                 //     showDialog(
