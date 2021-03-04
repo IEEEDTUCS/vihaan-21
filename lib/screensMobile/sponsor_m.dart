@@ -1,4 +1,5 @@
 import 'dart:math';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
@@ -9,11 +10,13 @@ class Sponsors extends StatelessWidget {
   Widget build(BuildContext context) {
     final width = MediaQuery.of(context).size.width;
     final double mrg = 4,
-        gold = min(300, width * 0.2),
-        silver = min(236, width * 0.15),
-        bronze = min(195, width * 0.125),
-        titleFont = min(width * 0.065, 90),
-        headingFont = min(width * 0.085, 110);
+        gold = width * 0.2,
+        silver = width * 0.15,
+        bronze = width * 0.125,
+        titleFont = max(width * 0.075, 60),
+        headingFont = max(width * 0.085, 68);
+
+    print(width);
 
     return Container(
       padding: EdgeInsets.all(16),
@@ -35,7 +38,7 @@ class Sponsors extends StatelessWidget {
             padding: const EdgeInsets.only(bottom: 12.0),
             child: Text(
               'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-              style: TextStyle(fontSize: 20, fontFamily: 'NunitoSans'),
+              style: TextStyle(fontSize: 15, fontFamily: 'NunitoSans'),
               textAlign: TextAlign.center,
             ),
           ),
@@ -43,7 +46,7 @@ class Sponsors extends StatelessWidget {
               height: 2,
               color: Colors.black12,
               margin: EdgeInsets.symmetric(horizontal: 350)),
-          SponsorTitle(title: 'GOLD', fnt: titleFont, clr: Colors.amber[500]),
+          SponsorTitle(title: 'GOLD', fnt: 38.00, clr: Colors.amber[500]),
           SingleChildScrollView(
             scrollDirection: Axis.horizontal,
             child: Row(
@@ -76,7 +79,7 @@ class Sponsors extends StatelessWidget {
           SizedBox(height: 15),
           SponsorTitle(
               title: 'SILVER',
-              fnt: titleFont,
+              fnt: 38.00,
               clr: Color.fromARGB(255, 192, 192, 192)),
           SingleChildScrollView(
             scrollDirection: Axis.horizontal,
@@ -115,7 +118,7 @@ class Sponsors extends StatelessWidget {
           SizedBox(height: 15),
           SponsorTitle(
               title: 'BRONZE',
-              fnt: titleFont,
+              fnt: 38.00,
               clr: Color.fromARGB(255, 205, 127, 50)),
           SingleChildScrollView(
             scrollDirection: Axis.horizontal,

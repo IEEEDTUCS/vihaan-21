@@ -25,11 +25,9 @@ class ProfileCard extends StatelessWidget {
           mainAxisSize: MainAxisSize.min,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Padding(
-              padding: const EdgeInsets.all(12.0),
+            Flexible(
               child: CircleAvatar(
-                maxRadius: 64.0,
-                minRadius: 20.0,
+                maxRadius: 80.0,
                 backgroundColor: Colors.white,
                 //radius: 60.0,
                 backgroundImage: AssetImage(imageAddress),

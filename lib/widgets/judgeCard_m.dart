@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:vihaan_new/widgets/vihaan_icons_icons.dart';
 
-class ProfileCard extends StatelessWidget {
-  ProfileCard(
+class JudgeCard extends StatelessWidget {
+  JudgeCard(
       {this.name,
       this.position,
       this.imageAddress,
       this.linkedInAddress,
-      this.facebookAddress});
+      this.twitterAddress});
 
   final String name;
   final String position;
   final String imageAddress;
   final String linkedInAddress;
-  final String facebookAddress;
+  final String twitterAddress;
 
   @override
   Widget build(BuildContext context) {
@@ -25,14 +25,12 @@ class ProfileCard extends StatelessWidget {
           mainAxisSize: MainAxisSize.min,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Padding(
-              padding: const EdgeInsets.all(12.0),
+            Flexible(
               child: CircleAvatar(
-                maxRadius: 64.0,
-                minRadius: 20.0,
+                maxRadius: 80.0,
                 backgroundColor: Colors.white,
                 //radius: 60.0,
-                backgroundImage: AssetImage(imageAddress),
+                backgroundImage: NetworkImage(imageAddress),
               ),
             ),
             Padding(
@@ -56,11 +54,11 @@ class ProfileCard extends StatelessWidget {
               children: [
                 if (linkedInAddress != null)
                   InkWell(onTap: () {}, child: Icon(VihaanIcons.linkedin)),
-                if (linkedInAddress != null && facebookAddress != null)
+                if (linkedInAddress != null && twitterAddress != null)
                   SizedBox(
                     width: 5,
                   ),
-                if (facebookAddress != null)
+                if (twitterAddress != null)
                   InkWell(onTap: () {}, child: Icon(VihaanIcons.twitter)),
               ],
             )
