@@ -3,7 +3,9 @@ import 'dart:math';
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:simple_animations/simple_animations.dart';
+import 'package:universal_html/html.dart';
 import 'package:vihaan_new/widgets/animatedWave.dart';
+import 'package:vihaan_new/widgets/devfolio_button.dart';
 
 class AnimatedBackground extends StatelessWidget {
   @override
@@ -121,9 +123,8 @@ class LandingPageContent extends StatelessWidget {
                     Row(
                       mainAxisSize: MainAxisSize.min,
                       children: [
-                        Flexible(
-                          flex: 3,
-                          child: Padding(
+                        Flexible(flex: 3, child: DevfolioButton()
+                            /*Padding(
                             padding: const EdgeInsets.all(8.0),
                             child: Material(
                               elevation: 8,
@@ -145,8 +146,8 @@ class LandingPageContent extends StatelessWidget {
                                 )),
                               ),
                             ),
-                          ),
-                        ),
+                          ),*/
+                            ),
                         Flexible(
                           flex: 3,
                           child: Padding(
