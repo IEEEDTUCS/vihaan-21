@@ -215,7 +215,7 @@ class _MobileHomePageState extends State<MobileHomePage> {
             _wrapScrollTag(
               index: 4,
               child: Container(
-                height: MediaQuery.of(context).size.height*2.25,
+                //height: MediaQuery.of(context).size.height*2.25,
                 width: MediaQuery.of(context).size.width,
 
                 child: Stack(
