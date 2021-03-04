@@ -25,19 +25,22 @@ class ProfileCard extends StatelessWidget {
           mainAxisSize: MainAxisSize.min,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            CircleAvatar(
-              maxRadius: 64.0,
-              minRadius: 20.0,
-              backgroundColor: Colors.white,
-              //radius: 60.0,
-              backgroundImage: NetworkImage(
-                  imageAddress), // https://github.com/hemangdtu/MiCardApp/blob/master/images/hemang.jpg?raw=true
+            Padding(
+              padding: const EdgeInsets.all(12.0),
+              child: CircleAvatar(
+                maxRadius: 64.0,
+                minRadius: 20.0,
+                backgroundColor: Colors.white,
+                //radius: 60.0,
+                backgroundImage: AssetImage(imageAddress),
+              ),
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Text(
                 name,
                 style: TextStyle(color: Colors.white, fontSize: 20),
+                textAlign: TextAlign.center,
               ),
             ),
             Padding(
@@ -45,6 +48,7 @@ class ProfileCard extends StatelessWidget {
               child: Text(
                 position,
                 style: TextStyle(color: Colors.white, fontSize: 15),
+                textAlign: TextAlign.center,
               ),
             ),
             Row(

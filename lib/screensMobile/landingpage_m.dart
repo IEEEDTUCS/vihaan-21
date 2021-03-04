@@ -5,13 +5,6 @@ import 'package:flutter/material.dart';
 import 'package:simple_animations/simple_animations.dart';
 import 'package:vihaan_new/widgets/animatedWave.dart';
 
-// class LandingPage extends StatelessWidget {
-//   @override
-//   Widget build(BuildContext context) {
-//     return Container();
-//   }
-// }
-
 class AnimatedBackground extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -59,7 +52,6 @@ class FancyBackgroundApp extends StatelessWidget {
           speed: 1.2,
           offset: pi / 2,
         )),
-        // Positioned.fill(child: Text("HEMANG")), // Testing
       ],
     );
   }
@@ -85,7 +77,6 @@ class LandingPageContent extends StatelessWidget {
           child: Padding(
             padding: EdgeInsets.symmetric(horizontal: 20),
             child: Column(
-              // crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Flexible(
@@ -94,7 +85,7 @@ class LandingPageContent extends StatelessWidget {
                   ),
                 ),
                 Text(
-                  'by IEEE DTU | April 2 - 4, 2021',
+                  'by IEEE DTU | April 9 - 11, 2021',
                   textScaleFactor: 1.25,
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
@@ -130,18 +121,15 @@ class LandingPageContent extends StatelessWidget {
                       borderRadius: BorderRadius.all(
                         Radius.circular(12),
                       ),
-                      child: InkWell(
-                        onTap: () {},
-                        child: Container(
-                          width: min(170, _width * 0.4),
-                          height: 48,
-                          child: Center(
-                            child: Text(
-                              "Register Now",
-                              style: TextStyle(
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.bold),
-                            ),
+                      child: Container(
+                        width: min(170, _width * 0.4),
+                        height: 48,
+                        child: Center(
+                          child: Text(
+                            "Register Now",
+                            style: TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold),
                           ),
                         ),
                       ),
@@ -171,19 +159,6 @@ class LandingPageContent extends StatelessWidget {
                       ),
                     )
                   ],
-                ),
-                Padding(
-                  padding: EdgeInsets.all(10.0),
-                  child: Align(
-                    alignment: Alignment.bottomCenter,
-                    child: Container(
-                      // height: _height * 0.60,
-                      // width: _width * 0.60,
-                      child: Image.asset(
-                        'images/Vihaan_Landing_Image.png',
-                      ),
-                    ),
-                  ),
                 ),
               ],
             ),

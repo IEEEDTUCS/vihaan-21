@@ -1,19 +1,24 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
+
 import 'package:scroll_to_index/scroll_to_index.dart';
+
 import 'package:vihaan_new/screensDesktop/TimelineSection.dart';
 import 'package:vihaan_new/screensDesktop/aboutus.dart';
 import 'package:vihaan_new/screensDesktop/contact_us.dart';
 import 'package:vihaan_new/screensDesktop/faq.dart';
+import 'package:vihaan_new/screensDesktop/judgesDesktop.dart';
 import 'package:vihaan_new/screensDesktop/landingpage.dart';
+import 'package:vihaan_new/screensDesktop/prizes.dart';
 import 'package:vihaan_new/screensDesktop/sponsors.dart';
 import 'package:vihaan_new/screensDesktop/team.dart';
 import 'package:vihaan_new/screensDesktop/tracks.dart';
+
 import 'package:vihaan_new/widgets/desktopNavbar.dart';
-import 'package:vihaan_new/screensDesktop/judgesDesktop.dart';
+import 'package:vihaan_new/widgets/hyperlinks.dart';
 import 'package:vihaan_new/widgets/revealing_soon.dart';
-import 'package:vihaan_new/screensDesktop/prizes.dart';
+import 'package:vihaan_new/widgets/vihaan_icons_icons.dart';
 
 class DesktopHomePage extends StatefulWidget {
   DesktopHomePage({Key key}) : super(key: key);
@@ -32,7 +37,6 @@ class _DesktopHomePageState extends State<DesktopHomePage> {
         controller: _controller,
         index: index,
         child: child,
-        //highlightColor: Colors.black.withOpacity(0.1),
       );
 
   @override
@@ -101,12 +105,25 @@ class _DesktopHomePageState extends State<DesktopHomePage> {
                     child: Container(
                       height: MediaQuery.of(context).size.height,
                       width: MediaQuery.of(context).size.width,
-                      color: Colors.blueGrey[800],
-                      child: Stack(
+                      color: Colors.purpleAccent,
+                      child: Column(
                         children: [
-                          Align(
-                            alignment: Alignment.center,
-                            child: Prizes()
+                          Text(
+                            'Prizes',
+                            style: TextStyle(
+                                fontSize: max(_width * 0.085, 68),
+                                fontWeight: FontWeight.w700,
+                                fontFamily: 'NunitoSans',
+                                color: Colors.white),
+                            textAlign: TextAlign.center,
+                          ),
+                          Padding(
+                            padding: EdgeInsets.only(bottom: 20),
+                            child: Align(
+                              alignment: Alignment.center,
+                              // child: TimelineSection(),
+                              child: RevealingSoon(),
+                            ),
                           ),
                         ],
                       ),
@@ -115,25 +132,26 @@ class _DesktopHomePageState extends State<DesktopHomePage> {
                   _wrapScrollTag(
                     index: 4,
                     child: Container(
-                      height: MediaQuery.of(context).size.height * 2.1,
+                      height: MediaQuery.of(context).size.height,
                       width: MediaQuery.of(context).size.width,
-                      child: Stack(
+                      color: Colors.amber,
+                      child: Column(
                         children: [
-                          Align(
-                            alignment: Alignment.center,
-                            child: TimelineSection(),
-                            // child: RevealingSoon(),
-                          ),
-                          Align(
-                            alignment: Alignment.topCenter,
-                            child: Text(
-                              'Timeline',
-                              style: TextStyle(
+                          Text(
+                            'Timeline',
+                            style: TextStyle(
                                 fontSize: max(_width * 0.085, 68),
                                 fontWeight: FontWeight.w700,
                                 fontFamily: 'NunitoSans',
-                              ),
-                              textAlign: TextAlign.center,
+                                color: Colors.black),
+                            textAlign: TextAlign.center,
+                          ),
+                          Padding(
+                            padding: EdgeInsets.only(bottom: 20),
+                            child: Align(
+                              alignment: Alignment.center,
+                              // child: TimelineSection(),
+                              child: RevealingSoon(),
                             ),
                           ),
                         ],
@@ -143,12 +161,22 @@ class _DesktopHomePageState extends State<DesktopHomePage> {
                   _wrapScrollTag(
                     index: 5,
                     child: Container(
-                      //height: MediaQuery.of(context).size.height,
+                      height: MediaQuery.of(context).size.height,
                       width: MediaQuery.of(context).size.width,
                       color: Colors.blueAccent,
-                      child: Stack(children: [
-                        Align(child: JudgeSection() //Judges(),
-                            ),
+                      child: Column(children: [
+                        Text(
+                          'Judges',
+                          style: TextStyle(
+                              fontSize: max(_width * 0.085, 68),
+                              fontWeight: FontWeight.w700,
+                              fontFamily: 'NunitoSans',
+                              color: Colors.amberAccent),
+                          textAlign: TextAlign.center,
+                        ),
+                        Align(
+                          child: RevealingSoon(),
+                        ),
                       ]),
                     ),
                   ),
@@ -242,6 +270,68 @@ class _DesktopHomePageState extends State<DesktopHomePage> {
                 ),
               )
             ]),
+          ),
+
+          // Social Media Panel
+          Positioned(
+            top: 80,
+            //left: 25,
+            right: 20,
+            child: Container(
+              height: max(_height * 0.3, 300),
+              width: max(_width * 0.03, 40),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(40),
+                color: Colors.black,
+              ),
+              // padding: EdgeInsets.only(
+              //   top: 9,
+              //   right: 25,
+              //   left: 25,
+              // ),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  InkWell(
+                    onTap: IEEEURLS.ieeedtufb,
+                    child: Icon(VihaanIcons.facebook, color: Colors.white),
+                  ),
+                  InkWell(
+                    onTap: IEEEURLS.ieeedtuinsta,
+                    child: Icon(VihaanIcons.instagram, color: Colors.white),
+                  ),
+                  InkWell(
+                    onTap: IEEEURLS.ieeedtutwitter,
+                    child: Icon(VihaanIcons.twitter, color: Colors.white),
+                  ),
+                  InkWell(
+                    onTap: IEEEURLS.ieeedtulinkedin,
+                    child: Icon(VihaanIcons.linkedin, color: Colors.white),
+                  ),
+                  InkWell(
+                    onTap: IEEEURLS.ieeedtumail,
+                    child: Icon(Icons.mail, color: Colors.white),
+                  ),
+                ],
+              ),
+            ),
+          ),
+          Positioned(
+            bottom: 30,
+            right: 30,
+            child: FloatingActionButton(
+              onPressed: () {
+                _controller.scrollToIndex(0);
+              },
+              backgroundColor: Colors.black,
+              hoverColor: Colors.purple[800],
+              splashColor: Colors.purple,
+              hoverElevation: 10,
+              child: Icon(
+                Icons.home,
+                size: 32,
+              ),
+            ),
           ),
         ],
       ),

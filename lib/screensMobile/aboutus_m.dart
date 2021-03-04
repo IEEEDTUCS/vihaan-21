@@ -28,6 +28,7 @@ class AboutUs extends StatelessWidget {
                             fontFamily: 'NunitoSans',
                             fontWeight: FontWeight.w700,
                             color: Colors.white),
+                        textAlign: TextAlign.center,
                       ),
                       SizedBox(height: 20),
                       Center(

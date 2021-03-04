@@ -26,10 +26,10 @@ class Sponsors extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Text(
-            'OUR PROUD\nSPONSORS',
+            'SPONSORS',
             style: TextStyle(
-              fontSize: 45,
-              fontWeight: FontWeight.bold,
+              fontSize: 50,
+              fontWeight: FontWeight.w700,
               fontFamily: 'NunitoSans',
             ),
             textAlign: TextAlign.center,
