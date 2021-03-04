@@ -6,6 +6,7 @@ import 'package:simple_animations/simple_animations.dart';
 import 'package:universal_html/html.dart';
 import 'package:vihaan_new/widgets/animatedWave.dart';
 import 'package:vihaan_new/widgets/devfolio_button.dart';
+import 'package:vihaan_new/widgets/hyperlinks.dart';
 
 class AnimatedBackground extends StatelessWidget {
   @override
@@ -158,19 +159,20 @@ class LandingPageContent extends StatelessWidget {
                               clipBehavior: Clip.antiAlias,
                               shadowColor: Colors.black54,
                               borderRadius: BorderRadius.all(
-                                Radius.circular(12),
+                                Radius.circular(5),
                               ),
                               child: InkWell(
-                                onTap: () {},
+                                onTap: ContactMails.becomeSponsor,
                                 child: Container(
-                                  width: 170,
-                                  height: 48,
+                                  width: 310,
+                                  height: 45,
                                   child: Center(
                                       child: Text(
                                     "Become a Sponsor",
                                     style: TextStyle(
                                         color: Colors.white,
-                                        fontWeight: FontWeight.bold),
+                                        fontWeight: FontWeight.w500,
+                                        fontSize: 20),
                                   )),
                                 ),
                               ),

@@ -46,3 +46,25 @@ class IEEEURLS {
     }
   }
 }
+
+class ContactMails {
+  static becomeSponsor() async {
+    const url = 'mailto:ritwikr@ieee.org';
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
+}
+
+class SponsorContacts {
+  static sponsorRosenfeld() async {
+    const url = 'https://rosenfeldmedia.com/';
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
+}

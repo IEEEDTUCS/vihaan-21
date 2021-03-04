@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:simple_animations/simple_animations.dart';
 import 'package:vihaan_new/widgets/animatedWave.dart';
 import 'package:vihaan_new/widgets/devfolio_button.dart';
+import 'package:vihaan_new/widgets/hyperlinks.dart';
 
 class AnimatedBackground extends StatelessWidget {
   @override
@@ -144,19 +145,20 @@ class LandingPageContent extends StatelessWidget {
                         clipBehavior: Clip.antiAlias,
                         shadowColor: Colors.black54,
                         borderRadius: BorderRadius.all(
-                          Radius.circular(12),
+                          Radius.circular(5),
                         ),
                         child: InkWell(
-                          onTap: () {},
+                          onTap: ContactMails.becomeSponsor,
                           child: Container(
-                            width: min(170, _width * 0.4),
-                            height: 48,
+                            width: 310,
+                            height: 45,
                             child: Center(
                                 child: Text(
                               "Become a Sponsor",
                               style: TextStyle(
                                   color: Colors.white,
-                                  fontWeight: FontWeight.bold),
+                                  fontWeight: FontWeight.w500,
+                                  fontSize: 20),
                             )),
                           ),
                         ),
@@ -165,6 +167,7 @@ class LandingPageContent extends StatelessWidget {
                   ),
                 if (_width <= 600)
                   Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       /*Material(
                       elevation: 8,
@@ -188,26 +191,29 @@ class LandingPageContent extends StatelessWidget {
                       ),
                     ),*/
                       DevfolioButton(),
-                      Padding(padding: EdgeInsets.only(right: 20)),
+                      Padding(
+                        padding: EdgeInsets.only(right: 20),
+                      ),
                       Material(
                         elevation: 8,
                         color: Colors.redAccent,
                         clipBehavior: Clip.antiAlias,
                         shadowColor: Colors.black54,
                         borderRadius: BorderRadius.all(
-                          Radius.circular(12),
+                          Radius.circular(5),
                         ),
                         child: InkWell(
                           onTap: () {},
                           child: Container(
-                            width: min(170, _width * 0.4),
-                            height: 48,
+                            width: 310,
+                            height: 45,
                             child: Center(
                                 child: Text(
                               "Become a Sponsor",
                               style: TextStyle(
                                   color: Colors.white,
-                                  fontWeight: FontWeight.bold),
+                                  fontWeight: FontWeight.w500,
+                                  fontSize: 20),
                             )),
                           ),
                         ),
