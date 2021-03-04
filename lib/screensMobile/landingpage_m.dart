@@ -112,7 +112,7 @@ class LandingPageContent extends StatelessWidget {
                     ),
                   ),
                 ),
-                if (_width > 600)
+                if (_width > 700)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -165,7 +165,7 @@ class LandingPageContent extends StatelessWidget {
                       )
                     ],
                   ),
-                if (_width <= 600)
+                if (_width <= 700)
                   Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
