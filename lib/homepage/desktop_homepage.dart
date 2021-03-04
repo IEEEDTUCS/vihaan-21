@@ -192,6 +192,7 @@ class _DesktopHomePageState extends State<DesktopHomePage> {
                     index: 7,
                     child: Container(
                       width: MediaQuery.of(context).size.width,
+                      color: Colors.white,
                       child: Stack(children: [Faq()]),
                     ),
                   ),

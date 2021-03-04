@@ -329,7 +329,7 @@ class _MobileHomePageState extends State<MobileHomePage> {
               index: 7,
               child: Container(
                 width: MediaQuery.of(context).size.width,
-                // color: Colors.blue,
+                color: Colors.white,
                 child: Stack(
                   children: [
                     Faq(),
