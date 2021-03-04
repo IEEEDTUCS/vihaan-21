@@ -105,26 +105,23 @@ class _DesktopHomePageState extends State<DesktopHomePage> {
                     child: Container(
                       height: MediaQuery.of(context).size.height,
                       width: MediaQuery.of(context).size.width,
-                      color: Colors.purpleAccent,
-                      child: Column(
+                      color: Colors.blue,
+                      child: Stack(
                         children: [
+                          //NOTE: Remove the Text property when replacing the 'RevealingSoon()' with actual class
                           Text(
                             'Prizes',
                             style: TextStyle(
                                 fontSize: max(_width * 0.085, 68),
                                 fontWeight: FontWeight.w700,
                                 fontFamily: 'NunitoSans',
-                                color: Colors.white),
+                                color: Colors.black),
                             textAlign: TextAlign.center,
                           ),
-                          Padding(
-                            padding: EdgeInsets.only(bottom: 20),
-                            child: Align(
-                              alignment: Alignment.center,
-                              // child: TimelineSection(),
-                              child: RevealingSoon(),
-                            ),
-                          ),
+                          Align(
+                            alignment: Alignment.center,
+                            child: RevealingSoon(),
+                          )
                         ],
                       ),
                     ),

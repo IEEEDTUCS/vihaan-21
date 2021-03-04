@@ -3,15 +3,15 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:scroll_to_index/scroll_to_index.dart';
 import 'package:vihaan_new/screensmobile/aboutus_m.dart';
-
 import 'package:vihaan_new/screensmobile/judges_m.dart';
 import 'package:vihaan_new/screensmobile/tracks_m.dart';
 import 'package:vihaan_new/screensmobile/sponsor_m.dart';
-
 import 'package:vihaan_new/screensmobile/faq_m.dart';
 import 'package:vihaan_new/screensmobile/landingpage_m.dart';
 import 'package:vihaan_new/screensmobile/sponsor_m.dart';
 import 'package:vihaan_new/screensmobile/team_m.dart';
+import 'package:vihaan_new/screensmobile/team_m.dart';
+import 'package:vihaan_new/screensMobile/prizes.dart';
 
 import 'package:vihaan_new/screensmobile/contactus_m.dart';
 import 'package:vihaan_new/widgets/revealing_soon.dart';
@@ -229,12 +229,13 @@ class _MobileHomePageState extends State<MobileHomePage> {
             _wrapScrollTag(
               index: 3,
               child: Container(
-                height: MediaQuery.of(context).size.height,
+                height: MediaQuery.of(context).size.height*1.75,
                 width: MediaQuery.of(context).size.width,
-                color: Colors.purpleAccent,
-                child: Column(
+                color: Colors.blue,
+                child: Stack(
                   children: [
-                    Text(
+                     //NOTE: Remove the Text property when replacing the 'RevealingSoon()' with actual class
+                     Text(
                       'Prizes',
                       style: TextStyle(
                           fontSize: max(_width * 0.085, 68),
@@ -243,14 +244,10 @@ class _MobileHomePageState extends State<MobileHomePage> {
                           color: Colors.white),
                       textAlign: TextAlign.center,
                     ),
-                    Padding(
-                      padding: EdgeInsets.only(bottom: 20),
-                      child: Align(
-                        alignment: Alignment.center,
-                        // child: TimelineSection(),
-                        child: RevealingSoon(),
-                      ),
-                    ),
+                    Align(
+                      alignment: Alignment.center,
+                      child: RevealingSoon(),
+                    )
                   ],
                 ),
               ),
