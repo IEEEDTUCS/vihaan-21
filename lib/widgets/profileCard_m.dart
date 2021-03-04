@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:vihaan_new/widgets/vihaan_icons_icons.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class ProfileCard extends StatelessWidget {
   ProfileCard(
@@ -25,19 +26,20 @@ class ProfileCard extends StatelessWidget {
           mainAxisSize: MainAxisSize.min,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            CircleAvatar(
-              maxRadius: 64.0,
-              minRadius: 20.0,
-              backgroundColor: Colors.white,
-              //radius: 60.0,
-              backgroundImage: NetworkImage(
-                  imageAddress), // https://github.com/hemangdtu/MiCardApp/blob/master/images/hemang.jpg?raw=true
+            Flexible(
+              child: CircleAvatar(
+                maxRadius: 80.0,
+                backgroundColor: Colors.white,
+                //radius: 60.0,
+                backgroundImage: AssetImage(imageAddress),
+              ),
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Text(
                 name,
                 style: TextStyle(color: Colors.white, fontSize: 20),
+                textAlign: TextAlign.center,
               ),
             ),
             Padding(
@@ -45,13 +47,17 @@ class ProfileCard extends StatelessWidget {
               child: Text(
                 position,
                 style: TextStyle(color: Colors.white, fontSize: 15),
+                textAlign: TextAlign.center,
               ),
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 if (linkedInAddress != null)
-                  InkWell(onTap: () {}, child: Icon(VihaanIcons.linkedin)),
+                  InkWell(onTap: () {
+                   launch(linkedInAddress);
+                      
+                  }, child: Icon(VihaanIcons.linkedin)),
                 if (linkedInAddress != null && facebookAddress != null)
                   SizedBox(
                     width: 5,
