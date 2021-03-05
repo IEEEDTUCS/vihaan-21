@@ -2,24 +2,21 @@ import 'package:flutter/material.dart';
 import 'package:timelines/timelines.dart';
 
 var dates = [
-  "16th March 11:00 AM",
-  "22nd March 11:59 PM",
-  "21st April\n11:00 AM Onwards",
-  "25th April 11:00 PM",
-  "26th April 11:00 AM",
+  "8th March 2021",
+  "28th March 2021",
+  "6th - 8th\nApril 2021",
+  "9 - 11th\nApril 2021",
 ];
 var events = [
   "Invite friends and devs, create a team,\nand put on your thinking caps while we\nreview your entries.",
   "It's time to roll the wheels!",
   "We start sending you the confirmation\nemails. Sit tight and set your eyes on the\ninbox as you need to confirm your RSVPs\nwithin 4 days in order to join in.",
   "Last Chance to confirm your RSVP\n& your presence in Central India's\nLargest Community Hackathon.",
-  "Vihaan's Stage will lay set, so\ngather your toolkit and expertise to\nmaze the audience.",
 ];
 var eventHeadings = [
-  "Registration Started",
-  "Registration Ended",
-  "Team Confirmation Rollout\n& RSVP Start",
-  "RSVP End Date",
+  "Registration Begins",
+  "Registration Ends",
+  "Team Confirmation Rollout",
   "Check In! Let's Hack",
 ];
 var nodePoints = [
@@ -133,7 +130,7 @@ class _TimelineSectionState extends State<TimelineSection> {
           },
           connectorStyleBuilder: (context, index) => ConnectorStyle.solidLine,
           indicatorStyleBuilder: (context, index) => IndicatorStyle.dot,
-          itemCount: 5,
+          itemCount: 4,
         ),
       ),
     );

@@ -2,6 +2,7 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:scroll_to_index/scroll_to_index.dart';
+import 'package:vihaan_new/screensDesktop/TimelineSection.dart';
 import 'package:vihaan_new/screensDesktop/aboutus.dart';
 import 'package:vihaan_new/screensDesktop/contact_us.dart';
 import 'package:vihaan_new/screensDesktop/faq.dart';
@@ -126,10 +127,10 @@ class _DesktopHomePageState extends State<DesktopHomePage> {
                   _wrapScrollTag(
                     index: 4,
                     child: Container(
-                      height: MediaQuery.of(context).size.height,
                       width: MediaQuery.of(context).size.width,
                       color: Colors.amber,
                       child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Text(
                             'Timeline',
@@ -144,8 +145,8 @@ class _DesktopHomePageState extends State<DesktopHomePage> {
                             padding: EdgeInsets.only(bottom: 20),
                             child: Align(
                               alignment: Alignment.center,
-                              // child: TimelineSection(),
-                              child: RevealingSoon(),
+                              child: Container(child: TimelineSection()),
+                              // child: RevealingSoon(),
                             ),
                           ),
                         ],

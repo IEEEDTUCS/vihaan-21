@@ -203,7 +203,7 @@ class LandingPageContent extends StatelessWidget {
                           Radius.circular(5),
                         ),
                         child: InkWell(
-                          onTap: () {},
+                          onTap: ContactMails.becomeSponsor,
                           child: Container(
                             width: 310,
                             height: 45,
