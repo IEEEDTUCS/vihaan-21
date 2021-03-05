@@ -12,7 +12,10 @@ import 'package:vihaan_new/screensDesktop/prizes.dart';
 import 'package:vihaan_new/screensDesktop/sponsors.dart';
 import 'package:vihaan_new/screensDesktop/team.dart';
 import 'package:vihaan_new/screensDesktop/tracks.dart';
-import 'package:vihaan_new/widgets/desktopNavbarmport 'package:vihaan_new/widgets/vihaan_icons_icons.dart';
+import 'package:vihaan_new/widgets/desktopNavbar.dart';
+import 'package:vihaan_new/widgets/hyperlinks.dart';
+import 'package:vihaan_new/widgets/revealing_soon.dart';
+import 'package:vihaan_new/widgets/vihaan_icons_icons.dart';
 
 class DesktopHomePage extends StatefulWidget {
   DesktopHomePage({Key key}) : super(key: key);
