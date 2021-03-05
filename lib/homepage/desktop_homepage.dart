@@ -126,10 +126,10 @@ class _DesktopHomePageState extends State<DesktopHomePage> {
                   _wrapScrollTag(
                     index: 4,
                     child: Container(
-                      height: MediaQuery.of(context).size.height,
                       width: MediaQuery.of(context).size.width,
                       color: Colors.amber,
                       child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Text(
                             'Timeline',
@@ -144,8 +144,8 @@ class _DesktopHomePageState extends State<DesktopHomePage> {
                             padding: EdgeInsets.only(bottom: 20),
                             child: Align(
                               alignment: Alignment.center,
-                              // child: TimelineSection(),
-                              child: RevealingSoon(),
+                              child: Container(child: TimelineSection()),
+                              // child: RevealingSoon(),
                             ),
                           ),
                         ],
