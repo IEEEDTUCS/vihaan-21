@@ -275,7 +275,7 @@ class _DesktopHomePageState extends State<DesktopHomePage> {
 
           // Social Media Panel
           Positioned(
-            top: 80,
+            top: _height / 4,
             //left: 25,
             right: 20,
             child: Container(
