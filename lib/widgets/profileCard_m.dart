@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:vihaan_new/widgets/vihaan_icons_icons.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class ProfileCard extends StatelessWidget {
   ProfileCard(
@@ -53,13 +54,24 @@ class ProfileCard extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 if (linkedInAddress != null)
-                  InkWell(onTap: () {}, child: Icon(VihaanIcons.linkedin)),
+                  InkWell(
+                    onTap: () => launch(linkedInAddress),
+                    child: Icon(
+                      VihaanIcons.linkedin,
+                      color: Colors.white,
+                    ),
+                  ),
                 if (linkedInAddress != null && facebookAddress != null)
                   SizedBox(
                     width: 5,
                   ),
                 if (facebookAddress != null)
-                  InkWell(onTap: () {}, child: Icon(VihaanIcons.twitter)),
+                  InkWell(
+                      onTap: () {},
+                      child: Icon(
+                        VihaanIcons.facebook,
+                        color: Colors.white,
+                      )),
               ],
             )
           ],
