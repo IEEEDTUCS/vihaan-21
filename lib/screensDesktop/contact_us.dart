@@ -73,6 +73,14 @@ class ContactUs extends StatelessWidget {
                                 text: 'Ritwik Ranjan',
                                 children: [
                                   TextSpan(
+                                    text: 'Ranjan',
+                                    style: TextStyle(
+                                        backgroundColor: Colors.white70,
+                                        color: Colors.black87,
+                                        fontWeight: FontWeight.w700,
+                                        height: 1.8),
+                                  ),
+                                  TextSpan(
                                     text: '\nLead Organizer, VIHAAN',
                                     style: contactUsTextStyle,
                                   ),
