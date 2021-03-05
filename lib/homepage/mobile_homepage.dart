@@ -2,18 +2,17 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:scroll_to_index/scroll_to_index.dart';
-import 'package:vihaan_new/screensmobile/aboutus_m.dart';
+import 'package:vihaan_new/screensMobile/aboutus_m.dart';
 
-import 'package:vihaan_new/screensmobile/judges_m.dart';
-import 'package:vihaan_new/screensmobile/tracks_m.dart';
-import 'package:vihaan_new/screensmobile/sponsor_m.dart';
+import 'package:vihaan_new/screensMobile/judges_m.dart';
+import 'package:vihaan_new/screensMobile/tracks_m.dart';
+import 'package:vihaan_new/screensMobile/sponsor_m.dart';
+import 'package:vihaan_new/screensMobile/faq_m.dart';
+import 'package:vihaan_new/screensMobile/landingpage_m.dart';
+import 'package:vihaan_new/screensMobile/team_m.dart';
+import 'package:vihaan_new/screensMobile/timelineSection_m.dart';
+import 'package:vihaan_new/screensMobile/contactus_m.dart';
 
-import 'package:vihaan_new/screensmobile/faq_m.dart';
-import 'package:vihaan_new/screensmobile/landingpage_m.dart';
-import 'package:vihaan_new/screensmobile/sponsor_m.dart';
-import 'package:vihaan_new/screensmobile/team_m.dart';
-
-import 'package:vihaan_new/screensmobile/contactus_m.dart';
 import 'package:vihaan_new/widgets/revealing_soon.dart';
 import 'package:vihaan_new/widgets/hyperlinks.dart';
 
@@ -258,9 +257,9 @@ class _MobileHomePageState extends State<MobileHomePage> {
             _wrapScrollTag(
               index: 4,
               child: Container(
-                height: MediaQuery.of(context).size.height,
+                // height: MediaQuery.of(context).size.height,
                 width: MediaQuery.of(context).size.width,
-                color: Colors.purpleAccent,
+                color: Colors.amber,
                 child: Column(
                   children: [
                     Text(
@@ -276,8 +275,8 @@ class _MobileHomePageState extends State<MobileHomePage> {
                       padding: EdgeInsets.only(bottom: 20),
                       child: Align(
                         alignment: Alignment.center,
-                        // child: TimelineSection(),
-                        child: RevealingSoon(),
+                        child: TimelineSection(),
+                        //child: RevealingSoon(),
                       ),
                     ),
                   ],
