@@ -71,14 +71,14 @@ class ContactUs extends StatelessWidget {
                               text: TextSpan(
                                 text: 'Ritwik Ranjan',
                                 children: [
-                                  TextSpan(
-                                    text: 'Ranjan',
-                                    style: TextStyle(
-                                        backgroundColor: Colors.white70,
-                                        color: Colors.black87,
-                                        fontWeight: FontWeight.w700,
-                                        height: 1.8),
-                                  ),
+                                  // TextSpan(
+                                  //   text: 'Ranjan',
+                                  //   style: TextStyle(
+                                  //       backgroundColor: Colors.white70,
+                                  //       color: Colors.black87,
+                                  //       fontWeight: FontWeight.w700,
+                                  //       height: 1.8),
+                                  // ),
                                   TextSpan(
                                     text: '\nLead Organizer, VIHAAN',
                                     style: contactUsTextStyle,
@@ -176,12 +176,12 @@ class ContactUs extends StatelessWidget {
                     style: TextStyle(fontSize: 25, color: Colors.red),
                   ),
                 ),
+                // Text(
+                //   ' by ',
+                //   style: TextStyle(fontSize: 16, color: Colors.white70),
+                // ),
                 Text(
-                  ' by ',
-                  style: TextStyle(fontSize: 16, color: Colors.white70),
-                ),
-                Text(
-                  'members of IEEE DTU',
+                  'by members of IEEE DTU',
                   style: TextStyle(
                     fontSize: 16,
                     color: Colors.white70,
