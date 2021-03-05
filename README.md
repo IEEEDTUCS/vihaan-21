@@ -1,5 +1,5 @@
 # [Vihaan](https://vihaan.ieeedtu.in)
-Website made by the students of [IEEE DTU](https://ieeedtu.in/) for Vihaan, a 24 hour hackathon providing budding programmers to come up unique solutions to interesting problems using various technological know-hows.
+Website made by the students of [IEEE DTU](https://ieeedtu.in/) for Vihaan, a 48 hour hackathon providing budding programmers to come up unique solutions to interesting problems using various technological know-hows.
 
 ## Technologies Used
 | Technology        | Home Page         |
