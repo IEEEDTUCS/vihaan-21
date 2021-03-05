@@ -67,4 +67,40 @@ class SponsorContacts {
       throw 'Could not launch $url';
     }
   }
+
+  static sponsorDevfolio() async {
+    const url = 'https://devfolio.co';
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
+
+  static sponsorPortis() async {
+    const url = 'https://www.portis.io';
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
+
+  static sponsorMatic() async {
+    const url = 'https://matic.network';
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
+
+  static sponsorTezos() async {
+    const url = 'https://tezos.com';
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
 }

@@ -3,6 +3,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:vihaan_new/widgets/sponsorCard.dart';
+import 'package:vihaan_new/widgets/hyperlinks.dart';
 
 class Sponsors extends StatelessWidget {
   @override
@@ -51,25 +52,12 @@ class Sponsors extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 SponsorCard(
-                    bx: gold,
-                    mrl: mrg,
-                    mrr: mrg,
-                    url: 'images/Vihaan_Aboutus.jpg'),
-                SponsorCard(
-                    bx: gold,
-                    mrl: mrg,
-                    mrr: mrg,
-                    url: 'images/Vihaan_Aboutus.jpg'),
-                SponsorCard(
-                    bx: gold,
-                    mrl: mrg,
-                    mrr: mrg,
-                    url: 'images/Vihaan_Aboutus.jpg'),
-                SponsorCard(
-                    bx: gold,
-                    mrl: mrg,
-                    mrr: mrg,
-                    url: 'images/Vihaan_Aboutus.jpg')
+                  bx: gold,
+                  mrl: mrg,
+                  mrr: mrg,
+                  url: 'images/sponsor_devfolio.jpg',
+                  link: SponsorContacts.sponsorDevfolio,
+                ),
               ],
             ),
           ),
@@ -85,30 +73,26 @@ class Sponsors extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 SponsorCard(
-                    bx: silver,
-                    mrl: mrg,
-                    mrr: mrg,
-                    url: 'images/Vihaan_Aboutus.jpg'),
+                  bx: silver,
+                  mrl: mrg,
+                  mrr: mrg,
+                  url: 'images/sponsor_matic.jpg',
+                  link: SponsorContacts.sponsorMatic,
+                ),
                 SponsorCard(
-                    bx: silver,
-                    mrl: mrg,
-                    mrr: mrg,
-                    url: 'images/Vihaan_Aboutus.jpg'),
+                  bx: silver,
+                  mrl: mrg,
+                  mrr: mrg,
+                  url: 'images/sponsor_portis.jpg',
+                  link: SponsorContacts.sponsorPortis,
+                ),
                 SponsorCard(
-                    bx: silver,
-                    mrl: mrg,
-                    mrr: mrg,
-                    url: 'images/Vihaan_Aboutus.jpg'),
-                SponsorCard(
-                    bx: silver,
-                    mrl: mrg,
-                    mrr: mrg,
-                    url: 'images/Vihaan_Aboutus.jpg'),
-                SponsorCard(
-                    bx: silver,
-                    mrl: mrg,
-                    mrr: mrg,
-                    url: 'images/Vihaan_Aboutus.jpg')
+                  bx: silver,
+                  mrl: mrg,
+                  mrr: mrg,
+                  url: 'images/sponsor_tezos.jpg',
+                  link: SponsorContacts.sponsorTezos,
+                ),
               ],
             ),
           ),
@@ -124,35 +108,12 @@ class Sponsors extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 SponsorCard(
-                    bx: bronze,
-                    mrl: mrg,
-                    mrr: mrg,
-                    url: 'images/Vihaan_Aboutus.jpg'),
-                SponsorCard(
-                    bx: bronze,
-                    mrl: mrg,
-                    mrr: mrg,
-                    url: 'images/Vihaan_Aboutus.jpg'),
-                SponsorCard(
-                    bx: bronze,
-                    mrl: mrg,
-                    mrr: mrg,
-                    url: 'images/Vihaan_Aboutus.jpg'),
-                SponsorCard(
-                    bx: bronze,
-                    mrl: mrg,
-                    mrr: mrg,
-                    url: 'images/Vihaan_Aboutus.jpg'),
-                SponsorCard(
-                    bx: bronze,
-                    mrl: mrg,
-                    mrr: mrg,
-                    url: 'images/Vihaan_Aboutus.jpg'),
-                SponsorCard(
-                    bx: bronze,
-                    mrl: mrg,
-                    mrr: mrg,
-                    url: 'images/Vihaan_Aboutus.jpg')
+                  bx: bronze,
+                  mrl: mrg,
+                  mrr: mrg,
+                  url: 'images/sponsor_rosenfeld.jpg',
+                  link: SponsorContacts.sponsorRosenfeld,
+                ),
               ],
             ),
           )
