@@ -23,27 +23,29 @@ class Sponsors extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Text(
-            'SPONSORS',
-            style: TextStyle(
-              fontSize: 50,
-              fontWeight: FontWeight.w700,
-              fontFamily: 'NunitoSans',
-            ),
-            textAlign: TextAlign.center,
-          ),
-          Padding(
-            padding: const EdgeInsets.only(bottom: 12.0),
+          Container(
             child: Text(
-              'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-              style: TextStyle(fontSize: 20, fontFamily: 'NunitoSans'),
-              textAlign: TextAlign.center,
+              'SPONSORS',
+              style: TextStyle(
+                  fontFamily: 'NunitoSans',
+                  fontSize: 50,
+                  color: Color.fromARGB(255, 0, 48, 76),
+                  fontWeight: FontWeight.w700),
             ),
           ),
           Container(
               height: 2,
               color: Colors.black12,
-              margin: EdgeInsets.symmetric(horizontal: 350)),
+              margin: EdgeInsets.fromLTRB(80, 0, 80, 10)),
+          // Padding(
+          //   padding: const EdgeInsets.only(bottom: 12.0),
+          //   child: Text(
+          //     'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+          //     style: TextStyle(fontSize: 20, fontFamily: 'NunitoSans'),
+          //     textAlign: TextAlign.center,
+          //   ),
+          // ),
+
           SponsorTitle(title: 'GOLD', fnt: titleFont, clr: Colors.amber[500]),
           SingleChildScrollView(
             scrollDirection: Axis.horizontal,

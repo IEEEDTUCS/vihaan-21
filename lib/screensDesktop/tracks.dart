@@ -14,7 +14,7 @@ class Tracks extends StatelessWidget {
         children: <Widget>[
           Container(
             child: Text(
-              'Tracks',
+              'TRACKS',
               style: TextStyle(
                   fontFamily: 'NunitoSans',
                   fontSize: 50,
@@ -25,7 +25,7 @@ class Tracks extends StatelessWidget {
           Container(
               height: 2,
               color: Colors.black12,
-              margin: EdgeInsets.fromLTRB(400, 0, 400, 10)),
+              margin: EdgeInsets.fromLTRB(80, 0, 80, 10)),
           SizedBox(height: 10),
           TrackCard(
             orient: 0,

@@ -4,14 +4,14 @@ import 'package:timelines/timelines.dart';
 var dates = [
   "8th March 2021",
   "28th March 2021",
-  "6th - 8th\nApril 2021",
+  "1st - 6th\nApril 2021",
   "9 - 11th\nApril 2021",
 ];
 var events = [
   "Invite friends and devs, create a team,\nand put on your thinking caps while we\nreview your entries.",
   "It's time to roll the wheels!",
-  "We start sending you the confirmation\nemails. Sit tight and set your eyes on the\ninbox as you need to confirm your RSVPs\nwithin 4 days in order to join in.",
-  "Last Chance to confirm your RSVP\n& your presence in Central India's\nLargest Community Hackathon.",
+  "The confirmation mails are sent and the top contestant teams are selected to particiapte in this 48 Hours showdown.",
+  "Welcome to the thunderdome of ideas flowing through the servers of Vihaan. With great participants, insightful judges and awesome webinars, have one of the greatest 48 Hours experience etched in your geeky life.",
 ];
 var eventHeadings = [
   "Registration Begins",

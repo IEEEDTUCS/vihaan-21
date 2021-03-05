@@ -4,14 +4,14 @@ import 'package:timelines/timelines.dart';
 var dates = [
   "8th March 2021",
   "28th March 2021",
-  "6th - 8th\nApril 2021",
+  "1st - 6th\nApril 2021",
   "9 - 11th\nApril 2021",
 ];
 var events = [
   "Invite friends and devs, create a team,\nand put on your thinking caps while we\nreview your entries.",
   "It's time to roll the wheels!",
-  "We start sending you the confirmation\nemails. Sit tight and set your eyes on the\ninbox as you need to confirm your RSVPs\nwithin 4 days in order to join in.",
-  "Last Chance to confirm your RSVP\n& your presence in Central India's\nLargest Community Hackathon.",
+  "The confirmation mails are sent and the top contestant\nteams are selected to particiapte in\nthis 48 Hours showdown.",
+  "Welcome to the thunderdome of ideas flowing\nthrough the servers of Vihaan. With\ngreat participants, insightful judges and awesome\nwebinars, have one of the greatest\n48 Hours experience\netched in your geeky life.",
 ];
 var eventHeadings = [
   "Registration Begins",
@@ -92,8 +92,10 @@ class _TimelineSectionState extends State<TimelineSection> {
           },
           contentsBuilder: (context, index) {
             return Padding(
-              padding: EdgeInsets.only(
-                  top: 28.0, bottom: 28.0, left: 15.0, right: 15.0),
+              padding: EdgeInsets.symmetric(
+                vertical: 28.0,
+                horizontal: 15.0,
+              ),
               child: Card(
                 color: Colors.white,
                 child: Padding(
@@ -118,7 +120,7 @@ class _TimelineSectionState extends State<TimelineSection> {
                             bottom: 28.0, left: 15.0, right: 15.0),
                         child: Text(
                           events[index],
-                          style: TextStyle(fontSize: 15),
+                          style: TextStyle(fontSize: 15, height: 1.5),
                           textAlign: TextAlign.center,
                         ),
                       ),

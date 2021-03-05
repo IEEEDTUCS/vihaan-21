@@ -103,15 +103,23 @@ class _DesktopHomePageState extends State<DesktopHomePage> {
                       color: Colors.purpleAccent,
                       child: Column(
                         children: [
-                          Text(
-                            'Prizes',
-                            style: TextStyle(
-                                fontSize: max(_width * 0.085, 68),
-                                fontWeight: FontWeight.w700,
-                                fontFamily: 'NunitoSans',
-                                color: Colors.white),
-                            textAlign: TextAlign.center,
+                          Padding(
+                            padding: EdgeInsets.only(top: 15),
+                            child: Container(
+                              child: Text(
+                                'PRIZES',
+                                style: TextStyle(
+                                    fontFamily: 'NunitoSans',
+                                    fontSize: 50,
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.w700),
+                              ),
+                            ),
                           ),
+                          Container(
+                              height: 2,
+                              color: Colors.black12,
+                              margin: EdgeInsets.fromLTRB(80, 0, 80, 10)),
                           Padding(
                             padding: EdgeInsets.only(bottom: 20),
                             child: Align(
@@ -132,15 +140,23 @@ class _DesktopHomePageState extends State<DesktopHomePage> {
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Text(
-                            'Timeline',
-                            style: TextStyle(
-                                fontSize: max(_width * 0.085, 68),
-                                fontWeight: FontWeight.w700,
-                                fontFamily: 'NunitoSans',
-                                color: Colors.black),
-                            textAlign: TextAlign.center,
+                          Padding(
+                            padding: EdgeInsets.only(top: 15),
+                            child: Container(
+                              child: Text(
+                                'TIMELINE',
+                                style: TextStyle(
+                                    fontFamily: 'NunitoSans',
+                                    fontSize: 50,
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.w700),
+                              ),
+                            ),
                           ),
+                          Container(
+                              height: 2,
+                              color: Colors.black12,
+                              margin: EdgeInsets.fromLTRB(80, 0, 80, 10)),
                           Padding(
                             padding: EdgeInsets.only(bottom: 20),
                             child: Align(
@@ -160,15 +176,23 @@ class _DesktopHomePageState extends State<DesktopHomePage> {
                       width: MediaQuery.of(context).size.width,
                       color: Colors.blueAccent,
                       child: Column(children: [
-                        Text(
-                          'Judges',
-                          style: TextStyle(
-                              fontSize: max(_width * 0.085, 68),
-                              fontWeight: FontWeight.w700,
-                              fontFamily: 'NunitoSans',
-                              color: Colors.amberAccent),
-                          textAlign: TextAlign.center,
+                        Padding(
+                          padding: EdgeInsets.only(top: 15),
+                          child: Container(
+                            child: Text(
+                              'JUDGES',
+                              style: TextStyle(
+                                  fontFamily: 'NunitoSans',
+                                  fontSize: 50,
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.w700),
+                            ),
+                          ),
                         ),
+                        Container(
+                            height: 2,
+                            color: Colors.black12,
+                            margin: EdgeInsets.fromLTRB(80, 0, 80, 10)),
                         Align(
                           child: RevealingSoon(),
                         ),

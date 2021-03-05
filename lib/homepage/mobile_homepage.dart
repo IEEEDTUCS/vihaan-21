@@ -233,20 +233,24 @@ class _MobileHomePageState extends State<MobileHomePage> {
                 color: Colors.purpleAccent,
                 child: Column(
                   children: [
-                    Text(
-                      'Prizes',
-                      style: TextStyle(
-                          fontSize: max(_width * 0.085, 68),
-                          fontWeight: FontWeight.w700,
-                          fontFamily: 'NunitoSans',
-                          color: Colors.white),
-                      textAlign: TextAlign.center,
+                    Container(
+                      child: Text(
+                        'PRIZES',
+                        style: TextStyle(
+                            fontFamily: 'NunitoSans',
+                            fontSize: max(_width * 0.075, 50),
+                            color: Colors.white,
+                            fontWeight: FontWeight.w700),
+                      ),
                     ),
+                    Container(
+                        height: 2,
+                        color: Colors.black12,
+                        margin: EdgeInsets.fromLTRB(80, 0, 80, 10)),
                     Padding(
                       padding: EdgeInsets.only(bottom: 20),
                       child: Align(
                         alignment: Alignment.center,
-                        // child: TimelineSection(),
                         child: RevealingSoon(),
                       ),
                     ),
@@ -262,15 +266,20 @@ class _MobileHomePageState extends State<MobileHomePage> {
                 color: Colors.amber,
                 child: Column(
                   children: [
-                    Text(
-                      'Timeline',
-                      style: TextStyle(
-                          fontSize: max(_width * 0.085, 68),
-                          fontWeight: FontWeight.w700,
-                          fontFamily: 'NunitoSans',
-                          color: Colors.white),
-                      textAlign: TextAlign.center,
+                    Container(
+                      child: Text(
+                        'TIMELINE',
+                        style: TextStyle(
+                            fontFamily: 'NunitoSans',
+                            fontSize: max(_width * 0.075, 60),
+                            color: Colors.white,
+                            fontWeight: FontWeight.w700),
+                      ),
                     ),
+                    Container(
+                        height: 2,
+                        color: Colors.black12,
+                        margin: EdgeInsets.fromLTRB(80, 0, 80, 10)),
                     Padding(
                       padding: EdgeInsets.only(bottom: 20),
                       child: Align(
@@ -291,15 +300,20 @@ class _MobileHomePageState extends State<MobileHomePage> {
                 color: Colors.purpleAccent,
                 child: Column(
                   children: [
-                    Text(
-                      'Judges',
-                      style: TextStyle(
-                          fontSize: max(_width * 0.085, 68),
-                          fontWeight: FontWeight.w700,
-                          fontFamily: 'NunitoSans',
-                          color: Colors.white),
-                      textAlign: TextAlign.center,
+                    Container(
+                      child: Text(
+                        'JUDGES',
+                        style: TextStyle(
+                            fontFamily: 'NunitoSans',
+                            fontSize: max(_width * 0.075, 50),
+                            color: Colors.white,
+                            fontWeight: FontWeight.w700),
+                      ),
                     ),
+                    Container(
+                        height: 2,
+                        color: Colors.black12,
+                        margin: EdgeInsets.fromLTRB(80, 0, 80, 10)),
                     Padding(
                       padding: EdgeInsets.only(bottom: 20),
                       child: Align(

@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:vihaan_new/widgets/profileCard.dart';
 
@@ -8,18 +10,22 @@ class TeamSection extends StatelessWidget {
     return Column(
       children: [
         Padding(
-          padding: const EdgeInsets.only(top: 8.0),
-          child: Center(
-              child: Text(
-            "OUR TEAM",
-            style: TextStyle(
-              fontSize: 50,
-              color: Colors.white,
-              fontFamily: 'NunitoSans',
-              fontWeight: FontWeight.w700,
+          padding: EdgeInsets.only(top: 15),
+          child: Container(
+            child: Text(
+              'OUR TEAM',
+              style: TextStyle(
+                  fontFamily: 'NunitoSans',
+                  fontSize: 50,
+                  color: Colors.white,
+                  fontWeight: FontWeight.w700),
             ),
-          )),
+          ),
         ),
+        Container(
+            height: 2,
+            color: Colors.black12,
+            margin: EdgeInsets.fromLTRB(80, 0, 80, 10)),
         Column(
           mainAxisSize: MainAxisSize.min,
           children: [

@@ -17,8 +17,6 @@ class Sponsors extends StatelessWidget {
         titleFont = max(width * 0.075, 60),
         headingFont = max(width * 0.085, 68);
 
-    print(width);
-
     return Container(
       padding: EdgeInsets.all(16),
       color: Color.fromARGB(255, 255, 255, 240),
@@ -26,23 +24,28 @@ class Sponsors extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Text(
-            'SPONSORS',
-            style: TextStyle(
-              fontSize: 50,
-              fontWeight: FontWeight.w700,
-              fontFamily: 'NunitoSans',
-            ),
-            textAlign: TextAlign.center,
-          ),
-          Padding(
-            padding: const EdgeInsets.only(bottom: 12.0),
+          Container(
             child: Text(
-              'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-              style: TextStyle(fontSize: 15, fontFamily: 'NunitoSans'),
-              textAlign: TextAlign.center,
+              'SPONSORS',
+              style: TextStyle(
+                  fontFamily: 'NunitoSans',
+                  fontSize: max(width * 0.075, 50),
+                  color: Color.fromARGB(255, 0, 48, 76),
+                  fontWeight: FontWeight.w700),
             ),
           ),
+          Container(
+              height: 2,
+              color: Colors.black12,
+              margin: EdgeInsets.fromLTRB(80, 0, 80, 10)),
+          // Padding(
+          //   padding: const EdgeInsets.only(bottom: 12.0),
+          //   child: Text(
+          //     'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+          //     style: TextStyle(fontSize: 15, fontFamily: 'NunitoSans'),
+          //     textAlign: TextAlign.center,
+          //   ),
+          // ),
           Container(
               height: 2,
               color: Colors.black12,
