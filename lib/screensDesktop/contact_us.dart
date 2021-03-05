@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:vihaan_new/widgets/profileCard.dart';
 
 class ContactUs extends StatelessWidget {
   List<String> team_name = [
