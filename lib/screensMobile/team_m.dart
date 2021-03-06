@@ -136,6 +136,13 @@ class TeamSection extends StatelessWidget {
               linkedInAddress:
                   "https://www.linkedin.com/in/hemang-sinha-0485081a4/",
             ),
+            ProfileCard(
+              name: "Priyansh Tyagi",
+              position: "Publicity Team Lead",
+              imageAddress: "images/team_priyansh.jpg",
+              linkedInAddress:
+                  "https://www.linkedin.com/in/priyansh-t-3336b1168/",
+            ),
           ],
         ),
       ],

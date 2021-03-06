@@ -169,6 +169,21 @@ class TeamSection extends StatelessWidget {
                 ],
               ),
             ),
+            Flexible(
+              flex: 1,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  ProfileCard(
+                    name: "Priyansh Tyagi",
+                    position: "Publicity Team Lead",
+                    imageAddress: "images/team_priyansh.jpg",
+                    linkedInAddress:
+                        "https://www.linkedin.com/in/priyansh-t-3336b1168/",
+                  ),
+                ],
+              ),
+            ),
           ],
         ),
       ],

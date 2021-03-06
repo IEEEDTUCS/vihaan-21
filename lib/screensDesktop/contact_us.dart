@@ -132,7 +132,7 @@ class ContactUs extends StatelessWidget {
                                   ),
                                   TextSpan(
                                     text:
-                                        '\nInduatrial Relations Coordinator,IEEE DTU',
+                                        '\Industrial Relations Coordinator,IEEE DTU',
                                     style: contactUsTextStyle,
                                   ),
                                   TextSpan(
@@ -181,7 +181,7 @@ class ContactUs extends StatelessWidget {
                 //   style: TextStyle(fontSize: 16, color: Colors.white70),
                 // ),
                 Text(
-                  'by members of IEEE DTU',
+                  ' by members of IEEE DTU',
                   style: TextStyle(
                     fontSize: 16,
                     color: Colors.white70,
