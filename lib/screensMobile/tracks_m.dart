@@ -24,56 +24,56 @@ class Tracks extends StatelessWidget {
             ),
           ),
           Container(
-              height: 2,
               color: Colors.black12,
               margin: EdgeInsets.fromLTRB(80, 0, 80, 10)),
           SizedBox(height: 10),
           TrackCard(
-            orient: 0,
-            width: width,
-            icon: Icons.add_box,
-            name: 'Healthcare',
-            detail: 'Description',
+            width: width * 0.75,
+            image: 'images/track_agriculture.png',
+            name: 'Agriculture and Rural Development',
+            detail: 'Click to know more',
           ),
           SizedBox(height: 10),
           TrackCard(
-            orient: 1,
-            width: width,
-            icon: Icons.add_box,
-            name: 'Education',
-            detail: 'Description',
-          ),
-          SizedBox(height: 10),
-          TrackCard(
-            orient: 0,
-            width: width,
-            icon: Icons.add_box,
+            width: width * 0.75,
+            image: 'images/track_blockchain.png',
             name: 'Blockchain',
-            detail: 'Description',
+            detail: 'Click to know more',
           ),
           SizedBox(height: 10),
           TrackCard(
-            orient: 1,
-            width: width,
-            icon: Icons.add_box,
-            name: 'Transport',
-            detail: 'Description',
+            width: width * 0.75,
+            image: 'images/track_education.png',
+            name: 'Education',
+            detail: 'Click to know more',
           ),
           SizedBox(height: 10),
           TrackCard(
-            orient: 0,
-            width: width,
-            icon: Icons.add_box,
+            width: width * 0.75,
+            image: 'images/track_healthcare.png',
+            name: 'Healthcare',
+            detail: 'Click to know more',
+          ),
+          SizedBox(height: 10),
+          TrackCard(
+            width: width * 0.75,
+            image: 'images/track_security.png',
             name: 'Security',
-            detail: 'Description',
+            detail: 'Click to know more',
           ),
           SizedBox(height: 10),
           TrackCard(
-            orient: 1,
-            width: width,
-            icon: Icons.add_box,
-            name: 'Rural Development',
-            detail: 'Description',
+            width: width * 0.75,
+            image: 'images/track_transport.png',
+            name: 'Transport',
+            detail: 'Click to know more',
+          ),
+          SizedBox(height: 10),
+          TrackCard(
+            width: width * 0.75,
+            image: 'images/track_other.png',
+            name: 'Open Innovation',
+            detail: 'Click to know more',
           ),
         ],
       ),
@@ -85,49 +85,45 @@ class TrackCard extends StatelessWidget {
   const TrackCard({
     Key key,
     @required this.width,
-    this.icon,
+    this.image,
     this.name,
     this.detail,
-    this.orient,
   }) : super(key: key);
 
   final double width;
-  final icon, name, detail;
-  final orient;
+  final image, name, detail;
 
   @override
   Widget build(BuildContext context) {
+    var _width = MediaQuery.of(context).size.width;
     return Card(
-      child: Row(
+      child: Column(
         mainAxisSize: MainAxisSize.min,
         children: <Widget>[
-          if (orient == 0)
             Container(
-              width: width * 0.2,
-              child: Icon(
-                icon,
-                size: width * 0.15,
-                color: Color.fromARGB(255, 1, 188, 99),
-              ),
+              padding: EdgeInsets.only(top: 10),
+              width: width * 0.5,
+              child: Image(
+                image: AssetImage(image),
+              )
             ),
-          if (orient == 0)
             Container(
               padding: EdgeInsets.fromLTRB(0.0, 10.0, 0.0, 0.0),
               height: 115.0,
-              width: width * 0.7,
+              width: width * 100,
               child: Column(
-                crossAxisAlignment: (orient == 1)
-                    ? CrossAxisAlignment.end
-                    : CrossAxisAlignment.start,
                 children: [
                   Container(
-                    child: Text(
-                      name,
-                      style: TextStyle(
-                        fontFamily: 'NunitoSans',
-                        fontSize: 25.0,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.black87,
+                    child: Center(
+                      child: Text(
+                        name,
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          fontFamily: 'NunitoSans',
+                          fontSize: (_width < 400) ? 20.0 : 25.0,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.black87,
+                        ),
                       ),
                     ),
                   ),
@@ -143,50 +139,6 @@ class TrackCard extends StatelessWidget {
                     ),
                   ),
                 ],
-              ),
-            ),
-          if (orient == 1)
-            Container(
-              padding: EdgeInsets.fromLTRB(0.0, 10.0, 20.0, 0.0),
-              height: 115.0,
-              width: width * 0.7,
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.end,
-                children: [
-                  Container(
-                    child: Text(
-                      name,
-                      style: TextStyle(
-                        fontFamily: 'NunitoSans',
-                        fontSize: 25.0,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.black87,
-                      ),
-                      textAlign: TextAlign.end,
-                    ),
-                  ),
-                  Container(
-                    padding: EdgeInsets.only(top: 10),
-                    child: Text(
-                      detail,
-                      style: TextStyle(
-                        fontFamily: 'NunitoSans',
-                        fontSize: 12.0,
-                        color: Colors.black87,
-                      ),
-                      textAlign: TextAlign.end,
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          if (orient == 1)
-            Container(
-              width: width * 0.2,
-              child: Icon(
-                icon,
-                size: width * 0.15,
-                color: Color.fromARGB(255, 1, 188, 99),
               ),
             ),
         ],
