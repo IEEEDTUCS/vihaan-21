@@ -30,49 +30,57 @@ class Tracks extends StatelessWidget {
           TrackCard(
             orient: 0,
             width: width * 0.75,
-            icon: Icons.add_box,
-            name: 'Enter name here',
-            detail: 'Enter Detail here',
+            image: 'images/track_agriculture.png',
+            name: 'Agriculture and Rural Development',
+            detail: 'Click to know more',
           ),
           SizedBox(height: 10),
           TrackCard(
             orient: 1,
             width: width * 0.75,
-            icon: Icons.add_box,
-            name: 'Enter name here',
-            detail: 'Enter Detail here',
+            image: 'images/track_blockchain.png',
+            name: 'Blockchain',
+            detail: 'Click to know more',
           ),
           SizedBox(height: 10),
           TrackCard(
             orient: 0,
             width: width * 0.75,
-            icon: Icons.add_box,
-            name: 'Enter name here',
-            detail: 'Enter Detail here',
+            image: 'images/track_education.png',
+            name: 'Education',
+            detail: 'Click to know more',
           ),
           SizedBox(height: 10),
           TrackCard(
             orient: 1,
             width: width * 0.75,
-            icon: Icons.add_box,
-            name: 'Enter name here',
-            detail: 'Enter Detail here',
+            image: 'images/track_healthcare.png',
+            name: 'Healthcare',
+            detail: 'Click to know more',
           ),
           SizedBox(height: 10),
           TrackCard(
             orient: 0,
             width: width * 0.75,
-            icon: Icons.add_box,
-            name: 'Enter name here',
-            detail: 'Enter Detail here',
+            image: 'images/track_security.png',
+            name: 'Security',
+            detail: 'Click to know more',
           ),
           SizedBox(height: 10),
           TrackCard(
             orient: 1,
             width: width * 0.75,
-            icon: Icons.add_box,
-            name: 'Enter name here',
-            detail: 'Enter Detail here',
+            image: 'images/track_transport.png',
+            name: 'Transport',
+            detail: 'Click to know more',
+          ),
+          SizedBox(height: 10),
+          TrackCard(
+            orient: 0,
+            width: width * 0.75,
+            image: 'images/track_other.png',
+            name: 'Others',
+            detail: 'Click to know more',
           ),
         ],
       ),
@@ -84,18 +92,19 @@ class TrackCard extends StatelessWidget {
   const TrackCard({
     Key key,
     @required this.width,
-    this.icon,
+    this.image,
     this.name,
     this.detail,
     this.orient,
   }) : super(key: key);
 
   final double width;
-  final icon, name, detail;
+  final image, name, detail;
   final orient;
 
   @override
   Widget build(BuildContext context) {
+    var _width = MediaQuery.of(context).size.width;
     return Card(
       child: Row(
         mainAxisSize: MainAxisSize.min,
@@ -103,10 +112,13 @@ class TrackCard extends StatelessWidget {
           if (orient == 0)
             Container(
               width: width * 0.15,
-              child: Icon(
-                icon,
-                size: width * 0.12,
-                color: Color.fromARGB(255, 1, 188, 99),
+              child: Padding(
+                padding: const EdgeInsets.all(11.0),
+                child: Image(
+                  image: AssetImage(image), fit: BoxFit.fill,
+                  //size: width * 0.12,
+                  //color: Color.fromARGB(255, 1, 188, 99),
+                ),
               ),
             ),
           if (orient == 0)
@@ -128,7 +140,7 @@ class TrackCard extends StatelessWidget {
                       name,
                       style: TextStyle(
                         fontFamily: 'NunitoSans',
-                        fontSize: 30.0,
+                        fontSize: (_width < 900) ? 25.0 : 30.0,
                         fontWeight: FontWeight.bold,
                         color: Colors.black87,
                       ),
@@ -190,11 +202,19 @@ class TrackCard extends StatelessWidget {
           if (orient == 1)
             Container(
               width: width * 0.15,
-              child: Icon(
-                icon,
-                size: width * 0.12,
-                color: Color.fromARGB(255, 1, 188, 99),
+              child: Padding(
+                padding: const EdgeInsets.all(11.0),
+                child: Image(
+                  image: AssetImage(image), fit: BoxFit.fill,
+                  //size: width * 0.12,
+                  //color: Color.fromARGB(255, 1, 188, 99),
+                ),
               ),
+              // Icon(
+              //   image,
+              //   size: width * 0.12,
+              //   color: Color.fromARGB(255, 1, 188, 99),
+              // ),
             ),
         ],
       ),
