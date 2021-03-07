@@ -79,7 +79,7 @@ class Tracks extends StatelessWidget {
             orient: 0,
             width: width * 0.75,
             image: 'images/track_other.png',
-            name: 'Others',
+            name: 'Open Innovation',
             detail: 'Click to know more',
           ),
         ],
