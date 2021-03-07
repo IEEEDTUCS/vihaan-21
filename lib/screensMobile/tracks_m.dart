@@ -24,12 +24,10 @@ class Tracks extends StatelessWidget {
             ),
           ),
           Container(
-              height: 2,
               color: Colors.black12,
               margin: EdgeInsets.fromLTRB(80, 0, 80, 10)),
           SizedBox(height: 10),
           TrackCard(
-            orient: 0,
             width: width * 0.75,
             image: 'images/track_agriculture.png',
             name: 'Agriculture and Rural Development',
@@ -37,7 +35,6 @@ class Tracks extends StatelessWidget {
           ),
           SizedBox(height: 10),
           TrackCard(
-            orient: 1,
             width: width * 0.75,
             image: 'images/track_blockchain.png',
             name: 'Blockchain',
@@ -45,7 +42,6 @@ class Tracks extends StatelessWidget {
           ),
           SizedBox(height: 10),
           TrackCard(
-            orient: 0,
             width: width * 0.75,
             image: 'images/track_education.png',
             name: 'Education',
@@ -53,7 +49,6 @@ class Tracks extends StatelessWidget {
           ),
           SizedBox(height: 10),
           TrackCard(
-            orient: 1,
             width: width * 0.75,
             image: 'images/track_healthcare.png',
             name: 'Healthcare',
@@ -61,7 +56,6 @@ class Tracks extends StatelessWidget {
           ),
           SizedBox(height: 10),
           TrackCard(
-            orient: 0,
             width: width * 0.75,
             image: 'images/track_security.png',
             name: 'Security',
@@ -69,7 +63,6 @@ class Tracks extends StatelessWidget {
           ),
           SizedBox(height: 10),
           TrackCard(
-            orient: 1,
             width: width * 0.75,
             image: 'images/track_transport.png',
             name: 'Transport',
@@ -77,10 +70,9 @@ class Tracks extends StatelessWidget {
           ),
           SizedBox(height: 10),
           TrackCard(
-            orient: 0,
             width: width * 0.75,
             image: 'images/track_other.png',
-            name: 'Others',
+            name: 'Open Innovation',
             detail: 'Click to know more',
           ),
         ],
@@ -96,47 +88,35 @@ class TrackCard extends StatelessWidget {
     this.image,
     this.name,
     this.detail,
-    this.orient,
   }) : super(key: key);
 
   final double width;
   final image, name, detail;
-  final orient;
 
   @override
   Widget build(BuildContext context) {
     var _width = MediaQuery.of(context).size.width;
     return Card(
-      child: Row(
+      child: Column(
         mainAxisSize: MainAxisSize.min,
         children: <Widget>[
-          if (orient == 0)
-            Container(
-              width: width * 0.2,
+          Container(
+              padding: EdgeInsets.only(top: 10),
+              width: width * 0.5,
               child: Image(
-                image: AssetImage(image), fit: BoxFit.fill,
-                //size: width * 0.12,
-                //color: Color.fromARGB(255, 1, 188, 99),
-              ),
-              // Icon(
-              //   icon,
-              //   size: width * 0.15,
-              //   color: Color.fromARGB(255, 1, 188, 99),
-              // ),
-            ),
-          if (orient == 0)
-            Container(
-              padding: EdgeInsets.fromLTRB(0.0, 10.0, 0.0, 0.0),
-              height: 115.0,
-              width: width * 0.7,
-              child: Column(
-                crossAxisAlignment: (orient == 1)
-                    ? CrossAxisAlignment.end
-                    : CrossAxisAlignment.start,
-                children: [
-                  Container(
+                image: AssetImage(image),
+              )),
+          Container(
+            padding: EdgeInsets.fromLTRB(0.0, 10.0, 0.0, 0.0),
+            height: 115.0,
+            width: width * 100,
+            child: Column(
+              children: [
+                Container(
+                  child: Center(
                     child: Text(
                       name,
+                      textAlign: TextAlign.center,
                       style: TextStyle(
                         fontFamily: 'NunitoSans',
                         fontSize: (_width < 400) ? 20.0 : 25.0,
@@ -145,69 +125,21 @@ class TrackCard extends StatelessWidget {
                       ),
                     ),
                   ),
-                  Container(
-                    padding: EdgeInsets.only(top: 10),
-                    child: Text(
-                      detail,
-                      style: TextStyle(
-                        fontFamily: 'NunitoSans',
-                        fontSize: 12.0,
-                        color: Colors.black87,
-                      ),
+                ),
+                Container(
+                  padding: EdgeInsets.only(top: 10),
+                  child: Text(
+                    detail,
+                    style: TextStyle(
+                      fontFamily: 'NunitoSans',
+                      fontSize: 12.0,
+                      color: Colors.black87,
                     ),
                   ),
-                ],
-              ),
+                ),
+              ],
             ),
-          if (orient == 1)
-            Container(
-              padding: EdgeInsets.fromLTRB(0.0, 10.0, 20.0, 0.0),
-              height: 115.0,
-              width: width * 0.7,
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.end,
-                children: [
-                  Container(
-                    child: Text(
-                      name,
-                      style: TextStyle(
-                        fontFamily: 'NunitoSans',
-                        fontSize: (_width < 400) ? 20.0 : 25.0,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.black87,
-                      ),
-                      textAlign: TextAlign.end,
-                    ),
-                  ),
-                  Container(
-                    padding: EdgeInsets.only(top: 10),
-                    child: Text(
-                      detail,
-                      style: TextStyle(
-                        fontFamily: 'NunitoSans',
-                        fontSize: 12.0,
-                        color: Colors.black87,
-                      ),
-                      textAlign: TextAlign.end,
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          if (orient == 1)
-            Container(
-              width: width * 0.2,
-              child: Image(
-                image: AssetImage(image), fit: BoxFit.fill,
-                //size: width * 0.12,
-                //color: Color.fromARGB(255, 1, 188, 99),
-              ),
-              // Icon(
-              //   icon,
-              //   size: width * 0.15,
-              //   color: Color.fromARGB(255, 1, 188, 99),
-              // ),
-            ),
+          ),
         ],
       ),
     );

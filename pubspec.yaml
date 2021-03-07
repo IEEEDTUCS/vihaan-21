@@ -33,12 +33,9 @@ dev_dependencies:
 
 
 flutter:
-
   uses-material-design: true
-
   assets:
       - images/
-
 
   fonts:
     - family: VihaanIcons
@@ -53,4 +50,3 @@ flutter:
       fonts:
         - asset: fonts/LeagueSpartan-Bold.otf
           weight: 500
-
