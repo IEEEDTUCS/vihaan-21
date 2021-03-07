@@ -4,8 +4,6 @@ import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:simple_animations/simple_animations.dart';
 import 'package:vihaan_new/widgets/animatedWave.dart';
-import 'package:vihaan_new/widgets/devfolio_button.dart';
-import 'package:vihaan_new/widgets/hyperlinks.dart';
 
 class AnimatedBackground extends StatelessWidget {
   @override
@@ -112,7 +110,7 @@ class LandingPageContent extends StatelessWidget {
                     ),
                   ),
                 ),
-                if (_width > 700)
+                /*if (_width > 700)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -137,7 +135,6 @@ class LandingPageContent extends StatelessWidget {
                         ),
                       ),
                     ),*/
-                      DevfolioButton(),
                       Padding(padding: EdgeInsets.only(right: 20)),
                       Material(
                         elevation: 8,
@@ -248,7 +245,7 @@ class LandingPageContent extends StatelessWidget {
                         ),
                       )
                     ],
-                  ),
+                  ),*/
               ],
             ),
           ),

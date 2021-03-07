@@ -11,6 +11,7 @@ import 'package:vihaan_new/screensDesktop/sponsors.dart';
 import 'package:vihaan_new/screensDesktop/team.dart';
 import 'package:vihaan_new/screensDesktop/tracks.dart';
 import 'package:vihaan_new/widgets/desktopNavbar.dart';
+import 'package:vihaan_new/widgets/devfolio_button.dart';
 import 'package:vihaan_new/widgets/hyperlinks.dart';
 import 'package:vihaan_new/widgets/revealing_soon.dart';
 import 'package:vihaan_new/widgets/vihaan_icons_icons.dart';
@@ -276,7 +277,6 @@ class _DesktopHomePageState extends State<DesktopHomePage> {
                 bottom: 30,
                 right: 30,
                 child: FloatingActionButton(
-                  heroTag: "button1",
                   onPressed: () {
                     _controller.scrollToIndex(0);
                   },
@@ -337,22 +337,10 @@ class _DesktopHomePageState extends State<DesktopHomePage> {
               ),
             ),
           ),
-          Positioned(
-            bottom: 30,
-            right: 30,
-            child: FloatingActionButton(
-              onPressed: () {
-                _controller.scrollToIndex(0);
-              },
-              backgroundColor: Colors.black,
-              hoverColor: Colors.purple[800],
-              splashColor: Colors.purple,
-              hoverElevation: 10,
-              child: Icon(
-                Icons.home,
-                size: 32,
-              ),
-            ),
+          Container(
+            height: _height,
+            width: _width,
+            child: DevfolioButton(),
           ),
         ],
       ),

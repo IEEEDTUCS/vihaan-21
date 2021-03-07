@@ -5,7 +5,6 @@ import 'package:flutter/material.dart';
 import 'package:simple_animations/simple_animations.dart';
 import 'package:universal_html/html.dart';
 import 'package:vihaan_new/widgets/animatedWave.dart';
-import 'package:vihaan_new/widgets/hyperlinks.dart';
 
 class AnimatedBackground extends StatelessWidget {
   @override
@@ -120,10 +119,10 @@ class LandingPageContent extends StatelessWidget {
                         ),
                       ),
                     ),
-                    Row(
+                    /*Row(
                       mainAxisSize: MainAxisSize.min,
                       children: [
-                        Flexible(
+                        /*Flexible(
                           flex: 3,
                           child: //DevfolioButton()
                               Padding(
@@ -184,9 +183,9 @@ class LandingPageContent extends StatelessWidget {
                               ),
                             ),
                           ),
-                        ),
+                        ),*/
                       ],
-                    ),
+                    ),*/
                   ],
                 ),
               ),
