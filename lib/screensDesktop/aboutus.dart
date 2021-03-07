@@ -5,7 +5,6 @@ class AboutUs extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var _width = MediaQuery.of(context).size.width;
-    print(_width);
 
     return Container(
       color: Color.fromARGB(255, 222, 240, 244),
@@ -14,7 +13,9 @@ class AboutUs extends StatelessWidget {
         children: [
           Flexible(
             child: Padding(
-              padding: EdgeInsets.symmetric(horizontal: (_width <= 960)? 5: _width*0.05, vertical: 10),
+              padding: EdgeInsets.symmetric(
+                  horizontal: (_width <= 960) ? 5 : _width * 0.05,
+                  vertical: 10),
               child: Card(
                 child: Padding(
                   padding: EdgeInsets.fromLTRB(30, 20, 30, 30),

@@ -276,6 +276,7 @@ class _DesktopHomePageState extends State<DesktopHomePage> {
                 bottom: 30,
                 right: 30,
                 child: FloatingActionButton(
+                  heroTag: "button1",
                   onPressed: () {
                     _controller.scrollToIndex(0);
                   },
@@ -340,6 +341,7 @@ class _DesktopHomePageState extends State<DesktopHomePage> {
             bottom: 30,
             right: 30,
             child: FloatingActionButton(
+              heroTag: "button2",
               onPressed: () {
                 _controller.scrollToIndex(0);
               },
