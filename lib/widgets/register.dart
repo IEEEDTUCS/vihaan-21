@@ -29,8 +29,8 @@ class RegisterScreen extends StatelessWidget {
       floatingActionButton: FloatingActionButton(
         heroTag: "button3",
         onPressed: () {
-          print("Active!");
-          // Navigator.of(context).pop();
+          // print("Active!");
+          Navigator.pop(context);
         },
         backgroundColor: Colors.black,
         hoverColor: Colors.purple[800],

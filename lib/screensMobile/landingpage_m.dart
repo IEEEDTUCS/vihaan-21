@@ -190,7 +190,36 @@ class LandingPageContent extends StatelessWidget {
                         ),
                       ),
                     ),*/
-                      DevfolioButton(),
+                      // DevfolioButton(),
+                      Material(
+                        elevation: 8,
+                        color: Colors.blueAccent,
+                        clipBehavior: Clip.antiAlias,
+                        shadowColor: Colors.black54,
+                        borderRadius: BorderRadius.all(
+                          Radius.circular(12),
+                        ),
+                        child: InkWell(
+                          onTap: () {
+                            Navigator.pushNamed(context, '/register');
+                          },
+                          child: Container(
+                            width: 170,
+                            height: 48,
+                            child: Center(
+                                child: Text(
+                              "Register Now",
+                              style: TextStyle(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold),
+                            )),
+                          ),
+                        ),
+                      ),
+                      SizedBox(
+                        height: 5,
+                      ),
+                      // -------------------Devfolio Button was here-----------------
                       Padding(
                         padding: EdgeInsets.only(right: 20),
                       ),
