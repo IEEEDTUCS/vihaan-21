@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:vihaan_new/widgets/vihaan_icons_icons.dart';
-import 'dart:math';
-
 import 'package:url_launcher/url_launcher.dart';
 
 class MemberCard extends StatelessWidget {
@@ -29,13 +26,16 @@ class MemberCard extends StatelessWidget {
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child: InkWell(onTap: () async {
-                if(await canLaunch(githubAddress)) await launch(githubAddress);
-              }, 
-                child: Text(name,
+              child: InkWell(
+                onTap: () async {
+                  if (await canLaunch(githubAddress))
+                    await launch(githubAddress);
+                },
+                child: Text(
+                  name,
                   style: TextStyle(color: Colors.white, fontSize: 20),
                   textAlign: TextAlign.center,
-                ), 
+                ),
               ),
             ),
           ],

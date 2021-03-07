@@ -133,7 +133,7 @@ class ContactUs extends StatelessWidget {
                                   ),
                                   TextSpan(
                                     text:
-                                        '\Industrial Relations Coordinator,IEEE DTU',
+                                        '\nIndustrial Relations Coordinator,IEEE DTU',
                                     style: contactUsTextStyle,
                                   ),
                                   TextSpan(

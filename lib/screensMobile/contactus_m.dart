@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vihaan_new/widgets/TeamCard.dart';
 
 class ContactUs extends StatelessWidget {
   List<String> team_name = [
@@ -136,7 +137,7 @@ class ContactUs extends StatelessWidget {
                                   ),
                                   TextSpan(
                                     text:
-                                        '\Industrial Relations Coordinator, IEEE DTU',
+                                        '\nIndustrial Relations Coordinator, IEEE DTU',
                                     style: contactUsTextStyle,
                                   ),
                                   TextSpan(
@@ -203,13 +204,25 @@ class ContactUs extends StatelessWidget {
                   ],
                 ),
 
-                Text(
-                  'members of IEEE DTU',
-                  style: TextStyle(
-                    fontSize: 16,
-                    color: Colors.white70,
-                    decoration: TextDecoration.underline,
-                    decorationThickness: 0.7,
+                InkWell(
+                  onTap: () {
+                    showDialog(
+                        context: context,
+                        builder: (context) {
+                          return Dialog(
+                              elevation: 16,
+                              backgroundColor: Colors.transparent,
+                              child: TeamCard());
+                        });
+                  },
+                  child: Text(
+                    'members of IEEE DTU',
+                    style: TextStyle(
+                      fontSize: 16,
+                      color: Colors.white70,
+                      decoration: TextDecoration.underline,
+                      decorationThickness: 0.7,
+                    ),
                   ),
                 ),
                 // --------------- in Flutter
