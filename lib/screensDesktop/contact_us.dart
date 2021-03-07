@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vihaan_new/widgets/TeamCard.dart';
 
 class ContactUs extends StatelessWidget {
   List<String> team_name = [
@@ -59,7 +60,7 @@ class ContactUs extends StatelessWidget {
                 ),
               ),
               Flexible(
-                flex: 2,
+                flex: 3,
                 child: Column(
                   children: [
                     Container(
@@ -132,7 +133,7 @@ class ContactUs extends StatelessWidget {
                                   ),
                                   TextSpan(
                                     text:
-                                        '\Industrial Relations Coordinator,IEEE DTU',
+                                        '\nIndustrial Relations Coordinator,IEEE DTU',
                                     style: contactUsTextStyle,
                                   ),
                                   TextSpan(
@@ -176,77 +177,31 @@ class ContactUs extends StatelessWidget {
                     style: TextStyle(fontSize: 25, color: Colors.red),
                   ),
                 ),
-                // Text(
-                //   ' by ',
-                //   style: TextStyle(fontSize: 16, color: Colors.white70),
-                // ),
                 Text(
-                  ' by members of IEEE DTU',
-                  style: TextStyle(
-                    fontSize: 16,
-                    color: Colors.white70,
-                    decoration: TextDecoration.underline,
-                    decorationThickness: 0.7,
+                  ' by ',
+                  style: TextStyle(fontSize: 16, color: Colors.white70),
+                ),
+                InkWell(
+                  onTap: () {
+                    showDialog(
+                        context: context,
+                        builder: (context) {
+                          return Dialog(
+                              elevation: 16,
+                              backgroundColor: Colors.transparent,
+                              child: TeamCard());
+                        });
+                  },
+                  child: Text(
+                    'members of IEEE DTU',
+                    style: TextStyle(
+                      fontSize: 16,
+                      color: Colors.white70,
+                      decoration: TextDecoration.underline,
+                      decorationThickness: 0.7,
+                    ),
                   ),
                 ),
-                // --------------- in Flutter
-                // Text(
-                //   ' in ',
-                //   style: TextStyle(fontSize: 16, color: Colors.white70),
-                // ),
-                // FlutterLogo(
-                //   size: 25,
-                // ),
-                // --------------- in Flutter
-
-                // InkWell(
-                //   onTap: () {
-                //     showDialog(
-                //         context: context,
-                //         builder: (context) {
-                //           return Dialog(
-                //             shape: RoundedRectangleBorder(
-                //                 borderRadius: BorderRadius.circular(10)),
-                //             elevation: 16,
-                //             child: Container(
-                //                 height: 700.0,
-                //                 width: 500.0,
-                //                 child: Scrollbar(
-                //                   isAlwaysShown: true,
-                //                   controller: ScrollController(),
-                //                   child: ListView.builder(
-                //                     controller: ScrollController(),
-                //                     itemCount: 7,
-                //                     itemBuilder: (context, index) {
-                //                       if (index == 0)
-                //                         return Center(
-                //                             child: Text("Team Members",
-                //                                 style: TextStyle(
-                //                                     fontSize: 36,
-                //                                     color: Colors.black26,
-                //                                     fontWeight:
-                //                                         FontWeight.bold)));
-                //                       else
-                //                         return ProfileCard(
-                //                             name: team_name[index - 1],
-                //                             position: team_qt[index - 1],
-                //                             imageAddress: team_img[index - 1]);
-                //                     },
-                //                   ),
-                //                 )),
-                //           );
-                //         });
-                //   },
-                //   child: Text(
-                //     'members of IEEE DTU',
-                //     style: TextStyle(
-                //       fontSize: 16,
-                //       color: Colors.white70,
-                //       decoration: TextDecoration.underline,
-                //       decorationThickness: 0.7,
-                //     ),
-                //   ),
-                // ),
               ],
             ),
           ),

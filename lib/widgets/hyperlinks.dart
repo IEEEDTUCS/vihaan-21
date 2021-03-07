@@ -103,4 +103,13 @@ class SponsorContacts {
       throw 'Could not launch $url';
     }
   }
+
+  static sponsor1password() async {
+    const url = 'https://1password.com/';
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
 }
