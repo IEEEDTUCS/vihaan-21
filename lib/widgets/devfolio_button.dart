@@ -29,12 +29,6 @@ class _DevfolioButtonState extends State<DevfolioButton> {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      margin: EdgeInsets.only(top: 22),
-      color: Colors.transparent,
-      height: 65,
-      width: 320,
-      child: HtmlElementView(viewType: 'divElement'),
-    );
+    return HtmlElementView(viewType: 'divElement');
   }
 }

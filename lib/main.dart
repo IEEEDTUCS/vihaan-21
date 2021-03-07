@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:vihaan_new/homepage/homepage.dart';
+import 'package:vihaan_new/widgets/register.dart';
+
+import 'homepage/homepage.dart';
 
 void main() {
   runApp(MyApp());
@@ -11,7 +14,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Vihaan',
-      home: MyHomePage(),
+      initialRoute: '/',
+      routes: {
+        '/': (context) => MyHomePage(),
+        '/register': (context) => RegisterScreen(),
+      },
     );
   }
 }

@@ -5,7 +5,6 @@ import 'package:flutter/material.dart';
 import 'package:simple_animations/simple_animations.dart';
 import 'package:universal_html/html.dart';
 import 'package:vihaan_new/widgets/animatedWave.dart';
-import 'package:vihaan_new/widgets/devfolio_button.dart';
 import 'package:vihaan_new/widgets/hyperlinks.dart';
 
 class AnimatedBackground extends StatelessWidget {
@@ -124,8 +123,10 @@ class LandingPageContent extends StatelessWidget {
                     Row(
                       mainAxisSize: MainAxisSize.min,
                       children: [
-                        Flexible(flex: 3, child: DevfolioButton()
-                            /*Padding(
+                        Flexible(
+                          flex: 3,
+                          child: //DevfolioButton()
+                              Padding(
                             padding: const EdgeInsets.all(8.0),
                             child: Material(
                               elevation: 8,
@@ -135,20 +136,25 @@ class LandingPageContent extends StatelessWidget {
                               borderRadius: BorderRadius.all(
                                 Radius.circular(12),
                               ),
-                              child: Container(
-                                width: 170,
-                                height: 48,
-                                child: Center(
-                                    child: Text(
-                                  "Register Now",
-                                  style: TextStyle(
-                                      color: Colors.white,
-                                      fontWeight: FontWeight.bold),
-                                )),
+                              child: InkWell(
+                                onTap: () {
+                                  Navigator.of(context).pushNamed('/register');
+                                },
+                                child: Container(
+                                  width: 170,
+                                  height: 48,
+                                  child: Center(
+                                      child: Text(
+                                    "Register Now",
+                                    style: TextStyle(
+                                        color: Colors.white,
+                                        fontWeight: FontWeight.bold),
+                                  )),
+                                ),
                               ),
                             ),
-                          ),*/
-                            ),
+                          ),
+                        ),
                         Flexible(
                           flex: 3,
                           child: Padding(
