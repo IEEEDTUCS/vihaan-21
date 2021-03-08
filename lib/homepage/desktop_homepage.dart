@@ -337,11 +337,11 @@ class _DesktopHomePageState extends State<DesktopHomePage> {
               ),
             ),
           ),
-          Container(
-            height: _height,
-            width: _width,
-            child: DevfolioButton(),
-          ),
+          // Container(
+          //   height: _height,
+          //   width: _width,
+          //   child: DevfolioButton(),
+          // ),
         ],
       ),
     );

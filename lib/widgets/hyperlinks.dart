@@ -45,6 +45,15 @@ class IEEEURLS {
       throw 'Could not launch $url';
     }
   }
+
+  static devfolioPage() async {
+    const url = 'https://vihaan4.devfolio.co/';
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
 }
 
 class ContactMails {

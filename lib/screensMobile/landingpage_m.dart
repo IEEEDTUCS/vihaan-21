@@ -4,6 +4,7 @@ import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:simple_animations/simple_animations.dart';
 import 'package:vihaan_new/widgets/animatedWave.dart';
+import 'package:vihaan_new/widgets/hyperlinks.dart';
 
 class AnimatedBackground extends StatelessWidget {
   @override
@@ -108,6 +109,12 @@ class LandingPageContent extends StatelessWidget {
                       fontWeight: FontWeight.bold,
                       height: 1.6,
                     ),
+                  ),
+                ),
+                InkWell(
+                  onTap: IEEEURLS.devfolioPage,
+                  child: Image(
+                    image: AssetImage("images/devfolio_button_mobile.png"),
                   ),
                 ),
                 /*if (_width > 700)

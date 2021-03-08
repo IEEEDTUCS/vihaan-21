@@ -378,11 +378,12 @@ class _MobileHomePageState extends State<MobileHomePage> {
               ],
             ),
           ),
-          Container(
-            height: _height,
-            width: _width,
-            child: DevfolioButton(),
-          ),
+          // Container(
+          //   height: _height,
+          //   width: _width,
+          //   child: DevfolioButton(),
+          // ),
+          
         ],
       ),
     );
