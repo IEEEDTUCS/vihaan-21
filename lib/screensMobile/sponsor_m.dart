@@ -11,9 +11,9 @@ class Sponsors extends StatelessWidget {
   Widget build(BuildContext context) {
     final width = MediaQuery.of(context).size.width;
     final double mrg = 4,
-        gold = width * 0.2,
-        silver = width * 0.15,
-        bronze = width * 0.125,
+        gold = width * 0.4,
+        silver = width * 0.3,
+        bronze = width * 0.2,
         titleFont = max(width * 0.075, 60),
         headingFont = max(width * 0.085, 68);
 
