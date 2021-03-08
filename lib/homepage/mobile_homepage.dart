@@ -383,7 +383,6 @@ class _MobileHomePageState extends State<MobileHomePage> {
           //   width: _width,
           //   child: DevfolioButton(),
           // ),
-          
         ],
       ),
     );
