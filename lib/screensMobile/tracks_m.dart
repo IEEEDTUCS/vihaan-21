@@ -1,12 +1,6 @@
 import 'dart:math';
 import 'package:flutter/material.dart';
-import 'package:vihaan_new/widgets/HealthTrack.dart';
-import 'package:vihaan_new/widgets/EducationTrack.dart';
-import 'package:vihaan_new/widgets/BlockchainTrack.dart';
-import 'package:vihaan_new/widgets/TransportTrack.dart';
-import 'package:vihaan_new/widgets/SecurityTrack.dart';
-import 'package:vihaan_new/widgets/AgroTrack.dart';
-import 'package:vihaan_new/widgets/OtherTrack.dart';
+import 'package:vihaan_new/widgets/tracksData.dart';
 
 class Tracks extends StatelessWidget {
   // This widget is the root of your application.
@@ -37,49 +31,84 @@ class Tracks extends StatelessWidget {
             width: width * 0.75,
             image: 'images/track_agriculture.png',
             name: 'Agriculture and Rural Development',
-            display: AgroTrack(),
+            display: SingleChildScrollView(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: agroTrack,
+              ),
+            ),
           ),
           SizedBox(height: 10),
           TrackCard(
             width: width * 0.75,
             image: 'images/track_blockchain.png',
             name: 'Blockchain',
-            display: BlockchainTrack(),
+            display: SingleChildScrollView(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: blockchainTracks,
+              ),
+            ),
           ),
           SizedBox(height: 10),
           TrackCard(
             width: width * 0.75,
             image: 'images/track_education.png',
             name: 'Education',
-            display: EducationTrack(),
+            display: SingleChildScrollView(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: educationTracks,
+              ),
+            ),
           ),
           SizedBox(height: 10),
           TrackCard(
             width: width * 0.75,
             image: 'images/track_healthcare.png',
             name: 'Healthcare',
-            display: HealthTrack(),
+            display: SingleChildScrollView(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: healthTrack,
+              ),
+            ),
           ),
           SizedBox(height: 10),
           TrackCard(
             width: width * 0.75,
             image: 'images/track_security.png',
             name: 'Security',
-            display: SecurityTrack(),
+            display: SingleChildScrollView(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: securityTrack,
+              ),
+            ),
           ),
           SizedBox(height: 10),
           TrackCard(
             width: width * 0.75,
             image: 'images/track_transport.png',
             name: 'Transport',
-            display: TransportTrack(),
+            display: SingleChildScrollView(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: transportTrack,
+              ),
+            ),
           ),
           SizedBox(height: 10),
           TrackCard(
             width: width * 0.75,
             image: 'images/track_other.png',
             name: 'Open Innovation',
-            display: OtherTrack(),
+            display: SingleChildScrollView(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: otherTracks,
+              ),
+            ),
           ),
         ],
       ),
@@ -88,14 +117,14 @@ class Tracks extends StatelessWidget {
 }
 
 class TrackCard extends StatelessWidget {
-  const TrackCard({
-    Key key,
-    @required this.width,
-    this.image,
-    this.name,
-    this.detail,
-    this.display
-  }) : super(key: key);
+  const TrackCard(
+      {Key key,
+      @required this.width,
+      this.image,
+      this.name,
+      this.detail,
+      this.display})
+      : super(key: key);
 
   final double width;
   final image, name, detail;
@@ -139,24 +168,30 @@ class TrackCard extends StatelessWidget {
                   child: InkWell(
                     onTap: () {
                       showDialog(
-                        context: context,
-                        builder: (context) {
-                          return Dialog(
-                            elevation: 16,
-                            backgroundColor: Colors.transparent,
-                            child: Container(
-                              decoration: BoxDecoration(
-                                color: Colors.black45,
-                                borderRadius: BorderRadius.circular(40),
-                              ),
-                              padding: EdgeInsets.symmetric(vertical: 20, horizontal: 30),
-                              height: min(1200, MediaQuery.of(context).size.height*4/5),
-                              width: min(900, MediaQuery.of(context).size.width*5/6),
-                              child: display
-                            )
-                          );
-                        }
-                      );
+                          context: context,
+                          builder: (context) {
+                            return Dialog(
+                                elevation: 16,
+                                backgroundColor: Colors.transparent,
+                                child: Container(
+                                    decoration: BoxDecoration(
+                                      color: Colors.black45,
+                                      borderRadius: BorderRadius.circular(40),
+                                    ),
+                                    padding: EdgeInsets.symmetric(
+                                        vertical: 20, horizontal: 30),
+                                    height: min(
+                                        1200,
+                                        MediaQuery.of(context).size.height *
+                                            4 /
+                                            5),
+                                    width: min(
+                                        900,
+                                        MediaQuery.of(context).size.width *
+                                            5 /
+                                            6),
+                                    child: display));
+                          });
                     },
                     child: Text(
                       'Click to read more',
