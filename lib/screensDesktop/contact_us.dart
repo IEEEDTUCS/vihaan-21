@@ -2,31 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:vihaan_new/widgets/TeamCard.dart';
 
 class ContactUs extends StatelessWidget {
-  List<String> team_name = [
-    'Ritwik Ranjan',
-    'Hemang Sinha',
-    'Garvit Kansal',
-    'Shubham Srivastava',
-    'Ansh Agrawal',
-    'Vaibhav Srivastava'
-  ];
-  List<String> team_img = [
-    'images/Vihaan_Aboutus.jpg',
-    'images/Vihaan_Aboutus.jpg',
-    'images/garvitkansal.jpg',
-    'images/Vihaan_Aboutus.jpg',
-    'images/Vihaan_Aboutus.jpg',
-    'images/Vihaan_Aboutus.jpg'
-  ];
-  List<String> team_qt = [
-    'I don\'t ever wanna let you down',
-    'I don\'t ever wanna leave this town',
-    '\'Cause after all',
-    'This city never sleeps at night',
-    'Now don\'t you understand',
-    'That I\'m never changing who I am'
-  ];
-
   @override
   Widget build(BuildContext context) {
     var contactUsTextStyle =
@@ -184,13 +159,14 @@ class ContactUs extends StatelessWidget {
                 InkWell(
                   onTap: () {
                     showDialog(
-                        context: context,
-                        builder: (context) {
-                          return Dialog(
-                              elevation: 16,
-                              backgroundColor: Colors.transparent,
-                              child: TeamCard());
-                        });
+                      context: context,
+                      builder: (context) {
+                        return Dialog(
+                            elevation: 16,
+                            backgroundColor: Colors.transparent,
+                            child: TeamCard());
+                      }
+                    );
                   },
                   child: Text(
                     'members of IEEE DTU',

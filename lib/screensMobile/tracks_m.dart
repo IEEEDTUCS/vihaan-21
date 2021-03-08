@@ -1,6 +1,12 @@
 import 'dart:math';
-
 import 'package:flutter/material.dart';
+import 'package:vihaan_new/widgets/HealthTrack.dart';
+import 'package:vihaan_new/widgets/EducationTrack.dart';
+import 'package:vihaan_new/widgets/BlockchainTrack.dart';
+import 'package:vihaan_new/widgets/TransportTrack.dart';
+import 'package:vihaan_new/widgets/SecurityTrack.dart';
+import 'package:vihaan_new/widgets/AgroTrack.dart';
+import 'package:vihaan_new/widgets/OtherTrack.dart';
 
 class Tracks extends StatelessWidget {
   // This widget is the root of your application.
@@ -31,49 +37,49 @@ class Tracks extends StatelessWidget {
             width: width * 0.75,
             image: 'images/track_agriculture.png',
             name: 'Agriculture and Rural Development',
-            detail: 'Click to know more',
+            display: AgroTrack(),
           ),
           SizedBox(height: 10),
           TrackCard(
             width: width * 0.75,
             image: 'images/track_blockchain.png',
             name: 'Blockchain',
-            detail: 'Click to know more',
+            display: BlockchainTrack(),
           ),
           SizedBox(height: 10),
           TrackCard(
             width: width * 0.75,
             image: 'images/track_education.png',
             name: 'Education',
-            detail: 'Click to know more',
+            display: EducationTrack(),
           ),
           SizedBox(height: 10),
           TrackCard(
             width: width * 0.75,
             image: 'images/track_healthcare.png',
             name: 'Healthcare',
-            detail: 'Click to know more',
+            display: HealthTrack(),
           ),
           SizedBox(height: 10),
           TrackCard(
             width: width * 0.75,
             image: 'images/track_security.png',
             name: 'Security',
-            detail: 'Click to know more',
+            display: SecurityTrack(),
           ),
           SizedBox(height: 10),
           TrackCard(
             width: width * 0.75,
             image: 'images/track_transport.png',
             name: 'Transport',
-            detail: 'Click to know more',
+            display: TransportTrack(),
           ),
           SizedBox(height: 10),
           TrackCard(
             width: width * 0.75,
             image: 'images/track_other.png',
             name: 'Open Innovation',
-            detail: 'Click to know more',
+            display: OtherTrack(),
           ),
         ],
       ),
@@ -88,10 +94,12 @@ class TrackCard extends StatelessWidget {
     this.image,
     this.name,
     this.detail,
+    this.display
   }) : super(key: key);
 
   final double width;
   final image, name, detail;
+  final Widget display;
 
   @override
   Widget build(BuildContext context) {
@@ -128,12 +136,36 @@ class TrackCard extends StatelessWidget {
                 ),
                 Container(
                   padding: EdgeInsets.only(top: 10),
-                  child: Text(
-                    detail,
-                    style: TextStyle(
-                      fontFamily: 'NunitoSans',
-                      fontSize: 12.0,
-                      color: Colors.black87,
+                  child: InkWell(
+                    onTap: () {
+                      showDialog(
+                        context: context,
+                        builder: (context) {
+                          return Dialog(
+                            elevation: 16,
+                            backgroundColor: Colors.transparent,
+                            child: Container(
+                              decoration: BoxDecoration(
+                                color: Colors.black45,
+                                borderRadius: BorderRadius.circular(40),
+                              ),
+                              padding: EdgeInsets.symmetric(vertical: 20, horizontal: 30),
+                              height: min(1200, MediaQuery.of(context).size.height*4/5),
+                              width: min(900, MediaQuery.of(context).size.width*5/6),
+                              child: display
+                            )
+                          );
+                        }
+                      );
+                    },
+                    child: Text(
+                      'Click to read more',
+                      style: TextStyle(
+                        fontSize: 16,
+                        color: Colors.black,
+                        decoration: TextDecoration.underline,
+                        decorationThickness: 0.7,
+                      ),
                     ),
                   ),
                 ),
