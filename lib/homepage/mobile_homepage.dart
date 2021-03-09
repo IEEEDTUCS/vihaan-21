@@ -2,7 +2,7 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:scroll_to_index/scroll_to_index.dart';
-import 'package:vihaan_new/screensMobile/aboutus_m.dart';
+import 'package:vihaan_new/screensDesktop/aboutus.dart';
 import 'package:vihaan_new/screensMobile/contactus_m.dart';
 import 'package:vihaan_new/screensMobile/faq_m.dart';
 import 'package:vihaan_new/screensMobile/landingpage_m.dart';
@@ -32,7 +32,6 @@ class _MobileHomePageState extends State<MobileHomePage> {
         controller: controller,
         index: index,
         child: child,
-        //highlightColor: Colors.black.withOpacity(0.1),
       );
 
   @override
@@ -73,83 +72,64 @@ class _MobileHomePageState extends State<MobileHomePage> {
             ListTile(
               title: Text('About Us'),
               onTap: () {
-                // Update the state of the app.
                 controller.scrollToIndex(1);
                 Navigator.pop(context);
-                // Navigator.pop(context)
-                // ...
               },
             ),
             ListTile(
               title: Text('Tracks'),
               onTap: () {
-                // Update the state of the app.
                 controller.scrollToIndex(2);
                 Navigator.pop(context);
-                // ...
               },
             ),
             ListTile(
               title: Text('Prizes'),
               onTap: () {
-                // Update the state of the app.
                 controller.scrollToIndex(3);
                 Navigator.pop(context);
-                // ...
               },
             ),
             ListTile(
               title: Text('Timeline'),
               onTap: () {
-                // Update the state of the app.
                 controller.scrollToIndex(4);
                 Navigator.pop(context);
-                // ...
               },
             ),
             ListTile(
               title: Text('Judges'),
               onTap: () {
-                // Update the state of the app.
                 controller.scrollToIndex(5);
                 Navigator.pop(context);
-                // ...
               },
             ),
             ListTile(
               title: Text('Sponsors'),
               onTap: () {
-                // Update the state of the app.
                 controller.scrollToIndex(6);
                 Navigator.pop(context);
-                // ...
               },
             ),
             ListTile(
               title: Text('FAQs'),
               onTap: () {
-                // Update the state of the app.
                 controller.scrollToIndex(7);
                 Navigator.pop(context);
-                // ...
               },
             ),
             ListTile(
               title: Text('Team'),
               onTap: () {
-                // Update the state of the app.
                 controller.scrollToIndex(8);
                 Navigator.pop(context);
-                // ...
               },
             ),
             ListTile(
               title: Text('Contact Us'),
               onTap: () {
-                // Update the state of the app.
                 controller.scrollToIndex(9);
                 Navigator.pop(context);
-                // ...
               },
             ),
             ListTile(
@@ -262,7 +242,6 @@ class _MobileHomePageState extends State<MobileHomePage> {
                 _wrapScrollTag(
                   index: 4,
                   child: Container(
-                    // height: MediaQuery.of(context).size.height,
                     width: MediaQuery.of(context).size.width,
                     color: Colors.amber,
                     child: Column(
@@ -286,7 +265,6 @@ class _MobileHomePageState extends State<MobileHomePage> {
                           child: Align(
                             alignment: Alignment.center,
                             child: TimelineSection(),
-                            //child: RevealingSoon(),
                           ),
                         ),
                       ],
@@ -319,7 +297,6 @@ class _MobileHomePageState extends State<MobileHomePage> {
                           padding: EdgeInsets.only(bottom: 20),
                           child: Align(
                             alignment: Alignment.center,
-                            // child: TimelineSection(),
                             child: RevealingSoon(),
                           ),
                         ),
@@ -332,11 +309,7 @@ class _MobileHomePageState extends State<MobileHomePage> {
                   child: Container(
                     width: MediaQuery.of(context).size.width,
                     color: Colors.green,
-                    child: Stack(
-                      children: [
-                        Sponsors(),
-                      ],
-                    ),
+                    child: Sponsors(),
                   ),
                 ),
                 _wrapScrollTag(
@@ -344,11 +317,7 @@ class _MobileHomePageState extends State<MobileHomePage> {
                   child: Container(
                     width: MediaQuery.of(context).size.width,
                     color: Colors.white,
-                    child: Stack(
-                      children: [
-                        Faq(),
-                      ],
-                    ),
+                    child: Faq(),
                   ),
                 ),
                 _wrapScrollTag(
@@ -368,21 +337,12 @@ class _MobileHomePageState extends State<MobileHomePage> {
                   child: Container(
                     width: MediaQuery.of(context).size.width,
                     color: Colors.black12,
-                    child: Stack(
-                      children: [
-                        ContactUs(),
-                      ],
-                    ),
+                    child: ContactUs(),
                   ),
                 ),
               ],
             ),
           ),
-          // Container(
-          //   height: _height,
-          //   width: _width,
-          //   child: DevfolioButton(),
-          // ),
         ],
       ),
     );
