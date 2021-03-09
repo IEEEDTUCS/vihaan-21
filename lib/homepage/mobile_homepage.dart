@@ -3,7 +3,7 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:scroll_to_index/scroll_to_index.dart';
 import 'package:vihaan_new/screensDesktop/aboutus.dart';
-import 'package:vihaan_new/screensMobile/contactus_m.dart';
+import 'package:vihaan_new/screensDesktop/contact_us.dart';
 import 'package:vihaan_new/screensMobile/faq_m.dart';
 import 'package:vihaan_new/screensMobile/landingpage_m.dart';
 import 'package:vihaan_new/screensMobile/sponsor_m.dart';
