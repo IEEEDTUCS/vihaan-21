@@ -61,8 +61,6 @@ class _Faq extends State<Faq> {
               alignment: Alignment.center,
               child: Container(
                 height: 250,
-                // height: _height * 0.60,
-                // width: _width * 0.60,
                 child: Image(
                   fit: BoxFit.fill,
                   image: AssetImage("images/faq.png"),

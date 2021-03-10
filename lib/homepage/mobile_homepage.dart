@@ -9,6 +9,7 @@ import 'package:vihaan_new/screensMobile/landingpage_m.dart';
 import 'package:vihaan_new/screensMobile/sponsor_m.dart';
 import 'package:vihaan_new/screensMobile/team_m.dart';
 import 'package:vihaan_new/screensMobile/timelineSection_m.dart';
+import 'package:vihaan_new/screensMobile/prizes_m.dart';
 import 'package:vihaan_new/screensMobile/tracks_m.dart';
 import 'package:vihaan_new/widgets/devfolio_button.dart';
 import 'package:vihaan_new/widgets/hyperlinks.dart';
@@ -200,7 +201,7 @@ class _MobileHomePageState extends State<MobileHomePage> {
                       children: [
                         Align(
                           alignment: Alignment.center,
-                          child: Tracks(),
+                          child: Tracks(), // RevealingSoon(),//
                         )
                       ],
                     ),
@@ -232,7 +233,8 @@ class _MobileHomePageState extends State<MobileHomePage> {
                           padding: EdgeInsets.only(bottom: 20),
                           child: Align(
                             alignment: Alignment.center,
-                            child: RevealingSoon(),
+                            child:
+                                RevealingSoon(), // Prizes(), // RevealingSoon(),
                           ),
                         ),
                       ],
