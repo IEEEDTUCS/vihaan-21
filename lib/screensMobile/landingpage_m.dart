@@ -113,9 +113,46 @@ class LandingPageContent extends StatelessWidget {
                 ),
                 InkWell(
                   onTap: IEEEURLS.devfolioPage,
-                  child: Image(
-                    image: AssetImage("images/devfolio_button_mobile.png"),
+                  child: Material(
+                    elevation: 8,
+                    color: Colors.white,
+                    clipBehavior: Clip.antiAlias,
+                    shadowColor: Colors.black54,
+                    borderRadius: BorderRadius.all(
+                      Radius.circular(12),
+                    ),
+                    child: Container(
+                      width: 260,
+                      height: 48,
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          Container(
+                            width: 25,
+                            child: Image(
+                              image: AssetImage("images/devfolio_logo.png"),
+                            ),
+                          ),
+                          SizedBox(
+                            width: 10,
+                          ),
+                          Text(
+                            "Apply with Devfolio",
+                            style: TextStyle(
+                                color: Colors.black,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 20,
+                                letterSpacing: 1,
+                                fontFamily: "Helvetica"),
+                          ),
+                        ],
+                      ),
+                    ),
                   ),
+                  // Image(
+                  //   image: AssetImage("images/devfolio_button_mobile.png"),
+                  // ),
                 ),
                 /*if (_width > 700)
                   Row(

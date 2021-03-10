@@ -54,3 +54,6 @@ flutter:
       fonts:
         - asset: fonts/LeagueSpartan-Bold.otf
           weight: 500
+    - family: Helvetica
+      fonts:
+        - asset: fonts/Helvetica.ttf

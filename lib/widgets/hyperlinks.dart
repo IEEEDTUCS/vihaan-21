@@ -121,4 +121,22 @@ class SponsorContacts {
       throw 'Could not launch $url';
     }
   }
+
+  static sponsorloop11() async {
+    const url = 'https://www.loop11.com/';
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
+
+  static sponsorduexpress() async {
+    const url = 'https://duexpress.in/';
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
 }

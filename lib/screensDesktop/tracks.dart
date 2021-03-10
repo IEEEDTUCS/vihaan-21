@@ -7,7 +7,12 @@ class Tracks extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final width = MediaQuery.of(context).size.width;
-
+    final height = MediaQuery.of(context).size.height;
+    final double itemHeight =
+        (height > 900) ? 500 : ((height < 600) ? 450 : 300);
+    final double itemWidth = (width > 350)
+        ? ((width > 600) ? ((width >= 800) ? width / 4 : width / 3) : width / 2)
+        : width;
     return Padding(
       padding: EdgeInsets.symmetric(horizontal: width * 0.025, vertical: 16),
       child: Column(
@@ -27,96 +32,114 @@ class Tracks extends StatelessWidget {
               color: Colors.black12,
               margin: EdgeInsets.fromLTRB(80, 0, 80, 10)),
           SizedBox(height: 10),
-          TrackCard(
-            orient: 0,
-            width: width * 0.75,
-            image: 'images/track_agriculture.png',
-            name: 'Agriculture and Rural Development',
-            display: SingleChildScrollView(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: agroTrack,
+          GridView.count(
+            crossAxisSpacing: (width >= 800) ? 16 : 8,
+            primary: false,
+            shrinkWrap: true,
+            crossAxisCount: (width > 350)
+                ? ((width > 800) ? ((width >= 950) ? 4 : 3) : 2)
+                : 1,
+            // childAspectRatio: 1,
+            children: [
+              TrackCard(
+                orient: 0,
+                width: width * 0.75,
+                image: 'images/track_agriculture.png',
+                name: 'Open Innovation',
+                display: SingleChildScrollView(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: otherTracks,
+                  ),
+                ),
               ),
-            ),
-          ),
-          SizedBox(height: 10),
-          TrackCard(
-            orient: 1,
-            width: width * 0.75,
-            image: 'images/track_blockchain.png',
-            name: 'Blockchain',
-            display: SingleChildScrollView(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: blockchainTracks,
+              TrackCard(
+                orient: 0,
+                width: width * 0.75,
+                image: 'images/track_blockchain.png',
+                name: 'Open Innovation',
+                display: SingleChildScrollView(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: otherTracks,
+                  ),
+                ),
               ),
-            ),
-          ),
-          SizedBox(height: 10),
-          TrackCard(
-            orient: 0,
-            width: width * 0.75,
-            image: 'images/track_education.png',
-            name: 'Education',
-            display: SingleChildScrollView(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: educationTracks,
+              TrackCard(
+                orient: 0,
+                width: width * 0.75,
+                image: 'images/track_education.png',
+                name: 'Open Innovation',
+                display: SingleChildScrollView(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: otherTracks,
+                  ),
+                ),
               ),
-            ),
-          ),
-          SizedBox(height: 10),
-          TrackCard(
-            orient: 1,
-            width: width * 0.75,
-            image: 'images/track_healthcare.png',
-            name: 'Healthcare',
-            display: SingleChildScrollView(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: healthTrack,
+              TrackCard(
+                orient: 0,
+                width: width * 0.75,
+                image: 'images/track_healthcare.png',
+                name: 'Open Innovation',
+                display: SingleChildScrollView(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: otherTracks,
+                  ),
+                ),
               ),
-            ),
-          ),
-          SizedBox(height: 10),
-          TrackCard(
-            orient: 0,
-            width: width * 0.75,
-            image: 'images/track_security.png',
-            name: 'Security',
-            display: SingleChildScrollView(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: securityTrack,
+              TrackCard(
+                orient: 0,
+                width: width * 0.75,
+                image: 'images/track_security.png',
+                name: 'Open Innovation',
+                display: SingleChildScrollView(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: otherTracks,
+                  ),
+                ),
               ),
-            ),
-          ),
-          SizedBox(height: 10),
-          TrackCard(
-            orient: 1,
-            width: width * 0.75,
-            image: 'images/track_transport.png',
-            name: 'Transport',
-            display: SingleChildScrollView(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: transportTrack,
+              TrackCard(
+                orient: 0,
+                width: width * 0.75,
+                image: 'images/track_transport.png',
+                name: 'Open Innovation',
+                display: SingleChildScrollView(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: otherTracks,
+                  ),
+                ),
               ),
-            ),
-          ),
-          SizedBox(height: 10),
-          TrackCard(
-            orient: 0,
-            width: width * 0.75,
-            image: 'images/track_other.png',
-            name: 'Open Innovation',
-            display: SingleChildScrollView(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: otherTracks,
+              TrackCard(
+                orient: 0,
+                width: width * 0.75,
+                image: 'images/track_other.png',
+                name: 'Open Innovation',
+                display: SingleChildScrollView(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: otherTracks,
+                  ),
+                ),
               ),
-            ),
+            ],
           ),
+          // SizedBox(height: 10),
+          // TrackCard(
+          //   orient: 0,
+          //   width: width * 0.75,
+          //   image: 'images/track_other.png',
+          //   name: 'Open Innovation',
+          //   display: SingleChildScrollView(
+          //     child: Column(
+          //       crossAxisAlignment: CrossAxisAlignment.start,
+          //       children: otherTracks,
+          //     ),
+          //   ),
+          // ),
         ],
       ),
     );
