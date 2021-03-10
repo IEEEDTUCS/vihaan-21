@@ -17,11 +17,6 @@ class RegisterScreen extends StatelessWidget {
         child: Stack(children: [
           FancyBackgroundApp(),
           Container(
-            height: height,
-            width: width,
-            child: DevfolioButton(),
-          ),
-          Container(
             margin: EdgeInsets.only(top: height * 0.1),
             child: Center(
               child: Image.asset(
@@ -32,6 +27,11 @@ class RegisterScreen extends StatelessWidget {
             constraints: BoxConstraints(
               maxHeight: 400,
             ),
+          ),
+          Container(
+            height: height,
+            width: width,
+            child: DevfolioButton(),
           ),
         ]),
       ),
