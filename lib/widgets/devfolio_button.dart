@@ -28,22 +28,23 @@ class _DevfolioButtonState extends State<DevfolioButton> {
     _divElement.style.margin = '0';
     final _containerElement = DivElement();
     _containerElement.classes = ['container'];
-    _containerElement.style.textAlign = 'center';
-    _containerElement.style.position = 'absolute';
-    _containerElement.style.bottom = '20%';
-    _containerElement.style.width = '100%';
+    // _containerElement.style.textAlign = 'center';
+    // _containerElement.style.position = 'absolute';
+    // _containerElement.style.bottom = '20%';
+    // _containerElement.style.width = '100%';
     _containerElement.children = [
+      _scriptElement,
       _divElement,
     ];
-    final _bodyElement = BodyElement();
-    _bodyElement.style.background = 'transparent';
-    _bodyElement.children = [
-      _scriptElement,
-      _containerElement,
-    ];
+    // final _bodyElement = BodyElement();
+    // _bodyElement.style.height = '50px';
+    // _bodyElement.style.background = 'transparent';
+    // _bodyElement.children = [
+    //   _containerElement,
+    // ];
 
     ui.platformViewRegistry
-        .registerViewFactory('bodyElement', (int viewID) => _bodyElement);
+        .registerViewFactory('bodyElement', (int viewID) => _containerElement);
 
     super.initState();
   }

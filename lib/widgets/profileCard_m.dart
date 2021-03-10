@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:vihaan_new/widgets/vihaan_icons_icons.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:vihaan_new/widgets/vihaan_icons_icons.dart';
 
 class ProfileCard extends StatelessWidget {
   ProfileCard(
@@ -26,13 +26,11 @@ class ProfileCard extends StatelessWidget {
           mainAxisSize: MainAxisSize.min,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Flexible(
-              child: CircleAvatar(
-                maxRadius: 80.0,
-                backgroundColor: Colors.white,
-                //radius: 60.0,
-                backgroundImage: AssetImage(imageAddress),
-              ),
+            CircleAvatar(
+              radius: 60.0,
+              backgroundColor: Colors.white,
+              //radius: 60.0,
+              backgroundImage: AssetImage(imageAddress),
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),

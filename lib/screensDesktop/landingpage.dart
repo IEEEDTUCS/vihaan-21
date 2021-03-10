@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:simple_animations/simple_animations.dart';
 import 'package:universal_html/html.dart';
 import 'package:vihaan_new/widgets/animatedWave.dart';
-import 'package:vihaan_new/widgets/hyperlinks.dart';
+import 'package:vihaan_new/widgets/devfolio_button.dart';
 
 class AnimatedBackground extends StatelessWidget {
   @override
@@ -120,12 +120,17 @@ class LandingPageContent extends StatelessWidget {
                         ),
                       ),
                     ),
-                    InkWell(
-                      onTap: IEEEURLS.devfolioPage,
-                      child: Image(
-                        image: AssetImage("images/devfolio_button_mobile.png"),
-                      ),
+                    Container(
+                      height: 50,
+                      width: 330,
+                      child: DevfolioButton(),
                     ),
+                    // InkWell(
+                    //   onTap: IEEEURLS.devfolioPage,
+                    //   child: Image(
+                    //     image: AssetImage("images/devfolio_button_mobile.png"),
+                    //   ),
+                    // ),
                     /*Row(
                       mainAxisSize: MainAxisSize.min,
                       children: [
