@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vihaan_new/data/images.dart';
 import 'package:vihaan_new/widgets/trackCard.dart';
 import 'package:vihaan_new/data/tracksData.dart';
 
@@ -13,6 +14,23 @@ class Tracks extends StatelessWidget {
     final double itemWidth = (width > 350)
         ? ((width > 600) ? ((width >= 800) ? width / 4 : width / 3) : width / 2)
         : width;
+    List<Widget> tracks = [];
+    for (int i = 0; i < trackName.length; i++) {
+      precacheImage(AssetImage(tracksImages[i]), context);
+      tracks.add(
+        TrackCard(
+          width: width * 0.75,
+          image: tracksImages[i],
+          name: trackName[i],
+          display: SingleChildScrollView(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: otherTracks,
+            ),
+          ),
+        ),
+      );
+    }
     return Padding(
       padding: EdgeInsets.symmetric(horizontal: width * 0.025, vertical: 16),
       child: Column(
@@ -40,92 +58,7 @@ class Tracks extends StatelessWidget {
                 ? ((width > 800) ? ((width >= 950) ? 4 : 3) : 2)
                 : 1,
             // childAspectRatio: 1,
-            children: [
-              TrackCard(
-                orient: 0,
-                width: width * 0.75,
-                image: 'images/track_agriculture.png',
-                name: 'Open Innovation',
-                display: SingleChildScrollView(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: otherTracks,
-                  ),
-                ),
-              ),
-              TrackCard(
-                orient: 0,
-                width: width * 0.75,
-                image: 'images/track_blockchain.png',
-                name: 'Open Innovation',
-                display: SingleChildScrollView(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: otherTracks,
-                  ),
-                ),
-              ),
-              TrackCard(
-                orient: 0,
-                width: width * 0.75,
-                image: 'images/track_education.png',
-                name: 'Open Innovation',
-                display: SingleChildScrollView(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: otherTracks,
-                  ),
-                ),
-              ),
-              TrackCard(
-                orient: 0,
-                width: width * 0.75,
-                image: 'images/track_healthcare.png',
-                name: 'Open Innovation',
-                display: SingleChildScrollView(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: otherTracks,
-                  ),
-                ),
-              ),
-              TrackCard(
-                orient: 0,
-                width: width * 0.75,
-                image: 'images/track_security.png',
-                name: 'Open Innovation',
-                display: SingleChildScrollView(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: otherTracks,
-                  ),
-                ),
-              ),
-              TrackCard(
-                orient: 0,
-                width: width * 0.75,
-                image: 'images/track_transport.png',
-                name: 'Open Innovation',
-                display: SingleChildScrollView(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: otherTracks,
-                  ),
-                ),
-              ),
-              TrackCard(
-                orient: 0,
-                width: width * 0.75,
-                image: 'images/track_other.png',
-                name: 'Open Innovation',
-                display: SingleChildScrollView(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: otherTracks,
-                  ),
-                ),
-              ),
-            ],
+            children: tracks,
           ),
           // SizedBox(height: 10),
           // TrackCard(

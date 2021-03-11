@@ -1,5 +1,15 @@
 import 'package:flutter/material.dart';
 
+var trackName = [
+  'Agriculture & Rural Development',
+  'Blockchain',
+  'Education',
+  'Healthcare',
+  'Security',
+  'Transport',
+  'Open Innovation'
+];
+
 List<Widget> agroTrack = [
   Text(
     'Portal for Farmers to sell the produce at a better rate\n',

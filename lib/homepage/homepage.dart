@@ -1,10 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:vihaan_new/data/images.dart';
 import 'package:vihaan_new/homepage/desktop_homepage.dart';
 import 'package:vihaan_new/homepage/mobile_homepage.dart';
 
 class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    for (int i = 0; i < sectionImages.length; i++) {
+      precacheImage(AssetImage(sectionImages[i]), context);
+    }
     return LayoutBuilder(
         // ignore: missing_return
         builder: (context, constraints) {
