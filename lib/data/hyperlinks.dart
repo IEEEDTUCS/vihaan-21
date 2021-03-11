@@ -58,7 +58,25 @@ class IEEEURLS {
 
 class ContactMails {
   static becomeSponsor() async {
+    const url = 'mailto:vihaan.ieee@gmail.com';
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
+
+  static ritwikEmail() async {
     const url = 'mailto:ritwikr@ieee.org';
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
+
+  static shubhamEmail() async {
+    const url = 'mailto:shubhamgodleon@ieee.org';
     if (await canLaunch(url)) {
       await launch(url);
     } else {

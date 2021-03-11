@@ -1,5 +1,7 @@
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_conditional_rendering/flutter_conditional_rendering.dart';
+import 'package:vihaan_new/data/hyperlinks.dart';
 import 'package:vihaan_new/widgets/TeamCard.dart';
 
 class ContactUs extends StatelessWidget {
@@ -8,6 +10,7 @@ class ContactUs extends StatelessWidget {
     var _width = MediaQuery.of(context).size.width;
     var contactUsTextStyle =
         TextStyle(fontSize: 16, fontWeight: FontWeight.w200, height: 1.3);
+
     return Container(
       padding: EdgeInsets.only(top: 32, bottom: 16),
       color: Colors.black,
@@ -48,37 +51,7 @@ class ContactUs extends StatelessWidget {
                           children: [
                             Padding(
                               padding: const EdgeInsets.all(8.0),
-                              child: RichText(
-                                text: TextSpan(
-                                  text: 'Ritwik Ranjan',
-                                  children: [
-                                    TextSpan(
-                                      text: '\nLead Organizer, VIHAAN',
-                                      style: contactUsTextStyle,
-                                    ),
-                                    TextSpan(
-                                      text:
-                                          '\nMembership & Webinar Coordinator, IEEE DTU',
-                                      style: contactUsTextStyle,
-                                    ),
-                                    TextSpan(
-                                      text: '\n+91 98733 88660',
-                                      style: contactUsTextStyle,
-                                    ),
-                                    TextSpan(
-                                      text: '\nritwikr@ieee.org',
-                                      style: contactUsTextStyle,
-                                    ),
-                                  ],
-                                  style: TextStyle(
-                                    color: Colors.white70,
-                                    fontFamily: 'NunitoSans',
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 22,
-                                    height: 1.2,
-                                  ),
-                                ),
-                              ),
+                              child: buildRitwikDetails(),
                             )
                           ],
                         ),
@@ -95,37 +68,7 @@ class ContactUs extends StatelessWidget {
                           children: [
                             Padding(
                               padding: const EdgeInsets.all(8.0),
-                              child: RichText(
-                                text: TextSpan(
-                                  text: 'Shubham Kumar',
-                                  children: [
-                                    TextSpan(
-                                      text: '\nLead Organizer, VIHAAN',
-                                      style: contactUsTextStyle,
-                                    ),
-                                    TextSpan(
-                                      text:
-                                          '\nIndustrial Relations Coordinator,IEEE DTU',
-                                      style: contactUsTextStyle,
-                                    ),
-                                    TextSpan(
-                                      text: '\n+91 99535 69302',
-                                      style: contactUsTextStyle,
-                                    ),
-                                    TextSpan(
-                                      text: '\nshubhamgodleon@ieee.org',
-                                      style: contactUsTextStyle,
-                                    ),
-                                  ],
-                                  style: TextStyle(
-                                    color: Colors.white70,
-                                    fontFamily: 'NunitoSans',
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 22,
-                                    height: 1.2,
-                                  ),
-                                ),
-                              ),
+                              child: buildShubhamDetails(),
                             )
                           ],
                         ),
@@ -221,37 +164,7 @@ class ContactUs extends StatelessWidget {
                           children: [
                             Padding(
                               padding: const EdgeInsets.all(8.0),
-                              child: RichText(
-                                text: TextSpan(
-                                  text: 'Ritwik Ranjan',
-                                  children: [
-                                    TextSpan(
-                                      text: '\nLead Organizer, VIHAAN',
-                                      style: contactUsTextStyle,
-                                    ),
-                                    TextSpan(
-                                      text:
-                                          '\nMembership & Webinar Coordinator, IEEE DTU',
-                                      style: contactUsTextStyle,
-                                    ),
-                                    TextSpan(
-                                      text: '\n+91 98733 88660',
-                                      style: contactUsTextStyle,
-                                    ),
-                                    TextSpan(
-                                      text: '\nritwikr@ieee.org',
-                                      style: contactUsTextStyle,
-                                    ),
-                                  ],
-                                  style: TextStyle(
-                                    color: Colors.white70,
-                                    fontFamily: 'NunitoSans',
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 22,
-                                    height: 1.2,
-                                  ),
-                                ),
-                              ),
+                              child: buildRitwikDetails(),
                             )
                           ],
                         ),
@@ -268,37 +181,7 @@ class ContactUs extends StatelessWidget {
                           children: [
                             Padding(
                               padding: const EdgeInsets.all(8.0),
-                              child: RichText(
-                                text: TextSpan(
-                                  text: 'Shubham Kumar',
-                                  children: [
-                                    TextSpan(
-                                      text: '\nLead Organizer, VIHAAN',
-                                      style: contactUsTextStyle,
-                                    ),
-                                    TextSpan(
-                                      text:
-                                          '\nIndustrial Relations Coordinator, IEEE DTU',
-                                      style: contactUsTextStyle,
-                                    ),
-                                    TextSpan(
-                                      text: '\n+91 99535 69302',
-                                      style: contactUsTextStyle,
-                                    ),
-                                    TextSpan(
-                                      text: '\nshubhamgodleon@ieee.org',
-                                      style: contactUsTextStyle,
-                                    ),
-                                  ],
-                                  style: TextStyle(
-                                    color: Colors.white70,
-                                    fontFamily: 'NunitoSans',
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 22,
-                                    height: 1.2,
-                                  ),
-                                ),
-                              ),
+                              child: buildShubhamDetails(),
                             )
                           ],
                         ),
@@ -378,6 +261,82 @@ class ContactUs extends StatelessWidget {
             ),
           ],
         ),
+      ),
+    );
+  }
+
+  final contactUsTextStyle = TextStyle(
+    fontSize: 16,
+    fontWeight: FontWeight.w200,
+    height: 1.3,
+  );
+
+  final contactUsNameTextStyle = TextStyle(
+    color: Colors.white70,
+    fontFamily: 'NunitoSans',
+    fontWeight: FontWeight.bold,
+    fontSize: 22,
+    height: 1.2,
+  );
+
+  RichText buildShubhamDetails() {
+    return RichText(
+      text: TextSpan(
+        text: 'Shubham Kumar',
+        children: [
+          TextSpan(
+            text: '\nLead Organizer, VIHAAN',
+            style: contactUsTextStyle,
+          ),
+          TextSpan(
+            text: '\nIndustrial Relations Coordinator, IEEE DTU',
+            style: contactUsTextStyle,
+          ),
+          TextSpan(
+            text: '\n+91 99535 69302',
+            style: contactUsTextStyle,
+          ),
+          TextSpan(
+            text: '\nshubhamgodleon@ieee.org',
+            style: contactUsTextStyle,
+            recognizer: TapGestureRecognizer()
+              ..onTap = () {
+                ContactMails.shubhamEmail();
+              },
+          ),
+        ],
+        style: contactUsNameTextStyle,
+      ),
+    );
+  }
+
+  RichText buildRitwikDetails() {
+    return RichText(
+      text: TextSpan(
+        text: 'Ritwik Ranjan',
+        children: [
+          TextSpan(
+            text: '\nLead Organizer, VIHAAN',
+            style: contactUsTextStyle,
+          ),
+          TextSpan(
+            text: '\nMembership & Webinar Coordinator, IEEE DTU',
+            style: contactUsTextStyle,
+          ),
+          TextSpan(
+            text: '\n+91 98733 88660',
+            style: contactUsTextStyle,
+          ),
+          TextSpan(
+            text: '\nritwikr@ieee.org',
+            style: contactUsTextStyle,
+            recognizer: TapGestureRecognizer()
+              ..onTap = () {
+                ContactMails.ritwikEmail();
+              },
+          ),
+        ],
+        style: contactUsNameTextStyle,
       ),
     );
   }
