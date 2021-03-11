@@ -10,18 +10,7 @@ class TeamSection extends StatelessWidget {
   Widget build(BuildContext context) {
     var width = MediaQuery.of(context).size.width;
     var height = MediaQuery.of(context).size.height;
-    final rowCount =
-        (width > 350) ? ((width > 600) ? ((width >= 800) ? 4 : 3) : 2) : 1;
-    final ratio = height / (width / rowCount);
-    print(ratio);
-
-    final double itemHeight = (ratio >= 3.5)
-        ? height / 1.75
-        : (ratio >= 3.0
-            ? height / 2
-            : width > 1000
-                ? height / 1.75
-                : height / 2.25);
+    final double itemHeight = height / 2.4;
     final double itemWidth = (width > 350)
         ? ((width > 600) ? ((width >= 800) ? width / 4 : width / 3) : width / 2)
         : width;
@@ -56,7 +45,7 @@ class TeamSection extends StatelessWidget {
             color: Colors.black12,
             margin: EdgeInsets.fromLTRB(80, 0, 80, 10)),
         GridView.count(
-          crossAxisSpacing: (width >= 800) ? (width >= 1000 ? 48 : 28) : 8,
+          crossAxisSpacing: (width >= 800) ? 16 : 8,
           primary: false,
           shrinkWrap: true,
           crossAxisCount: (width > 350)
