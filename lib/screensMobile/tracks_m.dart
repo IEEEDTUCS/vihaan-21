@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:vihaan_new/widgets/trackCard.dart';
-import 'package:vihaan_new/widgets/tracksData.dart';
+import 'package:vihaan_new/data/tracksData.dart';
 
 class Tracks extends StatelessWidget {
   // This widget is the root of your application.
