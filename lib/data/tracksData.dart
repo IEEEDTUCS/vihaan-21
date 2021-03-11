@@ -1,3 +1,5 @@
+//TODO: Extract Text Styles and put them in a separate files.
+
 import 'package:flutter/material.dart';
 
 var trackName = [

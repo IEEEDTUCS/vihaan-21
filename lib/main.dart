@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:vihaan_new/homepage/homepage.dart';
-import 'package:vihaan_new/widgets/register.dart';
 
 import 'homepage/homepage.dart';
 
@@ -17,7 +16,6 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/': (context) => MyHomePage(),
-        '/register': (context) => RegisterScreen(),
       },
     );
   }

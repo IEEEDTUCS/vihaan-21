@@ -1,3 +1,5 @@
+//TODO: Make all as Map and Put in Static Files
+
 var goldSponsors = ['images/sponsor_devfolio.jpg'];
 
 var silverSponsor = [
