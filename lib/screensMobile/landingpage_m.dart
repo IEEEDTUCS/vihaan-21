@@ -119,11 +119,11 @@ class LandingPageContent extends StatelessWidget {
                     clipBehavior: Clip.antiAlias,
                     shadowColor: Colors.black54,
                     borderRadius: BorderRadius.all(
-                      Radius.circular(12),
+                      Radius.circular(5),
                     ),
                     child: Container(
-                      width: 260,
-                      height: 48,
+                      width: 300,
+                      height: 42,
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.center,

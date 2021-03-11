@@ -36,10 +36,10 @@ class Tracks extends StatelessWidget {
             crossAxisSpacing: (width >= 800) ? 16 : 8,
             primary: false,
             shrinkWrap: true,
-            crossAxisCount: (width > 350)
-                ? ((width > 450) ? ((width >= 700) ? 3 : 3) : 2)
+            crossAxisCount: (width >= 360)
+                ? ((width > 450) ? ((width >= 700) ? 3 : 2) : 2)
                 : 1,
-            childAspectRatio: (itemWidth / itemHeight),
+            // childAspectRatio: (itemWidth / itemHeight),
             children: [
               TrackCard(
                 orient: 0,
