@@ -3,15 +3,14 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:vihaan_new/data/images.dart';
 import 'package:vihaan_new/data/teamData.dart';
-import 'package:vihaan_new/widgets/profileCard_m.dart';
+import 'package:vihaan_new/widgets/profileCard.dart';
 
 class TeamSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var width = MediaQuery.of(context).size.width;
     var height = MediaQuery.of(context).size.height;
-    final double itemHeight =
-        (height > 900) ? 500 : ((height < 600) ? 450 : 300);
+    final double itemHeight = height / 2.4;
     final double itemWidth = (width > 350)
         ? ((width > 600) ? ((width >= 800) ? width / 4 : width / 3) : width / 2)
         : width;

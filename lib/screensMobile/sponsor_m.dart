@@ -3,8 +3,8 @@ import 'dart:math';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
+import 'package:vihaan_new/data/hyperlinks.dart';
 import 'package:vihaan_new/widgets/sponsorCard.dart';
-import 'package:vihaan_new/widgets/hyperlinks.dart';
 
 class Sponsors extends StatelessWidget {
   @override
