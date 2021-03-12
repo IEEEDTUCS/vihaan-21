@@ -157,4 +157,13 @@ class SponsorContacts {
       throw 'Could not launch $url';
     }
   }
+
+  static sponsorprotoio() async {
+    const url = 'https://proto.io/';
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
 }

@@ -19,6 +19,7 @@ Website made by the students of [IEEE DTU](https://ieeedtu.in/) for Vihaan, a 48
 ## Project Structure
 #### Source Code
 + `/lib/main.dart` -> Runner file
++ `/lib/data/` -> Data to be rendered using widgets
 + `/lib/widgets/` -> Components to be rendered in various pages
 + `/lib/screensMobile/` -> Pages to be shown in the mobile version of the website
 + `/lib/screensDesktop/` -> Pages to be shown in the desktop version of the website
@@ -30,9 +31,7 @@ Website made by the students of [IEEE DTU](https://ieeedtu.in/) for Vihaan, a 48
 #### Meta Files
 + `/app/` -> Flutter and Gradle
 + `/.vscode/` -> [VSCode](https://code.visualstudio.com)/[VSCodium](https://vscodium.com)
-+ `/ios/` -> IOS build of Flutter 
 + `/web/` -> Web build of Flutter 
-+ `/android/`-> Android build of Flutter
 + `/.firebase/` -> hosting and Firebase
 
 ## Contributors

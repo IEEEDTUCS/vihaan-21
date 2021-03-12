@@ -138,6 +138,13 @@ class Sponsors extends StatelessWidget {
                   url: 'images/sponsor_duexpress.png',
                   link: SponsorContacts.sponsorduexpress,
                 ),
+                SponsorCard(
+                  bx: bronze,
+                  mrl: mrg,
+                  mrr: mrg,
+                  url: 'images/sponsor_protoio.jpg',
+                  link: SponsorContacts.sponsorprotoio,
+                ),
               ],
             ),
           )

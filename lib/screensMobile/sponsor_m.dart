@@ -143,6 +143,25 @@ class Sponsors extends StatelessWidget {
                 ),
               ],
             ),
+          ),
+          SizedBox(
+            height: 10,
+          ),
+          SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            child: Row(
+              mainAxisSize: MainAxisSize.min,
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                SponsorCard(
+                  bx: bronze,
+                  mrl: mrg,
+                  mrr: mrg,
+                  url: 'images/sponsor_protoio.jpg',
+                  link: SponsorContacts.sponsorprotoio,
+                ),
+              ],
+            ),
           )
         ],
       ),
