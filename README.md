@@ -9,7 +9,7 @@ Website made by the students of [IEEE DTU](https://ieeedtu.in/) for Vihaan, a 48
 
 ## Deploying Locally
 + Ensure that you have a working instance of Flutter web on your machine, if not, visit [here](https://flutter.dev/docs/get-started/web)
-+ Clone the repository (master branch)
++ Clone the repository (ritwik branch)
 + Run the following commands at the root of the project :-
     ```
     flutter pub get
