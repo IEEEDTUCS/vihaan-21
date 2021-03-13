@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:simple_animations/simple_animations.dart';
 import 'package:vihaan_new/data/hyperlinks.dart';
 import 'package:vihaan_new/widgets/animatedWave.dart';
+import 'package:vihaan_new/widgets/vihaan_icons_icons.dart';
 
 class AnimatedBackground extends StatelessWidget {
   @override
@@ -140,19 +141,62 @@ class LandingPageContent extends StatelessWidget {
                           Text(
                             "Apply with Devfolio",
                             style: TextStyle(
-                                color: Colors.black,
-                                fontWeight: FontWeight.bold,
-                                fontSize: 20,
-                                letterSpacing: 1,
-                                fontFamily: "Helvetica"),
+                              color: Colors.black,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 20,
+                              letterSpacing: 0.4,
+                            ),
                           ),
                         ],
                       ),
                     ),
                   ),
+
                   // Image(
                   //   image: AssetImage("images/devfolio_button_mobile.png"),
                   // ),
+                ),
+                SizedBox(
+                  height: 10,
+                ),
+                InkWell(
+                  onTap: IEEEURLS.vihaanDiscord,
+                  child: Material(
+                    elevation: 8,
+                    color: Colors.white,
+                    clipBehavior: Clip.antiAlias,
+                    shadowColor: Colors.black54,
+                    borderRadius: BorderRadius.all(
+                      Radius.circular(5),
+                    ),
+                    child: Container(
+                      width: 300,
+                      height: 42,
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          Icon(
+                            VihaanIcons.discord,
+                            color: Colors.black,
+                            size: 30,
+                          ),
+                          SizedBox(
+                            width: 10,
+                          ),
+                          Text(
+                            "Join Our Discord Server",
+                            style: TextStyle(
+                              color: Colors.black,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 20,
+                              letterSpacing: 0.4,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
                 ),
                 /*if (_width > 700)
                   Row(
