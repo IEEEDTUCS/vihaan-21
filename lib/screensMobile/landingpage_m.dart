@@ -144,7 +144,7 @@ class LandingPageContent extends StatelessWidget {
                                 fontWeight: FontWeight.bold,
                                 fontSize: 20,
                                 letterSpacing: 1,
-                                fontFamily: "Helvetica"),
+                                fontFamily: "NunitoSans"),
                           ),
                         ],
                       ),
