@@ -124,7 +124,7 @@ class LandingPageContent extends StatelessWidget {
                     ),
                     Container(
                       height: 50,
-                      width: 330,
+                      width: 312,
                       child: DevfolioButton(),
                     ),
 
