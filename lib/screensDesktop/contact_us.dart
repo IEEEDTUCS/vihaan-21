@@ -2,14 +2,13 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_conditional_rendering/flutter_conditional_rendering.dart';
 import 'package:vihaan_new/data/hyperlinks.dart';
+import 'package:vihaan_new/data/images.dart';
 import 'package:vihaan_new/widgets/TeamCard.dart';
 
 class ContactUs extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var _width = MediaQuery.of(context).size.width;
-    var contactUsTextStyle =
-        TextStyle(fontSize: 16, fontWeight: FontWeight.w200, height: 1.3);
 
     return Container(
       padding: EdgeInsets.only(top: 32, bottom: 16),
@@ -26,8 +25,8 @@ class ContactUs extends StatelessWidget {
                   flex: 2,
                   child: Container(
                     constraints: BoxConstraints(maxHeight: 200),
-                    child: Image.asset(
-                      'images/IEEE_DTU_Logo.png',
+                    child: Image.network(
+                      sectionImages['images/IEEE_DTU_Logo.png'],
                       color: Colors.white70,
                     ),
                   ),
@@ -36,8 +35,8 @@ class ContactUs extends StatelessWidget {
                   flex: 2,
                   child: Container(
                     constraints: BoxConstraints(maxHeight: 200),
-                    child: Image.asset(
-                      'images/WIE_Logo_Black.png',
+                    child: Image.network(
+                      sectionImages['images/WIE_Logo_Black.png'],
                       color: Colors.white70,
                     ),
                   ),
@@ -135,8 +134,8 @@ class ContactUs extends StatelessWidget {
                   flex: 2,
                   child: Container(
                     constraints: BoxConstraints(maxHeight: 200),
-                    child: Image.asset(
-                      'images/IEEE_DTU_Logo.png',
+                    child: Image.network(
+                      sectionImages['images/IEEE_DTU_Logo.png'],
                       color: Colors.white70,
                     ),
                   ),
@@ -145,8 +144,8 @@ class ContactUs extends StatelessWidget {
                   flex: 2,
                   child: Container(
                     constraints: BoxConstraints(maxHeight: 200),
-                    child: Image.asset(
-                      'images/WIE_Logo_Black.png',
+                    child: Image.network(
+                      sectionImages['images/WIE_Logo_Black.png'],
                       color: Colors.white70,
                     ),
                   ),

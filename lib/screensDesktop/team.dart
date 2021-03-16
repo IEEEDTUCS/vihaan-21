@@ -28,7 +28,6 @@ class TeamSection extends StatelessWidget {
 
     List<Widget> teamMemberInfo = [];
     for (int i = 0; i < ieeeMembers.length; i++) {
-      precacheImage(AssetImage(ieeeMemberImages[i]), context);
       teamMemberInfo.add(
         ProfileCard(
           name: ieeeMembers[i],

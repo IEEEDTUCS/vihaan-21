@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vihaan_new/data/images.dart';
 
 class AboutUs extends StatelessWidget {
   @override
@@ -12,8 +13,8 @@ class AboutUs extends StatelessWidget {
           child: Container(
             constraints: BoxConstraints(maxWidth: 400),
             padding: EdgeInsets.all(20),
-            child: Image.asset(
-              "images/Vihaan_Aboutus.jpg",
+            child: Image.network(
+              sectionImages["images/Vihaan_Aboutus.jpg"],
             ),
           ),
         ));

@@ -57,12 +57,19 @@ var ieeeMemberImages = [
   'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fteam%2Fteam_priyansh.jpg?alt=media&token=96898120-9fab-40af-b725-ae9308a3427a',
 ];
 
-var sectionImages = [
-  'images/faq.png',
-  'images/Vihaan_Aboutus.jpg',
-  'images/vihaan.png',
-  'images/Vihaan_Logo.png',
-  'images/WIE_Logo_Black.png',
-  'images/IEEE_DTU_Logo.png',
-  'images/devfolio_logo.png'
-];
+var sectionImages = {
+  'images/faq.png':
+      'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Flogos%2Ffaq.png?alt=media&token=3afc7645-3faa-48b6-8eed-1ad62630b81e',
+  'images/Vihaan_Aboutus.jpg':
+      'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Flogos%2FVihaan_Aboutus.jpg?alt=media&token=fc66c23e-2e4a-45e3-968d-37a6ce1e9295',
+  'images/vihaan.png':
+      'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Flogos%2Fvihaan.png?alt=media&token=a5a807b4-8c11-4413-9fd2-f8b64ed714d8',
+  'images/Vihaan_Logo.png':
+      'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Flogos%2FVihaan_Logo.png?alt=media&token=4ff4cfc7-7613-48f1-a7fc-3da03b426ed1',
+  'images/WIE_Logo_Black.png':
+      'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Flogos%2FWIE_Logo_Black.png?alt=media&token=2de6a552-913e-4618-ae1e-59c88b17c345',
+  'images/IEEE_DTU_Logo.png':
+      'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Flogos%2FIEEE_DTU_Logo.png?alt=media&token=d375ef71-45b7-41cd-a735-8910e2296e9d',
+  'images/devfolio_logo.png':
+      'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Flogos%2Fdevfolio_logo.png?alt=media&token=bcfdf7d8-cf11-4dd5-855a-e837f139d0f8'
+};

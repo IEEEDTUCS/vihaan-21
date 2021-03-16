@@ -3,6 +3,7 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:scroll_to_index/scroll_to_index.dart';
 import 'package:vihaan_new/data/hyperlinks.dart';
+import 'package:vihaan_new/data/images.dart';
 import 'package:vihaan_new/screensDesktop/aboutus.dart';
 import 'package:vihaan_new/screensDesktop/contact_us.dart';
 import 'package:vihaan_new/screensDesktop/faq.dart';
@@ -63,7 +64,7 @@ class _MobileHomePageState extends State<MobileHomePage> {
                   Navigator.pop(context);
                 },
                 child: Image(
-                  image: AssetImage("images/Vihaan_Logo.png"),
+                  image: NetworkImage(sectionImages["images/Vihaan_Logo.png"]),
                 ),
               ),
             ),
@@ -192,6 +193,7 @@ class _MobileHomePageState extends State<MobileHomePage> {
                 _wrapScrollTag(
                   index: 2, // Tracks
                   child: Container(
+                    height: MediaQuery.of(context).size.height * 0.5,
                     width: MediaQuery.of(context).size.width,
                     color: Color.fromARGB(255, 209, 253, 172),
                     child: Column(
@@ -225,7 +227,7 @@ class _MobileHomePageState extends State<MobileHomePage> {
                 _wrapScrollTag(
                   index: 3,
                   child: Container(
-                    height: MediaQuery.of(context).size.height,
+                    height: MediaQuery.of(context).size.height * 0.5,
                     width: MediaQuery.of(context).size.width,
                     color: Colors.purpleAccent,
                     child: Column(
@@ -291,7 +293,7 @@ class _MobileHomePageState extends State<MobileHomePage> {
                 _wrapScrollTag(
                   index: 5,
                   child: Container(
-                    height: MediaQuery.of(context).size.height,
+                    height: MediaQuery.of(context).size.height * 0.5,
                     width: MediaQuery.of(context).size.width,
                     color: Colors.purpleAccent,
                     child: Column(

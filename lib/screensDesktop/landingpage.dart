@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:simple_animations/simple_animations.dart';
 import 'package:universal_html/html.dart';
 import 'package:vihaan_new/data/hyperlinks.dart';
+import 'package:vihaan_new/data/images.dart';
 import 'package:vihaan_new/widgets/animatedWave.dart';
 import 'package:vihaan_new/widgets/devfolio_button.dart';
 import 'package:vihaan_new/widgets/vihaan_icons_icons.dart';
@@ -90,7 +91,8 @@ class LandingPageContent extends StatelessWidget {
                   children: [
                     Flexible(
                       child: Container(
-                        child: Image.asset('images/vihaan.png'),
+                        child:
+                            Image.network(sectionImages['images/vihaan.png']),
                         constraints: BoxConstraints(
                           maxHeight: 400,
                         ),
