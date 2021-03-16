@@ -54,6 +54,15 @@ class IEEEURLS {
       throw 'Could not launch $url';
     }
   }
+
+  static vihaanDiscord() async {
+    const url = 'https://discord.gg/gTpWKBQBCC';
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
 }
 
 class ContactMails {

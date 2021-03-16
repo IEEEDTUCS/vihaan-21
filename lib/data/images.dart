@@ -30,7 +30,7 @@ var ieeeMemberImages = [
   'images/team_lavanisha.jpg',
   'images/team_shivamKansal.jpg',
   'images/team_akshita.jpeg',
-  'images/team_ritwik.jpg',
+  'images/team_ritwik_new.png',
   'images/team_shubham.jpg',
   'images/team_mridul.jpg',
   'images/team_kirti.jpg',
