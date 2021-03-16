@@ -4,6 +4,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:vihaan_new/data/hyperlinks.dart';
+import 'package:vihaan_new/data/images.dart';
 import 'package:vihaan_new/widgets/sponsorCard.dart';
 
 class Sponsors extends StatelessWidget {
@@ -61,7 +62,7 @@ class Sponsors extends StatelessWidget {
                   bx: gold,
                   mrl: mrg,
                   mrr: mrg,
-                  url: 'images/sponsor_devfolio.jpg',
+                  url: goldSponsors['images/sponsor_devfolio.jpg'],
                   link: SponsorContacts.sponsorDevfolio,
                 ),
               ],
@@ -82,21 +83,21 @@ class Sponsors extends StatelessWidget {
                   bx: silver,
                   mrl: mrg,
                   mrr: mrg,
-                  url: 'images/sponsor_matic.jpg',
+                  url: silverSponsor['images/sponsor_matic.jpg'],
                   link: SponsorContacts.sponsorMatic,
                 ),
                 SponsorCard(
                   bx: silver,
                   mrl: mrg,
                   mrr: mrg,
-                  url: 'images/sponsor_portis.jpg',
+                  url: silverSponsor['images/sponsor_portis.jpg'],
                   link: SponsorContacts.sponsorPortis,
                 ),
                 SponsorCard(
                   bx: silver,
                   mrl: mrg,
                   mrr: mrg,
-                  url: 'images/sponsor_tezos.jpg',
+                  url: silverSponsor['images/sponsor_tezos.jpg'],
                   link: SponsorContacts.sponsorTezos,
                 ),
               ],
@@ -117,28 +118,28 @@ class Sponsors extends StatelessWidget {
                   bx: bronze,
                   mrl: mrg,
                   mrr: mrg,
-                  url: 'images/sponsor_rosenfeld.jpg',
+                  url: bronzeSponsor['images/sponsor_rosenfeld.jpg'],
                   link: SponsorContacts.sponsorRosenfeld,
                 ),
                 SponsorCard(
                   bx: bronze,
                   mrl: mrg,
                   mrr: mrg,
-                  url: 'images/sponsor_1password.jpg',
+                  url: bronzeSponsor['images/sponsor_1password.jpg'],
                   link: SponsorContacts.sponsor1password,
                 ),
                 SponsorCard(
                   bx: bronze,
                   mrl: mrg,
                   mrr: mrg,
-                  url: 'images/sponsor_loop11.jpg',
+                  url: bronzeSponsor['images/sponsor_loop11.jpg'],
                   link: SponsorContacts.sponsorloop11,
                 ),
                 SponsorCard(
                   bx: bronze,
                   mrl: mrg,
                   mrr: mrg,
-                  url: 'images/sponsor_duexpress.png',
+                  url: bronzeSponsor['images/sponsor_duexpress.png'],
                   link: SponsorContacts.sponsorduexpress,
                 ),
               ],
@@ -157,7 +158,7 @@ class Sponsors extends StatelessWidget {
                   bx: bronze,
                   mrl: mrg,
                   mrr: mrg,
-                  url: 'images/sponsor_protoio.jpg',
+                  url: bronzeSponsor['images/sponsor_protoio.jpg'],
                   link: SponsorContacts.sponsorprotoio,
                 ),
               ],

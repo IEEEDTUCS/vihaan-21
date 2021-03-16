@@ -10,7 +10,6 @@ import 'package:vihaan_new/screensDesktop/team.dart';
 import 'package:vihaan_new/screensMobile/landingpage_m.dart';
 import 'package:vihaan_new/screensMobile/sponsor_m.dart';
 import 'package:vihaan_new/screensMobile/timelineSection_m.dart';
-import 'package:vihaan_new/screensMobile/tracks_m.dart';
 import 'package:vihaan_new/widgets/revealing_soon.dart';
 import 'package:vihaan_new/widgets/vihaan_icons_icons.dart';
 
@@ -195,12 +194,30 @@ class _MobileHomePageState extends State<MobileHomePage> {
                   child: Container(
                     width: MediaQuery.of(context).size.width,
                     color: Color.fromARGB(255, 209, 253, 172),
-                    child: Stack(
+                    child: Column(
                       children: [
-                        Align(
-                          alignment: Alignment.center,
-                          child: Tracks(), // RevealingSoon(),//
-                        )
+                        Container(
+                          child: Text(
+                            'TRACKS',
+                            style: TextStyle(
+                                fontFamily: 'NunitoSans',
+                                fontSize: max(_width * 0.075, 50),
+                                color: Colors.white,
+                                fontWeight: FontWeight.w700),
+                          ),
+                        ),
+                        Container(
+                            height: 2,
+                            color: Colors.black12,
+                            margin: EdgeInsets.fromLTRB(80, 0, 80, 10)),
+                        Padding(
+                          padding: EdgeInsets.only(bottom: 20),
+                          child: Align(
+                            alignment: Alignment.center,
+                            child:
+                                RevealingSoon(), // Prizes(), // RevealingSoon(),
+                          ),
+                        ),
                       ],
                     ),
                   ),

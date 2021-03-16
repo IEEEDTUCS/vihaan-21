@@ -13,12 +13,12 @@ class TeamCard extends StatelessWidget {
     'Vaibhav Srivastava'
   ];
   List<String> team_img = [
-    'images/team_ritwik_new.png',
-    'images/team_hemang.jpg',
-    'images/team_garvit.jpg',
-    'images/team_shubhamshri.jpg',
-    'images/team_ansh.jpg',
-    'images/team_vaibhav.jpg'
+    'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fteam%2Fteam_ritwik_new.png?alt=media&token=bf1f572f-8fed-4976-aac9-04832ae39a54',
+    'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fteam%2Fteam_hemang.jpg?alt=media&token=452c55fe-0c03-4d0c-8938-8fb578bbd78f',
+    'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fteam%2Fteam_garvit.jpg?alt=media&token=7363cdc0-46d4-4aad-b3a3-6b7a2bc3296d',
+    'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fteam%2Fteam_shubhamshri.jpg?alt=media&token=3bdadac9-073b-4246-8eb1-a927ea54cab5',
+    'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fteam%2Fteam_ansh.jpg?alt=media&token=0729235b-070a-4542-b8fd-e84d324c0286',
+    'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fteam%2Fteam_vaibhav.jpg?alt=media&token=ff7c1202-6313-4c53-913e-e02a6aa393d5'
   ];
   List<String> team_qt = [
     'https://github.com/ritwikranjan',

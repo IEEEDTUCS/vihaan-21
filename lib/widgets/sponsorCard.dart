@@ -15,7 +15,8 @@ class SponsorCard extends StatelessWidget {
             width: bx,
             margin: EdgeInsets.fromLTRB(mrl, 0, mrr, 0),
             decoration: BoxDecoration(
-              image: DecorationImage(image: AssetImage(url), fit: BoxFit.fill),
+              image:
+                  DecorationImage(image: NetworkImage(url), fit: BoxFit.fill),
               color: Colors.white,
               boxShadow: [
                 BoxShadow(
