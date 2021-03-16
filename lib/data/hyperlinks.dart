@@ -54,6 +54,15 @@ class IEEEURLS {
       throw 'Could not launch $url';
     }
   }
+
+  static vihaanDiscord() async {
+    const url = 'https://discord.gg/gTpWKBQBCC';
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
 }
 
 class ContactMails {
@@ -151,6 +160,15 @@ class SponsorContacts {
 
   static sponsorduexpress() async {
     const url = 'https://duexpress.in/';
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
+
+  static sponsorprotoio() async {
+    const url = 'https://proto.io/';
     if (await canLaunch(url)) {
       await launch(url);
     } else {

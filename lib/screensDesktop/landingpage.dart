@@ -4,8 +4,10 @@ import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:simple_animations/simple_animations.dart';
 import 'package:universal_html/html.dart';
+import 'package:vihaan_new/data/hyperlinks.dart';
 import 'package:vihaan_new/widgets/animatedWave.dart';
 import 'package:vihaan_new/widgets/devfolio_button.dart';
+import 'package:vihaan_new/widgets/vihaan_icons_icons.dart';
 
 class AnimatedBackground extends StatelessWidget {
   @override
@@ -124,6 +126,46 @@ class LandingPageContent extends StatelessWidget {
                       height: 50,
                       width: 330,
                       child: DevfolioButton(),
+                    ),
+
+                    InkWell(
+                      onTap: IEEEURLS.vihaanDiscord,
+                      child: Material(
+                        elevation: 8,
+                        color: Colors.white,
+                        clipBehavior: Clip.antiAlias,
+                        shadowColor: Colors.black54,
+                        borderRadius: BorderRadius.all(
+                          Radius.circular(5),
+                        ),
+                        child: Container(
+                          width: 310,
+                          height: 42,
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              Icon(
+                                VihaanIcons.discord,
+                                color: Color(0xff27333f),
+                                size: 30,
+                              ),
+                              SizedBox(
+                                width: 10,
+                              ),
+                              Text(
+                                "Join Our Discord Server",
+                                style: TextStyle(
+                                  color: Color(0xff2c3a43),
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 20,
+                                  letterSpacing: 0.4,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
                     ),
                     // InkWell(
                     //   onTap: IEEEURLS.devfolioPage,

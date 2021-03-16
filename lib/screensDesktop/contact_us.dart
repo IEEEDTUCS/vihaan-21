@@ -278,6 +278,13 @@ class ContactUs extends StatelessWidget {
     fontSize: 22,
     height: 1.2,
   );
+  final emailUsNameTextStyle = TextStyle(
+    fontSize: 16,
+    fontWeight: FontWeight.w200,
+    height: 1.3,
+    decoration: TextDecoration.underline,
+    decorationThickness: 2,
+  );
 
   RichText buildShubhamDetails() {
     return RichText(
@@ -298,7 +305,7 @@ class ContactUs extends StatelessWidget {
           ),
           TextSpan(
             text: '\nshubhamgodleon@ieee.org',
-            style: contactUsTextStyle,
+            style: emailUsNameTextStyle,
             recognizer: TapGestureRecognizer()
               ..onTap = () {
                 ContactMails.shubhamEmail();
@@ -329,7 +336,7 @@ class ContactUs extends StatelessWidget {
           ),
           TextSpan(
             text: '\nritwikr@ieee.org',
-            style: contactUsTextStyle,
+            style: emailUsNameTextStyle,
             recognizer: TapGestureRecognizer()
               ..onTap = () {
                 ContactMails.ritwikEmail();
