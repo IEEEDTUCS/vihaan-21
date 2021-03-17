@@ -5,12 +5,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:vihaan_new/data/hyperlinks.dart';
 import 'package:vihaan_new/data/images.dart';
+import 'package:vihaan_new/widgets/gridSponsors.dart';
 import 'package:vihaan_new/widgets/sponsorCard.dart';
 
 class Sponsors extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final width = MediaQuery.of(context).size.width;
+    final height = MediaQuery.of(context).size.height;
     final double mrg = 4,
         gold = width * 0.4,
         silver = width * 0.3,
@@ -108,62 +110,63 @@ class Sponsors extends StatelessWidget {
               title: 'BRONZE',
               fnt: 38.00,
               clr: Color.fromARGB(255, 205, 127, 50)),
-          SingleChildScrollView(
-            scrollDirection: Axis.horizontal,
-            child: Row(
-              mainAxisSize: MainAxisSize.min,
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                SponsorCard(
-                  bx: bronze,
-                  mrl: mrg,
-                  mrr: mrg,
-                  url: bronzeSponsor['images/sponsor_rosenfeld.jpg'],
-                  link: SponsorContacts.sponsorRosenfeld,
-                ),
-                SponsorCard(
-                  bx: bronze,
-                  mrl: mrg,
-                  mrr: mrg,
-                  url: bronzeSponsor['images/sponsor_1password.jpg'],
-                  link: SponsorContacts.sponsor1password,
-                ),
-                SponsorCard(
-                  bx: bronze,
-                  mrl: mrg,
-                  mrr: mrg,
-                  url: bronzeSponsor['images/sponsor_loop11.jpg'],
-                  link: SponsorContacts.sponsorloop11,
-                ),
-                SponsorCard(
-                  bx: bronze,
-                  mrl: mrg,
-                  mrr: mrg,
-                  url: bronzeSponsor['images/sponsor_duexpress.png'],
-                  link: SponsorContacts.sponsorduexpress,
-                ),
-              ],
-            ),
-          ),
-          SizedBox(
-            height: 10,
-          ),
-          SingleChildScrollView(
-            scrollDirection: Axis.horizontal,
-            child: Row(
-              mainAxisSize: MainAxisSize.min,
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                SponsorCard(
-                  bx: bronze,
-                  mrl: mrg,
-                  mrr: mrg,
-                  url: bronzeSponsor['images/sponsor_protoio.jpg'],
-                  link: SponsorContacts.sponsorprotoio,
-                ),
-              ],
-            ),
-          )
+          bronzeSponsorsGrid(width, height),
+          // SingleChildScrollView(
+          //   scrollDirection: Axis.horizontal,
+          //   child: Row(
+          //     mainAxisSize: MainAxisSize.min,
+          //     mainAxisAlignment: MainAxisAlignment.center,
+          //     children: [
+          //       SponsorCard(
+          //         bx: bronze,
+          //         mrl: mrg,
+          //         mrr: mrg,
+          //         url: bronzeSponsor['images/sponsor_rosenfeld.jpg'],
+          //         link: SponsorContacts.sponsorRosenfeld,
+          //       ),
+          //       SponsorCard(
+          //         bx: bronze,
+          //         mrl: mrg,
+          //         mrr: mrg,
+          //         url: bronzeSponsor['images/sponsor_1password.jpg'],
+          //         link: SponsorContacts.sponsor1password,
+          //       ),
+          //       SponsorCard(
+          //         bx: bronze,
+          //         mrl: mrg,
+          //         mrr: mrg,
+          //         url: bronzeSponsor['images/sponsor_loop11.jpg'],
+          //         link: SponsorContacts.sponsorloop11,
+          //       ),
+          //       SponsorCard(
+          //         bx: bronze,
+          //         mrl: mrg,
+          //         mrr: mrg,
+          //         url: bronzeSponsor['images/sponsor_duexpress.png'],
+          //         link: SponsorContacts.sponsorduexpress,
+          //       ),
+          //     ],
+          //   ),
+          // ),
+          // SizedBox(
+          //   height: 10,
+          // ),
+          // SingleChildScrollView(
+          //   scrollDirection: Axis.horizontal,
+          //   child: Row(
+          //     mainAxisSize: MainAxisSize.min,
+          //     mainAxisAlignment: MainAxisAlignment.center,
+          //     children: [
+          //       SponsorCard(
+          //         bx: bronze,
+          //         mrl: mrg,
+          //         mrr: mrg,
+          //         url: bronzeSponsor['images/sponsor_protoio.jpg'],
+          //         link: SponsorContacts.sponsorprotoio,
+          //       ),
+          //     ],
+          //   ),
+          // )
         ],
       ),
     );

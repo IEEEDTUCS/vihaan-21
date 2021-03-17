@@ -3,12 +3,13 @@
 import 'package:flutter/material.dart';
 
 var trackName = [
-  'Agriculture & Rural Development',
-  'Blockchain',
-  'Education',
-  'Healthcare',
+  'FinTech',
+  'Climate Change',
+  'AR/VR',
+  'Ed. Tech.',
+  'Halthcare',
   'Security',
-  'Transport',
+  'Future Mobility',
   'Open Innovation'
 ];
 

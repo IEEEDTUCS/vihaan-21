@@ -175,4 +175,31 @@ class SponsorContacts {
       throw 'Could not launch $url';
     }
   }
+
+  static sponsorDUBeat() async {
+    const url = 'https://dubeat.com/';
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
+
+  static sponsorTaskade() async {
+    const url = 'https://taskade.com/';
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
+
+  static sponsorGivemycertificate() async {
+    const url = 'https://givemycertificate.com/';
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
 }

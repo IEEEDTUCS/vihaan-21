@@ -25,16 +25,23 @@ var bronzeSponsor = {
       'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fsponsors%2Fsponsor_duexpress.png?alt=media&token=db811f8a-1f03-4f38-8eaf-492baf6b28e8',
   'images/sponsor_protoio.jpg':
       'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fsponsors%2Fsponsor_protoio.jpg?alt=media&token=1ed47a16-61df-49f3-9abb-a10435672ccf',
+  'images/sponsor_dubeat.jpg':
+      'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fsponsors%2Fsponsor_duexpress.png?alt=media&token=db811f8a-1f03-4f38-8eaf-492baf6b28e8',
+  'images/sponsor_givemycertificate.jpg':
+      'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fsponsors%2Fsponsor_protoio.jpg?alt=media&token=1ed47a16-61df-49f3-9abb-a10435672ccf',
+  'images/sponsor_taskade.jpg':
+      'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fsponsors%2Fsponsor_duexpress.png?alt=media&token=db811f8a-1f03-4f38-8eaf-492baf6b28e8',
 };
 
 var tracksImages = [
-  'images/track_agriculture.png',
-  'images/track_blockchain.png',
-  'images/track_education.png',
+  'images/track_fintech.png',
+  'images/track_climatechange.png',
+  'images/track_arvr.png',
+  'images/track_edtech.png',
   'images/track_healthcare.png',
   'images/track_security.png',
-  'images/track_transport.png',
-  'images/track_other.png'
+  'images/track_futuremobility.png',
+  'images/track_openinnovation.png'
 ];
 
 var ieeeMemberImages = [
