@@ -17,8 +17,7 @@ class Sponsors extends StatelessWidget {
         gold = min(300, width * 0.2),
         silver = min(236, width * 0.15),
         bronze = min(195, width * 0.125),
-        titleFont = min(width * 0.065, 90),
-        headingFont = min(width * 0.085, 110);
+        titleFont = min(width * 0.065, 90);
 
     return Container(
       padding: EdgeInsets.all(16),
