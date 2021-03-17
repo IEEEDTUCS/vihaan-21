@@ -8,6 +8,7 @@ class SponsorCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      padding: EdgeInsets.only(top: 8.0),
       child: InkWell(
         onTap: link,
         child: Container(
