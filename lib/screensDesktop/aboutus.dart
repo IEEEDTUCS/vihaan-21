@@ -5,7 +5,6 @@ class AboutUs extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var _width = MediaQuery.of(context).size.width;
-    var _height = MediaQuery.of(context).size.height;
 
     Widget image = Flexible(
         flex: 2,

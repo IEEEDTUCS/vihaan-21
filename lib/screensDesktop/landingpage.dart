@@ -72,8 +72,6 @@ class FancyBackgroundApp extends StatelessWidget {
 class LandingPageContent extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    var _height = MediaQuery.of(context).size.height;
-    var _width = MediaQuery.of(context).size.width;
     return AnimatedOpacity(
       duration: Duration(milliseconds: 250),
       opacity: 1.0,
