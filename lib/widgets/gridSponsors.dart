@@ -17,7 +17,9 @@ Widget bronzeSponsorsGrid(
     'images/sponsor_protoio.jpg',
     'images/sponsor_dubeat.jpg',
     'images/sponsor_givemycertificate.jpg',
-    'images/sponsor_taskade.jpg'
+    'images/sponsor_taskade.jpg',
+    'images/sponsor_replit.jpg',
+    //'images/sponsor_echoar.jpg'
   ];
   List<Widget> bronzeSponsorsWidget = [];
   var bronzeSponsorLinks = [
@@ -29,6 +31,8 @@ Widget bronzeSponsorsGrid(
     SponsorContacts.sponsorDUBeat,
     SponsorContacts.sponsorGivemycertificate,
     SponsorContacts.sponsorTaskade,
+    SponsorContacts.sponsorReplit,
+    //SponsorContacts.sponsorEchoAR
   ];
   for (int i = 0; i < bronzeSponsorImages.length; i++) {
     bronzeSponsorsWidget.add(
