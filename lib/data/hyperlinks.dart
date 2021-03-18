@@ -238,4 +238,49 @@ class SponsorContacts {
       throw 'Could not launch $url';
     }
   }
+
+  static sponsorSashido() async {
+    const url = 'https://www.sashido.io/en/';
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
+
+  static sponsorSpeechly() async {
+    const url = 'https://www.speechly.com/';
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
+
+  static sponsorCryptopolitan() async {
+    const url = 'https://www.cryptopolitan.com/';
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
+
+  static sponsorDailybot() async {
+    const url = 'https://www.dailybot.com/';
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
+
+  static sponsorTesseract() async {
+    const url = 'https://tesseract.rezzlon.com/';
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
 }

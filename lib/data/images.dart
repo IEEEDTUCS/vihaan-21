@@ -39,6 +39,14 @@ var bronzeSponsor = {
       'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fsponsors%2Fsponsor_noticebard.jpg?alt=media&token=79bf7892-d47a-4bb8-8ce9-fdd3104348c2',
   'images/sponsor_axure.jpg':
       'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fsponsors%2Fsponsor_axure.jpg?alt=media&token=54a26d69-0b08-40b4-931f-09b7bb5e8c80',
+  'images/sponsor_dailybot.jpg':
+      'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fsponsors%2Fsponsor_dailybot.jpg?alt=media&token=9e28572a-df5e-4ab3-bd25-9595a603c950',
+  'images/sponsor_sashido.jpg':
+      'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fsponsors%2Fsponsor_sashido.jpg?alt=media&token=4e6a26cb-80c4-47d9-ac7f-9960c8c5f540',
+  'images/sponsor_speechly.jpg':
+      'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fsponsors%2Fsponsor_speechly.jpg?alt=media&token=7e5a6d60-55e7-41e2-a4d0-26382ab39e5e',
+  'images/sponsor_cryptopolitan.jpg':
+      'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fsponsors%2Fsponsor_cryptopolitan.jpg?alt=media&token=818b3231-58b7-40d2-947a-762e4b33071b',
 };
 
 var tracksImages = [
