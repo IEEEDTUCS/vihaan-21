@@ -17,6 +17,8 @@ Widget bronzeSponsorsGrid(
     'images/sponsor_givemycertificate.jpg',
     'images/sponsor_taskade.jpg',
     'images/sponsor_replit.jpg',
+    'images/sponsor_noticebard.jpg',
+    'images/sponsor_axure.jpg',
   ];
   List<Widget> bronzeSponsorsWidget = [];
   var bronzeSponsorLinks = [
@@ -29,6 +31,8 @@ Widget bronzeSponsorsGrid(
     SponsorContacts.sponsorGivemycertificate,
     SponsorContacts.sponsorTaskade,
     SponsorContacts.sponsorReplit,
+    SponsorContacts.sponsorNoticebard,
+    SponsorContacts.sponsorAxure
   ];
   for (int i = 0; i < bronzeSponsorImages.length; i++) {
     bronzeSponsorsWidget.add(

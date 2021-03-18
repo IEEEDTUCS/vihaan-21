@@ -220,4 +220,22 @@ class SponsorContacts {
       throw 'Could not launch $url';
     }
   }
+
+  static sponsorNoticebard() async {
+    const url = 'https://www.noticebard.com/';
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
+
+  static sponsorAxure() async {
+    const url = 'https://www.axure.com/';
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
 }

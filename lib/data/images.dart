@@ -35,6 +35,10 @@ var bronzeSponsor = {
       'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fsponsors%2Fsponsor_taskade.jpg?alt=media&token=b0ae16c9-809f-49f7-88ac-4ec19fe11152',
   'images/sponsor_replit.jpg':
       'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fsponsors%2Fsponsor_replit.jpg?alt=media&token=b5bb76cb-2bef-464f-a428-51dceaefad59',
+  'images/sponsor_noticebard.jpg':
+      'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fsponsors%2Fsponsor_noticebard.jpg?alt=media&token=79bf7892-d47a-4bb8-8ce9-fdd3104348c2',
+  'images/sponsor_axure.jpg':
+      'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fsponsors%2Fsponsor_axure.jpg?alt=media&token=54a26d69-0b08-40b4-931f-09b7bb5e8c80',
 };
 
 var tracksImages = [
