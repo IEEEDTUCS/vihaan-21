@@ -202,4 +202,22 @@ class SponsorContacts {
       throw 'Could not launch $url';
     }
   }
+
+  static sponsorReplit() async {
+    const url = 'https://repl.it/';
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
+
+  static sponsorEchoAR() async {
+    const url = 'https://www.echoar.xyz/';
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
 }

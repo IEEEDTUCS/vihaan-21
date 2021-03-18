@@ -31,6 +31,10 @@ var bronzeSponsor = {
       'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fsponsors%2Fsponsor_protoio.jpg?alt=media&token=1ed47a16-61df-49f3-9abb-a10435672ccf',
   'images/sponsor_taskade.jpg':
       'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fsponsors%2Fsponsor_duexpress.png?alt=media&token=db811f8a-1f03-4f38-8eaf-492baf6b28e8',
+  'images/sponsor_replit.jpg':
+      'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fsponsors%2Fsponsor_duexpress.png?alt=media&token=db811f8a-1f03-4f38-8eaf-492baf6b28e8',
+  'images/sponsor_echoar.jpg':
+      'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fsponsors%2Fsponsor_duexpress.png?alt=media&token=db811f8a-1f03-4f38-8eaf-492baf6b28e8',
 };
 
 var tracksImages = [
