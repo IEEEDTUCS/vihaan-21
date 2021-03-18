@@ -32,7 +32,7 @@ var bronzeSponsor = {
   'images/sponsor_givemycertificate.jpg':
       'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fsponsors%2Fsponsor_gmc.jpg?alt=media&token=7020a8e4-f31e-422e-aea3-dfe301333da3',
   'images/sponsor_taskade.jpg':
-      'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fsponsors%2Fsponsor_duexpress.png?alt=media&token=db811f8a-1f03-4f38-8eaf-492baf6b28e8',
+      'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fsponsors%2Fsponsor_taskade.jpg?alt=media&token=b0ae16c9-809f-49f7-88ac-4ec19fe11152',
   'images/sponsor_replit.jpg':
       'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fsponsors%2Fsponsor_replit.jpg?alt=media&token=b5bb76cb-2bef-464f-a428-51dceaefad59',
 };

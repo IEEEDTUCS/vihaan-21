@@ -91,7 +91,7 @@ class _DesktopHomePageState extends State<DesktopHomePage> {
                             padding: EdgeInsets.only(top: 15),
                             child: Container(
                               child: Text(
-                                'PRIZES',
+                                'TRACKS',
                                 style: TextStyle(
                                     fontFamily: 'NunitoSans',
                                     fontSize: 50,
