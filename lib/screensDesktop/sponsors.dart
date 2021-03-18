@@ -5,8 +5,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:vihaan_new/data/hyperlinks.dart';
 import 'package:vihaan_new/data/images.dart';
-import 'package:vihaan_new/widgets/sponsorCard.dart';
 import 'package:vihaan_new/widgets/gridSponsors.dart';
+import 'package:vihaan_new/widgets/sponsorCard.dart';
 
 class Sponsors extends StatelessWidget {
   @override
@@ -14,8 +14,8 @@ class Sponsors extends StatelessWidget {
     final width = MediaQuery.of(context).size.width;
     final height = MediaQuery.of(context).size.height;
     final double mrg = 4,
-        gold = min(300, width * 0.2),
-        silver = min(236, width * 0.15),
+        gold = min(300, width * 0.225),
+        silver = max(100, width * 0.175),
         bronze = min(195, width * 0.125),
         titleFont = min(width * 0.065, 90);
 
@@ -97,6 +97,13 @@ class Sponsors extends StatelessWidget {
                   mrr: mrg,
                   url: silverSponsor['images/sponsor_tezos.jpg'],
                   link: SponsorContacts.sponsorTezos,
+                ),
+                SponsorCard(
+                  bx: silver,
+                  mrl: mrg,
+                  mrr: mrg,
+                  url: silverSponsor['images/sponsor_echoar.jpg'],
+                  link: SponsorContacts.sponsorEchoAR,
                 ),
               ],
             ),

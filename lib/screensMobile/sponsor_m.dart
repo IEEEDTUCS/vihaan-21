@@ -14,8 +14,8 @@ class Sponsors extends StatelessWidget {
     final width = MediaQuery.of(context).size.width;
     final height = MediaQuery.of(context).size.height;
     final double mrg = 4,
-        gold = width * 0.4,
-        silver = width * 0.3,
+        gold = width * 0.45,
+        silver = width * 0.35,
         bronze = width * 0.2,
         titleFont = max(width * 0.075, 60),
         headingFont = max(width * 0.085, 68);
@@ -95,12 +95,29 @@ class Sponsors extends StatelessWidget {
                   url: silverSponsor['images/sponsor_portis.jpg'],
                   link: SponsorContacts.sponsorPortis,
                 ),
+              ],
+            ),
+          ),
+          SizedBox(height: 15),
+          SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            child: Row(
+              mainAxisSize: MainAxisSize.min,
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
                 SponsorCard(
                   bx: silver,
                   mrl: mrg,
                   mrr: mrg,
                   url: silverSponsor['images/sponsor_tezos.jpg'],
                   link: SponsorContacts.sponsorTezos,
+                ),
+                SponsorCard(
+                  bx: silver,
+                  mrl: mrg,
+                  mrr: mrg,
+                  url: silverSponsor['images/sponsor_echoar.jpg'],
+                  link: SponsorContacts.sponsorEchoAR,
                 ),
               ],
             ),

@@ -1,5 +1,3 @@
-import 'dart:math';
-
 import 'package:flutter/material.dart';
 import 'package:vihaan_new/data/hyperlinks.dart';
 import 'package:vihaan_new/data/images.dart';
@@ -19,7 +17,6 @@ Widget bronzeSponsorsGrid(
     'images/sponsor_givemycertificate.jpg',
     'images/sponsor_taskade.jpg',
     'images/sponsor_replit.jpg',
-    //'images/sponsor_echoar.jpg'
   ];
   List<Widget> bronzeSponsorsWidget = [];
   var bronzeSponsorLinks = [
@@ -32,12 +29,11 @@ Widget bronzeSponsorsGrid(
     SponsorContacts.sponsorGivemycertificate,
     SponsorContacts.sponsorTaskade,
     SponsorContacts.sponsorReplit,
-    //SponsorContacts.sponsorEchoAR
   ];
   for (int i = 0; i < bronzeSponsorImages.length; i++) {
     bronzeSponsorsWidget.add(
       SponsorCard(
-        bx: min(300, width * 0.2),
+        bx: (width >= 800) ? width * 0.125 : width * 0.2,
         mrl: 4,
         mrr: 4,
         url: bronzeSponsor[bronzeSponsorImages[i]],

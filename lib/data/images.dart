@@ -11,7 +11,9 @@ var silverSponsor = {
   'images/sponsor_portis.jpg':
       'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fsponsors%2Fsponsor_portis.jpg?alt=media&token=ded91ae5-2141-402a-a2b8-5b1aaf76d4f3',
   'images/sponsor_tezos.jpg':
-      'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fsponsors%2Fsponsor_tezos.jpg?alt=media&token=099b3c60-f75b-45d3-8997-cb6338cb95bf'
+      'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fsponsors%2Fsponsor_tezos.jpg?alt=media&token=099b3c60-f75b-45d3-8997-cb6338cb95bf',
+  'images/sponsor_echoar.jpg':
+      'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fsponsors%2Fsponsor_echoar.jpg?alt=media&token=5d30fec7-37d5-41c3-ae6c-cdc32967792e'
 };
 
 var bronzeSponsor = {
@@ -26,15 +28,13 @@ var bronzeSponsor = {
   'images/sponsor_protoio.jpg':
       'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fsponsors%2Fsponsor_protoio.jpg?alt=media&token=1ed47a16-61df-49f3-9abb-a10435672ccf',
   'images/sponsor_dubeat.jpg':
-      'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fsponsors%2Fsponsor_duexpress.png?alt=media&token=db811f8a-1f03-4f38-8eaf-492baf6b28e8',
+      'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fsponsors%2Fsponsor_dubeat.jpg?alt=media&token=64e240bc-83fd-41a1-bbc6-5133a9238b9c',
   'images/sponsor_givemycertificate.jpg':
-      'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fsponsors%2Fsponsor_protoio.jpg?alt=media&token=1ed47a16-61df-49f3-9abb-a10435672ccf',
+      'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fsponsors%2Fsponsor_gmc.jpg?alt=media&token=7020a8e4-f31e-422e-aea3-dfe301333da3',
   'images/sponsor_taskade.jpg':
       'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fsponsors%2Fsponsor_duexpress.png?alt=media&token=db811f8a-1f03-4f38-8eaf-492baf6b28e8',
   'images/sponsor_replit.jpg':
-      'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fsponsors%2Fsponsor_duexpress.png?alt=media&token=db811f8a-1f03-4f38-8eaf-492baf6b28e8',
-  'images/sponsor_echoar.jpg':
-      'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fsponsors%2Fsponsor_duexpress.png?alt=media&token=db811f8a-1f03-4f38-8eaf-492baf6b28e8',
+      'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fsponsors%2Fsponsor_replit.jpg?alt=media&token=b5bb76cb-2bef-464f-a428-51dceaefad59',
 };
 
 var tracksImages = [
