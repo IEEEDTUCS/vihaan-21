@@ -283,4 +283,13 @@ class SponsorContacts {
       throw 'Could not launch $url';
     }
   }
+
+  static sponsorEgghead() async {
+    const url = 'https://egghead.io/';
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
 }

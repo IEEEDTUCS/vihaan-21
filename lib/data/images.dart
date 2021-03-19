@@ -47,6 +47,8 @@ var bronzeSponsor = {
       'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fsponsors%2Fsponsor_speechly.jpg?alt=media&token=7e5a6d60-55e7-41e2-a4d0-26382ab39e5e',
   'images/sponsor_cryptopolitan.jpg':
       'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fsponsors%2Fsponsor_cryptopolitan.jpg?alt=media&token=818b3231-58b7-40d2-947a-762e4b33071b',
+  'images/sponsor_egghead.jpg':
+      'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fsponsors%2Fsponsor_egghead.jpg?alt=media&token=e60b773d-2f98-4120-bc58-f6e69ea7a495',
 };
 
 var tracksImages = [
@@ -70,8 +72,9 @@ var ieeeMemberImages = [
   'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fteam%2Fteam_mridul.jpg?alt=media&token=73aa28a6-01ee-43cb-9339-0d99ff7154e8',
   'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fteam%2Fteam_kirti.jpg?alt=media&token=f1b976c1-12f2-4a74-a967-65f5e3473737',
   'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fteam%2Fteam_abhishek.jpg?alt=media&token=e7691363-0761-409d-ac6a-04500b6217f8',
+  'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fteam%2Fteam_chitra.jpg?alt=media&token=cbc4f406-3bab-48c6-8186-a61cb4f24420',
   'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fteam%2Fteam_manali.jpg?alt=media&token=7cb70f99-bbac-42cd-b36e-42edd240c256',
-  'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fteam%2Fteam_manan.jpg?alt=media&token=0eae0e9b-8b64-4fca-96a8-869d71b263ee',
+  'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fteam%2Fteam_mayank.jpg?alt=media&token=15a10a0e-62b5-4c42-b287-c67e18464e99',
   'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fteam%2Fteam_shivamShaurya.jpg?alt=media&token=da2d2cea-546f-44f3-b6de-617490027d4f',
   'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fteam%2Fteam_nitya.jpg?alt=media&token=b5b79a20-4bd4-4042-8ada-cba661476086',
   'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fteam%2Fteam_vaibhav.jpg?alt=media&token=ff7c1202-6313-4c53-913e-e02a6aa393d5',
