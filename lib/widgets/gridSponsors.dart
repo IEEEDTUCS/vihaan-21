@@ -21,7 +21,6 @@ Widget bronzeSponsorsGrid(
     'images/sponsor_axure.jpg',
     'images/sponsor_dailybot.jpg',
     'images/sponsor_sashido.jpg',
-    'images/sponsor_speechly.jpg',
     'images/sponsor_cryptopolitan.jpg',
     'images/sponsor_egghead.jpg'
   ];
@@ -40,7 +39,6 @@ Widget bronzeSponsorsGrid(
     SponsorContacts.sponsorAxure,
     SponsorContacts.sponsorDailybot,
     SponsorContacts.sponsorSashido,
-    SponsorContacts.sponsorSpeechly,
     SponsorContacts.sponsorCryptopolitan,
     SponsorContacts.sponsorEgghead
   ];
@@ -62,8 +60,15 @@ Widget bronzeSponsorsGrid(
 
     // crossAxisCount: 1,
     //padding: EdgeInsets.all(5.0),
-    crossAxisCount:
-        (width > 350) ? ((width > 600) ? ((width >= 800) ? 5 : 4) : 3) : 2,
+    crossAxisCount: (width > 350)
+        ? ((width > 600)
+            ? ((width >= 800)
+                ? (width >= 1000)
+                    ? 6
+                    : 5
+                : 4)
+            : 3)
+        : 2,
 
     children: bronzeSponsorsWidget,
   );

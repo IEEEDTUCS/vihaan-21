@@ -21,7 +21,7 @@ class Sponsors extends StatelessWidget {
 
     return Container(
       padding: EdgeInsets.all(16),
-      color: Color.fromARGB(255, 255, 255, 240),
+      color: Colors.black87,
       child: Column(
         mainAxisSize: MainAxisSize.min,
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -32,7 +32,7 @@ class Sponsors extends StatelessWidget {
               style: TextStyle(
                   fontFamily: 'NunitoSans',
                   fontSize: 50,
-                  color: Color.fromARGB(255, 0, 48, 76),
+                  color: Colors.white60,
                   fontWeight: FontWeight.w700),
             ),
           ),
@@ -105,6 +105,13 @@ class Sponsors extends StatelessWidget {
                 //   url: silverSponsor['images/sponsor_echoar.jpg'],
                 //   link: SponsorContacts.sponsorEchoAR,
                 // ),
+                SponsorCard(
+                  bx: silver,
+                  mrl: mrg,
+                  mrr: mrg,
+                  url: silverSponsor['images/sponsor_speechly.jpg'],
+                  link: SponsorContacts.sponsorSpeechly,
+                ),
               ],
             ),
           ),
