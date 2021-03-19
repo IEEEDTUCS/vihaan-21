@@ -17,7 +17,7 @@ class Tracks extends StatelessWidget {
 
     List<Widget> tracks = [];
     for (int i = 0; i < trackName.length; i++) {
-      precacheImage(AssetImage(tracksImages[i]), context);
+      precacheImage(NetworkImage(tracksImages[i]), context);
       tracks.add(
         TrackCard(
           orient: 0,
@@ -37,20 +37,20 @@ class Tracks extends StatelessWidget {
       padding: EdgeInsets.symmetric(horizontal: width * 0.025, vertical: 16),
       child: Column(
         children: <Widget>[
-          Container(
-            child: Text(
-              'TRACKS',
-              style: TextStyle(
-                  fontFamily: 'NunitoSans',
-                  fontSize: 50,
-                  color: Color.fromARGB(255, 0, 48, 76),
-                  fontWeight: FontWeight.w700),
-            ),
-          ),
-          Container(
-              height: 2,
-              color: Colors.black12,
-              margin: EdgeInsets.fromLTRB(80, 0, 80, 10)),
+          // Container(
+          //   child: Text(
+          //     'TRACKS',
+          //     style: TextStyle(
+          //         fontFamily: 'NunitoSans',
+          //         fontSize: 50,
+          //         color: Color.fromARGB(255, 0, 48, 76),
+          //         fontWeight: FontWeight.w700),
+          //   ),
+          // ),
+          // Container(
+          //     height: 2,
+          //     color: Colors.black12,
+          //     margin: EdgeInsets.fromLTRB(80, 0, 80, 10)),
           SizedBox(height: 10),
           GridView.count(
             crossAxisSpacing: (width >= 800) ? 16 : 8,

@@ -10,6 +10,7 @@ import 'package:vihaan_new/screensDesktop/faq.dart';
 import 'package:vihaan_new/screensDesktop/landingpage.dart';
 import 'package:vihaan_new/screensDesktop/sponsors.dart';
 import 'package:vihaan_new/screensDesktop/team.dart';
+import 'package:vihaan_new/screensDesktop/tracks.dart';
 import 'package:vihaan_new/widgets/desktopNavbar.dart';
 import 'package:vihaan_new/widgets/revealing_soon.dart';
 import 'package:vihaan_new/widgets/vihaan_icons_icons.dart';
@@ -108,7 +109,7 @@ class _DesktopHomePageState extends State<DesktopHomePage> {
                             padding: EdgeInsets.only(bottom: 20),
                             child: Align(
                               alignment: Alignment.center,
-                              // child: TimelineSection(),
+                              // child: Tracks(),
                               child: RevealingSoon(),
                             ),
                           ),

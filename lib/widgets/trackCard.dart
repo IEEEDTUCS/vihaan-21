@@ -28,7 +28,7 @@ class TrackCard extends StatelessWidget {
               padding: EdgeInsets.fromLTRB(15.0, 15.0, 15.0, 5.0),
               // width: width * 0.5,
               child: Image(
-                image: AssetImage(image),
+                image: NetworkImage(image),
               )),
         ),
         // Flexible(

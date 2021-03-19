@@ -52,14 +52,14 @@ var bronzeSponsor = {
 };
 
 var tracksImages = [
-  'images/track_fintech.png',
-  'images/track_climatechange.png',
-  'images/track_arvr.png',
-  'images/track_edtech.png',
-  'images/track_healthcare.png',
-  'images/track_security.png',
-  'images/track_futuremobility.png',
-  'images/track_openinnovation.png'
+  'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Ftracks%2Ftrack_fintech.png?alt=media&token=572e16ee-ba82-431c-a51a-7f6e19bebeb1',
+  'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Ftracks%2Ftrack_climatechange.png?alt=media&token=f47938f3-3f30-45d0-8c06-73381dbeca3f',
+  'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Ftracks%2Ftrack_arvr.png?alt=media&token=1f9017f7-2ca0-44f5-af5f-f14d10d89bc0',
+  'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Ftracks%2Ftrack_education.png?alt=media&token=f823d242-d59f-426f-b7ae-448acf2c1867',
+  'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Ftracks%2Ftrack_healthcare.png?alt=media&token=594a6fa9-e400-4c93-b486-fd023e799b45',
+  'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Ftracks%2Ftrack_security.png?alt=media&token=4a23bbb1-4d78-4d24-9f62-11f1d9e2d63e',
+  'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Ftracks%2Ftrack_futuremobility.png?alt=media&token=ef597df4-05b5-45d1-9c85-7fc15c9eb0f1',
+  'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Ftracks%2Ftrack_openinnovation.png?alt=media&token=23ae598e-6162-4a20-b132-f2dc79b05387'
 ];
 
 var ieeeMemberImages = [
