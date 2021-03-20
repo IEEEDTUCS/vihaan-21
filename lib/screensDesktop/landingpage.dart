@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:simple_animations/simple_animations.dart';
 import 'package:universal_html/html.dart';
 import 'package:vihaan_new/data/hyperlinks.dart';
+import 'package:vihaan_new/data/images.dart';
 import 'package:vihaan_new/widgets/animatedWave.dart';
 import 'package:vihaan_new/widgets/devfolio_button.dart';
 import 'package:vihaan_new/widgets/vihaan_icons_icons.dart';
@@ -71,8 +72,6 @@ class FancyBackgroundApp extends StatelessWidget {
 class LandingPageContent extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    var _height = MediaQuery.of(context).size.height;
-    var _width = MediaQuery.of(context).size.width;
     return AnimatedOpacity(
       duration: Duration(milliseconds: 250),
       opacity: 1.0,
@@ -90,7 +89,8 @@ class LandingPageContent extends StatelessWidget {
                   children: [
                     Flexible(
                       child: Container(
-                        child: Image.asset('images/vihaan.png'),
+                        child:
+                            Image.network(sectionImages['images/vihaan.png']),
                         constraints: BoxConstraints(
                           maxHeight: 400,
                         ),

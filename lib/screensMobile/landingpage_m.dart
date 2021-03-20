@@ -4,6 +4,7 @@ import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:simple_animations/simple_animations.dart';
 import 'package:vihaan_new/data/hyperlinks.dart';
+import 'package:vihaan_new/data/images.dart';
 import 'package:vihaan_new/widgets/animatedWave.dart';
 import 'package:vihaan_new/widgets/vihaan_icons_icons.dart';
 
@@ -82,8 +83,8 @@ class LandingPageContent extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Flexible(
-                  child: Image.asset(
-                    'images/vihaan.png',
+                  child: Image.network(
+                    sectionImages['images/vihaan.png'],
                   ),
                 ),
                 Text(
@@ -132,7 +133,8 @@ class LandingPageContent extends StatelessWidget {
                           Container(
                             width: 25,
                             child: Image(
-                              image: AssetImage("images/devfolio_logo.png"),
+                              image: NetworkImage(
+                                  sectionImages["images/devfolio_logo.png"]),
                             ),
                           ),
                           SizedBox(

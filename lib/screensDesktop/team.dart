@@ -14,13 +14,7 @@ class TeamSection extends StatelessWidget {
         (width > 350) ? ((width > 600) ? ((width >= 800) ? 4 : 3) : 2) : 1;
     final ratio = height / (width / rowCount);
 
-    final double itemHeight = (ratio >= 3.5)
-        ? height / 1.75
-        : (ratio >= 3.0
-            ? height / 2
-            : width > 1000
-                ? height / 1.75
-                : height / 2.25);
+    final double itemHeight = (width >= 800 && width < 1100) ? 425 : 385;
 
     final double itemWidth = (width > 350)
         ? ((width > 600) ? ((width >= 800) ? width / 4 : width / 3) : width / 2)
@@ -28,7 +22,6 @@ class TeamSection extends StatelessWidget {
 
     List<Widget> teamMemberInfo = [];
     for (int i = 0; i < ieeeMembers.length; i++) {
-      precacheImage(AssetImage(ieeeMemberImages[i]), context);
       teamMemberInfo.add(
         ProfileCard(
           name: ieeeMembers[i],
@@ -55,15 +48,18 @@ class TeamSection extends StatelessWidget {
             height: 2,
             color: Colors.black12,
             margin: EdgeInsets.fromLTRB(80, 0, 80, 10)),
-        GridView.count(
-          crossAxisSpacing: (width >= 800) ? (width >= 1000 ? 48 : 28) : 8,
-          primary: false,
-          shrinkWrap: true,
-          crossAxisCount: (width > 350)
-              ? ((width > 600) ? ((width >= 800) ? 4 : 3) : 2)
-              : 1,
-          childAspectRatio: (itemWidth / itemHeight),
-          children: teamMemberInfo,
+        Container(
+          margin: EdgeInsets.symmetric(horizontal: (width >= 800) ? 32 : 8),
+          child: GridView.count(
+            crossAxisSpacing: (width >= 800) ? (width >= 1000 ? 48 : 28) : 8,
+            primary: false,
+            shrinkWrap: true,
+            crossAxisCount: (width > 350)
+                ? ((width > 600) ? ((width >= 800) ? 4 : 3) : 2)
+                : 1,
+            childAspectRatio: (itemWidth / itemHeight),
+            children: teamMemberInfo,
+          ),
         ),
       ],
     );

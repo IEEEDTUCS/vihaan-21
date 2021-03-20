@@ -21,7 +21,7 @@ class MemberCard extends StatelessWidget {
                 maxRadius: 64.0,
                 minRadius: 20.0,
                 backgroundColor: Colors.white,
-                backgroundImage: AssetImage(imageAddress),
+                backgroundImage: NetworkImage(imageAddress),
               ),
             ),
             Padding(

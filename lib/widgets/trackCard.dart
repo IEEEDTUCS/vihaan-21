@@ -1,4 +1,3 @@
-import 'dart:math';
 import 'package:flutter/material.dart';
 
 class TrackCard extends StatelessWidget {
@@ -19,8 +18,6 @@ class TrackCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var _width = MediaQuery.of(context).size.width;
-    var _height = MediaQuery.of(context).size.height;
     return Card(
         child: Column(
       mainAxisSize: MainAxisSize.min,
@@ -31,7 +28,7 @@ class TrackCard extends StatelessWidget {
               padding: EdgeInsets.fromLTRB(15.0, 15.0, 15.0, 5.0),
               // width: width * 0.5,
               child: Image(
-                image: AssetImage(image),
+                image: NetworkImage(image),
               )),
         ),
         // Flexible(

@@ -8,6 +8,7 @@ class SponsorCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      padding: EdgeInsets.only(top: 8.0),
       child: InkWell(
         onTap: link,
         child: Container(
@@ -15,8 +16,9 @@ class SponsorCard extends StatelessWidget {
             width: bx,
             margin: EdgeInsets.fromLTRB(mrl, 0, mrr, 0),
             decoration: BoxDecoration(
-              image: DecorationImage(image: AssetImage(url), fit: BoxFit.fill),
-              color: Colors.white,
+              image:
+                  DecorationImage(image: NetworkImage(url), fit: BoxFit.fill),
+              color: Colors.white60,
               boxShadow: [
                 BoxShadow(
                   color: Colors.black26,

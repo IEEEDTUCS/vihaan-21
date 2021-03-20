@@ -1,20 +1,22 @@
 import 'package:flutter/material.dart';
+import 'package:vihaan_new/data/prizes.dart';
+import 'PrizeDialog.dart';
 import 'dart:math';
 
 class PrizeButton extends StatelessWidget {
-  final double width, height, pop_gap;
   final String src;
-  PrizeButton({this.width, this.src, this.height, this.pop_gap});
+  PrizeButton({this.src});
   @override
   Widget build(BuildContext context) {
+  var _width = MediaQuery.of(context).size.width, _height = MediaQuery.of(context).size.height;
     return Container(
       child: SizedBox(
-        width: max((width > 900)?200:(200-10*((900-width)/30)), width*0.15),
-        height: height*0.15,
+        width: max(300, _width*0.2),
+        height: max(100, _height*0.15),
         child: RaisedButton(
           child: ClipRRect(
             borderRadius: BorderRadius.circular(20),
-            child: Image.asset(src, width: max((width > 900)?200:(200-10*((900-width)/30)), width*0.1)),
+            child: Image.asset(cardImages[src], width: max(100, _width*0.1)),
           ),
           color: Color.fromARGB(255, 222, 240, 244),
           shape: RoundedRectangleBorder(
@@ -26,23 +28,15 @@ class PrizeButton extends StatelessWidget {
               context: context,
               builder: (context) {
                 return Dialog(
-                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(40)),
+                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
                   elevation: 16,
                   child: Container(
-                    height: 400.0,
-                    width: 360.0,
-                    child: ListView(
-                      children: <Widget>[
-                        SizedBox(height: pop_gap),
-                        Center(
-                          child: Text(
-                            "Prizes",
-                            style: TextStyle(fontSize: 24, color: Colors.blue, fontWeight: FontWeight.bold),
-                          ),
-                        ),
-                        SizedBox(height: pop_gap),
-                      ],
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      color: Color.fromARGB(255, 255, 255, 240)
                     ),
+                    padding: const EdgeInsets.all(10),
+                    child: PrizeDialog(src: src, height: _height, width: _width),
                   ),
                 );
               },

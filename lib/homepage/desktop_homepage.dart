@@ -8,13 +8,13 @@ import 'package:vihaan_new/screensDesktop/aboutus.dart';
 import 'package:vihaan_new/screensDesktop/contact_us.dart';
 import 'package:vihaan_new/screensDesktop/faq.dart';
 import 'package:vihaan_new/screensDesktop/landingpage.dart';
+import 'package:vihaan_new/screensDesktop/prizes.dart';
 import 'package:vihaan_new/screensDesktop/sponsors.dart';
 import 'package:vihaan_new/screensDesktop/team.dart';
 import 'package:vihaan_new/screensDesktop/tracks.dart';
 import 'package:vihaan_new/widgets/desktopNavbar.dart';
 import 'package:vihaan_new/widgets/revealing_soon.dart';
 import 'package:vihaan_new/widgets/vihaan_icons_icons.dart';
-
 
 class DesktopHomePage extends StatefulWidget {
   DesktopHomePage({Key key}) : super(key: key);
@@ -84,14 +84,36 @@ class _DesktopHomePageState extends State<DesktopHomePage> {
                   _wrapScrollTag(
                     index: 2,
                     child: Container(
+                      height: MediaQuery.of(context).size.height * 0.5,
                       width: MediaQuery.of(context).size.width,
                       color: Color.fromARGB(255, 209, 253, 172),
-                      child: Stack(
+                      child: Column(
                         children: [
-                          Align(
-                            alignment: Alignment.center,
-                            child: Tracks(),
-                          )
+                          Padding(
+                            padding: EdgeInsets.only(top: 15),
+                            child: Container(
+                              child: Text(
+                                'TRACKS',
+                                style: TextStyle(
+                                    fontFamily: 'NunitoSans',
+                                    fontSize: 50,
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.w700),
+                              ),
+                            ),
+                          ),
+                          Container(
+                              height: 2,
+                              color: Colors.black12,
+                              margin: EdgeInsets.fromLTRB(80, 0, 80, 10)),
+                          Padding(
+                            padding: EdgeInsets.only(bottom: 20),
+                            child: Align(
+                              alignment: Alignment.center,
+                              // child: Tracks(),
+                              child: RevealingSoon(),
+                            ),
+                          ),
                         ],
                       ),
                     ),
@@ -99,7 +121,7 @@ class _DesktopHomePageState extends State<DesktopHomePage> {
                   _wrapScrollTag(
                     index: 3,
                     child: Container(
-                      height: MediaQuery.of(context).size.height,
+                      //height: MediaQuery.of(context).size.height * 0.5,
                       width: MediaQuery.of(context).size.width,
                       color: Colors.purpleAccent,
                       child: Column(
@@ -118,9 +140,10 @@ class _DesktopHomePageState extends State<DesktopHomePage> {
                             ),
                           ),
                           Container(
-                              height: 2,
-                              color: Colors.black12,
-                              margin: EdgeInsets.fromLTRB(80, 0, 80, 10)),
+                            height: 2,
+                            color: Colors.black12,
+                            margin: EdgeInsets.fromLTRB(80, 0, 80, 10)
+                          ),
                           Padding(
                             padding: EdgeInsets.only(bottom: 20),
                             child: Align(
@@ -173,7 +196,7 @@ class _DesktopHomePageState extends State<DesktopHomePage> {
                   _wrapScrollTag(
                     index: 5,
                     child: Container(
-                      height: MediaQuery.of(context).size.height,
+                      height: MediaQuery.of(context).size.height * 0.5,
                       width: MediaQuery.of(context).size.width,
                       color: Colors.blueAccent,
                       child: Column(children: [
@@ -204,7 +227,6 @@ class _DesktopHomePageState extends State<DesktopHomePage> {
                     index: 6,
                     child: Container(
                       width: MediaQuery.of(context).size.width,
-                      color: Colors.green,
                       child: Stack(children: [Sponsors()]),
                     ),
                   ),

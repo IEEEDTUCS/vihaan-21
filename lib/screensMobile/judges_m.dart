@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:vihaan_new/widgets/judgeCard_m.dart';
 
 class JudgeSection extends StatelessWidget {
   @override

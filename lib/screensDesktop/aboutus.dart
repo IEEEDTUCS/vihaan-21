@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:vihaan_new/data/images.dart';
 
 class AboutUs extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var _width = MediaQuery.of(context).size.width;
-    var _height = MediaQuery.of(context).size.height;
 
     Widget image = Flexible(
         flex: 2,
@@ -12,8 +12,8 @@ class AboutUs extends StatelessWidget {
           child: Container(
             constraints: BoxConstraints(maxWidth: 400),
             padding: EdgeInsets.all(20),
-            child: Image.asset(
-              "images/Vihaan_Aboutus.jpg",
+            child: Image.network(
+              sectionImages["images/Vihaan_Aboutus.jpg"],
             ),
           ),
         ));

@@ -3,9 +3,11 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:scroll_to_index/scroll_to_index.dart';
 import 'package:vihaan_new/data/hyperlinks.dart';
+import 'package:vihaan_new/data/images.dart';
 import 'package:vihaan_new/screensDesktop/aboutus.dart';
 import 'package:vihaan_new/screensDesktop/contact_us.dart';
 import 'package:vihaan_new/screensDesktop/faq.dart';
+import 'package:vihaan_new/screensDesktop/prizes.dart';
 import 'package:vihaan_new/screensDesktop/team.dart';
 import 'package:vihaan_new/screensMobile/landingpage_m.dart';
 import 'package:vihaan_new/screensMobile/sponsor_m.dart';
@@ -42,7 +44,6 @@ class _MobileHomePageState extends State<MobileHomePage> {
   @override
   Widget build(BuildContext context) {
     var _width = MediaQuery.of(context).size.width;
-    var _height = MediaQuery.of(context).size.height;
 
     return Scaffold(
       appBar: AppBar(
@@ -64,7 +65,7 @@ class _MobileHomePageState extends State<MobileHomePage> {
                   Navigator.pop(context);
                 },
                 child: Image(
-                  image: AssetImage("images/Vihaan_Logo.png"),
+                  image: NetworkImage(sectionImages["images/Vihaan_Logo.png"]),
                 ),
               ),
             ),
@@ -193,14 +194,32 @@ class _MobileHomePageState extends State<MobileHomePage> {
                 _wrapScrollTag(
                   index: 2, // Tracks
                   child: Container(
+                    height: MediaQuery.of(context).size.height * 0.5,
                     width: MediaQuery.of(context).size.width,
                     color: Color.fromARGB(255, 209, 253, 172),
-                    child: Stack(
+                    child: Column(
                       children: [
-                        Align(
-                          alignment: Alignment.center,
-                          child: Tracks(), // RevealingSoon(),//
-                        )
+                        Container(
+                          child: Text(
+                            'TRACKS',
+                            style: TextStyle(
+                                fontFamily: 'NunitoSans',
+                                fontSize: max(_width * 0.075, 50),
+                                color: Colors.white,
+                                fontWeight: FontWeight.w700),
+                          ),
+                        ),
+                        Container(
+                            height: 2,
+                            color: Colors.black12,
+                            margin: EdgeInsets.fromLTRB(80, 0, 80, 10)),
+                        Padding(
+                          padding: EdgeInsets.only(bottom: 20),
+                          child: Align(
+                            alignment: Alignment.center,
+                            child: RevealingSoon(), // Tracks()
+                          ),
+                        ),
                       ],
                     ),
                   ),
@@ -208,7 +227,7 @@ class _MobileHomePageState extends State<MobileHomePage> {
                 _wrapScrollTag(
                   index: 3,
                   child: Container(
-                    height: MediaQuery.of(context).size.height,
+                    //height: MediaQuery.of(context).size.height * 0.5,
                     width: MediaQuery.of(context).size.width,
                     color: Colors.purpleAccent,
                     child: Column(
@@ -231,8 +250,7 @@ class _MobileHomePageState extends State<MobileHomePage> {
                           padding: EdgeInsets.only(bottom: 20),
                           child: Align(
                             alignment: Alignment.center,
-                            child:
-                                RevealingSoon(), // Prizes(), // RevealingSoon(),
+                            child: RevealingSoon(), // Prizes(), // RevealingSoon(),
                           ),
                         ),
                       ],
@@ -274,7 +292,7 @@ class _MobileHomePageState extends State<MobileHomePage> {
                 _wrapScrollTag(
                   index: 5,
                   child: Container(
-                    height: MediaQuery.of(context).size.height,
+                    height: MediaQuery.of(context).size.height * 0.5,
                     width: MediaQuery.of(context).size.width,
                     color: Colors.purpleAccent,
                     child: Column(
