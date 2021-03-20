@@ -17,6 +17,7 @@ class Sponsors extends StatelessWidget {
         gold = min(300, width * 0.225),
         silver = max(100, width * 0.175),
         bronze = min(195, width * 0.125),
+        community = width * 0.2,
         titleFont = min(width * 0.065, 90);
 
     return Container(
@@ -38,7 +39,7 @@ class Sponsors extends StatelessWidget {
           ),
           Container(
               height: 2,
-              color: Colors.black12,
+              color: Colors.white24,
               margin: EdgeInsets.fromLTRB(80, 0, 80, 10)),
           // Padding(
           //   padding: const EdgeInsets.only(bottom: 12.0),
@@ -121,50 +122,28 @@ class Sponsors extends StatelessWidget {
               fnt: titleFont,
               clr: Color.fromARGB(255, 205, 127, 50)),
           bronzeSponsorsGrid(width, height),
-          // SingleChildScrollView(
-          //   scrollDirection: Axis.horizontal,
-          //   child: Row(
-          //     mainAxisSize: MainAxisSize.min,
-          //     mainAxisAlignment: MainAxisAlignment.center,
-          //     children: [
-          //       SponsorCard(
-          //         bx: bronze,
-          //         mrl: mrg,
-          //         mrr: mrg,
-          //         url: bronzeSponsor['images/sponsor_rosenfeld.jpg'],
-          //         link: SponsorContacts.sponsorRosenfeld,
-          //       ),
-          //       SponsorCard(
-          //         bx: bronze,
-          //         mrl: mrg,
-          //         mrr: mrg,
-          //         url: bronzeSponsor['images/sponsor_1password.jpg'],
-          //         link: SponsorContacts.sponsor1password,
-          //       ),
-          //       SponsorCard(
-          //         bx: bronze,
-          //         mrl: mrg,
-          //         mrr: mrg,
-          //         url: bronzeSponsor['images/sponsor_loop11.jpg'],
-          //         link: SponsorContacts.sponsorloop11,
-          //       ),
-          //       SponsorCard(
-          //         bx: bronze,
-          //         mrl: mrg,
-          //         mrr: mrg,
-          //         url: bronzeSponsor['images/sponsor_duexpress.png'],
-          //         link: SponsorContacts.sponsorduexpress,
-          //       ),
-          //       SponsorCard(
-          //         bx: bronze,
-          //         mrl: mrg,
-          //         mrr: mrg,
-          //         url: bronzeSponsor['images/sponsor_protoio.jpg'],
-          //         link: SponsorContacts.sponsorprotoio,
-          //       ),
-          //     ],
-          //   ),
-          // )
+          SizedBox(height: 15),
+          SponsorTitle(
+            title: 'COMMUNITY PARTNER',
+            fnt: 38.00,
+            clr: Colors.white,
+          ),
+          SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            child: Row(
+              mainAxisSize: MainAxisSize.min,
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                SponsorCard(
+                  bx: community,
+                  mrl: mrg,
+                  mrr: mrg,
+                  url: communitypartner['images/sponsor_codeforcause.jpeg'],
+                  link: SponsorContacts.sponsorCodeforcause,
+                ),
+              ],
+            ),
+          ),
         ],
       ),
     );

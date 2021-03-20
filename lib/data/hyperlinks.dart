@@ -292,4 +292,40 @@ class SponsorContacts {
       throw 'Could not launch $url';
     }
   }
+
+  static sponsorWolframAlpha() async {
+    const url = 'https://www.wolfram.com/';
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
+
+  static sponsorNostarchpress() async {
+    const url = 'https://nostarch.com/';
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
+
+  static sponsorClerky() async {
+    const url = 'https://www.clerky.com/';
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
+
+  static sponsorCodeforcause() async {
+    const url = 'https://codeforcause.org/';
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
 }
