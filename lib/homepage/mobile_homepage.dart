@@ -7,6 +7,7 @@ import 'package:vihaan_new/data/images.dart';
 import 'package:vihaan_new/screensDesktop/aboutus.dart';
 import 'package:vihaan_new/screensDesktop/contact_us.dart';
 import 'package:vihaan_new/screensDesktop/faq.dart';
+import 'package:vihaan_new/screensDesktop/prizes.dart';
 import 'package:vihaan_new/screensDesktop/team.dart';
 import 'package:vihaan_new/screensMobile/landingpage_m.dart';
 import 'package:vihaan_new/screensMobile/sponsor_m.dart';
@@ -226,7 +227,7 @@ class _MobileHomePageState extends State<MobileHomePage> {
                 _wrapScrollTag(
                   index: 3,
                   child: Container(
-                    height: MediaQuery.of(context).size.height * 0.5,
+                    //height: MediaQuery.of(context).size.height * 0.5,
                     width: MediaQuery.of(context).size.width,
                     color: Colors.purpleAccent,
                     child: Column(
@@ -249,8 +250,7 @@ class _MobileHomePageState extends State<MobileHomePage> {
                           padding: EdgeInsets.only(bottom: 20),
                           child: Align(
                             alignment: Alignment.center,
-                            child:
-                                RevealingSoon(), // Prizes(), // RevealingSoon(),
+                            child: RevealingSoon(), // Prizes(), // RevealingSoon(),
                           ),
                         ),
                       ],

@@ -1,7 +1,6 @@
 import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:vihaan_new/widgets/PrizeButton.dart';
-
 class Prizes extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -23,36 +22,34 @@ class Prizes extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
-              PrizeButton(width: _width, src: "images/Vihaan_Aboutus.jpg", height: _height, pop_gap: pop_gap,)
+              PrizeButton(src: 'winning')
+            ],
+          ),
+          SizedBox(height: gap),
+          Wrap(
+            spacing: 10,
+            runSpacing: 20,
+            children: [
+              PrizeButton(src: 'first_runner_up'),
+              PrizeButton(src: 'second_runner_up'),
+            ],
+          ),
+          SizedBox(height: gap),
+          Wrap(
+            runSpacing: 10,
+            spacing: 20,
+            children: [
+              PrizeButton(src: 'matic'),
+              PrizeButton(src: 'tezos'),
+              PrizeButton(src: 'fortis'),
+              PrizeButton(src: 'speechly'),
             ],
           ),
           SizedBox(height: gap),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              PrizeButton(width: _width, src: "images/Vihaan_Aboutus.jpg", height: _height, pop_gap: pop_gap),
-              SizedBox(width: 30),
-              PrizeButton(width: _width, src: "images/Vihaan_Aboutus.jpg", height: _height, pop_gap: pop_gap),
-            ],
-          ),
-          SizedBox(height: gap),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              PrizeButton(width: _width, src: "images/Vihaan_Aboutus.jpg", height: _height, pop_gap: pop_gap),
-            ],
-          ),
-          SizedBox(height: gap),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              PrizeButton(width: _width, src: "images/Vihaan_Aboutus.jpg", height: _height, pop_gap: pop_gap),
-              SizedBox(width: 30),
-              PrizeButton(width: _width, src: "images/Vihaan_Aboutus.jpg", height: _height, pop_gap: pop_gap),
-              SizedBox(width: 30),
-              PrizeButton(width: _width, src: "images/Vihaan_Aboutus.jpg", height: _height, pop_gap: pop_gap),
-              SizedBox(width: 30),
-              PrizeButton(width: _width, src: "images/Vihaan_Aboutus.jpg", height: _height, pop_gap: pop_gap),
+              PrizeButton(src: 'to_all'),
             ],
           )
         ],

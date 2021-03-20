@@ -8,6 +8,7 @@ import 'package:vihaan_new/screensDesktop/aboutus.dart';
 import 'package:vihaan_new/screensDesktop/contact_us.dart';
 import 'package:vihaan_new/screensDesktop/faq.dart';
 import 'package:vihaan_new/screensDesktop/landingpage.dart';
+import 'package:vihaan_new/screensDesktop/prizes.dart';
 import 'package:vihaan_new/screensDesktop/sponsors.dart';
 import 'package:vihaan_new/screensDesktop/team.dart';
 import 'package:vihaan_new/screensDesktop/tracks.dart';
@@ -120,7 +121,7 @@ class _DesktopHomePageState extends State<DesktopHomePage> {
                   _wrapScrollTag(
                     index: 3,
                     child: Container(
-                      height: MediaQuery.of(context).size.height * 0.5,
+                      //height: MediaQuery.of(context).size.height * 0.5,
                       width: MediaQuery.of(context).size.width,
                       color: Colors.purpleAccent,
                       child: Column(
@@ -139,9 +140,10 @@ class _DesktopHomePageState extends State<DesktopHomePage> {
                             ),
                           ),
                           Container(
-                              height: 2,
-                              color: Colors.black12,
-                              margin: EdgeInsets.fromLTRB(80, 0, 80, 10)),
+                            height: 2,
+                            color: Colors.black12,
+                            margin: EdgeInsets.fromLTRB(80, 0, 80, 10)
+                          ),
                           Padding(
                             padding: EdgeInsets.only(bottom: 20),
                             child: Align(
