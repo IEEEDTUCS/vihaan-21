@@ -194,7 +194,7 @@ class _MobileHomePageState extends State<MobileHomePage> {
                 _wrapScrollTag(
                   index: 2, // Tracks
                   child: Container(
-                    height: MediaQuery.of(context).size.height * 0.5,
+                    // height: MediaQuery.of(context).size.height * 0.5,
                     width: MediaQuery.of(context).size.width,
                     color: Color.fromARGB(255, 209, 253, 172),
                     child: Column(
@@ -250,7 +250,8 @@ class _MobileHomePageState extends State<MobileHomePage> {
                           padding: EdgeInsets.only(bottom: 20),
                           child: Align(
                             alignment: Alignment.center,
-                            child: RevealingSoon(), // Prizes(), // RevealingSoon(),
+                            child:
+                                RevealingSoon(), // Prizes(), // RevealingSoon(),
                           ),
                         ),
                       ],
