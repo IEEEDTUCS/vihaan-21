@@ -2,18 +2,37 @@ import 'package:flutter/foundation.dart';
 import 'images.dart';
 
 Map<String, String> cardImages = {
-  'winning' : 'images/trophy.jpg',
-  'first_runner_up' : 'images/trophy.jpg',
-  'second_runner_up' : 'images/trophy.jpg',
-  'to_all' : 'images/trophy.jpg',
-  'matic' : 'images/trophy.jpg',
-  'tezos' : 'images/trophy.jpg',
-  'fortis' : 'images/trophy.jpg',
-  'speechly' : 'images/trophy.jpg'
+  'winning':
+      'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Flogos%2Faward_icon.png?alt=media&token=0720840e-6113-45a1-97a5-84ca9aa4dca4',
+  'first_runner_up':
+      'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Flogos%2Faward_icon.png?alt=media&token=0720840e-6113-45a1-97a5-84ca9aa4dca4',
+  'second_runner_up':
+      'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Flogos%2Faward_icon.png?alt=media&token=0720840e-6113-45a1-97a5-84ca9aa4dca4',
+  'to_all':
+      'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Flogos%2Faward_icon.png?alt=media&token=0720840e-6113-45a1-97a5-84ca9aa4dca4',
+  'matic':
+      'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Flogos%2Faward_icon.png?alt=media&token=0720840e-6113-45a1-97a5-84ca9aa4dca4',
+  'tezos':
+      'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Flogos%2Faward_icon.png?alt=media&token=0720840e-6113-45a1-97a5-84ca9aa4dca4',
+  'fortis':
+      'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Flogos%2Faward_icon.png?alt=media&token=0720840e-6113-45a1-97a5-84ca9aa4dca4',
+  'speechly':
+      'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Flogos%2Faward_icon.png?alt=media&token=0720840e-6113-45a1-97a5-84ca9aa4dca4'
+};
+
+Map<String, String> cardText = {
+  'winning': 'Winners',
+  'first_runner_up': '1st Runner Up',
+  'second_runner_up': '2nd Runner Up',
+  'to_all': 'For Everyone',
+  'matic': 'Matic Prize',
+  'tezos': 'Tezos Prize',
+  'fortis': 'Portis Prize',
+  'speechly': 'Speechly Prize'
 };
 
 Map<String, List<String>> images = {
-  'winning':[
+  'winning': [
     sectionImages['images/IEEE_DTU_Logo.png'], //cash prize
     bronzeSponsor['images/sponsor_1password.jpg'],
     bronzeSponsor['images/sponsor_axure.jpg'],
@@ -27,7 +46,7 @@ Map<String, List<String>> images = {
     goldSponsors['images/sponsor_devfolio.jpg'],
     sectionImages['images/IEEE_DTU_Logo.png'], //gold certi
   ],
-  'first_runner_up':[
+  'first_runner_up': [
     sectionImages['images/IEEE_DTU_Logo.png'], //cash prize
     bronzeSponsor['images/sponsor_1password.jpg'],
     bronzeSponsor['images/sponsor_axure.jpg'],
@@ -40,7 +59,7 @@ Map<String, List<String>> images = {
     goldSponsors['images/sponsor_devfolio.jpg'],
     sectionImages['images/IEEE_DTU_Logo.png'], //silver
   ],
-  'second_runner_up':[
+  'second_runner_up': [
     sectionImages['images/IEEE_DTU_Logo.png'], //cash prize
     bronzeSponsor['images/sponsor_1password.jpg'],
     bronzeSponsor['images/sponsor_axure.jpg'],
@@ -52,7 +71,7 @@ Map<String, List<String>> images = {
     goldSponsors['images/sponsor_devfolio.jpg'],
     sectionImages['images/IEEE_DTU_Logo.png'], //bronze
   ],
-  'to_all':[
+  'to_all': [
     bronzeSponsor['images/sponsor_rosenfeld.jpg'],
     bronzeSponsor['images/sponsor_protoio.jpg'],
     bronzeSponsor['images/sponsor_loop11.jpg'],
@@ -63,26 +82,26 @@ Map<String, List<String>> images = {
     bronzeSponsor['images/sponsor_sashido.jpg'],
     sectionImages['images/IEEE_DTU_Logo.png'], //part
   ],
-  'matic':[
+  'matic': [
     sectionImages['images/IEEE_DTU_Logo.png'], //cash
     sectionImages['images/IEEE_DTU_Logo.png'], //cash
     sectionImages['images/IEEE_DTU_Logo.png'], //cash
   ],
-  'tezos':[
+  'tezos': [
     sectionImages['images/IEEE_DTU_Logo.png'], //cash
     sectionImages['images/IEEE_DTU_Logo.png'], //cash
     silverSponsor['images/sponsor_tezos.jpg'],
     sectionImages['images/IEEE_DTU_Logo.png'], //continuity grant
   ],
-  'fortis':[
+  'fortis': [
     sectionImages['images/IEEE_DTU_Logo.png'], //cash
   ],
-  'speechly':[
+  'speechly': [
     sectionImages['images/IEEE_DTU_Logo.png'], //cash
   ]
 };
 Map<String, List<String>> text = {
-  'winning':[
+  'winning': [
     'Cash Prize',
     '1Password Subsription (Per head)',
     'Axure Subscription (Per team)',
@@ -96,7 +115,7 @@ Map<String, List<String>> text = {
     'Devfolio T-shirt and Swags (Per head)',
     'Gold Certificate'
   ],
-  'first_runner_up':[
+  'first_runner_up': [
     'Cash Prize',
     '1Password Subsription (Per head)',
     'Axure Subscription (per head)',
@@ -109,7 +128,7 @@ Map<String, List<String>> text = {
     'Devfolio T-shirt and Swags (Per head)',
     'Silver Certificate'
   ],
-  'second_runner_up':[
+  'second_runner_up': [
     'Cash Prize',
     '1Password Subsription (Per head)',
     'Axure Subscription (Per head)',
@@ -121,7 +140,7 @@ Map<String, List<String>> text = {
     'Devfolio T-shirt and Swags (Per head)',
     'Bronze Certificate'
   ],
-  'to_all':[
+  'to_all': [
     'Rosenfeld 20% Off (Per head)',
     'Proto.io 60 Day License Free (Per head)',
     'Loop 11 Subcription (Per team)',
@@ -132,23 +151,19 @@ Map<String, List<String>> text = {
     'Sashido 120\$ Credit (Per head)',
     'Participation Certificate'
   ],
-  'matic':[
+  'matic': [
     '10k Cash Prize',
     '15k Cash Prize',
     'Seed Funding worth \$5k',
   ],
-  'tezos':[
+  'tezos': [
     '20k Cash Prize (Best DAPP app)',
     '10k Cash Prize (Best Tezos based app)',
     'Internship/FTE Opportunity',
     'Continuity Grant Opportunity'
   ],
-  'fortis':[
-    '15k Cash Prize (Best Dapp app)'
-  ],
-  'speechly':[
-    'Best 3 teams to get \$100 gift cards'
-  ]
+  'fortis': ['15k Cash Prize (Best Dapp app)'],
+  'speechly': ['Best 3 teams to get \$100 gift cards']
 };
 
 /*
