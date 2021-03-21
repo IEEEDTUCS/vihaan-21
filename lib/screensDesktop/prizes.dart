@@ -7,7 +7,7 @@ class Prizes extends StatelessWidget {
   Widget build(BuildContext context) {
     var _width = MediaQuery.of(context).size.width,
         _height = MediaQuery.of(context).size.height;
-    double gap = 40, pop_gap = 20;
+    double gap = 40;
     return Container(
       child: Column(
         children: [

@@ -12,14 +12,18 @@ class PrizeButton extends StatelessWidget {
         _height = MediaQuery.of(context).size.height;
     return Container(
         child: SizedBox(
-      width: max(300, _width * 0.2),
-      height: max(100, _height * 0.22),
+      width: max(300, _width * 0.175),
+      height: max(100, _height * 0.125),
       child: RaisedButton(
           child: ClipRRect(
             borderRadius: BorderRadius.circular(20),
-            child: Column(
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                Image.network(cardImages[src], width: max(100, _width * 0.1)),
+                Image.network(cardImages[src], 
+                  // width: min(200, _width * 0.1),
+                  fit: BoxFit.cover,
+                ),
                 Text(
                   cardText[src],
                   style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
