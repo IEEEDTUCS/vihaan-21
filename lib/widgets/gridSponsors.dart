@@ -24,10 +24,11 @@ Widget bronzeSponsorsGrid(
     'images/sponsor_sashido.jpg',
     'images/sponsor_cryptopolitan.jpg',
     'images/sponsor_egghead.jpg',
-    // 'images/sponsor_clerky.jpg',
+    'images/sponsor_clerky.jpg',
     'images/sponsor_nostarchpress.jpg',
     'images/sponsor_tesseract.jpg',
     'images/sponsor_testmail.jpg',
+    'images/sponsor_sketch.jpg',
   ];
   List<Widget> bronzeSponsorsWidget = [];
   var bronzeSponsorLinks = [
@@ -47,10 +48,11 @@ Widget bronzeSponsorsGrid(
     SponsorContacts.sponsorSashido,
     SponsorContacts.sponsorCryptopolitan,
     SponsorContacts.sponsorEgghead,
-    // SponsorContacts.sponsorClerky,
+    SponsorContacts.sponsorClerky,
     SponsorContacts.sponsorNostarchpress,
     SponsorContacts.sponsorTesseract,
     SponsorContacts.sponsorTestmail,
+    SponsorContacts.sponsorSketch,
   ];
   for (int i = 0; i < bronzeSponsorImages.length; i++) {
     bronzeSponsorsWidget.add(
@@ -81,5 +83,56 @@ Widget bronzeSponsorsGrid(
         : 2,
 
     children: bronzeSponsorsWidget,
+  );
+}
+
+Widget silverSponsorsGrid(
+  double width,
+  double height,
+) {
+  var silverSponsorImages = [
+    'images/sponsor_matic.jpg',
+    'images/sponsor_portis.jpg',
+    'images/sponsor_tezos.jpg',
+    'images/sponsor_speechly.jpg',
+    'images/sponsor_echoar.jpg',
+  ];
+  List<Widget> silverSponsorsWidget = [];
+  var silverSponsorLinks = [
+    SponsorContacts.sponsorMatic,
+    SponsorContacts.sponsorPortis,
+    SponsorContacts.sponsorTezos,
+    SponsorContacts.sponsorSpeechly,
+    SponsorContacts.sponsorEchoAR,
+  ];
+  for (int i = 0; i < silverSponsorImages.length; i++) {
+    silverSponsorsWidget.add(
+      SponsorCard(
+        bx: (width >= 800) ? width * 0.125 : width * 0.2,
+        mrl: 4,
+        mrr: 4,
+        url: silverSponsor[silverSponsorImages[i]],
+        link: silverSponsorLinks[i],
+      ),
+    );
+  }
+  return GridView.count(
+    crossAxisSpacing: (width >= 800) ? (width >= 1000 ? 48 : 28) : 8,
+    primary: false,
+    shrinkWrap: true,
+
+    // crossAxisCount: 1,
+    //padding: EdgeInsets.all(5.0),
+    crossAxisCount: (width > 350)
+        ? ((width > 600)
+            ? ((width >= 800)
+                ? (width >= 1000)
+                    ? 5
+                    : 4
+                : 3)
+            : 2)
+        : 2,
+
+    children: silverSponsorsWidget,
   );
 }

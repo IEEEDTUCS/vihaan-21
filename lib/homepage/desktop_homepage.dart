@@ -121,7 +121,7 @@ class _DesktopHomePageState extends State<DesktopHomePage> {
                     index: 3,
                     child: Container(
                       width: MediaQuery.of(context).size.width,
-                      // height: MediaQuery.of(context).size.height * 0.7,
+                      height: MediaQuery.of(context).size.height * 0.7,
                       color: Colors.purpleAccent,
                       child: Column(
                         children: [
@@ -146,8 +146,8 @@ class _DesktopHomePageState extends State<DesktopHomePage> {
                             padding: EdgeInsets.only(bottom: 20),
                             child: Align(
                               alignment: Alignment.center,
-                              child: Prizes(),
-                              // child: RevealingSoon(),
+                              // child: Prizes(),
+                              child: RevealingSoon(),
                             ),
                           ),
                         ],

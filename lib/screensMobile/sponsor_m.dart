@@ -76,53 +76,54 @@ class Sponsors extends StatelessWidget {
               title: 'SILVER',
               fnt: 38.00,
               clr: Color.fromARGB(255, 192, 192, 192)),
-          SingleChildScrollView(
-            scrollDirection: Axis.horizontal,
-            child: Row(
-              mainAxisSize: MainAxisSize.min,
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                SponsorCard(
-                  bx: silver,
-                  mrl: mrg,
-                  mrr: mrg,
-                  url: silverSponsor['images/sponsor_matic.jpg'],
-                  link: SponsorContacts.sponsorMatic,
-                ),
-                SponsorCard(
-                  bx: silver,
-                  mrl: mrg,
-                  mrr: mrg,
-                  url: silverSponsor['images/sponsor_portis.jpg'],
-                  link: SponsorContacts.sponsorPortis,
-                ),
-              ],
-            ),
-          ),
-          SizedBox(height: 15),
-          SingleChildScrollView(
-            scrollDirection: Axis.horizontal,
-            child: Row(
-              mainAxisSize: MainAxisSize.min,
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                SponsorCard(
-                  bx: silver,
-                  mrl: mrg,
-                  mrr: mrg,
-                  url: silverSponsor['images/sponsor_tezos.jpg'],
-                  link: SponsorContacts.sponsorTezos,
-                ),
-                SponsorCard(
-                  bx: silver,
-                  mrl: mrg,
-                  mrr: mrg,
-                  url: silverSponsor['images/sponsor_speechly.jpg'],
-                  link: SponsorContacts.sponsorSpeechly,
-                ),
-              ],
-            ),
-          ),
+          silverSponsorsGrid(width, height),
+          // SingleChildScrollView(
+          //   scrollDirection: Axis.horizontal,
+          //   child: Row(
+          //     mainAxisSize: MainAxisSize.min,
+          //     mainAxisAlignment: MainAxisAlignment.center,
+          //     children: [
+          //       SponsorCard(
+          //         bx: silver,
+          //         mrl: mrg,
+          //         mrr: mrg,
+          //         url: silverSponsor['images/sponsor_matic.jpg'],
+          //         link: SponsorContacts.sponsorMatic,
+          //       ),
+          //       SponsorCard(
+          //         bx: silver,
+          //         mrl: mrg,
+          //         mrr: mrg,
+          //         url: silverSponsor['images/sponsor_portis.jpg'],
+          //         link: SponsorContacts.sponsorPortis,
+          //       ),
+          //     ],
+          //   ),
+          // ),
+          // SizedBox(height: 15),
+          // SingleChildScrollView(
+          //   scrollDirection: Axis.horizontal,
+          //   child: Row(
+          //     mainAxisSize: MainAxisSize.min,
+          //     mainAxisAlignment: MainAxisAlignment.center,
+          //     children: [
+          //       SponsorCard(
+          //         bx: silver,
+          //         mrl: mrg,
+          //         mrr: mrg,
+          //         url: silverSponsor['images/sponsor_tezos.jpg'],
+          //         link: SponsorContacts.sponsorTezos,
+          //       ),
+          //       SponsorCard(
+          //         bx: silver,
+          //         mrl: mrg,
+          //         mrr: mrg,
+          //         url: silverSponsor['images/sponsor_speechly.jpg'],
+          //         link: SponsorContacts.sponsorSpeechly,
+          //       ),
+          //     ],
+          //   ),
+          // ),
           SizedBox(height: 15),
           SponsorTitle(
               title: 'BRONZE',

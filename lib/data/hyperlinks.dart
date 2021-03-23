@@ -337,4 +337,13 @@ class SponsorContacts {
       throw 'Could not launch $url';
     }
   }
+
+  static sponsorSketch() async {
+    const url = 'https://www.sketch.com/';
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
 }

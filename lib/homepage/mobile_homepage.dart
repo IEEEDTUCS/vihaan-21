@@ -252,9 +252,8 @@ class _MobileHomePageState extends State<MobileHomePage> {
                           padding: EdgeInsets.only(bottom: 20),
                           child: Align(
                             alignment: Alignment.center,
-                            child:
-                                // RevealingSoon(),
-                                Prizes(), // RevealingSoon(),
+                            child: RevealingSoon(),
+                            // Prizes(), // RevealingSoon(),
                           ),
                         ),
                       ],
