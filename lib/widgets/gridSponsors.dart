@@ -29,6 +29,7 @@ Widget bronzeSponsorsGrid(
     'images/sponsor_tesseract.jpg',
     'images/sponsor_testmail.jpg',
     'images/sponsor_sketch.jpg',
+    'images/sponsor_todoist.jpg',
   ];
   List<Widget> bronzeSponsorsWidget = [];
   var bronzeSponsorLinks = [
@@ -53,6 +54,7 @@ Widget bronzeSponsorsGrid(
     SponsorContacts.sponsorTesseract,
     SponsorContacts.sponsorTestmail,
     SponsorContacts.sponsorSketch,
+    SponsorContacts.sponsorTodoist,
   ];
   for (int i = 0; i < bronzeSponsorImages.length; i++) {
     bronzeSponsorsWidget.add(

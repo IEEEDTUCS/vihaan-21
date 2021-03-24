@@ -57,8 +57,12 @@ var bronzeSponsor = {
       'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fsponsors%2Fsponsor_clerky.jpg?alt=media&token=88e61088-3778-42d0-be6f-21bb413fcb29',
   'images/sponsor_tesseract.jpg':
       'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fsponsors%2Fsponsor_tesseract.jpg?alt=media&token=27cdedf8-ab8c-4218-a2f7-d57fe415a269',
-  'images/sponsor_testmail.jpg' : 'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fsponsors%2Fsponsor_testmail.jpg?alt=media&token=8847fbc7-31f3-4c78-bc89-7d6fdf212789',
-  'images/sponsor_sketch.jpg' : 'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fsponsors%2Fsponsor_sketch.jpg?alt=media&token=20dff062-07c4-4c5b-a735-9990ef5c1b84',
+  'images/sponsor_testmail.jpg':
+      'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fsponsors%2Fsponsor_testmail.jpg?alt=media&token=8847fbc7-31f3-4c78-bc89-7d6fdf212789',
+  'images/sponsor_sketch.jpg':
+      'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fsponsors%2Fsponsor_sketch.jpg?alt=media&token=20dff062-07c4-4c5b-a735-9990ef5c1b84',
+  'images/sponsor_todoist.jpg':
+      'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fsponsors%2Fsponsor_todoist.jpg?alt=media&token=1ca02ead-4f96-4375-9870-fb34a976496b',
 };
 
 var communitypartner = {
@@ -97,6 +101,13 @@ var ieeeMemberImages = [
   'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fteam%2Fteam_hemang.jpg?alt=media&token=452c55fe-0c03-4d0c-8938-8fb578bbd78f',
   'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fteam%2Fteam_priyansh.jpg?alt=media&token=96898120-9fab-40af-b725-ae9308a3427a',
 ];
+
+var judgeImages = {
+  'Mr. Saurabh Jain':
+      'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fjudges%2Fspeaker_saurabhjain.jpg?alt=media&token=41ef162d-b3f9-4795-95db-085063de2549',
+  'Mr. Ritwik Ranjan':
+      'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fteam%2Fteam_ritwik_new.png?alt=media&token=bf1f572f-8fed-4976-aac9-04832ae39a54',
+};
 
 var sectionImages = {
   'images/faq.png':

@@ -7,6 +7,7 @@ import 'package:vihaan_new/screensDesktop/TimelineSection.dart';
 import 'package:vihaan_new/screensDesktop/aboutus.dart';
 import 'package:vihaan_new/screensDesktop/contact_us.dart';
 import 'package:vihaan_new/screensDesktop/faq.dart';
+import 'package:vihaan_new/screensDesktop/judges.dart';
 import 'package:vihaan_new/screensDesktop/landingpage.dart';
 import 'package:vihaan_new/screensDesktop/prizes.dart';
 import 'package:vihaan_new/screensDesktop/sponsors.dart';
@@ -194,15 +195,16 @@ class _DesktopHomePageState extends State<DesktopHomePage> {
                   _wrapScrollTag(
                     index: 5,
                     child: Container(
-                      height: MediaQuery.of(context).size.height * 0.5,
+                      //height: MediaQuery.of(context).size.height * 0.5,
                       width: MediaQuery.of(context).size.width,
-                      color: Colors.blueAccent,
+                      color: Colors.purpleAccent,
                       child: Column(children: [
                         Padding(
                           padding: EdgeInsets.only(top: 15),
                           child: Container(
                             child: Text(
-                              'JUDGES',
+                              'JUDGES AND SPEAKERS',
+                              textAlign: TextAlign.center,
                               style: TextStyle(
                                   fontFamily: 'NunitoSans',
                                   fontSize: 50,
@@ -216,7 +218,7 @@ class _DesktopHomePageState extends State<DesktopHomePage> {
                             color: Colors.black12,
                             margin: EdgeInsets.fromLTRB(80, 0, 80, 10)),
                         Align(
-                          child: RevealingSoon(),
+                          child: JudgeSection(), // RevealingSoon(),
                         ),
                       ]),
                     ),

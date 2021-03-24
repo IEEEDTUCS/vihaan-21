@@ -346,4 +346,13 @@ class SponsorContacts {
       throw 'Could not launch $url';
     }
   }
+
+  static sponsorTodoist() async {
+    const url = 'https://todoist.com/';
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
 }
