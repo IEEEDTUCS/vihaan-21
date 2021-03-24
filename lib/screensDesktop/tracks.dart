@@ -22,12 +22,6 @@ class Tracks extends StatelessWidget {
           width: width * 0.75,
           image: tracksImages[i],
           name: trackName[i],
-          display: SingleChildScrollView(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: otherTracks,
-            ),
-          ),
         ),
       );
     }
