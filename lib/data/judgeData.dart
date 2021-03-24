@@ -9,7 +9,7 @@ var judgesDesignation = {
 };
 
 var judgesLinkedIn = {
-  'Mr. Saurabh Jain': 'https://www.linkedin.com/in/hemang-sinha-0485081a4/',
+  'Mr. Saurabh Jain': 'https://www.linkedin.com/in/saurabhskj/',
   'Mr. Ritwik Ranjan': 'https://www.linkedin.com/in/ranjanritwik/',
 };
 
