@@ -14,11 +14,13 @@ class Sponsors extends StatelessWidget {
     final width = MediaQuery.of(context).size.width;
     final height = MediaQuery.of(context).size.height;
     final double mrg = 4,
-        gold = min(300, width * 0.225),
-        silver = max(100, width * 0.175),
-        bronze = min(195, width * 0.125),
+        gold = (width > 800) ? min(300, width * 0.225) : width * 0.45,
+        silver = (width > 800) ? max(100, width * 0.175) : width * 0.35,
+        bronze = (width > 800) ? min(195, width * 0.125) : width * 0.2,
         community = width * 0.2,
-        titleFont = min(width * 0.065, 90);
+        titleFont = (width > 800) ? 50 : max(width * 0.075, 50),
+        // (width > 800) ? min(width * 0.065, 90) : max(width * 0.075, 60),
+        headingFont = max(width * 0.085, 68);
 
     return Container(
       padding: EdgeInsets.all(16),
@@ -32,7 +34,7 @@ class Sponsors extends StatelessWidget {
               'SPONSORS',
               style: TextStyle(
                   fontFamily: 'NunitoSans',
-                  fontSize: 50,
+                  fontSize: (width > 800) ? 50 : max(width * 0.075, 50),
                   color: Colors.white60,
                   fontWeight: FontWeight.w700),
             ),
@@ -50,7 +52,14 @@ class Sponsors extends StatelessWidget {
           //   ),
           // ),
 
-          SponsorTitle(title: 'GOLD', fnt: titleFont, clr: Colors.amber[500]),
+          SponsorTitle(
+              title: 'GOLD',
+              fnt: titleFont,
+              clr: Colors.amber[500]),
+          Container(
+              height: 2,
+              color: Colors.black12,
+              margin: EdgeInsets.symmetric(horizontal: 350)),
           SingleChildScrollView(
             scrollDirection: Axis.horizontal,
             child: Row(

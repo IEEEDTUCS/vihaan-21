@@ -10,7 +10,7 @@ import 'package:vihaan_new/screensDesktop/faq.dart';
 import 'package:vihaan_new/screensDesktop/prizes.dart';
 import 'package:vihaan_new/screensDesktop/team.dart';
 import 'package:vihaan_new/screensMobile/landingpage_m.dart';
-import 'package:vihaan_new/screensMobile/sponsor_m.dart';
+import 'package:vihaan_new/screensDesktop/sponsors.dart';
 import 'package:vihaan_new/screensMobile/timelineSection_m.dart';
 import 'package:vihaan_new/screensMobile/tracks_m.dart';
 import 'package:vihaan_new/widgets/revealing_soon.dart';
