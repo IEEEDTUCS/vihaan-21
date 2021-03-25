@@ -37,13 +37,12 @@ class TrackCard extends StatelessWidget {
                             Padding(
                               padding: EdgeInsets.only(top: 16.0),
                               child: Text(
-                                "DESCRIPTION",
+                                name,
                                 textAlign: TextAlign.justify,
                                 style: TextStyle(
                                   fontSize: 25,
                                   color: Colors.black,
                                   fontWeight: FontWeight.bold,
-                                  decoration: TextDecoration.underline,
                                 ),
                               ),
                             ),

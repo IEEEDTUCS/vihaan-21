@@ -1,12 +1,10 @@
 //TODO: Extract Text Styles and put them in a separate files.
 
-import 'package:flutter/material.dart';
-
 var trackName = [
   'FinTech',
   'Climate Change',
   'AR/VR',
-  'Ed. Tech.',
+  'Education',
   'Healthcare',
   'Security',
   'Future Mobility',
@@ -20,7 +18,7 @@ var trackDescription = {
       'For the past one decade, Climate change has been a trending topic of discussion. As humanity has finally arrived at the conclusion that industrial development and sustainability must go hand in hand, with the rise of sustainable development, it can be seen that climate change is an idea that welcomes new intriguing ideas from developers.',
   'AR/VR':
       'Developments in the field of Augmented Reality has made heavy contributions to the healthcare, automotive, education industries and many more. Virtual Reality has formed the bridge between the world of Artificial Intelligence and the Real life, and it indeed has an immeasurable potential.',
-  'Ed. Tech.':
+  'Education':
       'Education has been revolutionised with the development of the EdTech Industry. The integration of technology with Education has indeed brought a positive shift in it’s accessibility, which can be easily witnessed with the success of Online Teaching during the COVID-19 Pandemic. New advancements that are accompanied with proper implementation of Technology, giving faster response and having superior designs, are always welcomed.',
   'Healthcare':
       'The Healthcare Industry has witnessed several advancements during the COVID-19 pandemic, with the boon in the Biotech industry. New Ideas that make the use of technology and clarity of thought to tackle other health issues like Diabetes, Cancer, Pulmonary diseases etc are appreciated.',
