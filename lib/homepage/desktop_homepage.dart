@@ -9,12 +9,10 @@ import 'package:vihaan_new/screensDesktop/contact_us.dart';
 import 'package:vihaan_new/screensDesktop/faq.dart';
 import 'package:vihaan_new/screensDesktop/judges.dart';
 import 'package:vihaan_new/screensDesktop/landingpage.dart';
-import 'package:vihaan_new/screensDesktop/prizes.dart';
 import 'package:vihaan_new/screensDesktop/sponsors.dart';
 import 'package:vihaan_new/screensDesktop/team.dart';
 import 'package:vihaan_new/screensDesktop/tracks.dart';
 import 'package:vihaan_new/widgets/desktopNavbar.dart';
-import 'package:vihaan_new/widgets/revealing_soon.dart';
 import 'package:vihaan_new/widgets/vihaan_icons_icons.dart';
 
 class DesktopHomePage extends StatefulWidget {
@@ -148,7 +146,15 @@ class _DesktopHomePageState extends State<DesktopHomePage> {
                             child: Align(
                               alignment: Alignment.center,
                               // child: Prizes(),
-                              child: RevealingSoon(),
+                              child: Text(
+                                'Prizes over\n INR 1 crore\n To be revealed soon!!',
+                                style: TextStyle(
+                                  fontSize: 56,
+                                  fontFamily: 'NunitoSans',
+                                  fontWeight: FontWeight.bold,
+                                ),
+                                textAlign: TextAlign.center,
+                              ),
                             ),
                           ),
                         ],
