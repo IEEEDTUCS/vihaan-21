@@ -63,6 +63,7 @@ var bronzeSponsor = {
       'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fsponsors%2Fsponsor_sketch.jpg?alt=media&token=20dff062-07c4-4c5b-a735-9990ef5c1b84',
   'images/sponsor_todoist.jpg':
       'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fsponsors%2Fsponsor_todoist.jpg?alt=media&token=1ca02ead-4f96-4375-9870-fb34a976496b',
+  'images/sponsor_streamyard.jpg':'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fsponsors%2Fsponsor_streamyard.jpg?alt=media&token=388cd5c1-375f-41e3-8185-f48b87e7f54b',
 };
 
 var communitypartner = {

@@ -3,7 +3,7 @@ var judgesName = [
   'Mr. Rakshit Tandon',
   'Mr. Sumeet Malik',
   'Mr. Alon Grinshpoon',
-  //'Mr. Ritwik Ranjan',
+  'Mr. Ritwik Ranjan',
 ];
 
 var judgesDesignation = {
