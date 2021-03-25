@@ -107,6 +107,12 @@ var judgeImages = {
       'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fjudges%2Fspeaker_saurabhjain.jpg?alt=media&token=41ef162d-b3f9-4795-95db-085063de2549',
   'Mr. Ritwik Ranjan':
       'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fteam%2Fteam_ritwik_new.png?alt=media&token=bf1f572f-8fed-4976-aac9-04832ae39a54',
+  'Mr. Rakshit Tandon':
+      'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fjudges%2Fspeaker_rakshittandon.jpg?alt=media&token=8c329811-53ac-432f-bd19-cfbf3e7fe764',
+  'Mr. Sumeet Malik':
+      'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fjudges%2Fspeaker_sumeetmalik.jpg?alt=media&token=ccbe0689-f699-494e-8261-f7bd97a31494',
+  'Mr. Alon Grinshpoon':
+      'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fjudges%2Fspeaker_alongrinshpoon.jpg?alt=media&token=79668171-da03-4fb0-be6d-41ecb40eb39e',
 };
 
 var sectionImages = {
