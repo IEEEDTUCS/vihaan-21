@@ -364,4 +364,49 @@ class SponsorContacts {
       throw 'Could not launch $url';
     }
   }
+
+  static sponsorHoverrobotix() async {
+    const url = 'https://hoverrobotix.com/';
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
+
+  static sponsorTransneuron() async {
+    const url = 'https://transneuron.com/';
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
+
+  static sponsorGobilda() async {
+    const url = 'https://www.gobilda.com/';
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
+
+  static sponsorCodingblocks() async {
+    const url = 'https://codingblocks.com/';
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
+
+  static sponsorInterviewbuddy() async {
+    const url = 'https://interviewbuddy.in/';
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
 }

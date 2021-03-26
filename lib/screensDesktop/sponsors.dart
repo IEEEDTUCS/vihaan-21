@@ -52,10 +52,7 @@ class Sponsors extends StatelessWidget {
           //   ),
           // ),
 
-          SponsorTitle(
-              title: 'GOLD',
-              fnt: titleFont,
-              clr: Colors.amber[500]),
+          SponsorTitle(title: 'GOLD', fnt: titleFont, clr: Colors.amber[500]),
           Container(
               height: 2,
               color: Colors.black12,
@@ -72,6 +69,13 @@ class Sponsors extends StatelessWidget {
                   mrr: mrg,
                   url: goldSponsors['images/sponsor_devfolio.jpg'],
                   link: SponsorContacts.sponsorDevfolio,
+                ),
+                SponsorCard(
+                  bx: gold,
+                  mrl: mrg,
+                  mrr: mrg,
+                  url: goldSponsors['images/sponsor_transneuron.jpg'],
+                  link: SponsorContacts.sponsorTransneuron,
                 ),
               ],
             ),
