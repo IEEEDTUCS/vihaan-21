@@ -2,7 +2,9 @@
 
 var goldSponsors = {
   'images/sponsor_devfolio.jpg':
-      'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fsponsors%2Fsponsor_devfolio.jpg?alt=media&token=b51987bc-47c3-49c7-8ec0-09650a94ecc7'
+      'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fsponsors%2Fsponsor_devfolio.jpg?alt=media&token=b51987bc-47c3-49c7-8ec0-09650a94ecc7',
+  'images/sponsor_transneuron.jpg':
+      'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fsponsors%2Fsponsor_transneuron.jpg?alt=media&token=2b38c2de-7f79-4f76-aedd-8e551bd734d0',
 };
 
 var silverSponsor = {
@@ -63,7 +65,16 @@ var bronzeSponsor = {
       'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fsponsors%2Fsponsor_sketch.jpg?alt=media&token=20dff062-07c4-4c5b-a735-9990ef5c1b84',
   'images/sponsor_todoist.jpg':
       'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fsponsors%2Fsponsor_todoist.jpg?alt=media&token=1ca02ead-4f96-4375-9870-fb34a976496b',
-  'images/sponsor_streamyard.jpg':'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fsponsors%2Fsponsor_streamyard.jpg?alt=media&token=388cd5c1-375f-41e3-8185-f48b87e7f54b',
+  'images/sponsor_streamyard.jpg':
+      'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fsponsors%2Fsponsor_streamyard.jpg?alt=media&token=388cd5c1-375f-41e3-8185-f48b87e7f54b',
+  'images/sponsor_hoverrobotix.jpg':
+      'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fsponsors%2Fsponsor_hoverrobotix.jpg?alt=media&token=412f8edc-95f9-4385-9d05-0893dba90ae2',
+  'images/sponsor_gobilda.jpg':
+      'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fsponsors%2Fsponsor_gobilda.jpg?alt=media&token=f21b701b-f534-454f-b7f4-858a2824bf58',
+  'images/sponsor_codingblocks.jpg':
+      'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fsponsors%2Fsponsor_codingblocks.jpg?alt=media&token=aa234ad3-275e-451b-8ad8-81231922682e',
+  'images/sponsor_interviewbuddy.jpg':
+      'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fsponsors%2Fsponsor_interviewbuddy.jpg?alt=media&token=3ab8a5de-370d-44e6-94bd-f7bc9d98d824',
 };
 
 var communitypartner = {
@@ -114,6 +125,8 @@ var judgeImages = {
       'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fjudges%2Fspeaker_sumeetmalik.jpg?alt=media&token=ccbe0689-f699-494e-8261-f7bd97a31494',
   'Mr. Alon Grinshpoon':
       'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fjudges%2Fspeaker_alongrinshpoon.jpg?alt=media&token=79668171-da03-4fb0-be6d-41ecb40eb39e',
+  'Mr. Arnav Gupta':
+      'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fjudges%2Fspeaker_arnavgupta.jpg?alt=media&token=136a8fb6-6c94-49b3-b2b1-a47e21b48ec4',
 };
 
 var sectionImages = {

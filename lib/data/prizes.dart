@@ -93,7 +93,7 @@ Map<String, List<String>> images = {
     silverSponsor['images/sponsor_tezos.jpg'],
     sectionImages['images/IEEE_DTU_Logo.png'], //continuity grant
   ],
-  'fortis': [
+  'portis': [
     sectionImages['images/IEEE_DTU_Logo.png'], //cash
   ],
   'speechly': [
@@ -102,53 +102,53 @@ Map<String, List<String>> images = {
 };
 Map<String, List<String>> text = {
   'winning': [
-    'Cash Prize',
-    '1Password Subsription (Per head)',
-    'Axure Subscription (Per team)',
-    'Interview Buddy Course (per head)',
+    'Cash Prize - TBD',
+    '1Password Subsription',
+    'Axure Subscription',
+    'Interview Buddy Course',
     'Internship Opportunity with Sashido',
-    'Egghead.io Course (Per head)',
-    'Daily Bot Subscription Course (Per head)',
-    'Taskade Subscription (Per head)',
-    'Rosenfeld Subscription (Per head)',
-    'Loop11 Subscription (Per head)',
-    'Devfolio T-shirt and Swags (Per head)',
+    'Egghead.io Course',
+    'Daily Bot Subscription Course',
+    'Taskade Subscription',
+    'Rosenfeld Subscription',
+    'Loop11 Subscription',
+    'Devfolio T-shirt and Swags',
     'Gold Certificate'
   ],
   'first_runner_up': [
-    'Cash Prize',
-    '1Password Subsription (Per head)',
-    'Axure Subscription (per head)',
-    'Interview Buddy Course (Per head)',
+    'Cash Prize - TBD',
+    '1Password Subsription',
+    'Axure Subscription',
+    'Interview Buddy Course',
     'Internship Opportunity with Sashido',
-    'Egghead.io Course (Per head)',
-    'Daily Bot Subscription Course (Per head)',
-    'Taskade Subscription (Per head)',
-    'Loop11 Subscription (Per head)',
-    'Devfolio T-shirt and Swags (Per head)',
+    'Egghead.io Course',
+    'Daily Bot Subscription Course',
+    'Taskade Subscription',
+    'Loop11 Subscription',
+    'Devfolio T-shirt and Swags',
     'Silver Certificate'
   ],
   'second_runner_up': [
-    'Cash Prize',
-    '1Password Subsription (Per head)',
-    'Axure Subscription (Per head)',
+    'Cash Prize - TBD',
+    '1Password Subsription',
+    'Axure Subscription',
     'Internship Opportunity with Sashido',
-    'Egghead.io Course (Per head)',
-    'Daily Bot Subscription Course (Per head)',
-    'Taskade Subscription (Per head)',
-    'Loop11 Subscription (Per head)',
-    'Devfolio T-shirt and Swags (Per head)',
+    'Egghead.io Course',
+    'Daily Bot Subscription Course',
+    'Taskade Subscription',
+    'Loop11 Subscription',
+    'Devfolio T-shirt and Swags',
     'Bronze Certificate'
   ],
   'to_all': [
-    'Rosenfeld 20% Off (Per head)',
-    'Proto.io 60 Day License Free (Per head)',
-    'Loop 11 Subcription (Per team)',
-    'Taskade 1 Year Free Upgrade (Per head)',
-    'Repl.it 3 Month Free (Hacker Plan) (Per head)',
-    'Access to Speechly Resources (Per head)',
-    'Interview Buddy 20% Off (Per head)',
-    'Sashido 120\$ Credit (Per head)',
+    'Rosenfeld 20% Off',
+    'Proto.io 60 Day License Free',
+    'Loop 11 Subcription',
+    'Taskade 1 Year Free Upgrade',
+    'Repl.it 3 Month Free (Hacker Plan)',
+    'Access to Speechly Resources',
+    'Interview Buddy 20% Off',
+    'Sashido 120\$ Credit',
     'Participation Certificate'
   ],
   'matic': [
@@ -157,36 +157,11 @@ Map<String, List<String>> text = {
     'Seed Funding worth \$5k',
   ],
   'tezos': [
-    '20k Cash Prize (Best DAPP app)',
-    '10k Cash Prize (Best Tezos based app)',
+    '20k Cash Prize (Best Dapp)',
+    '10k Cash Prize (Best Tezos based App)',
     'Internship/FTE Opportunity',
     'Continuity Grant Opportunity'
   ],
-  'fortis': ['15k Cash Prize (Best Dapp app)'],
+  'fortis': ['15k Cash Prize (Best Dapp)'],
   'speechly': ['Best 3 teams to get \$100 gift cards']
 };
-
-/*
-winning team - 
-1password sub, azure sub, interview buddy course, internship opportunity sashido, egghead.io course, daily bot sub(per head), taskade sub (per head), rosenfeld sub (per head), loop11 sub (per head), devfolio tshirt and swag (per head), gold certi, cash prize
-
-runner up team - 
-1password sub, azure sub, interview buddy course, internship opportunity sashido, egghead.io course, daily bot sub(per head), taskade sub (per head), loop11 sub (per head), devfolio tshirt and swag (per head), silver certi, cash prize
-
-2nd runner up - 
-1password sub, azure sub, internship opportunity sashido, egghead.io course, daily bot sub(per head), taskade sub (per head), loop11 sub (per head), devfolio tshirt and swag (per head), bronze certi, cash prize
-
-api prizes -
-  matic prize -
-  10k cash, 15k cash, internship/fte opportunity at matic, seed funding 5k dollar
-  tezos prize -
-  20k cash (best dapp app), 10k cash (best tezos based build), internship/fte opportunity at matic, Continuity Grant opportunity
-  fortis prize -
-  15k cash (best dapp app)
-  *speechly prize -
-  *100 dollar best app
-
-to all -
-  rosenfeld 20% off, proto.io 60 day free, loop11 sub per team, taskade 1 year free upgrade, repl.it 3 month free sub as per hacker plan, cert, access to speeechly tech, interview buddy 20% off, sashido 120$ credit
-
-*/

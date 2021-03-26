@@ -41,7 +41,7 @@ class Prizes extends StatelessWidget {
             children: [
               PrizeButton(src: 'matic'),
               PrizeButton(src: 'tezos'),
-              PrizeButton(src: 'fortis'),
+              PrizeButton(src: 'portis'),
               PrizeButton(src: 'speechly'),
             ],
           ),
