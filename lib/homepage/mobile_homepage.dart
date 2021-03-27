@@ -13,6 +13,7 @@ import 'package:vihaan_new/screensDesktop/team.dart';
 import 'package:vihaan_new/screensMobile/landingpage_m.dart';
 import 'package:vihaan_new/screensMobile/timelineSection_m.dart';
 import 'package:vihaan_new/screensMobile/tracks_m.dart';
+import 'package:vihaan_new/widgets/fancyBackgroundApp.dart';
 import 'package:vihaan_new/widgets/vihaan_icons_icons.dart';
 
 class MobileHomePage extends StatefulWidget {
