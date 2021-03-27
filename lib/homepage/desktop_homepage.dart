@@ -13,6 +13,7 @@ import 'package:vihaan_new/screensDesktop/sponsors.dart';
 import 'package:vihaan_new/screensDesktop/team.dart';
 import 'package:vihaan_new/screensDesktop/tracks.dart';
 import 'package:vihaan_new/widgets/desktopNavbar.dart';
+import 'package:vihaan_new/widgets/fancyBackgroundApp.dart';
 import 'package:vihaan_new/widgets/vihaan_icons_icons.dart';
 
 class DesktopHomePage extends StatefulWidget {
@@ -65,6 +66,7 @@ class _DesktopHomePageState extends State<DesktopHomePage> {
                   _wrapScrollTag(
                     index: 0,
                     child: Container(
+                      color: Colors.black87,
                       height: MediaQuery.of(context).size.height,
                       width: MediaQuery.of(context).size.width,
                       child: Stack(children: [

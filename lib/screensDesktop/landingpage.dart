@@ -1,73 +1,10 @@
-import 'dart:math';
-
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
-import 'package:simple_animations/simple_animations.dart';
 import 'package:universal_html/html.dart';
 import 'package:vihaan_new/data/hyperlinks.dart';
 import 'package:vihaan_new/data/images.dart';
-import 'package:vihaan_new/widgets/animatedWave.dart';
 import 'package:vihaan_new/widgets/devfolio_button.dart';
 import 'package:vihaan_new/widgets/vihaan_icons_icons.dart';
-
-class AnimatedBackground extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    final tween = MultiTrackTween([
-      Track("color1").add(Duration(seconds: 3),
-          ColorTween(begin: Color(0xffD38312), end: Colors.lightBlue.shade900)),
-      Track("color2").add(Duration(seconds: 3),
-          ColorTween(begin: Color(0xffA83279), end: Colors.blue.shade600))
-    ]);
-
-    return ControlledAnimation(
-      playback: Playback.MIRROR,
-      tween: tween,
-      duration: tween.duration,
-      builder: (context, animation) {
-        return Container(
-          decoration: BoxDecoration(
-              gradient: LinearGradient(
-                  begin: Alignment.topCenter,
-                  end: Alignment.bottomCenter,
-                  colors: [animation["color1"], animation["color2"]])),
-        );
-      },
-    );
-  }
-}
-
-class FancyBackgroundApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Stack(
-      children: <Widget>[
-        Positioned.fill(child: AnimatedBackground()),
-        onBottom(AnimatedWave(
-          height: 180,
-          speed: 1.0,
-        )),
-        onBottom(AnimatedWave(
-          height: 120,
-          speed: 0.9,
-          offset: pi,
-        )),
-        onBottom(AnimatedWave(
-          height: 220,
-          speed: 1.2,
-          offset: pi / 2,
-        )),
-      ],
-    );
-  }
-
-  onBottom(Widget child) => Positioned.fill(
-        child: Align(
-          alignment: Alignment.bottomCenter,
-          child: child,
-        ),
-      );
-}
 
 class LandingPageContent extends StatelessWidget {
   @override
@@ -111,14 +48,18 @@ class LandingPageContent extends StatelessWidget {
                         backgroundBlendMode: BlendMode.srcOver,
                         borderRadius: BorderRadius.circular(6),
                       ),
-                      child: TypewriterAnimatedTextKit(
-                        text: [' Eat', ' Sleep', ' Code', ' Repeat'],
-                        textStyle: TextStyle(
+                      child: DefaultTextStyle(
+                        style: const TextStyle(
                           fontSize: 22,
                           fontFamily: 'NunitoSans',
                           color: Colors.black87,
                           fontWeight: FontWeight.bold,
                           height: 1.6,
+                        ),
+                        child: AnimatedTextKit(
+                          animatedTexts: [' Eat', ' Sleep', ' Code', ' Repeat']
+                              .map((e) => TypewriterAnimatedText(e))
+                              .toList(),
                         ),
                       ),
                     ),
@@ -249,19 +190,4 @@ class LandingPageContent extends StatelessWidget {
       ),
     );
   }
-}
-
-class BezierClipper extends CustomClipper<Path> {
-  @override
-  Path getClip(Size size) {
-    Path path = new Path();
-    path.lineTo(0, size.height * 0.85); //vertical line
-    path.cubicTo(size.width / 3, size.height, 2 * size.width / 3,
-        size.height * 0.2, size.width, size.height * 2); //cubic curve
-    path.lineTo(size.width, 0); //vertical line
-    return path;
-  }
-
-  @override
-  bool shouldReclip(CustomClipper<Path> oldClipper) => true;
 }
