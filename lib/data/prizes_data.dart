@@ -38,7 +38,7 @@ Map<String, List<String>> images = {
     sectionImages['images/IEEE_DTU_Logo.png'], //cash prize
     bronzeSponsor['images/sponsor_1password.jpg'],
     bronzeSponsor['images/sponsor_axure.jpg'],
-    sectionImages['images/sponsor_interviewbuddy.jpg'], //Interview Buddy Course
+    bronzeSponsor['images/sponsor_interviewbuddy.jpg'], //Interview Buddy Course
     bronzeSponsor['images/sponsor_sashido.jpg'],
     bronzeSponsor['images/sponsor_egghead.jpg'],
     bronzeSponsor['images/sponsor_dailybot.jpg'],
@@ -52,7 +52,7 @@ Map<String, List<String>> images = {
     sectionImages['images/IEEE_DTU_Logo.png'], //cash prize
     bronzeSponsor['images/sponsor_1password.jpg'],
     bronzeSponsor['images/sponsor_axure.jpg'],
-    sectionImages['images/sponsor_interviewbuddy.jpg'], //Interview Buddy Course
+    bronzeSponsor['images/sponsor_interviewbuddy.jpg'], //Interview Buddy Course
     bronzeSponsor['images/sponsor_sashido.jpg'],
     bronzeSponsor['images/sponsor_egghead.jpg'],
     bronzeSponsor['images/sponsor_dailybot.jpg'],
@@ -80,7 +80,7 @@ Map<String, List<String>> images = {
     bronzeSponsor['images/sponsor_taskade.jpg'],
     bronzeSponsor['images/sponsor_replit.jpg'],
     silverSponsor['images/sponsor_speechly.jpg'],
-    sectionImages['images/sponsor_interviewbuddy.jpg'], //Interview Buddy Course
+    bronzeSponsor['images/sponsor_interviewbuddy.jpg'], //Interview Buddy Course
     bronzeSponsor['images/sponsor_sashido.jpg'],
     sectionImages['images/IEEE_DTU_Logo.png'], //part
   ],
