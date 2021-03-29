@@ -1,7 +1,9 @@
-import 'package:flutter/material.dart';
-import 'package:vihaan_new/data/prizes.dart';
-import 'PrizeDialog.dart';
 import 'dart:math';
+
+import 'package:flutter/material.dart';
+import 'package:vihaan_new/data/prizes_data.dart';
+
+import 'PrizeDialog.dart';
 
 class PrizeButton extends StatelessWidget {
   final String src;
@@ -14,13 +16,14 @@ class PrizeButton extends StatelessWidget {
         child: SizedBox(
       width: max(300, _width * 0.175),
       height: max(100, _height * 0.125),
-      child: RaisedButton(
+      child: ElevatedButton(
           child: ClipRRect(
             borderRadius: BorderRadius.circular(20),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                Image.network(cardImages[src], 
+                Image.network(
+                  cardImages[src],
                   // width: min(200, _width * 0.1),
                   fit: BoxFit.cover,
                 ),
@@ -31,10 +34,12 @@ class PrizeButton extends StatelessWidget {
               ],
             ),
           ),
-          color: Color.fromARGB(255, 222, 240, 244),
-          shape:
-              RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-          padding: EdgeInsets.all(10),
+          style: ElevatedButton.styleFrom(
+            primary: Color.fromARGB(255, 222, 240, 244),
+            shape:
+                RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+            padding: EdgeInsets.all(10),
+          ),
           onPressed: () {
             showDialog(
               context: context,

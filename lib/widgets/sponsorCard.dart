@@ -40,24 +40,26 @@ class SponsorTitle extends StatelessWidget {
   SponsorTitle({this.title, this.fnt, this.clr});
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Text(
-        title,
-        style: TextStyle(
-          letterSpacing: 2,
-          fontSize: fnt,
-          fontWeight: FontWeight.w900,
-          fontFamily: 'NunitoSans',
-          color: clr,
-          shadows: [
-            Shadow(
-              color: Colors.black12,
-              blurRadius: 1,
-              offset: Offset(3.0, 3.0),
-            ),
-          ],
+    return Center(
+      child: Container(
+        child: Text(
+          title,
+          style: TextStyle(
+            letterSpacing: 2,
+            fontSize: fnt,
+            fontWeight: FontWeight.w900,
+            fontFamily: 'NunitoSans',
+            color: clr,
+            shadows: [
+              Shadow(
+                color: Colors.black12,
+                blurRadius: 1,
+                offset: Offset(3.0, 3.0),
+              ),
+            ],
+          ),
+          textAlign: TextAlign.center,
         ),
-        textAlign: TextAlign.center,
       ),
     );
   }

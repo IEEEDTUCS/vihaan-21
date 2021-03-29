@@ -8,6 +8,7 @@ import 'package:vihaan_new/screensDesktop/aboutus.dart';
 import 'package:vihaan_new/screensDesktop/contact_us.dart';
 import 'package:vihaan_new/screensDesktop/faq.dart';
 import 'package:vihaan_new/screensDesktop/judges.dart';
+import 'package:vihaan_new/screensDesktop/prizes.dart';
 import 'package:vihaan_new/screensDesktop/sponsors.dart';
 import 'package:vihaan_new/screensDesktop/team.dart';
 import 'package:vihaan_new/screensMobile/landingpage_m.dart';
@@ -229,7 +230,7 @@ class _MobileHomePageState extends State<MobileHomePage> {
                 _wrapScrollTag(
                   index: 3,
                   child: Container(
-                    height: MediaQuery.of(context).size.height * 0.75,
+                    // height: MediaQuery.of(context).size.height * 0.75,
                     width: MediaQuery.of(context).size.width,
                     color: Colors.purpleAccent,
                     child: Column(
@@ -252,7 +253,8 @@ class _MobileHomePageState extends State<MobileHomePage> {
                           padding: EdgeInsets.only(bottom: 20),
                           child: Align(
                             alignment: Alignment.center,
-                            child: Text(
+                            child:
+                                /*Text(
                               'Prizes over\n INR 1 Crore\n To be revealed soon!!',
                               style: TextStyle(
                                 fontSize: 56,
@@ -260,8 +262,8 @@ class _MobileHomePageState extends State<MobileHomePage> {
                                 fontWeight: FontWeight.bold,
                               ),
                               textAlign: TextAlign.center,
-                            ),
-                            // Prizes(), // RevealingSoon(),
+                            ),*/
+                                Prizes(), // RevealingSoon(),
                           ),
                         ),
                       ],

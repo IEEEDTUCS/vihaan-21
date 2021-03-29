@@ -54,14 +54,17 @@ class Sponsors extends StatelessWidget {
 
           Row(
             children: [
-              Expanded(
+              Flexible(
                 child: Container(
                   child: Column(
                     children: [
-                      SponsorTitle(
-                          title: 'TITLE SPONSOR',
-                          fnt: titleFont,
-                          clr: Colors.yellow),
+                      SizedBox(
+                        height: 200,
+                        child: SponsorTitle(
+                            title: 'TITLE SPONSOR',
+                            fnt: titleFont,
+                            clr: Colors.yellow),
+                      ),
                       Container(
                           height: 2,
                           color: Colors.black12,
@@ -87,14 +90,17 @@ class Sponsors extends StatelessWidget {
                   ),
                 ),
               ),
-              Expanded(
+              Flexible(
                 child: Container(
                   child: Column(
                     children: [
-                      SponsorTitle(
-                          title: 'GOLD',
-                          fnt: titleFont,
-                          clr: Colors.amber[500]),
+                      SizedBox(
+                        height: 200,
+                        child: SponsorTitle(
+                            title: 'GOLD',
+                            fnt: titleFont,
+                            clr: Colors.amber[500]),
+                      ),
                       Container(
                           height: 2,
                           color: Colors.black12,
