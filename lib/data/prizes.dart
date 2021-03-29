@@ -1,4 +1,3 @@
-import 'package:flutter/foundation.dart';
 import 'images.dart';
 
 Map<String, String> cardImages = {
@@ -14,10 +13,12 @@ Map<String, String> cardImages = {
       'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Flogos%2Faward_icon.png?alt=media&token=0720840e-6113-45a1-97a5-84ca9aa4dca4',
   'tezos':
       'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Flogos%2Faward_icon.png?alt=media&token=0720840e-6113-45a1-97a5-84ca9aa4dca4',
-  'fortis':
+  'portis':
       'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Flogos%2Faward_icon.png?alt=media&token=0720840e-6113-45a1-97a5-84ca9aa4dca4',
   'speechly':
-      'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Flogos%2Faward_icon.png?alt=media&token=0720840e-6113-45a1-97a5-84ca9aa4dca4'
+      'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Flogos%2Faward_icon.png?alt=media&token=0720840e-6113-45a1-97a5-84ca9aa4dca4',
+  'women_team':
+      'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Flogos%2Faward_icon.png?alt=media&token=0720840e-6113-45a1-97a5-84ca9aa4dca4',
 };
 
 Map<String, String> cardText = {
@@ -27,8 +28,9 @@ Map<String, String> cardText = {
   'to_all': 'For Everyone',
   'matic': 'Matic Prize',
   'tezos': 'Tezos Prize',
-  'fortis': 'Portis Prize',
-  'speechly': 'Speechly Prize'
+  'portis': 'Portis Prize',
+  'speechly': 'Speechly Prize',
+  'women_team': 'Best Performing\nWomen Team',
 };
 
 Map<String, List<String>> images = {
@@ -36,7 +38,7 @@ Map<String, List<String>> images = {
     sectionImages['images/IEEE_DTU_Logo.png'], //cash prize
     bronzeSponsor['images/sponsor_1password.jpg'],
     bronzeSponsor['images/sponsor_axure.jpg'],
-    sectionImages['images/IEEE_DTU_Logo.png'], //Interview Buddy Course
+    sectionImages['images/sponsor_interviewbuddy.jpg'], //Interview Buddy Course
     bronzeSponsor['images/sponsor_sashido.jpg'],
     bronzeSponsor['images/sponsor_egghead.jpg'],
     bronzeSponsor['images/sponsor_dailybot.jpg'],
@@ -50,7 +52,7 @@ Map<String, List<String>> images = {
     sectionImages['images/IEEE_DTU_Logo.png'], //cash prize
     bronzeSponsor['images/sponsor_1password.jpg'],
     bronzeSponsor['images/sponsor_axure.jpg'],
-    sectionImages['images/IEEE_DTU_Logo.png'], //Interview Buddy Course
+    sectionImages['images/sponsor_interviewbuddy.jpg'], //Interview Buddy Course
     bronzeSponsor['images/sponsor_sashido.jpg'],
     bronzeSponsor['images/sponsor_egghead.jpg'],
     bronzeSponsor['images/sponsor_dailybot.jpg'],
@@ -78,7 +80,7 @@ Map<String, List<String>> images = {
     bronzeSponsor['images/sponsor_taskade.jpg'],
     bronzeSponsor['images/sponsor_replit.jpg'],
     silverSponsor['images/sponsor_speechly.jpg'],
-    sectionImages['images/IEEE_DTU_Logo.png'], //Interview Buddy Course
+    sectionImages['images/sponsor_interviewbuddy.jpg'], //Interview Buddy Course
     bronzeSponsor['images/sponsor_sashido.jpg'],
     sectionImages['images/IEEE_DTU_Logo.png'], //part
   ],
@@ -98,11 +100,17 @@ Map<String, List<String>> images = {
   ],
   'speechly': [
     sectionImages['images/IEEE_DTU_Logo.png'], //cash
-  ]
+  ],
+  'women_team': [
+    sectionImages['images/IEEE_DTU_Logo.png'], //cash
+  ],
 };
+
+// 10, 6, 3, 2
+
 Map<String, List<String>> text = {
   'winning': [
-    'Cash Prize - TBD',
+    'Cash Prize - 10,000',
     '1Password Subsription',
     'Axure Subscription',
     'Interview Buddy Course',
@@ -116,7 +124,7 @@ Map<String, List<String>> text = {
     'Gold Certificate'
   ],
   'first_runner_up': [
-    'Cash Prize - TBD',
+    'Cash Prize - 6,000',
     '1Password Subsription',
     'Axure Subscription',
     'Interview Buddy Course',
@@ -129,7 +137,7 @@ Map<String, List<String>> text = {
     'Silver Certificate'
   ],
   'second_runner_up': [
-    'Cash Prize - TBD',
+    'Cash Prize - 3,000',
     '1Password Subsription',
     'Axure Subscription',
     'Internship Opportunity with Sashido',
@@ -162,6 +170,7 @@ Map<String, List<String>> text = {
     'Internship/FTE Opportunity',
     'Continuity Grant Opportunity'
   ],
-  'fortis': ['15k Cash Prize (Best Dapp)'],
-  'speechly': ['Best 3 teams to get \$100 gift cards']
+  'portis': ['15k Cash Prize (Best Dapp)'],
+  'speechly': ['Best 3 teams to get \$100 gift cards'],
+  'women_team': ['Cash Prize - 2,000'],
 };

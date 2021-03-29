@@ -43,6 +43,7 @@ class Prizes extends StatelessWidget {
               PrizeButton(src: 'tezos'),
               PrizeButton(src: 'portis'),
               PrizeButton(src: 'speechly'),
+              PrizeButton(src: 'women_team'),
             ],
           ),
           SizedBox(height: _width < 800 ? gap - 10 : gap),

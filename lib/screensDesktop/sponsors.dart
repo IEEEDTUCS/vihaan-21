@@ -52,33 +52,74 @@ class Sponsors extends StatelessWidget {
           //   ),
           // ),
 
-          SponsorTitle(title: 'GOLD', fnt: titleFont, clr: Colors.amber[500]),
-          Container(
-              height: 2,
-              color: Colors.black12,
-              margin: EdgeInsets.symmetric(horizontal: 350)),
-          SingleChildScrollView(
-            scrollDirection: Axis.horizontal,
-            child: Row(
-              mainAxisSize: MainAxisSize.min,
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                SponsorCard(
-                  bx: gold,
-                  mrl: mrg,
-                  mrr: mrg,
-                  url: goldSponsors['images/sponsor_devfolio.jpg'],
-                  link: SponsorContacts.sponsorDevfolio,
+          Row(
+            children: [
+              Expanded(
+                child: Container(
+                  child: Column(
+                    children: [
+                      SponsorTitle(
+                          title: 'TITLE SPONSOR',
+                          fnt: titleFont,
+                          clr: Colors.yellow),
+                      Container(
+                          height: 2,
+                          color: Colors.black12,
+                          margin: EdgeInsets.symmetric(horizontal: 350)),
+                      SingleChildScrollView(
+                        scrollDirection: Axis.horizontal,
+                        child: Row(
+                          mainAxisSize: MainAxisSize.min,
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            SponsorCard(
+                              bx: gold,
+                              mrl: mrg,
+                              mrr: mrg,
+                              url: goldSponsors[
+                                  'images/sponsor_transneuron.jpg'],
+                              link: SponsorContacts.sponsorTransneuron,
+                            ),
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
-                SponsorCard(
-                  bx: gold,
-                  mrl: mrg,
-                  mrr: mrg,
-                  url: goldSponsors['images/sponsor_transneuron.jpg'],
-                  link: SponsorContacts.sponsorTransneuron,
+              ),
+              Expanded(
+                child: Container(
+                  child: Column(
+                    children: [
+                      SponsorTitle(
+                          title: 'GOLD',
+                          fnt: titleFont,
+                          clr: Colors.amber[500]),
+                      Container(
+                          height: 2,
+                          color: Colors.black12,
+                          margin: EdgeInsets.symmetric(horizontal: 350)),
+                      SingleChildScrollView(
+                        scrollDirection: Axis.horizontal,
+                        child: Row(
+                          mainAxisSize: MainAxisSize.min,
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            SponsorCard(
+                              bx: gold,
+                              mrl: mrg,
+                              mrr: mrg,
+                              url: goldSponsors['images/sponsor_devfolio.jpg'],
+                              link: SponsorContacts.sponsorDevfolio,
+                            ),
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
-              ],
-            ),
+              ),
+            ],
           ),
           SizedBox(height: 15),
           SponsorTitle(
@@ -158,6 +199,14 @@ class Sponsors extends StatelessWidget {
               ],
             ),
           ),
+          SizedBox(height: 15),
+          SponsorTitle(
+            title: 'MEDIA AND OUTREACH PARTNER',
+            fnt: 30.00,
+            clr: Colors.white,
+          ),
+
+          mediaOutreachSponsorsGrid(width, height),
         ],
       ),
     );

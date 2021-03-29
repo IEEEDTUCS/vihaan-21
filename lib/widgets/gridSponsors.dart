@@ -12,17 +12,13 @@ Widget bronzeSponsorsGrid(
     'images/sponsor_1password.jpg',
     'images/sponsor_wolframalpha.jpg',
     'images/sponsor_loop11.jpg',
-    'images/sponsor_duexpress.png',
     'images/sponsor_protoio.jpg',
-    'images/sponsor_dubeat.jpg',
     'images/sponsor_givemycertificate.jpg',
     'images/sponsor_taskade.jpg',
     'images/sponsor_replit.jpg',
-    'images/sponsor_noticebard.jpg',
     'images/sponsor_axure.jpg',
     'images/sponsor_dailybot.jpg',
     'images/sponsor_sashido.jpg',
-    'images/sponsor_cryptopolitan.jpg',
     'images/sponsor_egghead.jpg',
     'images/sponsor_clerky.jpg',
     'images/sponsor_nostarchpress.jpg',
@@ -42,17 +38,13 @@ Widget bronzeSponsorsGrid(
     SponsorContacts.sponsor1password,
     SponsorContacts.sponsorWolframAlpha,
     SponsorContacts.sponsorloop11,
-    SponsorContacts.sponsorduexpress,
     SponsorContacts.sponsorprotoio,
-    SponsorContacts.sponsorDUBeat,
     SponsorContacts.sponsorGivemycertificate,
     SponsorContacts.sponsorTaskade,
     SponsorContacts.sponsorReplit,
-    SponsorContacts.sponsorNoticebard,
     SponsorContacts.sponsorAxure,
     SponsorContacts.sponsorDailybot,
     SponsorContacts.sponsorSashido,
-    SponsorContacts.sponsorCryptopolitan,
     SponsorContacts.sponsorEgghead,
     SponsorContacts.sponsorClerky,
     SponsorContacts.sponsorNostarchpress,
@@ -146,5 +138,52 @@ Widget silverSponsorsGrid(
         : 2,
 
     children: silverSponsorsWidget,
+  );
+}
+
+Widget mediaOutreachSponsorsGrid(
+  double width,
+  double height,
+) {
+  var mediaOutreachSponsorImages = [
+    'images/sponsor_dubeat.jpg',
+    'images/sponsor_duexpress.png',
+    'images/sponsor_noticebard.jpg',
+    'images/sponsor_cryptopolitan.jpg',
+    'images/sponsor_dscdtu.jpg'
+  ];
+  List<Widget> mediaOutreachSponsorsWidget = [];
+  var mediaOutreachSponsorLinks = [
+    SponsorContacts.sponsorDUBeat,
+    SponsorContacts.sponsorduexpress,
+    SponsorContacts.sponsorNoticebard,
+    SponsorContacts.sponsorCryptopolitan,
+    SponsorContacts.sponsorDscdtu,
+  ];
+  for (int i = 0; i < mediaOutreachSponsorImages.length; i++) {
+    mediaOutreachSponsorsWidget.add(
+      SponsorCard(
+        bx: (width >= 800) ? width * 0.125 : width * 0.2,
+        mrl: 4,
+        mrr: 4,
+        url: mediaOutreachSponsor[mediaOutreachSponsorImages[i]],
+        link: mediaOutreachSponsorLinks[i],
+      ),
+    );
+  }
+  return GridView.count(
+    crossAxisSpacing: (width >= 800) ? (width >= 1000 ? 48 : 28) : 8,
+    primary: false,
+    shrinkWrap: true,
+    crossAxisCount: (width > 350)
+        ? ((width > 600)
+            ? ((width >= 800)
+                ? (width >= 1000)
+                    ? 5
+                    : 4
+                : 3)
+            : 2)
+        : 2,
+    children: mediaOutreachSponsorsWidget,
   );
 }
