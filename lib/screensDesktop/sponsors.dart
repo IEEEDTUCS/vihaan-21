@@ -62,7 +62,11 @@ class Sponsors extends StatelessWidget {
                         height: 200,
                         child: SponsorTitle(
                             title: 'TITLE SPONSOR',
-                            fnt: titleFont,
+                            fnt: (width > 800)
+                                ? titleFont
+                                : ((width > 400)
+                                    ? titleFont - 18
+                                    : titleFont - 20),
                             clr: Colors.yellow),
                       ),
                       Container(
@@ -201,6 +205,13 @@ class Sponsors extends StatelessWidget {
                   mrr: mrg,
                   url: communitypartner['images/sponsor_codeforcause.jpeg'],
                   link: SponsorContacts.sponsorCodeforcause,
+                ),
+                SponsorCard(
+                  bx: community,
+                  mrl: mrg,
+                  mrr: mrg,
+                  url: communitypartner['images/sponsor_ieeedelhisection.jpg'],
+                  link: SponsorContacts.sponsorIEEEDelSec,
                 ),
               ],
             ),

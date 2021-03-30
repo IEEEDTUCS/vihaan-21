@@ -8,12 +8,9 @@ class Tracks extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final width = MediaQuery.of(context).size.width;
-    final height = MediaQuery.of(context).size.height;
-    final double itemHeight =
-        (height > 900) ? 500 : ((height < 600) ? 450 : 300);
-    final double itemWidth = (width > 350)
-        ? ((width > 600) ? ((width >= 800) ? width / 4 : width / 3) : width / 2)
-        : width;
+    // final height = MediaQuery.of(context).size.height;
+    // final double itemHeight = (height > 900) ? 500 : ((height < 600) ? 450 : 300);
+    // final double itemWidth = (width > 350) ? ((width > 600) ? ((width >= 800) ? width / 4 : width / 3) : width / 2) : width;
     List<Widget> tracks = [];
     for (int i = 0; i < trackName.length; i++) {
       precacheImage(NetworkImage(tracksImages[i]), context);

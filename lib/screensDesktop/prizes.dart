@@ -1,12 +1,11 @@
-import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:vihaan_new/widgets/PrizeButton.dart';
 
 class Prizes extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    var _width = MediaQuery.of(context).size.width,
-        _height = MediaQuery.of(context).size.height;
+    var _width = MediaQuery.of(context).size.width;
+    // var _height = MediaQuery.of(context).size.height;
     double gap = 40;
     return Container(
       child: Column(

@@ -9,10 +9,9 @@ class TeamSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var width = MediaQuery.of(context).size.width;
-    var height = MediaQuery.of(context).size.height;
-    final rowCount =
-        (width > 350) ? ((width > 600) ? ((width >= 800) ? 4 : 3) : 2) : 1;
-    final ratio = height / (width / rowCount);
+    // var height = MediaQuery.of(context).size.height;
+    // final rowCount = (width > 350) ? ((width > 600) ? ((width >= 800) ? 4 : 3) : 2) : 1;
+    // final ratio = height / (width / rowCount);
 
     final double itemHeight = (width >= 800 && width < 1100) ? 425 : 385;
 

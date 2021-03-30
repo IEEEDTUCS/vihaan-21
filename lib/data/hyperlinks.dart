@@ -418,4 +418,22 @@ class SponsorContacts {
       throw 'Could not launch $url';
     }
   }
+
+  static sponsorIEEEDelSec() async {
+    const url = 'https://ewh.ieee.org/r10/delhi/';
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
+
+  static sponsorDigitalocean() async {
+    const url = 'https://www.digitalocean.com/';
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
 }

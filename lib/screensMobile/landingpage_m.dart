@@ -7,8 +7,8 @@ import 'package:vihaan_new/widgets/vihaan_icons_icons.dart';
 class LandingPageContent extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    var _height = MediaQuery.of(context).size.height;
-    var _width = MediaQuery.of(context).size.width;
+    // var _height = MediaQuery.of(context).size.height;
+    // var _width = MediaQuery.of(context).size.width;
     return AnimatedOpacity(
       duration: Duration(milliseconds: 250),
       opacity: 1.0,
