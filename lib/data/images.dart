@@ -3,8 +3,10 @@
 var goldSponsors = {
   'images/sponsor_devfolio.jpg':
       'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fsponsors%2Fsponsor_devfolio.jpg?alt=media&token=b51987bc-47c3-49c7-8ec0-09650a94ecc7',
-  'images/sponsor_transneuron.jpg':
-      'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fsponsors%2Fsponsor_transneuron.jpg?alt=media&token=2b38c2de-7f79-4f76-aedd-8e551bd734d0',
+  'images/prepbyte.jpg':
+      'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fsponsors%2Fsponsor_prepbytes.jpg?alt=media&token=a54916bf-0ca0-4ae3-b0ed-6dba37b5f7eb',
+  'images/sponsor_itrack.jpg':
+      'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fsponsors%2Fsponsor_itrack.jpg?alt=media&token=6deefa79-7e55-437b-8fe8-6f714f22cdfa',
 };
 
 var silverSponsor = {
@@ -68,7 +70,11 @@ var bronzeSponsor = {
   'images/sponsor_interviewbuddy.jpg':
       'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fsponsors%2Fsponsor_interviewbuddy.jpg?alt=media&token=3ab8a5de-370d-44e6-94bd-f7bc9d98d824',
   'images/sponsor_digitalocean.jpg':
-      'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fsponsors%2Fsponsor_digitalocean.jpg?alt=media&token=fbd01eb2-37be-43d6-ac5f-4c1ab5246e17'
+      'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fsponsors%2Fsponsor_digitalocean.jpg?alt=media&token=fbd01eb2-37be-43d6-ac5f-4c1ab5246e17',
+  'images/sponsor_scriptfoundation.jpg':
+      'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fsponsors%2Fsponsor_scriptfoundation.jpg?alt=media&token=5756a633-1f09-4b64-82e1-11ef0b83a8ef',
+  'images/sponsor_xyz.jpg':
+      'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fsponsors%2Fsponsor_xyz.jpg?alt=media&token=c7de8b67-5b48-4c7d-9aae-3014a5062c26',
 };
 
 var mediaOutreachSponsor = {
@@ -85,6 +91,8 @@ var mediaOutreachSponsor = {
 };
 
 var communitypartner = {
+  'images/sponsor_graphcms.jpg':
+      'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fsponsors%2Fsponsor_graphcms.jpg?alt=media&token=1aff3c10-90d4-4407-b822-ffca9bfe4494',
   'images/sponsor_ieeedelhisection.jpg':
       'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fsponsors%2Fsponsor_ieeedelhisection.jpg?alt=media&token=1222e5ab-bd24-46d7-b6e8-e204662b9cbe',
   'images/sponsor_codeforcause.jpeg':

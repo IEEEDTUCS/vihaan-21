@@ -148,8 +148,8 @@ class _DesktopHomePageState extends State<DesktopHomePage> {
                             padding: EdgeInsets.only(bottom: 20),
                             child: Align(
                               alignment: Alignment.center,
-                              child: Prizes(),
-                              /*child: Text(
+                              // child: Prizes(),
+                              child: Text(
                                 'Prizes over\n INR 1 crore\n To be revealed soon!!',
                                 style: TextStyle(
                                   fontSize: 56,
@@ -157,7 +157,7 @@ class _DesktopHomePageState extends State<DesktopHomePage> {
                                   fontWeight: FontWeight.bold,
                                 ),
                                 textAlign: TextAlign.center,
-                              )*/
+                              ),
                             ),
                           ),
                         ],

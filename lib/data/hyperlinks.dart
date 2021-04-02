@@ -374,8 +374,17 @@ class SponsorContacts {
     }
   }
 
-  static sponsorTransneuron() async {
-    const url = 'https://transneuron.com/';
+  static sponsorItrack() async {
+    const url = 'https://www.itrackglobal.com/';
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
+
+  static sponsorPrepbytes() async {
+    const url = 'https://www.prepbytes.com/';
     if (await canLaunch(url)) {
       await launch(url);
     } else {
@@ -430,6 +439,33 @@ class SponsorContacts {
 
   static sponsorDigitalocean() async {
     const url = 'https://www.digitalocean.com/';
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
+
+  static sponsorGraphcms() async {
+    const url = 'https://graphcms.com/';
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
+
+  static sponsorScriptfoundation() async {
+    const url = 'https://www.scriptindia.org/';
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
+
+  static sponsorXYZ() async {
+    const url = 'https://gen.xyz/';
     if (await canLaunch(url)) {
       await launch(url);
     } else {

@@ -43,93 +43,78 @@ class Sponsors extends StatelessWidget {
               height: 2,
               color: Colors.white24,
               margin: EdgeInsets.fromLTRB(80, 0, 80, 10)),
-          // Padding(
-          //   padding: const EdgeInsets.only(bottom: 12.0),
-          //   child: Text(
-          //     'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-          //     style: TextStyle(fontSize: 20, fontFamily: 'NunitoSans'),
-          //     textAlign: TextAlign.center,
-          //   ),
-          // ),
-
-          Row(
-            children: [
-              Flexible(
-                child: Container(
-                  child: Column(
+          Container(
+            child: Column(
+              children: [
+                SizedBox(
+                  height: 200,
+                  child: SponsorTitle(
+                      title: 'TITLE SPONSOR',
+                      fnt: (width > 800)
+                          ? titleFont
+                          : ((width > 400) ? titleFont - 18 : titleFont - 20),
+                      clr: Colors.yellow),
+                ),
+                Container(
+                    height: 2,
+                    color: Colors.black12,
+                    margin: EdgeInsets.symmetric(horizontal: 350)),
+                SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      SizedBox(
-                        height: 200,
-                        child: SponsorTitle(
-                            title: 'TITLE SPONSOR',
-                            fnt: (width > 800)
-                                ? titleFont
-                                : ((width > 400)
-                                    ? titleFont - 18
-                                    : titleFont - 20),
-                            clr: Colors.yellow),
-                      ),
-                      Container(
-                          height: 2,
-                          color: Colors.black12,
-                          margin: EdgeInsets.symmetric(horizontal: 350)),
-                      SingleChildScrollView(
-                        scrollDirection: Axis.horizontal,
-                        child: Row(
-                          mainAxisSize: MainAxisSize.min,
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            SponsorCard(
-                              bx: gold,
-                              mrl: mrg,
-                              mrr: mrg,
-                              url: goldSponsors[
-                                  'images/sponsor_transneuron.jpg'],
-                              link: SponsorContacts.sponsorTransneuron,
-                            ),
-                          ],
-                        ),
+                      SponsorCard(
+                        bx: gold,
+                        mrl: mrg,
+                        mrr: mrg,
+                        url: goldSponsors['images/sponsor_itrack.jpg'],
+                        link: SponsorContacts.sponsorItrack,
                       ),
                     ],
                   ),
                 ),
-              ),
-              Flexible(
-                child: Container(
-                  child: Column(
+              ],
+            ),
+          ),
+          Container(
+            child: Column(
+              children: [
+                SizedBox(
+                  height: 200,
+                  child: SponsorTitle(
+                      title: 'GOLD', fnt: titleFont, clr: Colors.amber[500]),
+                ),
+                Container(
+                    height: 2,
+                    color: Colors.black12,
+                    margin: EdgeInsets.symmetric(horizontal: 350)),
+                SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      SizedBox(
-                        height: 200,
-                        child: SponsorTitle(
-                            title: 'GOLD',
-                            fnt: titleFont,
-                            clr: Colors.amber[500]),
+                      SponsorCard(
+                        bx: gold,
+                        mrl: mrg,
+                        mrr: mrg,
+                        url: goldSponsors['images/sponsor_devfolio.jpg'],
+                        link: SponsorContacts.sponsorDevfolio,
                       ),
-                      Container(
-                          height: 2,
-                          color: Colors.black12,
-                          margin: EdgeInsets.symmetric(horizontal: 350)),
-                      SingleChildScrollView(
-                        scrollDirection: Axis.horizontal,
-                        child: Row(
-                          mainAxisSize: MainAxisSize.min,
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            SponsorCard(
-                              bx: gold,
-                              mrl: mrg,
-                              mrr: mrg,
-                              url: goldSponsors['images/sponsor_devfolio.jpg'],
-                              link: SponsorContacts.sponsorDevfolio,
-                            ),
-                          ],
-                        ),
+                      SponsorCard(
+                        bx: gold,
+                        mrl: mrg,
+                        mrr: mrg,
+                        url: goldSponsors['images/prepbyte.jpg'],
+                        link: SponsorContacts.sponsorPrepbytes,
                       ),
                     ],
                   ),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
           SizedBox(height: 15),
           SponsorTitle(
@@ -137,50 +122,6 @@ class Sponsors extends StatelessWidget {
               fnt: titleFont,
               clr: Color.fromARGB(255, 192, 192, 192)),
           silverSponsorsGrid(width, height),
-          // SingleChildScrollView(
-          //   scrollDirection: Axis.horizontal,
-          //   child: Row(
-          //     mainAxisSize: MainAxisSize.min,
-          //     mainAxisAlignment: MainAxisAlignment.center,
-          //     children: [
-          //       SponsorCard(
-          //         bx: silver,
-          //         mrl: mrg,
-          //         mrr: mrg,
-          //         url: silverSponsor['images/sponsor_matic.jpg'],
-          //         link: SponsorContacts.sponsorMatic,
-          //       ),
-          //       SponsorCard(
-          //         bx: silver,
-          //         mrl: mrg,
-          //         mrr: mrg,
-          //         url: silverSponsor['images/sponsor_portis.jpg'],
-          //         link: SponsorContacts.sponsorPortis,
-          //       ),
-          //       SponsorCard(
-          //         bx: silver,
-          //         mrl: mrg,
-          //         mrr: mrg,
-          //         url: silverSponsor['images/sponsor_tezos.jpg'],
-          //         link: SponsorContacts.sponsorTezos,
-          //       ),
-          //       // SponsorCard(
-          //       //   bx: silver,
-          //       //   mrl: mrg,
-          //       //   mrr: mrg,
-          //       //   url: silverSponsor['images/sponsor_echoar.jpg'],
-          //       //   link: SponsorContacts.sponsorEchoAR,
-          //       // ),
-          //       SponsorCard(
-          //         bx: silver,
-          //         mrl: mrg,
-          //         mrr: mrg,
-          //         url: silverSponsor['images/sponsor_speechly.jpg'],
-          //         link: SponsorContacts.sponsorSpeechly,
-          //       ),
-          //     ],
-          //   ),
-          // ),
           SizedBox(height: 15),
           SponsorTitle(
               title: 'BRONZE',
@@ -213,6 +154,13 @@ class Sponsors extends StatelessWidget {
                   url: communitypartner['images/sponsor_ieeedelhisection.jpg'],
                   link: SponsorContacts.sponsorIEEEDelSec,
                 ),
+                SponsorCard(
+                  bx: community,
+                  mrl: mrg,
+                  mrr: mrg,
+                  url: communitypartner['images/sponsor_graphcms.jpg'],
+                  link: SponsorContacts.sponsorGraphcms,
+                ),
               ],
             ),
           ),
@@ -222,7 +170,6 @@ class Sponsors extends StatelessWidget {
             fnt: 30.00,
             clr: Colors.white,
           ),
-
           mediaOutreachSponsorsGrid(width, height),
         ],
       ),

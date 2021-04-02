@@ -253,8 +253,7 @@ class _MobileHomePageState extends State<MobileHomePage> {
                           padding: EdgeInsets.only(bottom: 20),
                           child: Align(
                             alignment: Alignment.center,
-                            child:
-                                /*Text(
+                            child: Text(
                               'Prizes over\n INR 1 Crore\n To be revealed soon!!',
                               style: TextStyle(
                                 fontSize: 56,
@@ -262,8 +261,8 @@ class _MobileHomePageState extends State<MobileHomePage> {
                                 fontWeight: FontWeight.bold,
                               ),
                               textAlign: TextAlign.center,
-                            ),*/
-                                Prizes(), // RevealingSoon(),
+                            ),
+                            //  Prizes(), // RevealingSoon(),
                           ),
                         ),
                       ],
