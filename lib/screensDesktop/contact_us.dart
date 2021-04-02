@@ -26,7 +26,7 @@ class ContactUs extends StatelessWidget {
                   child: Container(
                     constraints: BoxConstraints(maxHeight: 200),
                     child: Image.network(
-                      sectionImages['images/IEEE_DTU_Logo.png'],
+                      sectionImages['images/IEEE_DTU_Logo.png']!,
                       color: Colors.white70,
                     ),
                   ),
@@ -36,7 +36,7 @@ class ContactUs extends StatelessWidget {
                   child: Container(
                     constraints: BoxConstraints(maxHeight: 200),
                     child: Image.network(
-                      sectionImages['images/WIE_Logo_Black.png'],
+                      sectionImages['images/WIE_Logo_Black.png']!,
                       color: Colors.white70,
                     ),
                   ),
@@ -135,7 +135,7 @@ class ContactUs extends StatelessWidget {
                   child: Container(
                     constraints: BoxConstraints(maxHeight: 200),
                     child: Image.network(
-                      sectionImages['images/IEEE_DTU_Logo.png'],
+                      sectionImages['images/IEEE_DTU_Logo.png']!,
                       color: Colors.white70,
                     ),
                   ),
@@ -145,7 +145,7 @@ class ContactUs extends StatelessWidget {
                   child: Container(
                     constraints: BoxConstraints(maxHeight: 200),
                     child: Image.network(
-                      sectionImages['images/WIE_Logo_Black.png'],
+                      sectionImages['images/WIE_Logo_Black.png']!,
                       color: Colors.white70,
                     ),
                   ),

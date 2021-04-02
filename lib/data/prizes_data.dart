@@ -33,7 +33,7 @@ Map<String, String> cardText = {
   'women_team': 'Best Performing\nWomen Team',
 };
 
-Map<String, List<String>> images = {
+Map<String, List<String?>> images = {
   'winning': [
     sectionImages['images/IEEE_DTU_Logo.png'], //cash prize
     bronzeSponsor['images/sponsor_1password.jpg'],

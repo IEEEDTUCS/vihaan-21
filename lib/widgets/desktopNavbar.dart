@@ -4,7 +4,7 @@ import 'package:scroll_to_index/scroll_to_index.dart';
 class DesktopNavbar extends StatefulWidget {
   final AutoScrollController controller;
 
-  const DesktopNavbar({Key key, this.controller}) : super(key: key);
+  const DesktopNavbar({Key? key, required this.controller}) : super(key: key);
 
   @override
   _DesktopNavbarState createState() => _DesktopNavbarState();

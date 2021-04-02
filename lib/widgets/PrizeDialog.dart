@@ -5,11 +5,11 @@ import 'package:vihaan_new/data/prizes_data.dart';
 
 class PrizeDialog extends StatelessWidget {
   const PrizeDialog({
-    Key key,
-    @required this.src,
-    @required double height,
-    @required double width,
-  })  : _height = height,
+    Key? key,
+    required this.src,
+    required double height,
+    required double width,
+  })   : _height = height,
         _width = width,
         super(key: key);
 
@@ -35,7 +35,7 @@ class PrizeDialog extends StatelessWidget {
             spacing: 10,
             runSpacing: 10,
             children: new List.generate(
-                text[src].length,
+                text[src]!.length,
                 (index) => Card(
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(20)),
@@ -47,7 +47,7 @@ class PrizeDialog extends StatelessWidget {
                                 topLeft: Radius.circular(20),
                                 topRight: Radius.circular(20)),
                             child: Image.network(
-                              images[src][index],
+                              images[src]![index]!,
                               height: _height * 0.2,
                               width: max(300, _width * 0.2),
                               fit: BoxFit.fitHeight,
@@ -56,7 +56,7 @@ class PrizeDialog extends StatelessWidget {
                           Padding(
                             padding: const EdgeInsets.all(20.0),
                             child: Text(
-                              text[src][index],
+                              text[src]![index],
                               style: TextStyle(
                                   fontSize: 16, fontWeight: FontWeight.bold),
                               softWrap: true,

@@ -8,7 +8,10 @@ class Faq extends StatefulWidget {
 }
 
 class _Faq extends State<Faq> {
-  Widget makeUI({Color color, String question, String answer}) {
+  Widget makeUI(
+      {required Color color,
+      required String question,
+      required String answer}) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 12.0, vertical: 8.0),
       child: ExpansionTileCard(
@@ -122,7 +125,7 @@ class _Faq extends State<Faq> {
                   flex: 3,
                   child: Padding(
                     padding: const EdgeInsets.all(32.0),
-                    child: Image.network(sectionImages['images/faq.png']),
+                    child: Image.network(sectionImages['images/faq.png']!),
                   ),
                 ),
                 Flexible(
@@ -149,7 +152,7 @@ class _Faq extends State<Faq> {
                       height: 250,
                       child: Image(
                         fit: BoxFit.fill,
-                        image: NetworkImage(sectionImages["images/faq.png"]),
+                        image: NetworkImage(sectionImages["images/faq.png"]!),
                       ),
                     ),
                   ),

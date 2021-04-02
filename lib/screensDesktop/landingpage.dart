@@ -27,7 +27,7 @@ class LandingPageContent extends StatelessWidget {
                     Flexible(
                       child: Container(
                         child:
-                            Image.network(sectionImages['images/vihaan.png']),
+                            Image.network(sectionImages['images/vihaan.png']!),
                         constraints: BoxConstraints(
                           maxHeight: 400,
                         ),

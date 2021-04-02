@@ -13,6 +13,8 @@ class MyHomePage extends StatelessWidget {
       else if (constraints.maxWidth <= 1200 && constraints.maxWidth >= 800)
         return DesktopHomePage();
       else if (constraints.maxWidth < 800) return MobileHomePage();
+
+      return Container();
     });
   }
 }

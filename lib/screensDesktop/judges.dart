@@ -23,10 +23,10 @@ class JudgeSection extends StatelessWidget {
       judgeInfo.add(
         JudgeCard(
           name: judgesName[i],
-          position: judgesDesignation[judgesName[i]],
-          imageAddress: judgeImages[judgesName[i]],
-          linkedInAddress: judgesLinkedIn[judgesName[i]],
-          category: judgesCategory[judgesName[i]],
+          position: judgesDesignation[judgesName[i]]!,
+          imageAddress: judgeImages[judgesName[i]]!,
+          linkedInAddress: judgesLinkedIn[judgesName[i]]!,
+          category: judgesCategory[judgesName[i]]!,
         ),
       );
     }

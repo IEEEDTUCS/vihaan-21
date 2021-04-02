@@ -13,7 +13,7 @@ class AboutUs extends StatelessWidget {
             constraints: BoxConstraints(maxWidth: 400),
             padding: EdgeInsets.all(20),
             child: Image.network(
-              sectionImages["images/Vihaan_Aboutus.jpg"],
+              sectionImages["images/Vihaan_Aboutus.jpg"]!,
             ),
           ),
         ));

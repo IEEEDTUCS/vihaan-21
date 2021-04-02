@@ -66,7 +66,7 @@ Widget bronzeSponsorsGrid(
         bx: (width >= 800) ? width * 0.125 : width * 0.2,
         mrl: 4,
         mrr: 4,
-        url: bronzeSponsor[bronzeSponsorImages[i]],
+        url: bronzeSponsor[bronzeSponsorImages[i]]!,
         link: bronzeSponsorLinks[i],
       ),
     );
@@ -117,7 +117,7 @@ Widget silverSponsorsGrid(
         bx: (width >= 800) ? width * 0.125 : width * 0.2,
         mrl: 4,
         mrr: 4,
-        url: silverSponsor[silverSponsorImages[i]],
+        url: silverSponsor[silverSponsorImages[i]]!,
         link: silverSponsorLinks[i],
       ),
     );
@@ -168,7 +168,7 @@ Widget mediaOutreachSponsorsGrid(
         bx: (width >= 800) ? width * 0.125 : width * 0.2,
         mrl: 4,
         mrr: 4,
-        url: mediaOutreachSponsor[mediaOutreachSponsorImages[i]],
+        url: mediaOutreachSponsor[mediaOutreachSponsorImages[i]]!,
         link: mediaOutreachSponsorLinks[i],
       ),
     );

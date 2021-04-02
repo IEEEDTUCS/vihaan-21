@@ -3,8 +3,8 @@ import 'package:vihaan_new/data/tracksData.dart';
 
 class TrackCard extends StatelessWidget {
   const TrackCard({
-    Key key,
-    @required this.width,
+    Key? key,
+    required this.width,
     this.image,
     this.name,
     this.detail,
@@ -50,7 +50,7 @@ class TrackCard extends StatelessWidget {
                               padding: const EdgeInsets.symmetric(
                                   vertical: 16.0, horizontal: 20.0),
                               child: Text(
-                                trackDescription[name],
+                                trackDescription[name]!,
                                 textAlign: TextAlign.justify,
                                 style: TextStyle(
                                   fontSize: 20,

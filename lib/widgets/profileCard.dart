@@ -4,17 +4,17 @@ import 'package:vihaan_new/widgets/vihaan_icons_icons.dart';
 
 class ProfileCard extends StatelessWidget {
   ProfileCard(
-      {this.name,
-      this.position,
-      this.imageAddress,
-      this.linkedInAddress,
+      {required this.name,
+      required this.position,
+      required this.imageAddress,
+      required this.linkedInAddress,
       this.facebookAddress});
 
   final String name;
   final String position;
   final String imageAddress;
   final String linkedInAddress;
-  final String facebookAddress;
+  final String? facebookAddress;
 
   @override
   Widget build(BuildContext context) {

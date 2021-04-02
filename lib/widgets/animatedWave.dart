@@ -8,7 +8,7 @@ class AnimatedWave extends StatelessWidget {
   final double speed;
   final double offset;
 
-  AnimatedWave({this.height, this.speed, this.offset = 0.0});
+  AnimatedWave({required this.height, required this.speed, this.offset = 0.0});
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +22,8 @@ class AnimatedWave extends StatelessWidget {
             tween: Tween(begin: 0.0, end: 2 * pi),
             builder: (context, child, value) {
               return CustomPaint(
-                foregroundPainter: CurvePainter(value + offset),
+                foregroundPainter:
+                    CurvePainter(double.parse(value!.toString()) + offset),
               );
             }),
       );

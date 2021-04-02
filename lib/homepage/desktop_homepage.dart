@@ -9,7 +9,6 @@ import 'package:vihaan_new/screensDesktop/contact_us.dart';
 import 'package:vihaan_new/screensDesktop/faq.dart';
 import 'package:vihaan_new/screensDesktop/judges.dart';
 import 'package:vihaan_new/screensDesktop/landingpage.dart';
-import 'package:vihaan_new/screensDesktop/prizes.dart';
 import 'package:vihaan_new/screensDesktop/sponsors.dart';
 import 'package:vihaan_new/screensDesktop/team.dart';
 import 'package:vihaan_new/screensDesktop/tracks.dart';
@@ -18,7 +17,7 @@ import 'package:vihaan_new/widgets/fancyBackgroundApp.dart';
 import 'package:vihaan_new/widgets/vihaan_icons_icons.dart';
 
 class DesktopHomePage extends StatefulWidget {
-  DesktopHomePage({Key key}) : super(key: key);
+  DesktopHomePage({Key? key}) : super(key: key);
   @override
   State<StatefulWidget> createState() {
     return _DesktopHomePageState();
@@ -26,14 +25,14 @@ class DesktopHomePage extends StatefulWidget {
 }
 
 class _DesktopHomePageState extends State<DesktopHomePage> {
-  AutoScrollController _controller;
+  late AutoScrollController _controller;
   final scrollDirection = Axis.vertical;
 
-  Widget _wrapScrollTag({int index, Widget child}) => AutoScrollTag(
+  Widget _wrapScrollTag({int? index, Widget? child}) => AutoScrollTag(
         key: ValueKey(index),
         controller: _controller,
-        index: index,
-        child: child,
+        index: index!,
+        child: child!,
       );
 
   @override
@@ -123,7 +122,7 @@ class _DesktopHomePageState extends State<DesktopHomePage> {
                     index: 3,
                     child: Container(
                       width: MediaQuery.of(context).size.width,
-                      // height: MediaQuery.of(context).size.height * 0.7,
+                      height: MediaQuery.of(context).size.height * 0.7,
                       color: Colors.purpleAccent,
                       child: Column(
                         children: [
@@ -147,18 +146,17 @@ class _DesktopHomePageState extends State<DesktopHomePage> {
                           Padding(
                             padding: EdgeInsets.only(bottom: 20),
                             child: Align(
-                              alignment: Alignment.center,
-                              child: Prizes(),
-                              /*child: Text(
-                                'Prizes over\n INR 1 crore\n To be revealed soon!!',
-                                style: TextStyle(
-                                  fontSize: 56,
-                                  fontFamily: 'NunitoSans',
-                                  fontWeight: FontWeight.bold,
-                                ),
-                                textAlign: TextAlign.center,
-                              )*/
-                            ),
+                                alignment: Alignment.center,
+                                // child: Prizes(),
+                                child: Text(
+                                  'Prizes over\n INR 1 crore\n To be revealed soon!!',
+                                  style: TextStyle(
+                                    fontSize: 56,
+                                    fontFamily: 'NunitoSans',
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                  textAlign: TextAlign.center,
+                                )),
                           ),
                         ],
                       ),

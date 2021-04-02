@@ -2,7 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class MemberCard extends StatelessWidget {
-  MemberCard({this.name, this.imageAddress, this.githubAddress});
+  MemberCard(
+      {required this.name,
+      required this.imageAddress,
+      required this.githubAddress});
   final String name;
   final String imageAddress;
   final String githubAddress;

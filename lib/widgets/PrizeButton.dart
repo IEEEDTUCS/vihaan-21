@@ -7,7 +7,7 @@ import 'PrizeDialog.dart';
 
 class PrizeButton extends StatelessWidget {
   final String src;
-  PrizeButton({this.src});
+  PrizeButton({required this.src});
   @override
   Widget build(BuildContext context) {
     var _width = MediaQuery.of(context).size.width,
@@ -23,12 +23,12 @@ class PrizeButton extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 Image.network(
-                  cardImages[src],
+                  cardImages[src]!,
                   // width: min(200, _width * 0.1),
                   fit: BoxFit.cover,
                 ),
                 Text(
-                  cardText[src],
+                  cardText[src]!,
                   style: TextStyle(
                       fontSize: 20,
                       fontWeight: FontWeight.bold,

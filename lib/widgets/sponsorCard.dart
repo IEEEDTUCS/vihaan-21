@@ -3,8 +3,13 @@ import 'package:flutter/material.dart';
 class SponsorCard extends StatelessWidget {
   final double bx, mrl, mrr;
   final String url;
-  final Function link;
-  SponsorCard({this.bx, this.mrl, this.mrr, this.url, this.link});
+  final Function()? link;
+  SponsorCard(
+      {required this.bx,
+      required this.mrl,
+      required this.mrr,
+      required this.url,
+      required this.link});
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -37,7 +42,7 @@ class SponsorTitle extends StatelessWidget {
   final String title;
   final double fnt;
   final Color clr;
-  SponsorTitle({this.title, this.fnt, this.clr});
+  SponsorTitle({required this.title, required this.fnt, required this.clr});
   @override
   Widget build(BuildContext context) {
     return Center(

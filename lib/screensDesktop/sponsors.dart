@@ -84,7 +84,7 @@ class Sponsors extends StatelessWidget {
                               mrl: mrg,
                               mrr: mrg,
                               url: goldSponsors[
-                                  'images/sponsor_transneuron.jpg'],
+                                  'images/sponsor_transneuron.jpg']!,
                               link: SponsorContacts.sponsorTransneuron,
                             ),
                           ],
@@ -103,7 +103,7 @@ class Sponsors extends StatelessWidget {
                         child: SponsorTitle(
                             title: 'GOLD',
                             fnt: titleFont,
-                            clr: Colors.amber[500]),
+                            clr: Colors.amber[500]!),
                       ),
                       Container(
                           height: 2,
@@ -119,7 +119,7 @@ class Sponsors extends StatelessWidget {
                               bx: gold,
                               mrl: mrg,
                               mrr: mrg,
-                              url: goldSponsors['images/sponsor_devfolio.jpg'],
+                              url: goldSponsors['images/sponsor_devfolio.jpg']!,
                               link: SponsorContacts.sponsorDevfolio,
                             ),
                           ],
@@ -203,14 +203,14 @@ class Sponsors extends StatelessWidget {
                   bx: community,
                   mrl: mrg,
                   mrr: mrg,
-                  url: communitypartner['images/sponsor_codeforcause.jpeg'],
+                  url: communitypartner['images/sponsor_codeforcause.jpeg']!,
                   link: SponsorContacts.sponsorCodeforcause,
                 ),
                 SponsorCard(
                   bx: community,
                   mrl: mrg,
                   mrr: mrg,
-                  url: communitypartner['images/sponsor_ieeedelhisection.jpg'],
+                  url: communitypartner['images/sponsor_ieeedelhisection.jpg']!,
                   link: SponsorContacts.sponsorIEEEDelSec,
                 ),
               ],

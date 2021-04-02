@@ -4,10 +4,10 @@ import 'package:vihaan_new/widgets/vihaan_icons_icons.dart';
 
 class JudgeCard extends StatelessWidget {
   JudgeCard(
-      {this.name,
-      this.position,
-      this.imageAddress,
-      this.linkedInAddress,
+      {required this.name,
+      required this.position,
+      required this.imageAddress,
+      required this.linkedInAddress,
       this.twitterAddress,
       this.category});
 
@@ -15,8 +15,8 @@ class JudgeCard extends StatelessWidget {
   final String position;
   final String imageAddress;
   final String linkedInAddress;
-  final String twitterAddress;
-  final String category;
+  final String? twitterAddress;
+  final String? category;
 
   @override
   Widget build(BuildContext context) {
@@ -81,7 +81,7 @@ class JudgeCard extends StatelessWidget {
                 Padding(
                   padding: EdgeInsets.only(top: 8.0),
                   child: Text(
-                    category,
+                    category!,
                     style: TextStyle(color: Colors.yellow[700], fontSize: 15),
                     textAlign: TextAlign.center,
                   ),

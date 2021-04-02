@@ -21,7 +21,7 @@ class LandingPageContent extends StatelessWidget {
               children: [
                 Flexible(
                   child: Image.network(
-                    sectionImages['images/vihaan.png'],
+                    sectionImages['images/vihaan.png']!,
                   ),
                 ),
                 Text(
@@ -75,7 +75,7 @@ class LandingPageContent extends StatelessWidget {
                             width: 25,
                             child: Image(
                               image: NetworkImage(
-                                  sectionImages["images/devfolio_logo.png"]),
+                                  sectionImages["images/devfolio_logo.png"]!),
                             ),
                           ),
                           SizedBox(

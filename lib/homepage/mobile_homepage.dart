@@ -8,7 +8,6 @@ import 'package:vihaan_new/screensDesktop/aboutus.dart';
 import 'package:vihaan_new/screensDesktop/contact_us.dart';
 import 'package:vihaan_new/screensDesktop/faq.dart';
 import 'package:vihaan_new/screensDesktop/judges.dart';
-import 'package:vihaan_new/screensDesktop/prizes.dart';
 import 'package:vihaan_new/screensDesktop/sponsors.dart';
 import 'package:vihaan_new/screensDesktop/team.dart';
 import 'package:vihaan_new/screensMobile/landingpage_m.dart';
@@ -18,9 +17,7 @@ import 'package:vihaan_new/widgets/fancyBackgroundApp.dart';
 import 'package:vihaan_new/widgets/vihaan_icons_icons.dart';
 
 class MobileHomePage extends StatefulWidget {
-  final AutoScrollController controller;
-
-  const MobileHomePage({Key key, this.controller}) : super(key: key);
+  const MobileHomePage({Key? key}) : super(key: key);
   @override
   _MobileHomePageState createState() => _MobileHomePageState();
 }
@@ -28,12 +25,12 @@ class MobileHomePage extends StatefulWidget {
 class _MobileHomePageState extends State<MobileHomePage> {
   final scrollDirection = Axis.vertical;
 
-  AutoScrollController controller;
-  Widget _wrapScrollTag({int index, Widget child}) => AutoScrollTag(
+  late AutoScrollController controller;
+  Widget _wrapScrollTag({int? index, Widget? child}) => AutoScrollTag(
         key: ValueKey(index),
         controller: controller,
-        index: index,
-        child: child,
+        index: index!,
+        child: child!,
       );
 
   @override
@@ -66,7 +63,7 @@ class _MobileHomePageState extends State<MobileHomePage> {
                   Navigator.pop(context);
                 },
                 child: Image(
-                  image: NetworkImage(sectionImages["images/Vihaan_Logo.png"]),
+                  image: NetworkImage(sectionImages["images/Vihaan_Logo.png"]!),
                 ),
               ),
             ),
@@ -230,7 +227,7 @@ class _MobileHomePageState extends State<MobileHomePage> {
                 _wrapScrollTag(
                   index: 3,
                   child: Container(
-                    // height: MediaQuery.of(context).size.height * 0.75,
+                    height: MediaQuery.of(context).size.height * 0.75,
                     width: MediaQuery.of(context).size.width,
                     color: Colors.purpleAccent,
                     child: Column(
@@ -253,8 +250,7 @@ class _MobileHomePageState extends State<MobileHomePage> {
                           padding: EdgeInsets.only(bottom: 20),
                           child: Align(
                             alignment: Alignment.center,
-                            child:
-                                /*Text(
+                            child: Text(
                               'Prizes over\n INR 1 Crore\n To be revealed soon!!',
                               style: TextStyle(
                                 fontSize: 56,
@@ -262,8 +258,8 @@ class _MobileHomePageState extends State<MobileHomePage> {
                                 fontWeight: FontWeight.bold,
                               ),
                               textAlign: TextAlign.center,
-                            ),*/
-                                Prizes(), // RevealingSoon(),
+                            ),
+                            // Prizes(), // RevealingSoon(),
                           ),
                         ),
                       ],
