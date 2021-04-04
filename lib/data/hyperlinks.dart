@@ -472,4 +472,22 @@ class SponsorContacts {
       throw 'Could not launch $url';
     }
   }
+
+  static sponsorHackon() async {
+    const url = 'https://hackon.tech/';
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
+
+  static sponsorStickermule() async {
+    const url = 'https://www.stickermule.com/en-in';
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
 }
