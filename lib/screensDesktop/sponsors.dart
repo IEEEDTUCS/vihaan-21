@@ -144,6 +144,13 @@ class Sponsors extends StatelessWidget {
                   bx: community,
                   mrl: mrg,
                   mrr: mrg,
+                  url: communitypartner['images/sponsor_hackon.jpg'],
+                  link: SponsorContacts.sponsorHackon,
+                ),
+                SponsorCard(
+                  bx: community,
+                  mrl: mrg,
+                  mrr: mrg,
                   url: communitypartner['images/sponsor_codeforcause.jpeg'],
                   link: SponsorContacts.sponsorCodeforcause,
                 ),
