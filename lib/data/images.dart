@@ -94,7 +94,7 @@ var mediaOutreachSponsor = {
 
 var communitypartner = {
   'images/sponsor_hackon.jpg':
-      'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fsponsors%2Fsponsor_hackon.jpg?alt=media&token=d88448ad-f3ae-497a-b130-97793be2faee',
+      'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fsponsors%2Fsponsor_hackon.jpg?alt=media&token=9f9dc04d-7933-4e65-95ac-da182e7a378b',
   'images/sponsor_graphcms.jpg':
       'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fsponsors%2Fsponsor_graphcms.jpg?alt=media&token=1aff3c10-90d4-4407-b822-ffca9bfe4494',
   'images/sponsor_ieeedelhisection.jpg':
