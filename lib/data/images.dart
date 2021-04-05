@@ -20,6 +20,8 @@ var silverSponsor = {
       'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fsponsors%2Fsponsor_echoar.jpg?alt=media&token=5d30fec7-37d5-41c3-ae6c-cdc32967792e',
   'images/sponsor_speechly.jpg':
       'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fsponsors%2Fsponsor_speechly.jpg?alt=media&token=7e5a6d60-55e7-41e2-a4d0-26382ab39e5e',
+  'images/sponsor_itrack.jpg':
+      'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fsponsors%2Fsponsor_itrack.jpg?alt=media&token=6deefa79-7e55-437b-8fe8-6f714f22cdfa',
 };
 
 var bronzeSponsor = {

@@ -110,6 +110,7 @@ Widget silverSponsorsGrid(
     'images/sponsor_tezos.jpg',
     'images/sponsor_speechly.jpg',
     'images/sponsor_echoar.jpg',
+    'images/sponsor_itrack.jpg',
   ];
   List<Widget> silverSponsorsWidget = [];
   var silverSponsorLinks = [
@@ -118,6 +119,7 @@ Widget silverSponsorsGrid(
     SponsorContacts.sponsorTezos,
     SponsorContacts.sponsorSpeechly,
     SponsorContacts.sponsorEchoAR,
+    SponsorContacts.sponsorItrack,
   ];
   for (int i = 0; i < silverSponsorImages.length; i++) {
     silverSponsorsWidget.add(

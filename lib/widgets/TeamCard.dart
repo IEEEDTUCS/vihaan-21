@@ -3,6 +3,7 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:vihaan_new/widgets/MemberCard.dart';
 
+// ignore: must_be_immutable
 class TeamCard extends StatelessWidget {
   List<String> team_name = [
     'Ritwik Ranjan',

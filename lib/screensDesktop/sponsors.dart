@@ -15,12 +15,12 @@ class Sponsors extends StatelessWidget {
     final height = MediaQuery.of(context).size.height;
     final double mrg = 4,
         gold = (width > 800) ? min(300, width * 0.225) : width * 0.45,
-        silver = (width > 800) ? max(100, width * 0.175) : width * 0.35,
-        bronze = (width > 800) ? min(195, width * 0.125) : width * 0.2,
+        // silver = (width > 800) ? max(100, width * 0.175) : width * 0.35,
+        // bronze = (width > 800) ? min(195, width * 0.125) : width * 0.2,
         community = width * 0.2,
-        titleFont = (width > 800) ? 50 : max(width * 0.075, 50),
-        // (width > 800) ? min(width * 0.065, 90) : max(width * 0.075, 60),
-        headingFont = max(width * 0.085, 68);
+        titleFont = (width > 800) ? 50 : max(width * 0.075, 50);
+    // (width > 800) ? min(width * 0.065, 90) : max(width * 0.075, 60),
+    // headingFont = max(width * 0.085, 68);
 
     return Container(
       padding: EdgeInsets.all(16),
@@ -43,53 +43,53 @@ class Sponsors extends StatelessWidget {
               height: 2,
               color: Colors.white24,
               margin: EdgeInsets.fromLTRB(80, 0, 80, 10)),
+          // Container(
+          //   child: Column(
+          //     children: [
+          //       SizedBox(
+          //         height: 200,
+          //         child: SponsorTitle(
+          //             title: 'TITLE SPONSOR',
+          //             fnt: (width > 800)
+          //                 ? titleFont
+          //                 : ((width > 400) ? titleFont - 18 : titleFont - 20),
+          //             clr: Colors.yellow),
+          //       ),
+          //       Container(
+          //           height: 2,
+          //           color: Colors.black12,
+          //           margin: EdgeInsets.symmetric(horizontal: 350)),
+          //       SingleChildScrollView(
+          //         scrollDirection: Axis.horizontal,
+          //         child: Row(
+          //           mainAxisSize: MainAxisSize.min,
+          //           mainAxisAlignment: MainAxisAlignment.center,
+          //           children: [
+          //             SponsorCard(
+          //               bx: gold,
+          //               mrl: mrg,
+          //               mrr: mrg,
+          //               url: goldSponsors['images/sponsor_itrack.jpg'],
+          //               link: SponsorContacts.sponsorItrack,
+          //             ),
+          //           ],
+          //         ),
+          //       ),
+          //     ],
+          //   ),
+          // ),
           Container(
             child: Column(
               children: [
                 SizedBox(
-                  height: 200,
-                  child: SponsorTitle(
-                      title: 'TITLE SPONSOR',
-                      fnt: (width > 800)
-                          ? titleFont
-                          : ((width > 400) ? titleFont - 18 : titleFont - 20),
-                      clr: Colors.yellow),
-                ),
-                Container(
-                    height: 2,
-                    color: Colors.black12,
-                    margin: EdgeInsets.symmetric(horizontal: 350)),
-                SingleChildScrollView(
-                  scrollDirection: Axis.horizontal,
-                  child: Row(
-                    mainAxisSize: MainAxisSize.min,
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      SponsorCard(
-                        bx: gold,
-                        mrl: mrg,
-                        mrr: mrg,
-                        url: goldSponsors['images/sponsor_itrack.jpg'],
-                        link: SponsorContacts.sponsorItrack,
-                      ),
-                    ],
-                  ),
-                ),
-              ],
-            ),
-          ),
-          Container(
-            child: Column(
-              children: [
-                SizedBox(
-                  height: 200,
+                  height: 100,
                   child: SponsorTitle(
                       title: 'GOLD', fnt: titleFont, clr: Colors.amber[500]),
                 ),
-                Container(
-                    height: 2,
-                    color: Colors.black12,
-                    margin: EdgeInsets.symmetric(horizontal: 350)),
+                // Container(
+                //     height: 2,
+                //     color: Colors.black12,
+                //     margin: EdgeInsets.symmetric(horizontal: 350)),
                 SingleChildScrollView(
                   scrollDirection: Axis.horizontal,
                   child: Row(
