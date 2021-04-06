@@ -5,8 +5,8 @@ var goldSponsors = {
       'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fsponsors%2Fsponsor_devfolio.jpg?alt=media&token=b51987bc-47c3-49c7-8ec0-09650a94ecc7',
   'images/prepbyte.jpg':
       'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fsponsors%2Fsponsor_prepbytes.jpg?alt=media&token=a54916bf-0ca0-4ae3-b0ed-6dba37b5f7eb',
-  'images/sponsor_itrack.jpg':
-      'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fsponsors%2Fsponsor_itrack.jpg?alt=media&token=6deefa79-7e55-437b-8fe8-6f714f22cdfa',
+  'images/sponsor_lumous.jpg':
+      'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fsponsors%2Fsponsor_lumos.jpg?alt=media&token=bf5c3406-e8d9-454e-b36e-a55b02de9579',
 };
 
 var silverSponsor = {

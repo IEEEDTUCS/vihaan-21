@@ -153,6 +153,53 @@ Widget silverSponsorsGrid(
   );
 }
 
+Widget goldSponsorsGrid(
+  double width,
+  double height,
+) {
+  var goldSponsorImages = [
+    'images/sponsor_devfolio.jpg',
+    'images/prepbyte.jpg',
+    'images/sponsor_lumous.jpg',
+  ];
+  List<Widget> goldSponsorsWidget = [];
+  var goldSponsorLinks = [
+    SponsorContacts.sponsorDevfolio,
+    SponsorContacts.sponsorPrepbytes,
+    SponsorContacts.sponsorLumos,
+  ];
+  for (int i = 0; i < goldSponsorImages.length; i++) {
+    goldSponsorsWidget.add(
+      SponsorCard(
+        bx: (width >= 800) ? width * 0.125 : width * 0.2,
+        mrl: 4,
+        mrr: 4,
+        url: goldSponsors[goldSponsorImages[i]],
+        link: goldSponsorLinks[i],
+      ),
+    );
+  }
+  return GridView.count(
+    crossAxisSpacing: (width >= 800) ? (width >= 1000 ? 48 : 28) : 8,
+    primary: false,
+    shrinkWrap: true,
+
+    // crossAxisCount: 1,
+    //padding: EdgeInsets.all(5.0),
+    crossAxisCount: (width > 350)
+        ? ((width > 600)
+            ? ((width >= 800)
+                ? (width >= 1000)
+                    ? 3
+                    : 3
+                : 2)
+            : 2)
+        : 2,
+
+    children: goldSponsorsWidget,
+  );
+}
+
 Widget mediaOutreachSponsorsGrid(
   double width,
   double height,

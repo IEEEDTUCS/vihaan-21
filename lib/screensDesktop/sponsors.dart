@@ -90,28 +90,10 @@ class Sponsors extends StatelessWidget {
                 //     height: 2,
                 //     color: Colors.black12,
                 //     margin: EdgeInsets.symmetric(horizontal: 350)),
-                SingleChildScrollView(
-                  scrollDirection: Axis.horizontal,
-                  child: Row(
-                    mainAxisSize: MainAxisSize.min,
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      SponsorCard(
-                        bx: gold,
-                        mrl: mrg,
-                        mrr: mrg,
-                        url: goldSponsors['images/sponsor_devfolio.jpg'],
-                        link: SponsorContacts.sponsorDevfolio,
-                      ),
-                      SponsorCard(
-                        bx: gold,
-                        mrl: mrg,
-                        mrr: mrg,
-                        url: goldSponsors['images/prepbyte.jpg'],
-                        link: SponsorContacts.sponsorPrepbytes,
-                      ),
-                    ],
-                  ),
+                Padding(
+                  padding: EdgeInsets.symmetric(
+                      horizontal: (width > 800) ? 100.00 : 20.0),
+                  child: goldSponsorsGrid(width, height),
                 ),
               ],
             ),
