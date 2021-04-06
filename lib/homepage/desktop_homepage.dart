@@ -197,6 +197,27 @@ class _DesktopHomePageState extends State<DesktopHomePage> {
                               // child: RevealingSoon(),
                             ),
                           ),
+                          // Padding(
+                          //   padding: EdgeInsets.only(bottom: 20),
+                          //   child: ElevatedButton(
+                          //     child: Padding(
+                          //       padding: const EdgeInsets.all(8.0),
+                          //       child: Text(
+                          //         "Download Itenary",
+                          //         textAlign: TextAlign.center,
+                          //         style: TextStyle(
+                          //           fontWeight: FontWeight.bold,
+                          //           fontSize: 20,
+                          //           letterSpacing: 0.4,
+                          //         ),
+                          //       ),
+                          //     ),
+                          //     style: ButtonStyle(
+                          //       alignment: Alignment.center,
+                          //     ),
+                          //     onPressed: () {},
+                          //   ),
+                          // ),
                         ],
                       ),
                     ),
