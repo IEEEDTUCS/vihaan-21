@@ -29,6 +29,7 @@ class PrizeButton extends StatelessWidget {
                 ),
                 Text(
                   cardText[src],
+                  textAlign: TextAlign.center,
                   style: TextStyle(
                       fontSize: 20,
                       fontWeight: FontWeight.bold,

@@ -163,10 +163,24 @@ var sectionImages = {
       'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Flogos%2Fvihaan.png?alt=media&token=a5a807b4-8c11-4413-9fd2-f8b64ed714d8',
   'images/Vihaan_Logo.png':
       'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Flogos%2FVihaan_Logo.png?alt=media&token=4ff4cfc7-7613-48f1-a7fc-3da03b426ed1',
+  'vihaan_logo_black.png':
+      'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Flogos%2Fvihaan_logo_black.png?alt=media&token=873fe45f-78a8-413e-8580-bb3cf9016447',
   'images/WIE_Logo_Black.png':
       'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Flogos%2FWIE_Logo_Black.png?alt=media&token=2de6a552-913e-4618-ae1e-59c88b17c345',
   'images/IEEE_DTU_Logo.png':
       'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Flogos%2FIEEE_DTU_Logo.png?alt=media&token=d375ef71-45b7-41cd-a735-8910e2296e9d',
   'images/devfolio_logo.png':
-      'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Flogos%2Fdevfolio_logo.png?alt=media&token=bcfdf7d8-cf11-4dd5-855a-e837f139d0f8'
+      'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Flogos%2Fdevfolio_logo.png?alt=media&token=bcfdf7d8-cf11-4dd5-855a-e837f139d0f8',
+  'images/certificate.png':
+      'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Flogos%2Fcertificate.png?alt=media&token=45240659-dd8c-459d-b48b-6f225b205c2d',
+  'images/prize_10000.jpg':
+      'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Flogos%2Fprize_10000.jpg?alt=media&token=4bae6466-9aa8-4f42-a599-aca7ad118856',
+  'images/prize_15000.jpg':
+      'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Flogos%2Fprize_15000.jpg?alt=media&token=1e598338-502d-4078-a83b-0c4605d5683c',
+  'images/prize_20000.jpg':
+      'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Flogos%2Fprize_20000.jpg?alt=media&token=64d68954-6a2c-4536-898e-72583cbefe8a',
+  'images/prize_3000.jpg':
+      'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Flogos%2Fprize_3000.jpg?alt=media&token=ac270eb4-3282-48a4-832c-09524f760cb4',
+  'images/prize_5000.jpg':
+      'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Flogos%2Fprize_5000.jpg?alt=media&token=21fad435-31b2-448b-8a6e-d6f0f1d00fa5',
 };

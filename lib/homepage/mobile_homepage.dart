@@ -253,16 +253,16 @@ class _MobileHomePageState extends State<MobileHomePage> {
                           padding: EdgeInsets.only(bottom: 20),
                           child: Align(
                             alignment: Alignment.center,
-                            child: Text(
-                              'Prizes over\n INR 1 Crore\n To be revealed soon!!',
-                              style: TextStyle(
-                                fontSize: 56,
-                                fontFamily: 'NunitoSans',
-                                fontWeight: FontWeight.bold,
-                              ),
-                              textAlign: TextAlign.center,
-                            ),
-                            //  Prizes(), // RevealingSoon(),
+                            // child: Text(
+                            //   'Prizes over\n INR 1 Crore\n To be revealed soon!!',
+                            //   style: TextStyle(
+                            //     fontSize: 56,
+                            //     fontFamily: 'NunitoSans',
+                            //     fontWeight: FontWeight.bold,
+                            //   ),
+                            //   textAlign: TextAlign.center,
+                            // ),
+                            child: Prizes(),
                           ),
                         ),
                       ],
