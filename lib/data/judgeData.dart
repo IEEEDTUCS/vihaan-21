@@ -4,6 +4,7 @@ var judgesName = [
   'Mr. Sumeet Malik',
   'Mr. Alon Grinshpoon',
   'Mr. Arnav Gupta',
+  'Mr. Shivaam Sharma',
   //'Mr. Ritwik Ranjan',
 ];
 
@@ -15,6 +16,7 @@ var judgesDesignation = {
   'Mr. Alon Grinshpoon': 'Founder & CEO at echoAR (Techstars \'19)',
   'Mr. Arnav Gupta':
       'Founding Member - Coding Blocks\nLead Engineer, Android - Target',
+  'Mr. Shivaam Sharma': 'Founder and CEO, Trans Neuron Technologies',
 };
 
 var judgesLinkedIn = {
@@ -24,6 +26,7 @@ var judgesLinkedIn = {
   'Mr. Sumeet Malik': 'https://in.linkedin.com/in/sumeet-malik-ab650410',
   'Mr. Alon Grinshpoon': 'https://www.linkedin.com/in/alongrinshpoon',
   'Mr. Arnav Gupta': 'https://in.linkedin.com/in/arnavgupta',
+  'Mr. Shivaam Sharma': 'https://in.linkedin.com/in/shivaam',
 };
 
 var judgesCategory = {
@@ -33,4 +36,5 @@ var judgesCategory = {
   'Mr. Sumeet Malik': 'Speaker - Education',
   'Mr. Alon Grinshpoon': 'Speaker - AR/VR',
   'Mr. Arnav Gupta': 'Speaker - Innovation',
+  'Mr. Shivaam Sharma': 'iTrack',
 };

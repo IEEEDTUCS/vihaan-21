@@ -150,6 +150,8 @@ var judgeImages = {
       'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fjudges%2Fspeaker_alongrinshpoon.jpg?alt=media&token=79668171-da03-4fb0-be6d-41ecb40eb39e',
   'Mr. Arnav Gupta':
       'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fjudges%2Fspeaker_arnavgupta.jpg?alt=media&token=136a8fb6-6c94-49b3-b2b1-a47e21b48ec4',
+  'Mr. Shivaam Sharma':
+      'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fjudges%2Fspeaker_shivaamsharma.jpg?alt=media&token=733340bb-6512-4f6b-b24d-f34018e14b05',
 };
 
 var sectionImages = {
