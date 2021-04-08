@@ -183,4 +183,5 @@ var sectionImages = {
       'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Flogos%2Fprize_3000.jpg?alt=media&token=ac270eb4-3282-48a4-832c-09524f760cb4',
   'images/prize_5000.jpg':
       'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Flogos%2Fprize_5000.jpg?alt=media&token=21fad435-31b2-448b-8a6e-d6f0f1d00fa5',
+  'images/womenwhocode.jpg': '',
 };
