@@ -22,7 +22,7 @@ var judgesDesignation = {
   'Mr. Arnav Gupta': 'Founding Member - Coding Blocks',
   'Mr. Shivaam Sharma': 'Founder and CEO, Trans Neuron Technologies',
   'Mr. Utkarsh Singh': 'Senior Hardware Engineer, Samsung Electronics',
-  'Mr. Samarth Gupta': 'Software Engineer, Microsoft',
+  'Mr. Samarth Gupta': 'Software Engineer, Microsoft\nIEEE REM Scholar',
   'Mrs. Ishika Hooda': 'Software Developer, Atlassian',
 };
 
