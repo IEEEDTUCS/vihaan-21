@@ -499,4 +499,13 @@ class SponsorContacts {
       throw 'Could not launch $url';
     }
   }
+
+  static sponsorCodex() async {
+    const url = 'https://thecodex.me/';
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
 }

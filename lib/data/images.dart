@@ -79,6 +79,8 @@ var bronzeSponsor = {
       'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fsponsors%2Fsponsor_xyz.jpg?alt=media&token=c7de8b67-5b48-4c7d-9aae-3014a5062c26',
   'images/sponsor_stickermule.jpg':
       'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fsponsors%2Fsponsor_stickermule.jpg?alt=media&token=b6180d35-9d29-4b7c-a8ef-21b6cf54778c',
+  'images/codex.jpg':
+      'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fsponsors%2Fsponsor_codex.jpg?alt=media&token=7d131df0-9afe-467b-8e86-90e35e09d55b',
 };
 
 var mediaOutreachSponsor = {
@@ -152,6 +154,12 @@ var judgeImages = {
       'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fjudges%2Fspeaker_arnavgupta.jpg?alt=media&token=136a8fb6-6c94-49b3-b2b1-a47e21b48ec4',
   'Mr. Shivaam Sharma':
       'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fjudges%2Fspeaker_shivaamsharma.jpg?alt=media&token=733340bb-6512-4f6b-b24d-f34018e14b05',
+  'Mr. Utkarsh Singh':
+      'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fjudges%2Fjudge_utkarshsingh.jpg?alt=media&token=73ead81f-5886-454d-80d3-36df237be876',
+  'Mr. Samarth Gupta':
+      'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fjudges%2Fjudge_samarth-1.jpg?alt=media&token=9bebe1f5-0540-444a-936e-c22d6d6896b3',
+  'Mrs. Ishika Hooda':
+      'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fjudges%2Fjudge_ishika.jpg?alt=media&token=a4d364a0-ebcb-4617-921e-1fb98476d3b4',
 };
 
 var sectionImages = {

@@ -5,6 +5,9 @@ var judgesName = [
   'Mr. Alon Grinshpoon',
   'Mr. Arnav Gupta',
   'Mr. Shivaam Sharma',
+  'Mr. Utkarsh Singh',
+  'Mr. Samarth Gupta',
+  'Mrs. Ishika Hooda',
   //'Mr. Ritwik Ranjan',
 ];
 
@@ -18,6 +21,9 @@ var judgesDesignation = {
   //     'Founding Member - Coding Blocks\nLead Engineer, Android - Target',
   'Mr. Arnav Gupta': 'Founding Member - Coding Blocks',
   'Mr. Shivaam Sharma': 'Founder and CEO, Trans Neuron Technologies',
+  'Mr. Utkarsh Singh': 'Senior Hardware Engineer, Samsung Electronics',
+  'Mr. Samarth Gupta': 'Software Engineer, Microsoft',
+  'Mrs. Ishika Hooda': 'Software Developer, Atlassian',
 };
 
 var judgesLinkedIn = {
@@ -28,6 +34,9 @@ var judgesLinkedIn = {
   'Mr. Alon Grinshpoon': 'https://www.linkedin.com/in/alongrinshpoon',
   'Mr. Arnav Gupta': 'https://in.linkedin.com/in/arnavgupta',
   'Mr. Shivaam Sharma': 'https://in.linkedin.com/in/shivaam',
+  'Mr. Utkarsh Singh': 'https://in.linkedin.com/in/utkarshsingh1998',
+  'Mr. Samarth Gupta': 'https://in.linkedin.com/in/samarthgupta1011',
+  'Mrs. Ishika Hooda': 'https://in.linkedin.com/in/ishikahooda',
 };
 
 var judgesCategory = {
@@ -38,4 +47,7 @@ var judgesCategory = {
   'Mr. Alon Grinshpoon': 'Speaker - AR/VR',
   'Mr. Arnav Gupta': 'Speaker - Innovation',
   'Mr. Shivaam Sharma': 'iTrack',
+  'Mr. Utkarsh Singh': 'Judge',
+  'Mr. Samarth Gupta': 'Judge',
+  'Mrs. Ishika Hooda': 'Judge',
 };
