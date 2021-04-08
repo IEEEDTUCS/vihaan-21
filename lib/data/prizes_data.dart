@@ -132,11 +132,11 @@ Map<String, List<String>> images = {
   'echoar': [
     silverSponsor['images/sponsor_echoar.jpg'], //cash
     silverSponsor['images/sponsor_echoar.jpg'], //cash
-    // 'Inspiration website feature',
+    silverSponsor['images/sponsor_echoar.jpg'], //cash
   ],
   'women_team': [
     sectionImages['images/prize_3000.jpg'], //cash prize
-    sectionImages['images/IEEE_DTU_Logo.png'], //ebook $20
+    bronzeSponsor['images/sponsor_nostarchpress.jpg'], //ebook $20
     bronzeSponsor['images/sponsor_1password.jpg'],
     bronzeSponsor['images/sponsor_axure.jpg'],
     bronzeSponsor['images/sponsor_taskade.jpg'],
@@ -172,7 +172,7 @@ Map<String, List<String>> images = {
 
 Map<String, List<String>> text = {
   'winning': [
-    'Cash Prize - 10,000',
+    'Cash Prize - ₹10,000',
     '1Password Subscription',
     'Axure Subscription',
     'Interview Buddy Course',
@@ -180,7 +180,7 @@ Map<String, List<String>> text = {
     'Egghead.io Course',
     'Daily Bot Subscription Course',
     'Taskade Subscription',
-    'Rosenfeld Subscription',
+    'Books from Rosenfeld',
     'Loop11 Subscription',
     "PrepBytes Interview\nOpportunities and Coupons",
     "Clerky Subscription",
@@ -194,7 +194,7 @@ Map<String, List<String>> text = {
     'Gold Certificate',
   ],
   'first_runner_up': [
-    'Cash Prize - 5,000',
+    'Cash Prize - ₹5,000',
     '1Password Subscription',
     'Axure Subscription',
     'Interview Buddy Course',
@@ -214,7 +214,7 @@ Map<String, List<String>> text = {
     'Silver Certificate',
   ],
   'second_runner_up': [
-    'Cash Prize - 3,000',
+    'Cash Prize - ₹3,000',
     '1Password Subscription',
     'Axure Subscription',
     'Internship Opportunity with Sashido',
@@ -235,7 +235,7 @@ Map<String, List<String>> text = {
   'to_all': [
     'Rosenfeld 20% Off',
     'Proto.io 60 Day License Free',
-    'Loop 11 Subcription',
+    'Loop 11 Subscription',
     'Taskade 1 Year Free Upgrade',
     'Repl.it 3 Month Free (Hacker Plan)',
     'Access to Speechly Resources',
@@ -244,31 +244,31 @@ Map<String, List<String>> text = {
     'Participation Certificate'
   ],
   'matic': [
-    'Cash Prize - 10,000\n(Best hack built on top of Ethereum)',
-    'Cash Prize - 15,000\n(Hack using Matic as well)',
+    'Cash Prize - ₹10,000\n(Best hack built on top of Ethereum)',
+    'Cash Prize - ₹15,000\n(Hack using Matic as well)',
     // 'Seed Funding worth \$5k',
   ],
   'tezos': [
-    'Cash Prize - 20,000\n(Best Dapp built on Tezos)',
-    '10k Cash Prize\n(Best Tezos based App using tezster_dart)',
+    'Cash Prize - ₹20,000\n(Best Dapp built on Tezos)',
+    '₹10,000 Cash Prize\n(Best Tezos based App using tezster_dart)',
     // 'Internship/FTE Opportunity',
     // 'Continuity Grant Opportunity',
   ],
   'portis': [
-    'Cash Prize - 15,000\n(Best Dapp built on Portis)',
+    'Cash Prize - ₹15,000\n(Best Dapp built on Portis)',
   ],
   'speechly': [
     '\$100 gift cards for Best 3 teams',
   ],
   'echoar': [
     '\$50 amazon gift card',
-    '3 month Business-tier\nsubscription',
-    // 'Inspiration website feature',
+    '3 month Business-tier\nSubscription',
+    'Inspiration website feature',
   ],
   'women_team': [
-    'Cash Prize - 3,000',
+    'Cash Prize - ₹3,000',
     "\$20 E-Book Vouchers",
-    '1Password Subsription',
+    '1Password Subscription',
     'Axure Subscription',
     'Taskade Subscription',
     'Loop11 Subscription',
@@ -280,7 +280,7 @@ Map<String, List<String>> text = {
     "Wolfram Subscription worth \$375",
     'Devfolio T-shirt and Swags',
     "Vihaan Swag Kits",
-    "Certificate from Women in Tech",
+    "Certificate for team members",
   ],
   'freshers_team': [
     "EggHead.io Course",

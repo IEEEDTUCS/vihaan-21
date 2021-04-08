@@ -14,8 +14,9 @@ var judgesDesignation = {
   'Mr. Rakshit Tandon': 'Founder & Director Hackdev Technology Pvt Ltd.',
   'Mr. Sumeet Malik': 'Founder at Pepcoding Education Private Limited',
   'Mr. Alon Grinshpoon': 'Founder & CEO at echoAR (Techstars \'19)',
-  'Mr. Arnav Gupta':
-      'Founding Member - Coding Blocks\nLead Engineer, Android - Target',
+  // 'Mr. Arnav Gupta':
+  //     'Founding Member - Coding Blocks\nLead Engineer, Android - Target',
+  'Mr. Arnav Gupta': 'Founding Member - Coding Blocks',
   'Mr. Shivaam Sharma': 'Founder and CEO, Trans Neuron Technologies',
 };
 
