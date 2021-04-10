@@ -158,8 +158,10 @@ var judgeImages = {
       'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fjudges%2Fjudge_utkarshsingh.jpg?alt=media&token=73ead81f-5886-454d-80d3-36df237be876',
   'Mr. Samarth Gupta':
       'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fjudges%2Fjudge_samarth-1.jpg?alt=media&token=9bebe1f5-0540-444a-936e-c22d6d6896b3',
-  'Mrs. Ishika Hooda':
+  'Ms. Ishika Hooda':
       'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fjudges%2Fjudge_ishika.jpg?alt=media&token=a4d364a0-ebcb-4617-921e-1fb98476d3b4',
+  'Ms. Drishti Agarwal':
+      'https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Fjudges%2Fjudge_drishti.jpg?alt=media&token=0d04007c-9cdb-4781-bd30-8219e24f2f88',
 };
 
 var sectionImages = {

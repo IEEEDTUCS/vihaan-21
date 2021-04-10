@@ -7,7 +7,8 @@ var judgesName = [
   'Mr. Shivaam Sharma',
   'Mr. Utkarsh Singh',
   'Mr. Samarth Gupta',
-  'Mrs. Ishika Hooda',
+  'Ms. Ishika Hooda',
+  'Ms. Drishti Agarwal',
   //'Mr. Ritwik Ranjan',
 ];
 
@@ -23,7 +24,8 @@ var judgesDesignation = {
   'Mr. Shivaam Sharma': 'Founder and CEO, Trans Neuron Technologies',
   'Mr. Utkarsh Singh': 'Senior Hardware Engineer, Samsung Electronics',
   'Mr. Samarth Gupta': 'Software Engineer, Microsoft\nIEEE REM Scholar',
-  'Mrs. Ishika Hooda': 'Software Developer, Atlassian',
+  'Ms. Ishika Hooda': 'Software Developer, Atlassian',
+  'Ms. Drishti Agarwal': 'SDE at Adobe Systems',
 };
 
 var judgesLinkedIn = {
@@ -36,7 +38,8 @@ var judgesLinkedIn = {
   'Mr. Shivaam Sharma': 'https://in.linkedin.com/in/shivaam',
   'Mr. Utkarsh Singh': 'https://in.linkedin.com/in/utkarshsingh1998',
   'Mr. Samarth Gupta': 'https://in.linkedin.com/in/samarthgupta1011',
-  'Mrs. Ishika Hooda': 'https://in.linkedin.com/in/ishikahooda',
+  'Ms. Ishika Hooda': 'https://in.linkedin.com/in/ishikahooda',
+  'Ms. Drishti Agarwal': 'https://in.linkedin.com/in/drishti-agarwal-211134157',
 };
 
 var judgesCategory = {
@@ -49,5 +52,6 @@ var judgesCategory = {
   'Mr. Shivaam Sharma': 'iTrack',
   'Mr. Utkarsh Singh': 'Judge',
   'Mr. Samarth Gupta': 'Judge',
-  'Mrs. Ishika Hooda': 'Judge',
+  'Ms. Ishika Hooda': 'Judge',
+  'Ms. Drishti Agarwal': 'Judge',
 };
